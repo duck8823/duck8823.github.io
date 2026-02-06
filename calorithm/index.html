@@ -3,155 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorithm - Track calories with Health</title>
-    <meta name="description" content="Calorithm is a simple app that helps you visualize and manage your calorie balance by seamlessly integrating with Apple Health.">
+    <title>Calorithm — Track Your Calorie Balance with Apple Health</title>
+    <meta name="description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://duck8823.net/calorithm/">
+    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/">
+    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/index_ja.html">
+    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calorithm — Track Your Calorie Balance with Apple Health">
+    <meta property="og:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+    <meta property="og:image" content="https://duck8823.net/calorithm/images/en/daily.png">
+    <meta property="og:url" content="https://duck8823.net/calorithm/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Calorithm">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calorithm — Track Your Calorie Balance with Apple Health">
+    <meta name="twitter:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+    <meta name="twitter:image" content="https://duck8823.net/calorithm/images/en/daily.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Calorithm",
+      "alternateName": "カロリズム",
+      "description": "Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS 16.0+",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://apps.apple.com/app/id6746127712",
+      "featureList": [
+        "Apple Health integration",
+        "AI calorie estimation",
+        "Daily calorie balance view",
+        "Weekly trend charts",
+        "Weight tracking",
+        "Preset favorites",
+        "Home screen widget",
+        "Calorie balance notifications"
+      ],
+      "softwareVersion": "1.9.0",
+      "inLanguage": ["en", "ja"],
+      "author": {
+        "@type": "Person",
+        "name": "Shunsuke Maeda"
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">Calorithm</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#screenshots">Screenshots</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                </nav>
-                <div class="language-selector">
-                    <select id="language-select" onchange="changeLanguage()">
-                        <option value="en">English</option>
-                        <option value="ja">日本語</option>
-                    </select>
-                </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Calorithm</a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <div class="header-actions">
+                <a href="index_ja.html" class="lang-link" aria-label="Switch to Japanese">日本語</a>
+                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+            <a href="index_ja.html" class="lang-link">日本語</a>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Track calories with Health</h1>
-            <p>Calorithm is a simple app that helps you visualize and manage your calorie balance by seamlessly integrating with Apple Health.</p>
-            <a href="#download" class="cta-button">Download Now</a>
-        </div>
-    </section>
+    <main>
 
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar-day"></i>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1>Track Your Calorie Balance, Effortlessly</h1>
+                        <p>Calorithm syncs with Apple Health to visualize your calorie balance. AI-powered calorie estimation, weekly trends, and weight tracking — all in one app.</p>
+                        <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            Download on the App Store
+                        </a>
                     </div>
-                    <h3 class="feature-title">Daily View</h3>
-                    <p class="feature-description">Visualize your calorie balance with Health integration</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="hero-image">
+                        <img src="images/en/daily.png" alt="Calorithm daily calorie balance view on iPhone" width="300" height="649">
                     </div>
-                    <h3 class="feature-title">Weekly Trends</h3>
-                    <p class="feature-description">Track your calorie balance over time with intuitive graphs</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-weight"></i>
-                    </div>
-                    <h3 class="feature-title">Weight Monitoring</h3>
-                    <p class="feature-description">Keep an eye on your weight changes with weekly trend charts</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <h3 class="feature-title">Simple Input</h3>
-                    <p class="feature-description">Quickly log your energy intake with a clean, user-friendly interface</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-moon"></i>
-                    </div>
-                    <h3 class="feature-title">Dark Mode Support</h3>
-                    <p class="feature-description">Enjoy comfortable viewing in any lighting condition</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2 class="section-title">App Screenshots</h2>
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <img src="images/preview_daily_en.png" alt="Daily View">
+        <!-- Features Grid -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Everything You Need for Calorie Management</h2>
+                    <p>Simple, powerful tools to understand your energy balance at a glance.</p>
                 </div>
-                <div class="screenshot-item">
-                    <img src="images/preview_weekly_en.png" alt="Weekly Trends">
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/preview_weekly_weight_en.png" alt="Weight Monitoring">
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/preview_input_en.png" alt="Simple Input">
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/preview_input_preset_en.png" alt="Preset Input">
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/preview_darkmode_en.png" alt="Dark Mode">
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Heart icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3>Apple Health Sync</h3>
+                        <p>Automatically retrieves activity and weight data</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Sparkle / AI icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <h3>AI Estimation</h3>
+                        <p>Estimate calories by simply typing a food name</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Calendar icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <h3>Daily Balance</h3>
+                        <p>Visualize today's calorie intake vs. expenditure</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Chart icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3>Weekly Trends</h3>
+                        <p>Track your calorie balance over the week with charts</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Scale / Weight icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4c0 .74.2 1.44.56 2.03L2 22h20L15.44 9.03c.36-.6.56-1.29.56-2.03a4 4 0 0 0-4-4z"/><line x1="5" y1="22" x2="19" y2="22"/></svg>
+                        </div>
+                        <h3>Weight Tracking</h3>
+                        <p>Monitor weight changes with weekly trend charts</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Bookmark / Preset icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3>Preset Favorites</h3>
+                        <p>Log frequent meals with a single tap</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Layout / Widget icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        </div>
+                        <h3>Home Widget</h3>
+                        <p>View your calorie balance from your home screen</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <!-- Bell / Notification icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        </div>
+                        <h3>Notifications</h3>
+                        <p>Get notified of your daily calorie balance</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="features">
-        <div class="container">
-            <h2 class="section-title">About Calorithm</h2>
-            <div class="content-section">
-                <p>Calorithm focuses on simplicity and effectiveness, helping you understand your energy balance at a glance. By connecting with Health, the app automatically retrieves your activity data and combines it with your manually entered food intake to give you a complete picture of your calorie balance.</p>
-                <p>Whether you're trying to maintain, lose, or gain weight, Calorithm provides the insights you need to make informed decisions about your diet and exercise routine.</p>
+        <!-- Mid CTA -->
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Start Managing Your Calories Today</h2>
+                <p>No account required. Your data stays on your device.</p>
+                <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Download on the App Store
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="download" class="download">
-        <div class="container">
-            <h2>Take control of your health journey today!</h2>
-            <p>Download Calorithm from the App Store and start tracking your calorie balance.</p>
-            <a href="https://apps.apple.com/app/id6746127712" class="app-store-button">
-                <i class="fab fa-apple"></i> Download on the App Store
-            </a>
-        </div>
-    </section>
+        <!-- Feature Showcase 1: Daily Balance -->
+        <section class="feature-showcase">
+            <div class="container">
+                <div class="showcase-grid fade-in">
+                    <div class="showcase-text">
+                        <h2>Daily Balance</h2>
+                        <p>Auto-syncs with Apple Health to display your calorie intake and expenditure side by side. See your energy balance at a glance — no manual tracking of activity needed.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/daily.png" alt="Daily calorie balance screen showing intake vs expenditure" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
+        <!-- Feature Showcase 2: AI Calorie Estimation -->
+        <section class="feature-showcase feature-showcase--alt">
+            <div class="container">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
+                    <div class="showcase-text">
+                        <h2>AI Calorie Estimation</h2>
+                        <p>Just type a food name and let AI estimate the calories for you. No need to search through databases — get quick, intelligent estimates to keep your logging fast and simple.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/input_estimation.png" alt="AI calorie estimation screen with food name input" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase 3: Weekly Trends & Weight -->
+        <section class="feature-showcase">
+            <div class="container">
+                <div class="showcase-grid fade-in">
+                    <div class="showcase-text">
+                        <h2>Weekly Trends &amp; Weight</h2>
+                        <p>View your calorie balance trends and weight changes over the week with intuitive charts. Spot patterns, stay motivated, and make informed decisions about your diet.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/weekly.png" alt="Weekly calorie trend chart and weight tracking graph" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase 4: Preset Favorites -->
+        <section class="feature-showcase feature-showcase--alt">
+            <div class="container">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
+                    <div class="showcase-text">
+                        <h2>Preset Favorites</h2>
+                        <p>Save your frequently eaten meals as presets and log them with a single tap. No more re-entering the same foods every day — fast, convenient calorie logging.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/preset.png" alt="Preset favorites screen for quick meal logging" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase 5: Widget & Notifications -->
+        <section class="feature-showcase">
+            <div class="container">
+                <div class="showcase-grid fade-in">
+                    <div class="showcase-text">
+                        <h2>Widget &amp; Notifications</h2>
+                        <p>Add a widget to your home screen to see your calorie balance at a glance. Enable push notifications to receive your daily calorie balance summary.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/widget.png" alt="Home screen widget showing calorie balance" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshot Gallery -->
+        <section id="screenshots" class="gallery-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>App Screenshots</h2>
+                </div>
+                <div class="screenshot-gallery">
+                    <div class="screenshot-gallery-item"><img src="images/en/daily.png" alt="Daily calorie balance view" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/weekly.png" alt="Weekly calorie trend chart" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/weekly_weight.png" alt="Weekly weight tracking chart" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/input_estimation.png" alt="AI calorie estimation input" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/preset.png" alt="Preset favorites for quick logging" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/darkmode.png" alt="Dark mode interface" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/notification.png" alt="Calorie balance push notification" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/widget.png" alt="Home screen calorie widget" width="300" height="649" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Take Control of Your Health Journey</h2>
+                <p>Download Calorithm and start tracking your calorie balance today.</p>
+                <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    Download on the App Store
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Calorithm</h3>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">Calorithm</span>
+                    <p>A simple calorie balance tracker that integrates with Apple Health.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#screenshots">Screenshots</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
+                <div class="footer-col">
+                    <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Support</h3>
+                <div class="footer-col">
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="support.html">Support</a></li>
+                        <li><a href="support.html">Help Center</a></li>
                         <li><a href="support.html#faq">FAQ</a></li>
-                        <li><a href="support.html#contact">Contact Us</a></li>
+                        <li><a href="support.html#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -161,17 +346,6 @@
         </div>
     </footer>
 
-    <script>
-        function changeLanguage() {
-            const select = document.getElementById('language-select');
-            const language = select.value;
-
-            if (language === 'ja') {
-                window.location.href = 'index_ja.html';
-            } else {
-                window.location.href = 'index.html';
-            }
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
