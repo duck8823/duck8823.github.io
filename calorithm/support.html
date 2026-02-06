@@ -3,173 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Calorithm</title>
-    <meta name="description" content="Get help and support for Calorithm, a calorie tracking app that integrates with Apple Health.">
+    <title>Support — Calorithm</title>
+    <meta name="description" content="Get help and support for Calorithm, a calorie tracking app that integrates with Apple Health. FAQ, troubleshooting, and contact information.">
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://duck8823.net/calorithm/support.html">
+    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/support.html">
+    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/support_ja.html">
+    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html">
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">Calorithm</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#screenshots">Screenshots</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                </nav>
-                <div class="language-selector">
-                    <select id="language-select" onchange="changeLanguage()">
-                        <option value="en">English</option>
-                        <option value="ja">日本語</option>
-                    </select>
-                </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Calorithm</a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#screenshots">Screenshots</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <div class="header-actions">
+                <a href="support_ja.html" class="lang-link" aria-label="Switch to Japanese">日本語</a>
+                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#screenshots">Screenshots</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+            <a href="support_ja.html" class="lang-link">日本語</a>
+        </nav>
     </header>
 
-    <section class="content-page">
-        <div class="content-container">
-            <h1 class="content-title">Support</h1>
+    <main>
+        <section class="content-page">
+            <div class="content-container">
+                <h1 class="content-title">Support</h1>
 
-            <div class="content-section">
-                <p>Welcome to Calorithm Support. Here you'll find answers to frequently asked questions, troubleshooting tips, and ways to contact us if you need further assistance.</p>
+                <div class="content-section">
+                    <p>Welcome to Calorithm Support. Here you'll find answers to frequently asked questions, troubleshooting tips, and ways to contact us if you need further assistance.</p>
+                </div>
+
+                <div id="faq" class="content-section">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <h3>How does Calorithm integrate with Apple Health?</h3>
+                        <p>Calorithm seamlessly connects with Apple Health to retrieve your activity data (Active Energy and Resting Energy) and weight information. When you first launch the app, you'll be prompted to grant permission for Calorithm to access this data from Health. You can adjust these permissions at any time in your device's Settings app under Privacy &amp; Security &gt; Health.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I log my food intake?</h3>
+                        <p>To log your food intake, tap the "+" button on the daily view screen. Enter the calorie amount and optionally add a note about the meal. Your entry will be saved and immediately reflected in your daily calorie balance.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I edit or delete a food entry?</h3>
+                        <p>Yes, you can edit or delete any food entry. On the daily view screen, tap on the entry you wish to modify. You'll see options to edit the calorie amount, change the note, or delete the entry entirely.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How does AI calorie estimation work?</h3>
+                        <p>When logging food, simply type the name of the food item and Calorithm's AI will estimate its calorie content. The AI uses a large language model to provide approximate calorie values based on common portion sizes. You can always adjust the estimated value before saving.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I correct the AI's calorie estimation?</h3>
+                        <p>Yes. After the AI provides an estimate, you can freely edit the calorie value before saving. If the portion size or preparation method differs from what the AI assumed, simply adjust the number to match your actual intake.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I use preset favorites?</h3>
+                        <p>Presets let you save frequently eaten meals for quick logging. To create a preset, log a food entry and tap the bookmark icon to save it. Your presets appear in the input screen — just tap one to instantly log it without re-entering the details.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I add the home screen widget?</h3>
+                        <p>Long-press on your iPhone's home screen, tap the "+" button in the top-left corner, and search for "Calorithm". Choose the widget size you prefer and tap "Add Widget". The widget displays your current calorie balance for the day.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do push notifications work?</h3>
+                        <p>Calorithm can send you daily notifications with your calorie balance summary. Go to the app's settings and enable notifications. You can customize the notification time to receive your daily summary at a convenient time.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is the calorie balance summary?</h3>
+                        <p>The calorie balance summary shows the difference between your calorie intake (food logged) and your calorie expenditure (Active Energy + Resting Energy from Apple Health). A negative balance means you burned more than you consumed, while a positive balance means you consumed more than you burned.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Why isn't my activity data showing up?</h3>
+                        <p>There could be several reasons:</p>
+                        <ul>
+                            <li>You haven't granted Calorithm permission to access your Health data</li>
+                            <li>Your Apple Watch or other fitness device isn't properly synced with Health</li>
+                            <li>There's no activity data recorded for the selected date</li>
+                        </ul>
+                        <p>Check your Health app to ensure data is being recorded, and verify that Calorithm has the necessary permissions in Settings &gt; Privacy &amp; Security &gt; Health.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How accurate is the calorie balance calculation?</h3>
+                        <p>Calorithm's calorie balance calculation is based on the data provided by Apple Health for your energy expenditure and your manually entered food intake. The accuracy depends on several factors, including the accuracy of your fitness device's measurements and the precision of your food logging. For best results, be consistent with logging your meals and ensure your fitness devices are properly calibrated.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does Calorithm work without an Apple Watch?</h3>
+                        <p>Yes, Calorithm can work without an Apple Watch. The iPhone itself can track some activity data, though an Apple Watch or other fitness device that syncs with Health will provide more comprehensive data. You can also manually log your exercise in the Health app, which will then be reflected in Calorithm.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is my data secure?</h3>
+                        <p>Yes, your privacy and data security are our top priorities. All health and food intake data is stored locally on your device and is not transmitted to our servers. For more information, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Troubleshooting</h2>
+
+                    <div class="faq-item">
+                        <h3>App Crashes or Freezes</h3>
+                        <p>If you experience crashes or freezes:</p>
+                        <ol>
+                            <li>Ensure your iOS is updated to the latest version</li>
+                            <li>Close all background apps and restart Calorithm</li>
+                            <li>If the issue persists, try restarting your device</li>
+                            <li>If problems continue, uninstall and reinstall the app (note: this will reset any data not synced with Health)</li>
+                        </ol>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Health Data Not Syncing</h3>
+                        <p>If your Health data isn't appearing in Calorithm:</p>
+                        <ol>
+                            <li>Open the Settings app on your device</li>
+                            <li>Navigate to Privacy &amp; Security &gt; Health &gt; Calorithm</li>
+                            <li>Ensure that all necessary permissions are enabled</li>
+                            <li>Open the Health app and verify that data is being recorded</li>
+                            <li>Restart both the Health app and Calorithm</li>
+                        </ol>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Incorrect Calorie Calculations</h3>
+                        <p>If you notice discrepancies in calorie calculations:</p>
+                        <ol>
+                            <li>Check that your weight information in Health is up-to-date</li>
+                            <li>Verify that your activity data in Health is accurate</li>
+                            <li>Ensure you're logging all food intake accurately</li>
+                            <li>Remember that the app calculates based on data available at the time of viewing</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="contact" class="content-section">
+                    <h2>Contact Us</h2>
+                    <p>If you couldn't find the answer to your question or are experiencing issues not covered above, please contact our support team:</p>
+
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
+                    </div>
+
+                    <div class="feedback">
+                        <h3>Feedback and Suggestions</h3>
+                        <p>We're constantly working to improve Calorithm and value your input. If you have suggestions for new features or improvements, please send them to <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>App Information</h2>
+                    <p><strong>Current Version:</strong> v1.9.0</p>
+                    <p><strong>Compatible with:</strong> iOS 16.0 or later</p>
+                    <p><strong>Requires:</strong> iPhone with iOS 16.0 or later</p>
+                    <p><strong>Languages:</strong> English, Japanese</p>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div id="faq" class="content-section">
-                <h2>Frequently Asked Questions</h2>
-
-                <div class="faq-item">
-                    <h3>How does Calorithm integrate with Apple Health?</h3>
-                    <p>Calorithm seamlessly connects with Apple Health to retrieve your activity data (Active Energy and Resting Energy) and weight information. When you first launch the app, you'll be prompted to grant permission for Calorithm to access this data from Health. You can adjust these permissions at any time in your device's Settings app under Privacy > Health.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How do I log my food intake?</h3>
-                    <p>To log your food intake, tap the "+" button on the daily view screen. Enter the calorie amount and optionally add a note about the meal. Your entry will be saved and immediately reflected in your daily calorie balance.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Can I edit or delete a food entry?</h3>
-                    <p>Yes, you can edit or delete any food entry. On the daily view screen, tap on the entry you wish to modify. You'll see options to edit the calorie amount, change the note, or delete the entry entirely.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Why isn't my activity data showing up?</h3>
-                    <p>There could be several reasons:</p>
-                    <ul>
-                        <li>You haven't granted Calorithm permission to access your Health data</li>
-                        <li>Your Apple Watch or other fitness device isn't properly synced with Health</li>
-                        <li>There's no activity data recorded for the selected date</li>
-                    </ul>
-                    <p>Check your Health app to ensure data is being recorded, and verify that Calorithm has the necessary permissions in Settings > Privacy > Health.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How accurate is the calorie balance calculation?</h3>
-                    <p>Calorithm's calorie balance calculation is based on the data provided by Apple Health for your energy expenditure and your manually entered food intake. The accuracy depends on several factors, including the accuracy of your fitness device's measurements and the precision of your food logging. For best results, be consistent with logging your meals and ensure your fitness devices are properly calibrated.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Does Calorithm work without an Apple Watch?</h3>
-                    <p>Yes, Calorithm can work without an Apple Watch. The iPhone itself can track some activity data, though an Apple Watch or other fitness device that syncs with Health will provide more comprehensive data. You can also manually log your exercise in the Health app, which will then be reflected in Calorithm.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Is my data secure?</h3>
-                    <p>Yes, your privacy and data security are our top priorities. All health and food intake data is stored locally on your device and is not transmitted to our servers. For more information, please see our <a href="privacy.html">Privacy Policy</a>.</p>
-                </div>
-            </div>
-
-            <div class="content-section">
-                <h2>Troubleshooting</h2>
-
-                <div class="faq-item">
-                    <h3>App Crashes or Freezes</h3>
-                    <p>If you experience crashes or freezes:</p>
-                    <ol>
-                        <li>Ensure your iOS is updated to the latest version</li>
-                        <li>Close all background apps and restart Calorithm</li>
-                        <li>If the issue persists, try restarting your device</li>
-                        <li>If problems continue, uninstall and reinstall the app (note: this will reset any data not synced with Health)</li>
-                    </ol>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Health Data Not Syncing</h3>
-                    <p>If your Health data isn't appearing in Calorithm:</p>
-                    <ol>
-                        <li>Open the Settings app on your device</li>
-                        <li>Navigate to Privacy > Health > Calorithm</li>
-                        <li>Ensure that all necessary permissions are enabled</li>
-                        <li>Open the Health app and verify that data is being recorded</li>
-                        <li>Restart both the Health app and Calorithm</li>
-                    </ol>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Incorrect Calorie Calculations</h3>
-                    <p>If you notice discrepancies in calorie calculations:</p>
-                    <ol>
-                        <li>Check that your weight information in Health is up-to-date</li>
-                        <li>Verify that your activity data in Health is accurate</li>
-                        <li>Ensure you're logging all food intake accurately</li>
-                        <li>Remember that the app calculates based on data available at the time of viewing</li>
-                    </ol>
-                </div>
-            </div>
-
-            <div id="contact" class="content-section">
-                <h2>Contact Us</h2>
-                <p>If you couldn't find the answer to your question or are experiencing issues not covered above, please contact our support team:</p>
-
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
-                </div>
-
-                <div class="feedback">
-                    <h3>Feedback and Suggestions</h3>
-                    <p>We're constantly working to improve Calorithm and value your input. If you have suggestions for new features or improvements, please send them to <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</p>
-                </div>
-            </div>
-
-            <div class="content-section">
-                <h2>App Information</h2>
-                <p><strong>Current Version:</strong> v1.3.0</p>
-                <p><strong>Compatible with:</strong> iOS 14.0 or later</p>
-                <p><strong>Requires:</strong> iPhone with iOS 14.0 or later</p>
-                <p><strong>Languages:</strong> English, Japanese</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Calorithm</h3>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">Calorithm</span>
+                    <p>A simple calorie balance tracker that integrates with Apple Health.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#features">Features</a></li>
                         <li><a href="index.html#screenshots">Screenshots</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
+                <div class="footer-col">
+                    <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Support</h3>
+                <div class="footer-col">
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="support.html">Support</a></li>
+                        <li><a href="support.html">Help Center</a></li>
                         <li><a href="support.html#faq">FAQ</a></li>
-                        <li><a href="support.html#contact">Contact Us</a></li>
+                        <li><a href="support.html#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -179,17 +226,6 @@
         </div>
     </footer>
 
-    <script>
-        function changeLanguage() {
-            const select = document.getElementById('language-select');
-            const language = select.value;
-
-            if (language === 'ja') {
-                window.location.href = 'support_ja.html';
-            } else {
-                window.location.href = 'support.html';
-            }
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
