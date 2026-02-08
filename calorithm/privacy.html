@@ -13,6 +13,22 @@
     <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
+        authDomain: "calorie-balance-1b683.firebaseapp.com",
+        projectId: "calorie-balance-1b683",
+        storageBucket: "calorie-balance-1b683.firebasestorage.app",
+        messagingSenderId: "75295278625",
+        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
+        measurementId: "G-HQL6V430FS"
+      });
+      window.calorithmAnalytics = firebase.analytics();
+    </script>
 </head>
 <body>
 
@@ -69,13 +85,15 @@
                     <p>The app allows you to manually input information about your calorie intake. This information is stored locally on your device and is not transmitted to any external servers.</p>
 
                     <h3>Usage Data</h3>
-                    <p>The app collects anonymous usage data to help improve its functionality and user experience. This may include:</p>
+                    <p>The app and this website collect anonymous usage data to help improve functionality and user experience. This may include:</p>
                     <ul>
                         <li>App feature usage statistics</li>
                         <li>App performance data</li>
                         <li>Crash reports</li>
+                        <li>Website page views and button clicks</li>
                     </ul>
                     <p>This data is collected in a way that does not personally identify you.</p>
+                    <p>This website uses Firebase Analytics (provided by Google) to collect anonymous usage data such as page views and click events. No personally identifiable information is collected. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</p>
                 </div>
 
                 <div class="content-section">
@@ -156,7 +174,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shunsuke Maeda</p>
+                <p>&copy; 2026 Shunsuke Maeda</p>
             </div>
         </div>
     </footer>

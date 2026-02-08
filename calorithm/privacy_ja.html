@@ -13,6 +13,22 @@
     <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
+        authDomain: "calorie-balance-1b683.firebaseapp.com",
+        projectId: "calorie-balance-1b683",
+        storageBucket: "calorie-balance-1b683.firebasestorage.app",
+        messagingSenderId: "75295278625",
+        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
+        measurementId: "G-HQL6V430FS"
+      });
+      window.calorithmAnalytics = firebase.analytics();
+    </script>
 </head>
 <body>
 
@@ -69,13 +85,15 @@
                     <p>本アプリでは、カロリー摂取に関する情報を手動で入力することができます。この情報はお客様のデバイス上にローカルに保存され、外部サーバーには送信されません。</p>
 
                     <h3>使用状況データ</h3>
-                    <p>アプリの機能性とユーザーエクスペリエンスを向上させるために、匿名の使用状況データが収集されます。これには以下が含まれる場合があります：</p>
+                    <p>アプリおよび本ウェブサイトの機能性とユーザーエクスペリエンスを向上させるために、匿名の使用状況データが収集されます。これには以下が含まれる場合があります：</p>
                     <ul>
                         <li>アプリ機能の使用統計</li>
                         <li>アプリのパフォーマンスデータ</li>
                         <li>クラッシュレポート</li>
+                        <li>ウェブサイトのページビューおよびボタンクリック</li>
                     </ul>
                     <p>このデータは、お客様を個人的に特定しない方法で収集されます。</p>
+                    <p>本ウェブサイトでは、Firebase Analytics（Google 提供）を使用して、ページビューやクリックイベントなどの匿名の使用状況データを収集しています。個人を特定できる情報は収集されません。<a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google アナリティクス オプトアウト アドオン</a>をインストールすることで、収集を無効化できます。</p>
                 </div>
 
                 <div class="content-section">
@@ -156,7 +174,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shunsuke Maeda</p>
+                <p>&copy; 2026 Shunsuke Maeda</p>
             </div>
         </div>
     </footer>

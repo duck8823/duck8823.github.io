@@ -13,6 +13,22 @@
     <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
+        authDomain: "calorie-balance-1b683.firebaseapp.com",
+        projectId: "calorie-balance-1b683",
+        storageBucket: "calorie-balance-1b683.firebasestorage.app",
+        messagingSenderId: "75295278625",
+        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
+        measurementId: "G-HQL6V430FS"
+      });
+      window.calorithmAnalytics = firebase.analytics();
+    </script>
 </head>
 <body>
 
@@ -180,7 +196,7 @@
 
                 <div class="content-section">
                     <h2>App Information</h2>
-                    <p><strong>Current Version:</strong> v1.9.0</p>
+                    <p><strong>Current Version:</strong> v1.10.0</p>
                     <p><strong>Compatible with:</strong> iOS 16.0 or later</p>
                     <p><strong>Requires:</strong> iPhone with iOS 16.0 or later</p>
                     <p><strong>Languages:</strong> English, Japanese</p>
@@ -221,7 +237,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shunsuke Maeda</p>
+                <p>&copy; 2026 Shunsuke Maeda</p>
             </div>
         </div>
     </footer>

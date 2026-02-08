@@ -53,7 +53,7 @@
         "Home screen widget",
         "Calorie balance notifications"
       ],
-      "softwareVersion": "1.9.0",
+      "softwareVersion": "1.10.0",
       "inLanguage": ["en", "ja"],
       "author": {
         "@type": "Person",
@@ -62,7 +62,65 @@
     }
     </script>
 
+    <!-- JSON-LD FAQ Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Calorithm really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Calorithm is free to download and use. The app is ad-supported, and optional premium features may be available in future updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does AI calorie estimation work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply type a food name and AI estimates its calories using a large language model. You can always adjust the estimate before saving. There is a daily usage limit on AI estimations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Calorithm support Apple Watch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Currently Calorithm is available on iPhone only. Apple Watch support is planned for a future update."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All your health and food intake data is stored locally on your device and is never sent to external servers."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
+        authDomain: "calorie-balance-1b683.firebaseapp.com",
+        projectId: "calorie-balance-1b683",
+        storageBucket: "calorie-balance-1b683.firebasestorage.app",
+        messagingSenderId: "75295278625",
+        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
+        measurementId: "G-HQL6V430FS"
+      });
+      window.calorithmAnalytics = firebase.analytics();
+    </script>
 </head>
 <body>
 
@@ -105,6 +163,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                             Download on the App Store
                         </a>
+                        <span class="free-badge">Free Download</span>
                     </div>
                     <div class="hero-image">
                         <img src="images/en/daily.png" alt="Calorithm daily calorie balance view on iPhone" width="300" height="649">
@@ -198,6 +257,7 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     Download on the App Store
                 </a>
+                <span class="free-badge">Free Download</span>
             </div>
         </section>
 
@@ -225,7 +285,10 @@
                         <p>Just type a food name and let AI estimate the calories for you. No need to search through databases — get quick, intelligent estimates to keep your logging fast and simple.</p>
                     </div>
                     <div class="showcase-image">
-                        <img src="images/en/input_estimation.png" alt="AI calorie estimation screen with food name input" width="300" height="649" loading="lazy">
+                        <video autoplay muted loop playsinline poster="images/en/input_estimation.png" width="300" height="652">
+                            <source src="images/en/demo_estimation.mp4" type="video/mp4">
+                            <img src="images/en/input_estimation.png" alt="AI calorie estimation screen with food name input" width="300" height="649" loading="lazy">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -295,6 +358,100 @@
             </div>
         </section>
 
+        <!-- Comparison -->
+        <section class="comparison-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>What Makes Calorithm Different</h2>
+                </div>
+                <div class="comparison-table-wrapper fade-in">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="col-other">Typical Calorie Apps</th>
+                                <th class="col-app-head">Calorithm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Key metric</td>
+                                <td class="col-other">Remaining calories against a goal</td>
+                                <td class="col-app">Calorie balance: intake vs. expenditure</td>
+                            </tr>
+                            <tr>
+                                <td>Expenditure data</td>
+                                <td class="col-other">Used to adjust how much you can eat</td>
+                                <td class="col-app">Central element of the balance chart</td>
+                            </tr>
+                            <tr>
+                                <td>Weekly review</td>
+                                <td class="col-other">Intake calorie history</td>
+                                <td class="col-app">Balance trend + weight change chart</td>
+                            </tr>
+                            <tr>
+                                <td>Calorie input</td>
+                                <td class="col-other">Search a food database</td>
+                                <td class="col-app">AI estimates from a food name</td>
+                            </tr>
+                            <tr>
+                                <td>Account &amp; data</td>
+                                <td class="col-other">Sign-up required, stored in the cloud</td>
+                                <td class="col-app">No sign-up, stored on your device</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-accordion fade-in">
+                    <div class="faq-accordion-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is Calorithm really free?
+                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Yes, Calorithm is free to download and use. The app is ad-supported, and optional premium features may be available in future updates.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How does AI calorie estimation work?
+                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Simply type a food name and AI estimates its calories using a large language model. You can always adjust the estimate before saving. There is a daily usage limit on AI estimations.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Does it support Apple Watch?
+                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Currently Calorithm is available on iPhone only. Apple Watch support is planned for a future update.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is my data private?
+                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-inner">Yes. All your health and food intake data is stored locally on your device and is never sent to external servers. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Bottom CTA -->
         <section class="cta-section">
             <div class="container fade-in">
@@ -304,6 +461,7 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                     Download on the App Store
                 </a>
+                <span class="free-badge">Free Download</span>
             </div>
         </section>
 
@@ -341,7 +499,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shunsuke Maeda</p>
+                <p>&copy; 2026 Shunsuke Maeda</p>
             </div>
         </div>
     </footer>
