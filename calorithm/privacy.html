@@ -64,7 +64,7 @@
                 <h1 class="content-title">Privacy Policy</h1>
 
                 <div class="content-section">
-                    <p>Last Updated: February 14, 2026</p>
+                    <p>Last Updated: March 9, 2026</p>
                     <p>Calorithm is an independently developed personal project, not a company. This Privacy Policy describes how your personal information is collected, used, and shared when you use the mobile application Calorithm (the "App").</p>
                 </div>
 
@@ -86,6 +86,10 @@
 
                     <h3>User-Provided Information</h3>
                     <p>The app allows you to manually input information about your calorie intake. This information is stored locally on your device and is not transmitted to any external servers.</p>
+                    <p>Body measurements you provide (such as height, gender, and age) are stored in an encrypted local database on your device. This data is used solely for calorie balance estimation and is never transmitted to external servers.</p>
+
+                    <h3>Camera and Photo Library</h3>
+                    <p>Calorithm may access your device's camera or photo library when you choose to estimate calories from a food photo. Photos are sent to Google servers (Vertex AI / Gemini) solely for AI-powered calorie estimation. The app does not store your photos on any external server. Google's handling and retention of data sent to Vertex AI is governed by <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google's data governance policies</a>.</p>
 
                     <h3>Usage Data</h3>
                     <p>The app and this website collect anonymous usage data to help improve functionality and user experience. This may include:</p>
@@ -95,7 +99,7 @@
                         <li>Crash reports</li>
                         <li>Website page views and button clicks</li>
                     </ul>
-                    <p>This data is collected in a way that does not personally identify you.</p>
+                    <p>This data is collected in a way that does not personally identify you. Health metrics such as calorie and weight values are anonymized into ranges before being sent to analytics services.</p>
                     <p>This website uses Firebase Analytics (provided by Google) to collect anonymous usage data such as page views and click events. No personally identifiable information is collected. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</p>
                 </div>
 
@@ -117,9 +121,10 @@
                     <h3>Third-Party Service Providers</h3>
                     <p>The App uses the following third-party services:</p>
                     <ul>
-                        <li><strong>Firebase Analytics</strong> (Google): Collects anonymous app usage statistics such as feature interactions and crash reports. You can opt out in the App's settings.</li>
+                        <li><strong>Firebase Analytics</strong> (Google): Collects anonymous app usage statistics such as feature interactions. You can opt out in the App's settings.</li>
+                        <li><strong>Firebase Crashlytics</strong> (Google): Collects crash logs, stack traces, and device information (device model, OS version, app version) to help diagnose and fix issues. This data is not linked to your identity.</li>
                         <li><strong>Google AdMob</strong>: Displays ads within the App. Ad personalization depends on your App Tracking Transparency (ATT) permission. You can manage this in iOS Settings &gt; Privacy &amp; Security &gt; Tracking, or in the App's settings.</li>
-                        <li><strong>Google Vertex AI (Gemini)</strong>: Processes food descriptions you enter for AI-based calorie estimation. Your input text is sent to Google servers for processing and is not retained by Google after the request is completed. Estimation results and input text are stored locally on your device.</li>
+                        <li><strong>Google Vertex AI (Gemini)</strong>: Processes food descriptions and food photos you provide for AI-based calorie estimation. Your input text and photos are sent to Google servers for processing. The app does not store this data externally. Google's retention of data sent to Vertex AI is subject to <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google's data governance policies</a>. Estimation results and input text are stored locally on your device.</li>
                     </ul>
                     <p>These third parties have access to your information only to perform these tasks and are obligated not to disclose or use it for any other purpose.</p>
                 </div>
@@ -129,14 +134,15 @@
                     <ul>
                         <li><strong>Health data</strong>: Stored locally on your device. Never transmitted to external servers.</li>
                         <li><strong>Analytics data</strong>: Retained by Google in accordance with their standard data retention policies.</li>
-                        <li><strong>AI estimation data</strong>: Your input text is sent to Google Vertex AI for processing and is not retained by Google after the request is completed. Estimation results and input text are stored locally on your device.</li>
+                        <li><strong>Crash data</strong>: Retained by Firebase Crashlytics in accordance with Google's data retention policies (currently 90 days).</li>
+                        <li><strong>AI estimation data</strong>: Your input text and photos are sent to Google Vertex AI for processing. The app does not store this data externally. Google's retention of transmitted data is subject to their <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">data governance policies</a>. Estimation results and input text are stored locally on your device.</li>
                         <li><strong>Ad-related data</strong>: Managed by Google AdMob in accordance with their privacy policy.</li>
                     </ul>
                 </div>
 
                 <div class="content-section">
                     <h2>Data Security</h2>
-                    <p>Your trust in providing your personal information is valued, and commercially acceptable means are used to protect it. However, no method of transmission over the internet or method of electronic storage is 100% secure, and absolute security cannot be guaranteed.</p>
+                    <p>Your trust in providing your personal information is valued, and commercially acceptable means are used to protect it. Sensitive personal data (including body measurements and AI estimation history) is stored in an AES-256 encrypted database on your device. However, no method of transmission over the internet or method of electronic storage is 100% secure, and absolute security cannot be guaranteed.</p>
                 </div>
 
                 <div class="content-section">
@@ -145,6 +151,7 @@
                     <ul>
                         <li><strong>Analytics opt-out</strong>: You can disable usage analytics in the App's settings (Settings &gt; Ad Settings &gt; Usage Analytics).</li>
                         <li><strong>Ad personalization</strong>: You can change your tracking preference in iOS Settings &gt; Privacy &amp; Security &gt; Tracking, or toggle personalized ads in the App's settings.</li>
+                        <li><strong>Crash reporting</strong>: Crash data is collected automatically to maintain app stability and cannot be opted out of independently. It is not linked to your identity.</li>
                         <li><strong>Data deletion</strong>: To request deletion of your data, please contact us using the information in the "Contact" section below.</li>
                     </ul>
                 </div>

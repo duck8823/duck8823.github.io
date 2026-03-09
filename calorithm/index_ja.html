@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ</title>
-    <meta name="description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
+    <meta name="description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
 
     <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://duck8823.net/calorithm/index_ja.html">
@@ -15,7 +15,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ">
-    <meta property="og:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
+    <meta property="og:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
     <meta property="og:image" content="https://duck8823.net/calorithm/images/ja/daily.png">
     <meta property="og:url" content="https://duck8823.net/calorithm/index_ja.html">
     <meta property="og:locale" content="ja_JP">
@@ -24,7 +24,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ">
-    <meta name="twitter:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
+    <meta name="twitter:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
     <meta name="twitter:image" content="https://duck8823.net/calorithm/images/ja/daily.png">
 
     <!-- JSON-LD Structured Data -->
@@ -34,7 +34,7 @@
       "@type": "SoftwareApplication",
       "name": "Calorithm",
       "alternateName": "カロリズム",
-      "description": "Apple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、週間トレンド、体重管理、ウィジェットなど充実機能。",
+      "description": "Apple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS 16.0+",
       "offers": {
@@ -49,11 +49,12 @@
         "デイリーカロリー収支表示",
         "週間トレンドグラフ",
         "体重トラッキング",
+        "タイムライン表示",
         "プリセットお気に入り",
         "ホーム画面ウィジェット",
         "カロリー収支プッシュ通知"
       ],
-      "softwareVersion": "1.10.0",
+      "softwareVersion": "1.13.0",
       "inLanguage": ["en", "ja"],
       "author": {
         "@type": "Person",
@@ -97,7 +98,7 @@
           "name": "データのプライバシーは守られますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい。健康データや食事記録はすべてお使いのデバイスにローカル保存され、外部サーバーに送信されることはありません。"
+            "text": "はい。健康データや食事記録はすべてお使いのデバイス上にローカル保存され、外部サーバーに送信されることはありません。"
           }
         }
       ]
@@ -210,6 +211,14 @@
                     </div>
                     <div class="feature-card fade-in">
                         <div class="feature-icon">
+                            <!-- Clock / Timeline icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>タイムライン</h3>
+                        <p>食事・運動・体重の記録を時系列で確認</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4c0 .74.2 1.44.56 2.03L2 22h20L15.44 9.03c.36-.6.56-1.29.56-2.03a4 4 0 0 0-4-4z"/><line x1="5" y1="22" x2="19" y2="22"/></svg>
                         </div>
                         <h3>体重トラッキング</h3>
@@ -268,13 +277,28 @@
             </div>
         </section>
 
-        <!-- Feature Showcase 2: AI Calorie Estimation -->
+        <!-- Feature Showcase: Timeline -->
         <section class="feature-showcase feature-showcase--alt">
             <div class="container">
                 <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
+                        <h2>タイムライン</h2>
+                        <p>食事・運動・体重の記録をひとつの時系列フィードで確認。いつ何を記録したかをすぐに振り返れるので、日々の生活パターンの把握に役立ちます。</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/ja/timeline.png" alt="タイムライン画面 — 食事・運動・体重の記録を時系列表示" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase: AI Calorie Estimation -->
+        <section class="feature-showcase">
+            <div class="container">
+                <div class="showcase-grid fade-in">
+                    <div class="showcase-text">
                         <h2>AIカロリー推定</h2>
-                        <p>食品名を入力するだけで、AIがカロリーを推定。データベースを検索する手間なし — 素早く、スマートに記録できます。</p>
+                        <p>食品名を入力するだけで、AIがカロリーを推定。運動の活動エネルギーもAIで推定できます。データベースを検索する手間なし — 素早く、スマートに記録できます。</p>
                     </div>
                     <div class="showcase-image">
                         <video autoplay muted loop playsinline poster="images/ja/input_estimation.png" width="300" height="652">
@@ -286,10 +310,10 @@
             </div>
         </section>
 
-        <!-- Feature Showcase 3: Weekly Trends & Weight -->
-        <section class="feature-showcase">
+        <!-- Feature Showcase: Weekly Trends & Weight -->
+        <section class="feature-showcase feature-showcase--alt">
             <div class="container">
-                <div class="showcase-grid fade-in">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
                         <h2>週間トレンドと体重管理</h2>
                         <p>カロリー収支のトレンドと体重変化を直感的なグラフで確認。パターンを発見し、モチベーションを維持して食事プランの改善に役立てましょう。</p>
@@ -301,10 +325,10 @@
             </div>
         </section>
 
-        <!-- Feature Showcase 4: Preset Favorites -->
-        <section class="feature-showcase feature-showcase--alt">
+        <!-- Feature Showcase: Preset Favorites -->
+        <section class="feature-showcase">
             <div class="container">
-                <div class="showcase-grid showcase-grid--reverse fade-in">
+                <div class="showcase-grid fade-in">
                     <div class="showcase-text">
                         <h2>プリセット</h2>
                         <p>よく食べるメニューをプリセットとして保存し、ワンタップで記録。毎日同じ食品を入力する手間が省けます — 素早く便利なカロリー記録。</p>
@@ -316,10 +340,10 @@
             </div>
         </section>
 
-        <!-- Feature Showcase 5: Widget & Notifications -->
-        <section class="feature-showcase">
+        <!-- Feature Showcase: Widget & Notifications -->
+        <section class="feature-showcase feature-showcase--alt">
             <div class="container">
-                <div class="showcase-grid fade-in">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
                         <h2>ウィジェットと通知</h2>
                         <p>ホーム画面にウィジェットを追加して、カロリー収支を一目で確認。プッシュ通知で毎日のカロリー収支サマリーを受け取れます。</p>
@@ -344,6 +368,8 @@
                     <div class="screenshot-gallery-item"><img src="images/ja/input_estimation.png" alt="AIカロリー推定入力" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/ja/preset.png" alt="プリセットお気に入り" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/ja/darkmode.png" alt="ダークモード" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/ja/timeline.png" alt="タイムライン — 食事・運動・体重の時系列表示" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/ja/achievement.png" alt="達成状況 — ストリーク・コントリビューショングラフ" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/ja/notification.png" alt="カロリー収支プッシュ通知" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/ja/widget.png" alt="ホーム画面ウィジェット" width="300" height="649" loading="lazy"></div>
                 </div>
@@ -437,7 +463,7 @@
                             <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                         </button>
                         <div class="faq-answer">
-                            <p class="faq-answer-inner">はい。健康データや食事記録はすべてお使いのデバイスにローカル保存され、外部サーバーに送信されることはありません。詳しくは<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</p>
+                            <p class="faq-answer-inner">はい。健康データや食事記録はすべてお使いのデバイス上にローカル保存され、外部サーバーに送信されることはありません。詳しくは<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</p>
                         </div>
                     </div>
                 </div>

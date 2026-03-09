@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorithm — Track Your Calorie Balance with Apple Health</title>
-    <meta name="description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+    <meta name="description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, timeline view, weekly trends, weight tracking, and more. Available on iOS.">
 
     <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://duck8823.net/calorithm/">
@@ -15,7 +15,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Calorithm — Track Your Calorie Balance with Apple Health">
-    <meta property="og:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+    <meta property="og:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, timeline view, weekly trends, weight tracking, and more. Available on iOS.">
     <meta property="og:image" content="https://duck8823.net/calorithm/images/en/daily.png">
     <meta property="og:url" content="https://duck8823.net/calorithm/">
     <meta property="og:locale" content="en_US">
@@ -24,7 +24,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Calorithm — Track Your Calorie Balance with Apple Health">
-    <meta name="twitter:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more. Available on iOS.">
+    <meta name="twitter:description" content="Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, timeline view, weekly trends, weight tracking, and more. Available on iOS.">
     <meta name="twitter:image" content="https://duck8823.net/calorithm/images/en/daily.png">
 
     <!-- JSON-LD Structured Data -->
@@ -34,7 +34,7 @@
       "@type": "SoftwareApplication",
       "name": "Calorithm",
       "alternateName": "カロリズム",
-      "description": "Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, weekly trends, weight tracking, and more.",
+      "description": "Track your calorie balance effortlessly with Calorithm. Auto-syncs with Apple Health, AI calorie estimation, timeline view, weekly trends, weight tracking, and more.",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS 16.0+",
       "offers": {
@@ -49,11 +49,12 @@
         "Daily calorie balance view",
         "Weekly trend charts",
         "Weight tracking",
+        "Timeline view",
         "Preset favorites",
         "Home screen widget",
         "Calorie balance notifications"
       ],
-      "softwareVersion": "1.10.0",
+      "softwareVersion": "1.13.0",
       "inLanguage": ["en", "ja"],
       "author": {
         "@type": "Person",
@@ -214,6 +215,14 @@
                     </div>
                     <div class="feature-card fade-in">
                         <div class="feature-icon">
+                            <!-- Clock / Timeline icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Timeline</h3>
+                        <p>Review all your meals, exercises, and weight entries in chronological order</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
                             <!-- Scale / Weight icon -->
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4c0 .74.2 1.44.56 2.03L2 22h20L15.44 9.03c.36-.6.56-1.29.56-2.03a4 4 0 0 0-4-4z"/><line x1="5" y1="22" x2="19" y2="22"/></svg>
                         </div>
@@ -276,13 +285,28 @@
             </div>
         </section>
 
-        <!-- Feature Showcase 2: AI Calorie Estimation -->
+        <!-- Feature Showcase: Timeline -->
         <section class="feature-showcase feature-showcase--alt">
             <div class="container">
                 <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
+                        <h2>Timeline</h2>
+                        <p>See all your meals, exercises, and weight entries in one chronological feed. Quickly review what you logged and when, making it easy to spot patterns in your daily routine.</p>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="images/en/timeline.png" alt="Timeline view showing meals, exercises, and weight entries" width="300" height="649" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase 2: AI Calorie Estimation -->
+        <section class="feature-showcase">
+            <div class="container">
+                <div class="showcase-grid fade-in">
+                    <div class="showcase-text">
                         <h2>AI Calorie Estimation</h2>
-                        <p>Just type a food name and let AI estimate the calories for you. No need to search through databases — get quick, intelligent estimates to keep your logging fast and simple.</p>
+                        <p>Just type a food name and let AI estimate the calories for you. AI also estimates active energy for exercises. No need to search through databases — get quick, intelligent estimates to keep your logging fast and simple.</p>
                     </div>
                     <div class="showcase-image">
                         <video autoplay muted loop playsinline poster="images/en/input_estimation.png" width="300" height="652">
@@ -295,9 +319,9 @@
         </section>
 
         <!-- Feature Showcase 3: Weekly Trends & Weight -->
-        <section class="feature-showcase">
+        <section class="feature-showcase feature-showcase--alt">
             <div class="container">
-                <div class="showcase-grid fade-in">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
                         <h2>Weekly Trends &amp; Weight</h2>
                         <p>View your calorie balance trends and weight changes over the week with intuitive charts. Spot patterns, stay motivated, and make informed decisions about your diet.</p>
@@ -310,9 +334,9 @@
         </section>
 
         <!-- Feature Showcase 4: Preset Favorites -->
-        <section class="feature-showcase feature-showcase--alt">
+        <section class="feature-showcase">
             <div class="container">
-                <div class="showcase-grid showcase-grid--reverse fade-in">
+                <div class="showcase-grid fade-in">
                     <div class="showcase-text">
                         <h2>Preset Favorites</h2>
                         <p>Save your frequently eaten meals as presets and log them with a single tap. No more re-entering the same foods every day — fast, convenient calorie logging.</p>
@@ -325,9 +349,9 @@
         </section>
 
         <!-- Feature Showcase 5: Widget & Notifications -->
-        <section class="feature-showcase">
+        <section class="feature-showcase feature-showcase--alt">
             <div class="container">
-                <div class="showcase-grid fade-in">
+                <div class="showcase-grid showcase-grid--reverse fade-in">
                     <div class="showcase-text">
                         <h2>Widget &amp; Notifications</h2>
                         <p>Add a widget to your home screen to see your calorie balance at a glance. Enable push notifications to receive your daily calorie balance summary.</p>
@@ -352,6 +376,8 @@
                     <div class="screenshot-gallery-item"><img src="images/en/input_estimation.png" alt="AI calorie estimation input" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/en/preset.png" alt="Preset favorites for quick logging" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/en/darkmode.png" alt="Dark mode interface" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/timeline.png" alt="Timeline view of meals and activities" width="300" height="649" loading="lazy"></div>
+                    <div class="screenshot-gallery-item"><img src="images/en/achievement.png" alt="Achievement screen showing streak and contribution graph" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/en/notification.png" alt="Calorie balance push notification" width="300" height="649" loading="lazy"></div>
                     <div class="screenshot-gallery-item"><img src="images/en/widget.png" alt="Home screen calorie widget" width="300" height="649" loading="lazy"></div>
                 </div>
