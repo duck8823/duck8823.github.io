@@ -20,13 +20,15 @@
     <meta property="og:url" content="https://duck8823.net/wampo/privacy.html">
     <meta property="og:title" content="Privacy Policy — Wampo">
     <meta property="og:description" content="Privacy policy for Wampo, a dog walking tracker app.">
-    <meta property="og:image" content="https://duck8823.net/wampo/assets/icon.png">
+    <meta property="og:image" content="https://duck8823.net/wampo/assets/ogp.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Wampo">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Privacy Policy — Wampo">
     <meta name="twitter:description" content="Privacy policy for Wampo, a dog walking tracker app.">
-    <meta name="twitter:image" content="https://duck8823.net/wampo/assets/icon.png">
+    <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp.png">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -62,7 +64,7 @@
                 <h1 class="content-title">Privacy Policy</h1>
 
                 <div class="content-section">
-                    <p>Last updated: February 24, 2026</p>
+                    <p>Last updated: March 10, 2026</p>
                     <p>Wampo is a personally developed app. This Privacy Policy describes how your personal information is collected, used, and shared when you use the mobile application "Wampo" (the "App").</p>
                 </div>
 
@@ -71,16 +73,16 @@
                     <p>We are committed to protecting your privacy. The App uses the following types of information:</p>
 
                     <h3>Location Data (GPS)</h3>
-                    <p>The App uses location data to record walking routes. Location data is stored locally on your device and is not transmitted to any external servers.</p>
+                    <p>The App uses location data to record walking routes and to retrieve weather information. Walking route data is stored locally on your device. For weather features, your latitude and longitude are sent to the Open-Meteo weather service, and map tile coordinates are sent to the Japan Meteorological Agency for rain radar display.</p>
 
                     <h3>Camera &amp; Photo Library</h3>
                     <p>The App may request access to your camera or photo library for setting dog profile photos. Images are stored locally on your device and are not transmitted to any external servers.</p>
 
                     <h3>Weather Information</h3>
-                    <p>The App retrieves weather information from the Japan Meteorological Agency public API to suggest suitable walking times. No personal information is transmitted in this communication.</p>
+                    <p>The App retrieves weather information from Open-Meteo (latitude and longitude) and rain radar tiles from the Japan Meteorological Agency (map tile coordinates) to suggest suitable walking times. No personally identifiable information is transmitted in this communication.</p>
 
                     <h3>Map Display</h3>
-                    <p>The App uses Google Maps to display walking routes. Google's privacy policy applies to the use of Google Maps. The App does not provide personally identifiable information to Google.</p>
+                    <p>The App uses Google Maps to display walking routes. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies to the use of Google Maps. The App does not provide personally identifiable information to Google.</p>
                 </div>
 
                 <div class="content-section">
@@ -91,6 +93,7 @@
                         <li>Managing dog profiles</li>
                         <li>Suggesting suitable walking times</li>
                         <li>Displaying walk history and statistics</li>
+                        <li>Measuring app usage to improve features (Firebase Analytics)</li>
                     </ul>
                 </div>
 
@@ -101,8 +104,10 @@
                     <h3>Third-Party Service Providers</h3>
                     <p>The App uses the following third-party services:</p>
                     <ul>
-                        <li><strong>Google Maps</strong>: Used for displaying walking route maps. Google's privacy policy applies.</li>
-                        <li><strong>Japan Meteorological Agency API</strong>: Used for retrieving weather information. No personal data is transmitted.</li>
+                        <li><strong>Google Maps</strong>: Used for displaying walking route maps. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies.</li>
+                        <li><strong>Open-Meteo</strong>: Used for retrieving weather forecasts (temperature, precipitation, wind speed). Your latitude and longitude are sent. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo's terms</a> apply.</li>
+                        <li><strong>Japan Meteorological Agency API</strong>: Used for rain radar display. Only map tile coordinates are transmitted.</li>
+                        <li><strong>Firebase Analytics (Google)</strong>: Used to measure app usage (e.g., walk start/complete, tab selection) and improve features. Device identifiers and in-app events are collected. You can opt out by enabling "Stop sending usage data" in the App's settings. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies.</li>
                     </ul>
                 </div>
 

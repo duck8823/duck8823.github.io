@@ -6,8 +6,28 @@
     <title>プライバシーポリシー — わんぽ</title>
     <meta name="description" content="愛犬の散歩管理アプリ、わんぽのプライバシーポリシーです。">
 
-    <!-- Canonical -->
+    <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://duck8823.net/wampo/privacy_ja.html">
+    <link rel="alternate" hreflang="ja" href="https://duck8823.net/wampo/privacy_ja.html">
+    <link rel="alternate" hreflang="en" href="https://duck8823.net/wampo/privacy.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://duck8823.net/wampo/privacy_ja.html">
+    <meta property="og:title" content="プライバシーポリシー — わんぽ">
+    <meta property="og:description" content="愛犬の散歩管理アプリ、わんぽのプライバシーポリシーです。">
+    <meta property="og:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="わんぽ">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="プライバシーポリシー — わんぽ">
+    <meta name="twitter:description" content="愛犬の散歩管理アプリ、わんぽのプライバシーポリシーです。">
+    <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -43,7 +63,7 @@
                 <h1 class="content-title">プライバシーポリシー</h1>
 
                 <div class="content-section">
-                    <p>最終更新日: 2026年2月</p>
+                    <p>最終更新日: 2026年3月10日</p>
                     <p>わんぽは Shunsuke Maeda が個人で開発したアプリです。このプライバシーポリシーは、モバイルアプリケーション「わんぽ」（以下「本アプリ」）をご利用いただく際に、お客様の個人情報がどのように収集、使用、共有されるかについて説明するものです。</p>
                 </div>
 
@@ -52,23 +72,62 @@
                     <p>本アプリで収集する情報は以下のとおりです。</p>
 
                     <h3>位置情報（GPS）</h3>
-                    <p>本アプリは、散歩中のGPSルートを記録するために位置情報を使用します。収集された位置情報はすべてお使いのデバイスにローカル保存され、外部サーバーへ送信されることはありません。</p>
+                    <p>本アプリは、散歩中のGPSルートを記録するため、および天気情報の取得・雨雲レーダー表示のために位置情報を使用します。</p>
+                    <ul>
+                        <li><strong>散歩ルート記録</strong>: 収集された位置情報はお使いのデバイスにローカル保存されます。</li>
+                        <li><strong>天気情報取得</strong>: 散歩に適した時間帯の提案・天気表示のため、現在地の緯度・経度を天気予報サービス（Open-Meteo）へ、および現在地周辺のマップタイル座標を雨雲レーダーサービス（気象庁）へ送信します。</li>
+                    </ul>
                 </div>
 
                 <div class="content-section">
                     <h2>位置情報について</h2>
-                    <p>位置情報（GPS）は、散歩中のルート記録にのみ使用します。位置情報の許可を「常に許可」に設定することで、スマホをポケットにしまったままでもバックグラウンドでルートを記録し続けることができます。</p>
-                    <p>位置情報は、ルート記録以外の目的（広告、マーケティング、分析など）には一切使用しません。</p>
+                    <p>位置情報（GPS）は、散歩中のルート記録および天気情報取得にのみ使用します。位置情報の許可を「常に許可」に設定することで、スマホをポケットにしまったままでもバックグラウンドでルートを記録し続けることができます。</p>
+                    <p>位置情報は、ルート記録・天気取得以外の目的（広告、マーケティング、分析など）には一切使用しません。</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>外部サービスへのデータ送信</h2>
+                    <p>アプリの機能提供のため、以下の外部サービスにデータを送信します。</p>
+                    <ul>
+                        <li>
+                            <strong>Open-Meteo</strong>（天気予報・推奨散歩時間帯の計算）<br>
+                            送信データ: 現在地の緯度・経度<br>
+                            利用目的: 気温・降水確率・風速などの時間帯別予報の取得<br>
+                            外部保存: なし（Open-Meteo はリクエストログを個人識別目的で保存しません）<br>
+                            プライバシーポリシー: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a>
+                        </li>
+                        <li style="margin-top: 0.75em;">
+                            <strong>気象庁（Japan Meteorological Agency）</strong>（雨雲レーダー表示）<br>
+                            送信データ: マップタイル座標（ズームレベル・X/Yタイル番号）<br>
+                            利用目的: リアルタイム降水ナウキャストタイル画像の取得<br>
+                            外部保存: なし（タイル取得は公開APIへのHTTPリクエストのみ）
+                        </li>
+                        <li style="margin-top: 0.75em;">
+                            <strong>Google Maps</strong>（地図表示）<br>
+                            送信データ: マップ表示に必要な座標データ<br>
+                            利用目的: 散歩ルートの地図表示<br>
+                            プライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+                        </li>
+                    </ul>
+                        <li style="margin-top: 0.75em;">
+                            <strong>Firebase Analytics（Google）</strong>（利用状況の計測）<br>
+                            送信データ: デバイス識別子、アプリ内操作イベント（散歩開始・完了、タブ切替など）<br>
+                            利用目的: アプリの利用状況を計測し、機能改善に役立てるため<br>
+                            オプトアウト: アプリの設定画面から「利用状況の送信を停止」をオンにすることで、データ送信を停止できます<br>
+                            プライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+                        </li>
+                    </ul>
+                    <p>上記以外の外部サービスへ位置情報を送信することはありません。</p>
                 </div>
 
                 <div class="content-section">
                     <h2>データの保存</h2>
-                    <p>散歩データ（ルート、距離、時間、愛犬プロフィールなど）はすべてお使いのデバイス内のSQLiteデータベースに保存されます。クラウドへの同期や外部サーバーへの送信は行いません。</p>
+                    <p>散歩データ（ルート、距離、時間、愛犬プロフィールなど）はすべてお使いのデバイス内のSQLiteデータベースに保存されます。クラウドへの同期や外部サーバーへの保存は行いません。</p>
                 </div>
 
                 <div class="content-section">
                     <h2>第三者への提供</h2>
-                    <p>お客様の個人データを第三者に提供、販売、または共有することはありません。</p>
+                    <p>お客様の個人データを第三者に提供、販売、または共有することはありません。ただし、上記「外部サービスへのデータ送信」に記載のとおり、機能提供に必要な最小限の位置情報を当該APIサービスへ送信します。この送信はアプリの機能提供のためのみであり、第三者への販売・共有には該当しません。</p>
                 </div>
 
                 <div class="content-section">
