@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shunsuke Maeda — duck8823</title>
+  <meta name="description" content="前田隼輔（duck8823）— Software Engineer. CI/CD, Data, Mobile, Games.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    @property --gradient-angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    :root {
+      --bg: #f0eee9;
+      --bg-alt: #e8e5de;
+      --fg: #1a1a1a;
+      --fg-2: #555;
+      --fg-3: #999;
+      --accent: #2d2d2d;
+      --link: #1a1a1a;
+      --border: #d4d0c8;
+      --highlight: #e63946;
+      --sans: 'Inter','Noto Sans JP',-apple-system,sans-serif;
+      --display: 'Instrument Serif','Georgia',serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--fg-2);
+      font-size: 15px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection { background: var(--highlight); color: #fff; }
+
+    a { color: var(--fg); text-decoration-color: var(--border); text-underline-offset: 3px; transition: text-decoration-color 0.2s; }
+    a:hover { text-decoration-color: var(--fg); }
+
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ═══ Hero ═══ */
+    .hero {
+      padding: 10rem 0 6rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+    .hero h1 {
+      font-family: var(--display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 400;
+      color: var(--fg);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--highlight);
+    }
+    .hero .meta {
+      margin-top: 1.2rem;
+      font-size: 0.82rem;
+      color: var(--fg-3);
+      letter-spacing: 0.04em;
+    }
+    .hero .intro {
+      margin-top: 2rem;
+      font-size: 1.05rem;
+      color: var(--fg-2);
+      max-width: 520px;
+      line-height: 1.8;
+    }
+    .hero .nav-links {
+      margin-top: 2rem;
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      align-items: center;
+    }
+    .hero .nav-links a {
+      color: var(--fg-3);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: flex; align-items: center;
+    }
+    .hero .nav-links a:hover { color: var(--fg); }
+    .hero .nav-links a svg { width: 20px; height: 20px; fill: currentColor; }
+
+    /* ═══ Sections ═══ */
+    .section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-family: var(--display);
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--fg);
+    }
+    .section-head .more {
+      font-size: 0.78rem; font-weight: 600;
+      color: var(--fg-3);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .section-head .more:hover { color: var(--fg); }
+
+    /* ═══ Pets ═══ */
+    .pets {
+      display: flex; align-items: center; gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .pets-photos {
+      display: flex; gap: 0.6rem; flex-shrink: 0;
+    }
+    .pets-photos img {
+      width: 80px; height: 80px; object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .pets-photos img:last-child {
+      margin-left: -1.2rem;
+    }
+    .pets-body { }
+    .pets h3 { font-size: 0.88rem; font-weight: 700; color: var(--fg); margin-bottom: 0.15rem; }
+    .pets p { font-size: 0.82rem; }
+    .pets-links { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+    .pets-links a {
+      font-size: 0.7rem; font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      background: var(--bg-alt);
+      color: var(--fg-2);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .pets-links a:hover { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+    /* ═══ Skills ═══ */
+    .skills { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 1.2rem; }
+    .tag {
+      font-size: 0.7rem; font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      background: var(--bg-alt);
+      color: var(--fg-2);
+    }
+
+    /* ═══ List items ═══ */
+    .list-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+      align-items: baseline;
+    }
+    .list-item:first-child { border-top: none; }
+    .list-item .label {
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--fg-3);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .list-item h3 {
+      font-size: 0.92rem; font-weight: 600;
+      color: var(--fg);
+    }
+    .list-item p { font-size: 0.84rem; margin-top: 0.1rem; }
+    .list-item .tags { margin-top: 0.35rem; }
+
+    /* ═══ Project items ═══ */
+    a.list-item {
+      text-decoration: none; color: inherit;
+      transition: background 0.2s;
+      padding: 1rem;
+      margin: 0 -1rem;
+      border-radius: 8px;
+      border-top: none;
+    }
+    a.list-item + a.list-item { border-top: none; }
+    a.list-item:hover { background: #fff; }
+    a.list-item h3 { transition: color 0.2s; }
+    a.list-item:hover h3 { color: var(--highlight); }
+    a.list-item .arrow {
+      font-size: 0.75rem; opacity: 0; margin-left: 0.2rem;
+      display: inline-block; transition: all 0.2s;
+    }
+    a.list-item:hover .arrow { opacity: 1; transform: translate(2px, -2px); }
+    .proj-meta {
+      font-size: 0.72rem; color: var(--fg-3);
+      display: flex; gap: 0.8rem; align-items: center; margin-top: 0.2rem;
+    }
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 0.25rem; vertical-align: middle; }
+
+    /* ═══ Apps ═══ */
+    .apps { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; margin-top: 1.5rem; }
+    .app {
+      background: #fff; border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.25s;
+      overflow: hidden;
+    }
+    .app:hover { border-color: var(--fg-3); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+    .app a { text-decoration: none; color: inherit; display: block; }
+    .app img {
+      width: 100%; height: 180px; object-fit: cover; object-position: top;
+      border-bottom: 1px solid var(--border);
+    }
+    .app-body { padding: 1rem 1.2rem; }
+    .app h3 { font-size: 0.88rem; font-weight: 700; color: var(--fg); }
+    .app p { font-size: 0.72rem; color: var(--fg-3); margin-top: 0.15rem; }
+
+    /* ═══ Footer ═══ */
+    .footer {
+      padding: 3rem 0;
+      font-size: 0.75rem;
+      color: var(--fg-3);
+    }
+
+    /* ═══ Responsive ═══ */
+    @media (max-width: 600px) {
+      .hero { padding: 6rem 0 3rem; }
+      .hero h1 { font-size: 2.5rem; }
+      .list-item { grid-template-columns: 1fr; gap: 0.15rem; }
+      .apps { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Shunsuke<br><em>Maeda</em></h1>
+    <p class="meta"><img src="/images/avatar.jpg" alt="duck8823" class="avatar">@duck8823 &middot; Software Engineer &middot; CI/CD &amp; DevOps &middot; Tokyo</p>
+    <p class="intro">CI/CD とか開発基盤が好きで、CI サーバーを自作するくらいには好きです。必要なら何でもやります。趣味では Flutter アプリを作っています。犬のおかかと猫のツナマヨと暮らしています。</p>
+    <div class="nav-links">
+      <a href="https://github.com/duck8823" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+      <a href="https://duck8823.hatenablog.com/" target="_blank" rel="noopener" aria-label="Hatena Blog"><svg viewBox="0 0 24 24"><path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zm-3.705 14.47c-.78 0-1.41.63-1.41 1.41s.63 1.414 1.41 1.414 1.41-.645 1.41-1.425-.63-1.41-1.41-1.41zM8.61 17.247c1.2 0 2.056-.042 2.58-.12.526-.084.976-.222 1.32-.412.45-.232.78-.564 1.02-.99s.36-.915.36-1.48c0-.78-.21-1.403-.63-1.87-.42-.48-.99-.734-1.74-.794.66-.18 1.156-.45 1.456-.81.315-.344.465-.824.465-1.424 0-.48-.103-.885-.3-1.26-.21-.36-.493-.645-.883-.87-.345-.195-.735-.315-1.215-.405-.464-.074-1.29-.12-2.474-.12H5.654v10.486H8.61zm.736-4.185c.705 0 1.185.088 1.44.262.27.18.39.495.39.93 0 .405-.135.69-.42.855-.27.18-.765.254-1.44.254H8.31v-2.297h1.05zm8.656.706v-7.06h-2.46v7.06H18zM8.925 9.08c.71 0 1.185.08 1.432.24.245.16.367.435.367.83 0 .38-.13.646-.39.804-.265.154-.747.232-1.452.232h-.57V9.08h.615z"/></svg></a>
+      <a href="https://speakerdeck.com/duck8823" target="_blank" rel="noopener" aria-label="Speaker Deck"><svg viewBox="0 0 24 24"><path d="M10.025 13.875H4.687a4.688 4.688 0 0 1 0-9.375h6.227a1.875 1.875 0 0 1 0 3.75H4.592a.937.937 0 1 0 0 1.875h5.337a4.687 4.687 0 1 1 0 9.375H1.875a1.875 1.875 0 0 1 0-3.75h8.15a.938.938 0 0 0 0-1.875zM13.97 19.5a5.635 5.635 0 0 0 2.396-3.75h3.026a.93.93 0 0 0 .921-.938V9.189a.93.93 0 0 0-.921-.938h-5.497c.438-.498.704-1.155.704-1.875s-.266-1.377-.704-1.875h6.418C22.35 4.5 24 6.179 24 8.25v7.5c0 2.071-1.65 3.75-3.687 3.75H13.97z"/></svg></a>
+      <a href="https://www.slideshare.net/ShunsukeMaeda" target="_blank" rel="noopener" aria-label="SlideShare"><svg viewBox="0 0 24 24"><path d="M3.222.21C1.762.21 1.06 1.337 1.06 2.497v7.883c-.53-.502-1.096-.15-1.058.295.038.439.59 1.546 1.436 2.517.843.968 1.924 1.776 2.94 2.268a11.19 11.19 0 00-.491 3.598c.09 1.096.378 1.95.903 2.75.918 1.407 2.32 1.985 3.674 1.985 1.209 0 2.494-.563 2.698-2.373v-4.694c1.308.552 3.47.363 4.47-.39.19-.14.326-.207.416-.113.095.09.106.166-.113.439a5.6 5.6 0 01-3.103 1.965l.008 2.72a2.532 2.532 0 002.543 2.446c1.64.015 2.48-.556 3.148-1.164.632-.567 1.399-1.754 1.558-3.243a10.128 10.128 0 00-.454-3.926 10.358 10.358 0 002.948-2.268C23.213 12.5 24 11.185 24 10.675c0-.51-.556-.782-1.036-.302V2.497c0-.824-.48-2.29-2.135-2.29zm.423 1.35H20.41c.756 0 1.17.28 1.17 1.224v8.904a8.73 8.73 0 01-3.555 1.534c-1.606.352-2.94.087-3.666.148-.718.06-1.428.529-1.296 1.79-.491-.154-1.236-.683-1.682-1.117-.438-.428-.87-.711-1.534-.692-1.013.03-1.663.102-2.57.01a9.656 9.656 0 01-4.838-1.786V2.78c0-.87.378-1.22 1.206-1.22zm4.497 4.988a2.994 2.994 0 100 5.987 2.993 2.993 0 000-5.983zm7.71 0a2.994 2.994 0 100 5.987 2.993 2.993 0 000-5.983z"/></svg></a>
+      <a href="https://www.instagram.com/duck8823/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="pets">
+      <div class="pets-photos">
+        <img src="/images/okaka.jpg" alt="おかか">
+        <img src="/images/tunamayo.jpg" alt="ツナマヨ">
+      </div>
+      <div class="pets-body">
+        <h3>おかか &amp; ツナマヨ</h3>
+        <p>めっちゃかわいいです。この子たちのためにアプリを作っています。</p>
+        <div class="pets-links">
+          <a href="https://www.instagram.com/duck8823/" target="_blank" rel="noopener">Instagram</a>
+          <a href="/wampo/index_ja.html">わんぽ</a>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.9rem;">DeNA の SWET で CI/CD 基盤やテスト自動化をやったのが原体験で、そこからずっと開発プロセスとか基盤寄りの仕事が多いです。エス・エム・エスではレガシーシステムのリプレイス、朝日新聞社では落ちてるボール拾いつつマイクロサービスの設計・開発をやっていました。基盤が軸ですが、必要なら何でもやるタイプです。趣味では Flutter でアプリを出しています。最近は <a href="https://duck8823.hatenablog.com/entry/2026/03/20/080436" target="_blank">Claude Code などを使って AI と一緒に個人開発</a>しています。</p>
+    <div class="skills">
+      <span class="tag">Go</span>
+      <span class="tag">Kotlin</span>
+      <span class="tag">Flutter / Dart</span>
+      <span class="tag">Docker</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag">GitHub Actions</span>
+      <span class="tag">AWS</span>
+      <span class="tag">Terraform</span>
+      <span class="tag">BigQuery</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Claude Code</span>
+          </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="list-item"><span class="label">2021 &ndash; 2025</span><div><h3>朝日新聞社</h3><p>レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。</p><div class="tags"><span class="tag">Go</span> <span class="tag">AWS</span> <span class="tag">Terraform</span> <span class="tag">ProtocolBuffers</span></div></div></div>
+    <div class="list-item"><span class="label">2018 &ndash; 2021</span><div><h3>エス・エム・エス</h3><p>ヘルスケア SaaS のレガシーシステムリプレイスをしていました。</p><div class="tags"><span class="tag">Kotlin</span> <span class="tag">Java</span> <span class="tag">PostgreSQL</span></div></div></div>
+    <div class="list-item"><span class="label">2017 &ndash; 2018</span><div><h3>DeNA SWET</h3><p>CI/CD 環境の改善や、テストツールの検証・開発をしていました。</p><div class="tags"><span class="tag">CI/CD</span> <span class="tag">iOS</span> <span class="tag">Danger</span></div></div></div>
+    <div class="list-item"><span class="label">2013 &ndash; 2017</span><div><h3>日本ソフトウェアマネジメント</h3><p>ウェブアプリを作っていました。</p></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <a class="list-item" href="https://github.com/duck8823/duci" target="_blank" rel="noopener"><span class="label"></span><div><h3>duci<span class="arrow">&#x2197;</span></h3><p>CI が好きすぎて自作した Docker ベースの CI サーバー。GitHub Webhook でコンテナ上のビルドを回す。</p><div class="proj-meta"><span><span class="dot" style="background:#00ADD8"></span>Go</span><span style="color:var(--highlight);font-weight:700;">&#9733; 74</span></div></div></a>
+    <a class="list-item" href="https://github.com/duck8823/Slack-RTM-Bot" target="_blank" rel="noopener"><span class="label"></span><div><h3>Slack-RTM-Bot<span class="arrow">&#x2197;</span></h3><p>Slack RTM API で Bot 作るための Perl モジュール。</p><div class="proj-meta"><span><span class="dot" style="background:#0298c3"></span>Perl</span><span style="color:var(--highlight);font-weight:700;">&#9733; 18</span></div></div></a>
+    <a class="list-item" href="https://github.com/duck8823/danger-slack" target="_blank" rel="noopener"><span class="label"></span><div><h3>danger-slack<span class="arrow">&#x2197;</span></h3><p>Danger の結果を Slack に通知するプラグインです。</p><div class="proj-meta"><span><span class="dot" style="background:#CC342D"></span>Ruby</span><span style="color:var(--highlight);font-weight:700;">&#9733; 11</span></div></div></a>
+    <a class="list-item" href="https://github.com/duck8823/textlint-plugin-json" target="_blank" rel="noopener"><span class="label"></span><div><h3>textlint-plugin-json<span class="arrow">&#x2197;</span></h3><p>JSON を textlint で校正できるようにするプラグインです。</p><div class="proj-meta"><span><span class="dot" style="background:#f1e05a"></span>JavaScript</span><span style="color:var(--highlight);font-weight:700;">&#9733; 6</span></div></div></a>
+
+    <div class="apps">
+      <div class="app"><a href="/wampo/index_ja.html"><img src="/wampo/images/ja/1_home.png" alt="わんぽ" loading="lazy"><div class="app-body"><h3>わんぽ</h3><p>散歩管理 &middot; GPS &middot; 雨雲レーダー &middot; ウィジェット</p></div></a></div>
+      <div class="app"><a href="/calorithm/index_ja.html"><img src="/calorithm/images/ja/daily.png" alt="カロリズム" loading="lazy"><div class="app-body"><h3>カロリズム</h3><p>カロリー管理 &middot; AI 推定 &middot; HealthKit 連携 &middot; ウィジェット</p></div></a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Talks &amp; Writing</h2>
+    </div>
+    <a class="list-item" href="https://speakerdeck.com/duck8823/jing-de-jie-xi-turu-detekt-deren-yi-falsetiao-jian-dejing-gao-saseru" target="_blank" rel="noopener"><span class="label">2022</span><div><h3>detekt で任意の条件で警告させる<span class="arrow">&#x2197;</span></h3><p>Kotlin Fest 2022 LT</p></div></a>
+    <a class="list-item" href="https://speakerdeck.com/duck8823/golangdedockerbesufalseciwozuo-ru" target="_blank" rel="noopener"><span class="label">2019</span><div><h3>Golang で Docker ベースの CI を作る<span class="arrow">&#x2197;</span></h3><p>Go Conference 2019 Spring</p></div></a>
+    <a class="list-item" href="https://www.slideshare.net/slideshow/ossperl/129306353" target="_blank" rel="noopener"><span class="label">2019</span><div><h3>私と OSS 活動と Perl<span class="arrow">&#x2197;</span></h3><p>YAPC::Tokyo 2019</p></div></a>
+    <a class="list-item" href="https://www.slideshare.net/ShunsukeMaeda/ss-110757746" target="_blank" rel="noopener"><span class="label">2018</span><div><h3>外部環境への依存をテストする<span class="arrow">&#x2197;</span></h3><p>golang.tokyo</p></div></a>
+    <a class="list-item" href="https://www.slideshare.net/slideshow/droidkaigidevicefarm/87573170" target="_blank" rel="noopener"><span class="label">2018</span><div><h3>Android で利用できるデバイスファームの紹介<span class="arrow">&#x2197;</span></h3><p>DroidKaigi 2018</p></div></a>
+    <a class="list-item" href="https://www.slideshare.net/slideshow/ios-79834769/79834769" target="_blank" rel="noopener"><span class="label">2017</span><div><h3>iOS で利用できるデバイスファームのメリット・デメリット<span class="arrow">&#x2197;</span></h3><p>iOSDC 2017</p></div></a>
+    <a class="list-item" href="https://findy-tools.io/companies/asashi/25/35" target="_blank" rel="noopener"><span class="label">Article</span><div><h3>朝日新聞デジタルのデータアーキテクチャ<span class="arrow">&#x2197;</span></h3><p>Findy Tools</p></div></a>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Blog</h2>
+      <a class="more" href="https://duck8823.hatenablog.com/archive" target="_blank" rel="noopener">All posts &rarr;</a>
+    </div>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2026/03/20/080436" target="_blank" rel="noopener"><span class="label">2026.03</span><div><h3>AI と個人開発する話<span class="arrow">&#x2197;</span></h3></div></a>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2020/08/10/113844" target="_blank" rel="noopener"><span class="label">2020.08</span><div><h3>aibo 用にバーチャルウォールを作る<span class="arrow">&#x2197;</span></h3></div></a>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2020/07/08/154740" target="_blank" rel="noopener"><span class="label">2020.07</span><div><h3>aibo と Nature Remo で電気を消してもらう<span class="arrow">&#x2197;</span></h3></div></a>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2018/09/01/104130" target="_blank" rel="noopener"><span class="label">2018.09</span><div><h3>Golang で CI を作っている話<span class="arrow">&#x2197;</span></h3></div></a>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2018/05/06/174537" target="_blank" rel="noopener"><span class="label">2018.05</span><div><h3>300 行弱のコードで簡易 CI サーバーを作った<span class="arrow">&#x2197;</span></h3></div></a>
+    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2016/06/24/221625" target="_blank" rel="noopener"><span class="label">2016.06</span><div><h3>perl で Slack Bot を作るモジュールを公開した<span class="arrow">&#x2197;</span></h3></div></a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Shunsuke Maeda (@duck8823)</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
