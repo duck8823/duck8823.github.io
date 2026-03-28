@@ -21,7 +21,7 @@
   --gradient-cta: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
 
   /* Typography */
-  --font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 
   /* Spacing */
   --space-xs: 0.5rem;
