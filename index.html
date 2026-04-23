@@ -1,360 +1,890 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shunsuke Maeda — duck8823</title>
-  <meta name="description" content="前田隼輔（duck8823）— Software Engineer. CI/CD, Data, Mobile, Games.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f0eee9;
-      --bg-alt: #e8e5de;
-      --fg: #1a1a1a;
-      --fg-2: #555;
-      --fg-3: #737373;
-      --accent: #2d2d2d;
-      --link: #1a1a1a;
-      --border: #d4d0c8;
-      --highlight: #e63946;
-      --sans: 'Inter','Noto Sans JP',-apple-system,sans-serif;
-      --display: 'Instrument Serif','Georgia',serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>duck8823 — Shunsuke Maeda / Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+<style>
+:root {
+  --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --serif: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+  --sans: 'Inter', 'Noto Sans JP', -apple-system, sans-serif;
 
-    body {
-      font-family: var(--sans);
-      background: var(--bg);
-      color: var(--fg-2);
-      font-size: 15px;
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-    }
+  --bg:     oklch(0.965 0.008 85);
+  --bg-2:   oklch(0.935 0.010 85);
+  --bg-3:   oklch(0.90 0.012 85);
+  --fg:     oklch(0.22 0.012 85);
+  --fg-2:   oklch(0.40 0.010 85);
+  --fg-3:   oklch(0.58 0.008 85);
+  --rule:   oklch(0.85 0.010 85);
+  --rule-2: oklch(0.78 0.012 85);
+  --accent: oklch(0.58 0.16 145);
+  --accent-soft: oklch(0.58 0.16 145 / 0.14);
+  --warn:   oklch(0.68 0.17 55);
+  --blue:   oklch(0.60 0.14 240);
+}
 
-    ::selection { background: var(--highlight); color: #fff; }
+html[data-theme="dark"] {
+  --bg:     oklch(0.17 0.010 80);
+  --bg-2:   oklch(0.21 0.012 80);
+  --bg-3:   oklch(0.25 0.014 80);
+  --fg:     oklch(0.94 0.008 85);
+  --fg-2:   oklch(0.78 0.010 85);
+  --fg-3:   oklch(0.58 0.010 85);
+  --rule:   oklch(0.30 0.014 80);
+  --rule-2: oklch(0.38 0.014 80);
+  --accent: oklch(0.78 0.18 145);
+  --accent-soft: oklch(0.78 0.18 145 / 0.16);
+  --warn:   oklch(0.78 0.17 60);
+  --blue:   oklch(0.70 0.14 240);
+}
 
-    a { color: var(--fg); text-decoration-color: var(--border); text-underline-offset: 3px; transition: text-decoration-color 0.2s; }
-    a:hover { text-decoration-color: var(--fg); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--mono);
+  background: var(--bg);
+  color: var(--fg-2);
+  font-size: 14px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color .35s ease, color .35s ease;
+  cursor: none;
+}
+@media (max-width: 720px) { body { cursor: auto; } }
 
-    .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+::selection { background: var(--accent); color: var(--bg); }
 
-    /* ═══ Hero ═══ */
-    .hero {
-      padding: 10rem 0 6rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .avatar {
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--border);
-      vertical-align: middle;
-      margin-right: 0.5rem;
-    }
-    .hero h1 {
-      font-family: var(--display);
-      font-size: clamp(3rem, 8vw, 5.5rem);
-      font-weight: 400;
-      color: var(--fg);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-    }
-    .hero h1 em {
-      font-style: italic;
-      color: var(--highlight);
-    }
-    .hero .meta {
-      margin-top: 1.2rem;
-      font-size: 0.82rem;
-      color: var(--fg-3);
-      letter-spacing: 0.04em;
-    }
-    .hero .intro {
-      margin-top: 2rem;
-      font-size: 1.05rem;
-      color: var(--fg-2);
-      max-width: 520px;
-      line-height: 1.8;
-    }
-    .hero .nav-links {
-      margin-top: 2rem;
-      display: flex; gap: 1rem; flex-wrap: wrap;
-      align-items: center;
-    }
-    .hero .nav-links a {
-      color: var(--fg-3);
-      text-decoration: none;
-      transition: color 0.2s;
-      display: flex; align-items: center;
-    }
-    .hero .nav-links a:hover { color: var(--fg); }
-    .hero .nav-links a svg { width: 20px; height: 20px; fill: currentColor; }
+a { color: inherit; text-decoration: none; }
 
-    /* ═══ Sections ═══ */
-    .section {
-      padding: 4rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .section-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-    }
-    .section-title {
-      font-family: var(--display);
-      font-size: 1.8rem;
-      font-weight: 400;
-      color: var(--fg);
-    }
-    .section-head .more {
-      font-size: 0.78rem; font-weight: 600;
-      color: var(--fg-3);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .section-head .more:hover { color: var(--fg); }
+/* ═══ Noise / grid backdrop ═══ */
+.backdrop {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: .28;
+  mask-image: radial-gradient(ellipse at center, #000 0%, transparent 75%);
+}
+.backdrop::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='0.55'/></svg>");
+  opacity: .05;
+  mix-blend-mode: multiply;
+}
+html[data-theme="dark"] .backdrop::after { mix-blend-mode: screen; opacity: .04; }
 
-    /* ═══ Pets ═══ */
-    .pets {
-      display: flex; align-items: center; gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .pets-photos {
-      display: flex; gap: 0.6rem; flex-shrink: 0;
-    }
-    .pets-photos img {
-      width: 80px; height: 80px; object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    .pets-photos img:last-child {
-      margin-left: -1.2rem;
-    }
-    .pets-body { }
-    .pets h3 { font-size: 0.88rem; font-weight: 700; color: var(--fg); margin-bottom: 0.15rem; }
-    .pets p { font-size: 0.82rem; }
-    .pets-links { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
-    .pets-links a {
-      font-size: 0.7rem; font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      background: var(--bg-alt);
-      color: var(--fg-2);
-      text-decoration: none;
-      border: 1px solid var(--border);
-      transition: all 0.2s;
-    }
-    .pets-links a:hover { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+/* ═══ Custom cursor ═══ */
+.cursor-dot, .cursor-ring {
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9999;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  transition: width .2s, height .2s, background .2s;
+}
+.cursor-ring {
+  width: 28px; height: 28px;
+  border: 1px solid var(--fg-2);
+  border-radius: 50%;
+  transition: width .25s ease, height .25s ease, border-color .25s;
+  opacity: .65;
+}
+body.hovering .cursor-dot { width: 0; height: 0; }
+body.hovering .cursor-ring { width: 44px; height: 44px; border-color: var(--accent); opacity: 1; }
 
-    /* ═══ Skills ═══ */
-    .skills { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 1.2rem; }
-    .tag {
-      font-size: 0.7rem; font-weight: 600;
-      padding: 0.25rem 0.65rem;
-      border-radius: 4px;
-      background: var(--bg-alt);
-      color: var(--fg-2);
-    }
+/* ═══ Top chrome bar ═══ */
+.chrome {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  font-family: var(--mono);
+  font-size: 11px;
+  background: color-mix(in oklch, var(--bg) 85%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.chrome-inner {
+  max-width: 1280px; margin: 0 auto;
+  padding: 8px 24px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+.chrome-left { display: flex; gap: 16px; align-items: center; color: var(--fg-3); }
+.chrome-dots { display: flex; gap: 6px; }
+.chrome-dots span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--rule-2);
+}
+.chrome-dots span:nth-child(1) { background: oklch(0.70 0.17 30); }
+.chrome-dots span:nth-child(2) { background: oklch(0.82 0.14 85); }
+.chrome-dots span:nth-child(3) { background: oklch(0.72 0.15 145); }
+.chrome-path {
+  font-weight: 500; color: var(--fg-2);
+  letter-spacing: .02em;
+}
+.chrome-path .tilde { color: var(--accent); }
+.chrome-center {
+  font-weight: 500; color: var(--fg);
+  letter-spacing: .04em;
+  text-align: center;
+}
+.chrome-right {
+  display: flex; gap: 10px; align-items: center; justify-content: flex-end;
+  color: var(--fg-3);
+}
+.chrome-time {
+  font-variant-numeric: tabular-nums;
+  min-width: 130px; text-align: right;
+}
+.chrome-btn {
+  border: 1px solid var(--rule-2);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 11px;
+  background: transparent;
+  color: var(--fg-2);
+  cursor: pointer;
+  transition: all .2s;
+}
+.chrome-btn:hover { border-color: var(--accent); color: var(--accent); }
+.chrome-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
 
-    /* ═══ List items ═══ */
-    .list-item {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 1rem;
-      padding: 1rem 0;
-      border-top: 1px solid var(--border);
-      align-items: baseline;
-    }
-    .list-item:first-child { border-top: none; }
-    .list-item .label {
-      font-size: 0.72rem; font-weight: 600;
-      color: var(--fg-3);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    .list-item h3 {
-      font-size: 0.92rem; font-weight: 600;
-      color: var(--fg);
-    }
-    .list-item p { font-size: 0.84rem; margin-top: 0.1rem; }
-    .list-item .tags { margin-top: 0.35rem; }
+/* ═══ Layout ═══ */
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 720px) {
+  .wrap { padding: 0 20px; }
+  .chrome-inner { grid-template-columns: auto 1fr auto; padding: 8px 14px; }
+  .chrome-center { display: none; }
+  .chrome-time { display: none; }
+  .chrome-path { font-size: 10px; }
+}
 
-    /* ═══ Project items ═══ */
-    a.list-item {
-      text-decoration: none; color: inherit;
-      transition: background 0.2s;
-      padding: 1rem;
-      margin: 0 -1rem;
-      border-radius: 8px;
-      border-top: none;
-    }
-    a.list-item + a.list-item { border-top: none; }
-    a.list-item:hover { background: #fff; }
-    a.list-item h3 { transition: color 0.2s; }
-    a.list-item:hover h3 { color: var(--highlight); }
-    a.list-item .arrow {
-      font-size: 0.75rem; opacity: 0; margin-left: 0.2rem;
-      display: inline-block; transition: all 0.2s;
-    }
-    a.list-item:hover .arrow { opacity: 1; transform: translate(2px, -2px); }
-    .proj-meta {
-      font-size: 0.72rem; color: var(--fg-3);
-      display: flex; gap: 0.8rem; align-items: center; margin-top: 0.2rem;
-    }
-    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 0.25rem; vertical-align: middle; }
+/* ═══ Section shared ═══ */
+.section {
+  padding: 96px 0;
+  position: relative;
+  border-top: 1px dashed var(--rule);
+}
+.section:first-of-type { border-top: none; }
 
-    /* ═══ Apps ═══ */
-    .apps { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; margin-top: 1.5rem; }
-    .app {
-      background: #fff; border-radius: 12px;
-      border: 1px solid var(--border);
-      transition: all 0.25s;
-      overflow: hidden;
-    }
-    .app:hover { border-color: var(--fg-3); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
-    .app a { text-decoration: none; color: inherit; display: block; }
-    .app img {
-      width: 100%; height: 180px; object-fit: cover; object-position: top;
-      border-bottom: 1px solid var(--border);
-    }
-    .app-body { padding: 1rem 1.2rem; }
-    .app h3 { font-size: 0.88rem; font-weight: 700; color: var(--fg); }
-    .app p { font-size: 0.72rem; color: var(--fg-3); margin-top: 0.15rem; }
+.section-head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+  align-items: baseline;
+}
+.section-kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.section-kicker::before { content: "§ "; color: var(--accent); }
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--fg);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.section-title .en {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fg-3);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 
-    /* ═══ Footer ═══ */
-    .footer {
-      padding: 3rem 0;
-      font-size: 0.75rem;
-      color: var(--fg-3);
-    }
+@media (max-width: 720px) {
+  .section { padding: 64px 0; }
+  .section-head { grid-template-columns: 1fr; gap: 12px; margin-bottom: 32px; }
+}
 
-    /* ═══ Responsive ═══ */
-    @media (max-width: 600px) {
-      .hero { padding: 6rem 0 3rem; }
-      .hero h1 { font-size: 2.5rem; }
-      .list-item { grid-template-columns: 1fr; gap: 0.15rem; }
-      .apps { grid-template-columns: 1fr; }
-    }
+/* ═══ Scroll reveal ═══ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.in { opacity: 1; transform: none; }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
-    }
-  </style>
+/* ═══ Tweaks panel ═══ */
+.tweaks-panel {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  z-index: 100;
+  background: var(--bg-2);
+  border: 1px solid var(--rule-2);
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  overflow: hidden;
+  display: none;
+}
+.tweaks-panel.open { display: block; }
+.tweaks-hdr {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--fg-3);
+  display: flex; justify-content: space-between;
+  background: var(--bg-3);
+}
+.tweaks-row {
+  padding: 10px 12px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--rule);
+  gap: 10px;
+}
+.tweaks-row:last-child { border-bottom: none; }
+.tweaks-row label { color: var(--fg-2); }
+.tweaks-seg {
+  display: inline-flex;
+  border: 1px solid var(--rule-2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.tweaks-seg button {
+  padding: 3px 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  background: transparent;
+  color: var(--fg-2);
+  border: none;
+  cursor: pointer;
+  transition: all .15s;
+}
+.tweaks-seg button.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+</style>
+
+<style id="hero-style">
+/* ═══ Hero ═══ */
+.hero {
+  min-height: 100vh;
+  padding: 120px 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-terminal {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--fg-3);
+  margin-bottom: 40px;
+  line-height: 1.9;
+  min-height: 160px;
+}
+.hero-terminal .line { display: block; white-space: pre-wrap; }
+.hero-terminal .prompt { color: var(--accent); }
+.hero-terminal .ok { color: var(--accent); }
+.hero-terminal .warn { color: var(--warn); }
+.hero-terminal .dim { color: var(--fg-3); }
+.hero-terminal .cmd { color: var(--fg); font-weight: 500; }
+.hero-terminal .cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  background: var(--accent);
+  vertical-align: -2px;
+  margin-left: 2px;
+  animation: blink 1.05s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.hero-name-block {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: end;
+}
+.hero-name {
+  font-family: var(--serif);
+  font-weight: 900;
+  font-size: clamp(3.5rem, 10vw, 8.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.035em;
+  color: var(--fg);
+}
+.hero-name .jp {
+  display: block;
+  font-size: 0.32em;
+  font-weight: 600;
+  color: var(--fg-2);
+  letter-spacing: .02em;
+  margin-top: 18px;
+  line-height: 1.2;
+}
+.hero-name .duck {
+  font-family: var(--mono);
+  font-size: 0.16em;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0;
+  display: block;
+  margin-top: 18px;
+}
+
+.hero-pets {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  min-width: 180px;
+}
+.hero-pet-frame {
+  position: relative;
+  width: 180px; height: 180px;
+  border: 1px solid var(--rule-2);
+  padding: 8px;
+  background: var(--bg-2);
+}
+.hero-pet-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05);
+}
+.hero-pet-frame::before {
+  content: attr(data-name);
+  position: absolute;
+  top: -10px; left: 8px;
+  background: var(--bg);
+  padding: 0 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+.hero-pet-frame::after {
+  content: attr(data-meta);
+  position: absolute;
+  bottom: -10px; right: 8px;
+  background: var(--bg);
+  padding: 0 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+}
+.hero-pet-row {
+  display: flex; gap: 10px;
+}
+.hero-pet-row .hero-pet-frame { width: 110px; height: 110px; }
+
+.hero-intro {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 200px 1fr 280px;
+  gap: 48px;
+  align-items: start;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+.hero-intro-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.hero-intro-body {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--fg);
+  font-weight: 400;
+}
+.hero-intro-body em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+.hero-intro-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  line-height: 2;
+}
+.hero-intro-meta div { display: flex; gap: 10px; }
+.hero-intro-meta .k { min-width: 80px; color: var(--fg-3); }
+.hero-intro-meta .v { color: var(--fg-2); }
+.hero-intro-meta .v .hl { color: var(--accent); }
+
+.hero-socials {
+  margin-top: 40px;
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.hero-socials a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid var(--rule-2);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-2);
+  transition: all .2s;
+}
+.hero-socials a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.hero-socials a svg { width: 13px; height: 13px; fill: currentColor; }
+
+@media (max-width: 900px) {
+  .hero-name-block { grid-template-columns: 1fr; gap: 32px; }
+  .hero-pets { flex-direction: row; flex-wrap: wrap; }
+  .hero-intro { grid-template-columns: 1fr; gap: 16px; }
+}
+</style>
+
+<style id="blocks-style">
+/* ═══ Skills grid (stacked chips) ═══ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.skill-cell {
+  padding: 14px 16px;
+  background: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background .2s;
+}
+.skill-cell:hover { background: var(--accent-soft); }
+.skill-cell .k { color: var(--fg-3); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.skill-cell .v { color: var(--fg); font-weight: 500; }
+
+/* ═══ Experience ═══ */
+.xp-list {}
+.xp {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: 40px;
+  padding: 28px 0;
+  border-top: 1px solid var(--rule);
+  align-items: start;
+}
+.xp:last-child { border-bottom: 1px solid var(--rule); }
+.xp-when {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  letter-spacing: .08em;
+}
+.xp-when .bullet { color: var(--accent); }
+.xp-body h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 6px;
+  letter-spacing: -.01em;
+}
+.xp-body p {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--fg-2);
+  margin-bottom: 10px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+.xp-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+.tag-xs {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 2px 7px;
+  border: 1px solid var(--rule-2);
+  color: var(--fg-3);
+  letter-spacing: .03em;
+}
+.xp-dur {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--fg-3);
+  text-align: right;
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .xp { grid-template-columns: 1fr; gap: 10px; }
+  .xp-dur { text-align: left; }
+}
+
+/* ═══ Projects ═══ */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+.proj {
+  background: var(--bg);
+  padding: 24px;
+  display: flex; flex-direction: column; gap: 12px;
+  transition: background .2s;
+  min-height: 200px;
+}
+.proj:hover { background: var(--bg-2); }
+.proj-featured {
+  background: linear-gradient(135deg, var(--accent-soft), transparent 60%), var(--bg);
+  border-left: 2px solid var(--accent);
+}
+.proj-badge {
+  display: inline-block;
+  margin-left: 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 3px 8px;
+  background: var(--accent);
+  color: var(--bg);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  vertical-align: 4px;
+  font-weight: 500;
+}
+.proj-hdr {
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.proj-name {
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--fg);
+}
+.proj-name .slash { color: var(--accent); }
+.proj-stars {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--warn);
+}
+.proj-desc {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--fg-2);
+  line-height: 1.65;
+  flex: 1;
+}
+.proj-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+}
+.proj-lang { display: flex; align-items: center; gap: 6px; }
+.proj-lang .dot { width: 8px; height: 8px; border-radius: 50%; }
+.proj-link {
+  color: var(--fg-3);
+  transition: color .2s;
+}
+.proj:hover .proj-link { color: var(--accent); }
+
+@media (max-width: 720px) {
+  .proj-grid { grid-template-columns: 1fr; }
+}
+
+/* ═══ Apps ═══ */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+.app-card {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid var(--rule);
+  transition: border-color .25s, transform .3s;
+}
+.app-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.app-card .shot {
+  width: 110px; height: 200px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--rule-2);
+  background: var(--bg-3);
+}
+.app-card .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.app-card .body { flex: 1; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.app-card h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--fg);
+}
+.app-card .tagline {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.app-card .feats {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  margin-top: 8px;
+}
+.app-card p {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--fg-2);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.app-card .cta {
+  margin-top: auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  display: flex; align-items: center; gap: 6px;
+}
+.app-card:hover .cta { color: var(--accent); }
+@media (max-width: 720px) {
+  .apps-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
+/* ═══ Talks / Writing ═══ */
+.talks {}
+.talk {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 32px;
+  padding: 20px 0;
+  border-top: 1px solid var(--rule);
+  align-items: center;
+  transition: padding-left .25s, background .25s;
+  padding-left: 0;
+}
+.talk:last-child { border-bottom: 1px solid var(--rule); }
+.talk:hover { padding-left: 14px; background: linear-gradient(90deg, var(--accent-soft), transparent 80%); }
+.talk-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  letter-spacing: .08em;
+}
+.talk h4 {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--fg);
+  letter-spacing: -.005em;
+}
+.talk .venue {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  margin-top: 4px;
+}
+.talk-arrow {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--fg-3);
+  transition: color .2s, transform .2s;
+}
+.talk:hover .talk-arrow { color: var(--accent); transform: translate(3px, -3px); }
+
+@media (max-width: 720px) {
+  .talk { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
+  .talk-arrow { display: none; }
+}
+
+/* ═══ Contribution graph ═══ */
+.contrib-wrap {
+  background: var(--bg-2);
+  border: 1px solid var(--rule);
+  padding: 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.contrib-hdr {
+  display: flex; justify-content: space-between; margin-bottom: 14px;
+  color: var(--fg-3);
+}
+.contrib-hdr .total { color: var(--fg); font-weight: 500; }
+.contrib-hdr .total .n { color: var(--accent); font-weight: 700; }
+.contrib-grid {
+  display: grid;
+  grid-template-columns: repeat(53, minmax(0,1fr));
+  grid-auto-rows: 1fr;
+  gap: 3px;
+  aspect-ratio: 53/7;
+  max-width: 100%;
+}
+.contrib-cell {
+  aspect-ratio: 1;
+  background: var(--bg-3);
+  border-radius: 2px;
+  transition: transform .15s;
+}
+.contrib-cell:hover { transform: scale(1.8); }
+.contrib-cell.l1 { background: color-mix(in oklch, var(--accent) 25%, var(--bg-3)); }
+.contrib-cell.l2 { background: color-mix(in oklch, var(--accent) 50%, var(--bg-3)); }
+.contrib-cell.l3 { background: color-mix(in oklch, var(--accent) 75%, var(--bg-3)); }
+.contrib-cell.l4 { background: var(--accent); }
+.contrib-foot {
+  display: flex; justify-content: space-between; margin-top: 14px;
+  color: var(--fg-3);
+  font-size: 10px;
+}
+.contrib-legend { display: flex; align-items: center; gap: 6px; }
+.contrib-legend .box { width: 10px; height: 10px; border-radius: 2px; }
+
+/* ═══ Pet gallery ═══ */
+.pet-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 90px;
+  grid-auto-flow: dense;
+  gap: 6px;
+}
+.pet-tile {
+  position: relative;
+  background: var(--bg-3);
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+.pet-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; display: block; }
+.pet-tile:hover img { transform: scale(1.06); }
+.pet-tile::after {
+  content: attr(data-tag);
+  position: absolute;
+  left: 6px; bottom: 6px;
+  font-family: var(--mono);
+  font-size: 9px;
+  padding: 2px 6px;
+  background: var(--bg);
+  color: var(--fg-2);
+  letter-spacing: .05em;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.pet-tile:hover::after { opacity: 1; }
+
+/* Placeholder tile rendered as CSS (no real pet photos available) */
+.pet-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--fg-3);
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0 10px, var(--rule) 10px 11px);
+}
+
+/* ═══ Now section ═══ */
+.now {
+  background: var(--bg-2);
+  border: 1px solid var(--rule);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.now-item .k {
+  color: var(--fg-3);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.now-item .v {
+  color: var(--fg);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.now-item .v .hl { color: var(--accent); }
+
+@media (max-width: 720px) {
+  .now { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+}
+
+/* ═══ Footer ═══ */
+.footer {
+  padding: 64px 0 100px;
+  border-top: 1px dashed var(--rule);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-3);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: baseline;
+}
+.footer .ascii {
+  font-size: 9px;
+  line-height: 1.1;
+  white-space: pre;
+  color: var(--accent);
+  opacity: .5;
+  overflow: hidden;
+}
+</style>
+
+<!-- Tweak defaults for persistence -->
+<script>
+window.__TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "theme": "light",
+  "lang": "ja"
+}/*EDITMODE-END*/;
+</script>
+
 </head>
 <body>
 
-<div class="wrap">
+<div class="backdrop"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
 
-  <header class="hero">
-    <h1>Shunsuke<br><em>Maeda</em></h1>
-    <p class="meta"><img src="/images/avatar.jpg" alt="duck8823" class="avatar">@duck8823 &middot; Software Engineer &middot; CI/CD &amp; DevOps &middot; Tokyo</p>
-    <p class="intro">CI/CD とか開発基盤が好きで、CI サーバーを自作するくらいには好きです。必要なら何でもやります。趣味では Flutter アプリを作っています。犬のおかかと猫のツナマヨと暮らしています。</p>
-    <div class="nav-links">
-      <a href="https://github.com/duck8823" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
-      <a href="https://duck8823.hatenablog.com/" target="_blank" rel="noopener" aria-label="Hatena Blog"><svg viewBox="0 0 24 24"><path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zm-3.705 14.47c-.78 0-1.41.63-1.41 1.41s.63 1.414 1.41 1.414 1.41-.645 1.41-1.425-.63-1.41-1.41-1.41zM8.61 17.247c1.2 0 2.056-.042 2.58-.12.526-.084.976-.222 1.32-.412.45-.232.78-.564 1.02-.99s.36-.915.36-1.48c0-.78-.21-1.403-.63-1.87-.42-.48-.99-.734-1.74-.794.66-.18 1.156-.45 1.456-.81.315-.344.465-.824.465-1.424 0-.48-.103-.885-.3-1.26-.21-.36-.493-.645-.883-.87-.345-.195-.735-.315-1.215-.405-.464-.074-1.29-.12-2.474-.12H5.654v10.486H8.61zm.736-4.185c.705 0 1.185.088 1.44.262.27.18.39.495.39.93 0 .405-.135.69-.42.855-.27.18-.765.254-1.44.254H8.31v-2.297h1.05zm8.656.706v-7.06h-2.46v7.06H18zM8.925 9.08c.71 0 1.185.08 1.432.24.245.16.367.435.367.83 0 .38-.13.646-.39.804-.265.154-.747.232-1.452.232h-.57V9.08h.615z"/></svg></a>
-      <a href="https://speakerdeck.com/duck8823" target="_blank" rel="noopener" aria-label="Speaker Deck"><svg viewBox="0 0 24 24"><path d="M10.025 13.875H4.687a4.688 4.688 0 0 1 0-9.375h6.227a1.875 1.875 0 0 1 0 3.75H4.592a.937.937 0 1 0 0 1.875h5.337a4.687 4.687 0 1 1 0 9.375H1.875a1.875 1.875 0 0 1 0-3.75h8.15a.938.938 0 0 0 0-1.875zM13.97 19.5a5.635 5.635 0 0 0 2.396-3.75h3.026a.93.93 0 0 0 .921-.938V9.189a.93.93 0 0 0-.921-.938h-5.497c.438-.498.704-1.155.704-1.875s-.266-1.377-.704-1.875h6.418C22.35 4.5 24 6.179 24 8.25v7.5c0 2.071-1.65 3.75-3.687 3.75H13.97z"/></svg></a>
-      <a href="https://www.slideshare.net/ShunsukeMaeda" target="_blank" rel="noopener" aria-label="SlideShare"><svg viewBox="0 0 24 24"><path d="M3.222.21C1.762.21 1.06 1.337 1.06 2.497v7.883c-.53-.502-1.096-.15-1.058.295.038.439.59 1.546 1.436 2.517.843.968 1.924 1.776 2.94 2.268a11.19 11.19 0 00-.491 3.598c.09 1.096.378 1.95.903 2.75.918 1.407 2.32 1.985 3.674 1.985 1.209 0 2.494-.563 2.698-2.373v-4.694c1.308.552 3.47.363 4.47-.39.19-.14.326-.207.416-.113.095.09.106.166-.113.439a5.6 5.6 0 01-3.103 1.965l.008 2.72a2.532 2.532 0 002.543 2.446c1.64.015 2.48-.556 3.148-1.164.632-.567 1.399-1.754 1.558-3.243a10.128 10.128 0 00-.454-3.926 10.358 10.358 0 002.948-2.268C23.213 12.5 24 11.185 24 10.675c0-.51-.556-.782-1.036-.302V2.497c0-.824-.48-2.29-2.135-2.29zm.423 1.35H20.41c.756 0 1.17.28 1.17 1.224v8.904a8.73 8.73 0 01-3.555 1.534c-1.606.352-2.94.087-3.666.148-.718.06-1.428.529-1.296 1.79-.491-.154-1.236-.683-1.682-1.117-.438-.428-.87-.711-1.534-.692-1.013.03-1.663.102-2.57.01a9.656 9.656 0 01-4.838-1.786V2.78c0-.87.378-1.22 1.206-1.22zm4.497 4.988a2.994 2.994 0 100 5.987 2.993 2.993 0 000-5.983zm7.71 0a2.994 2.994 0 100 5.987 2.993 2.993 0 000-5.983z"/></svg></a>
-      <a href="https://www.instagram.com/duck8823/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-    </div>
-  </header>
+<div id="root"></div>
 
-  <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">About</h2>
-    </div>
-    <div class="pets">
-      <div class="pets-photos">
-        <img src="/images/okaka.jpg" alt="おかか" width="80" height="80" loading="lazy">
-        <img src="/images/tunamayo.jpg" alt="ツナマヨ" width="80" height="80" loading="lazy">
-      </div>
-      <div class="pets-body">
-        <h3>おかか &amp; ツナマヨ</h3>
-        <p>めっちゃかわいいです。この子たちのためにアプリを作っています。</p>
-        <div class="pets-links">
-          <a href="https://www.instagram.com/duck8823/" target="_blank" rel="noopener">Instagram</a>
-          <a href="/wampo/index_ja.html">わんぽ</a>
-        </div>
-      </div>
-    </div>
-    <p style="font-size:0.9rem;">DeNA の SWET で CI/CD 基盤やテスト自動化をやったのが原体験で、そこからずっと開発プロセスとか基盤寄りの仕事が多いです。エス・エム・エスではレガシーシステムのリプレイス、朝日新聞社では落ちてるボール拾いつつマイクロサービスの設計・開発をやっていました。基盤が軸ですが、必要なら何でもやるタイプです。趣味では Flutter でアプリを出しています。最近は <a href="https://duck8823.hatenablog.com/entry/2026/03/20/080436" target="_blank" rel="noopener">Claude Code などを使って AI と一緒に個人開発</a>しています。</p>
-    <div class="skills">
-      <span class="tag">Go</span>
-      <span class="tag">Kotlin</span>
-      <span class="tag">Flutter / Dart</span>
-      <span class="tag">Docker</span>
-      <span class="tag">CI/CD</span>
-      <span class="tag">GitHub Actions</span>
-      <span class="tag">AWS</span>
-      <span class="tag">Terraform</span>
-      <span class="tag">BigQuery</span>
-      <span class="tag">PostgreSQL</span>
-      <span class="tag">Claude Code</span>
-          </div>
-  </section>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-  <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">Experience</h2>
-    </div>
-    <div class="list-item"><span class="label">2021 &ndash; 2025</span><div><h3>朝日新聞社</h3><p>レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。</p><div class="tags"><span class="tag">Go</span> <span class="tag">AWS</span> <span class="tag">Terraform</span> <span class="tag">ProtocolBuffers</span></div></div></div>
-    <div class="list-item"><span class="label">2018 &ndash; 2021</span><div><h3>エス・エム・エス</h3><p>ヘルスケア SaaS のレガシーシステムリプレイスをしていました。</p><div class="tags"><span class="tag">Kotlin</span> <span class="tag">Java</span> <span class="tag">PostgreSQL</span></div></div></div>
-    <div class="list-item"><span class="label">2017 &ndash; 2018</span><div><h3>DeNA SWET</h3><p>CI/CD 環境の改善や、テストツールの検証・開発をしていました。</p><div class="tags"><span class="tag">CI/CD</span> <span class="tag">iOS</span> <span class="tag">Danger</span></div></div></div>
-    <div class="list-item"><span class="label">2013 &ndash; 2017</span><div><h3>日本ソフトウェアマネジメント</h3><p>ウェブアプリを作っていました。</p></div></div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">Projects</h2>
-    </div>
-    <a class="list-item" href="https://github.com/duck8823/duci" target="_blank" rel="noopener"><span class="label"></span><div><h3>duci<span class="arrow">&#x2197;</span></h3><p>CI が好きすぎて自作した Docker ベースの CI サーバー。GitHub Webhook でコンテナ上のビルドを回す。</p><div class="proj-meta"><span><span class="dot" style="background:#00ADD8"></span>Go</span><span style="color:var(--highlight);font-weight:700;">&#9733; 74</span></div></div></a>
-    <a class="list-item" href="https://github.com/duck8823/Slack-RTM-Bot" target="_blank" rel="noopener"><span class="label"></span><div><h3>Slack-RTM-Bot<span class="arrow">&#x2197;</span></h3><p>Slack RTM API で Bot 作るための Perl モジュール。</p><div class="proj-meta"><span><span class="dot" style="background:#0298c3"></span>Perl</span><span style="color:var(--highlight);font-weight:700;">&#9733; 18</span></div></div></a>
-    <a class="list-item" href="https://github.com/duck8823/danger-slack" target="_blank" rel="noopener"><span class="label"></span><div><h3>danger-slack<span class="arrow">&#x2197;</span></h3><p>Danger の結果を Slack に通知するプラグインです。</p><div class="proj-meta"><span><span class="dot" style="background:#CC342D"></span>Ruby</span><span style="color:var(--highlight);font-weight:700;">&#9733; 11</span></div></div></a>
-    <a class="list-item" href="https://github.com/duck8823/textlint-plugin-json" target="_blank" rel="noopener"><span class="label"></span><div><h3>textlint-plugin-json<span class="arrow">&#x2197;</span></h3><p>JSON を textlint で校正できるようにするプラグインです。</p><div class="proj-meta"><span><span class="dot" style="background:#f1e05a"></span>JavaScript</span><span style="color:var(--highlight);font-weight:700;">&#9733; 6</span></div></div></a>
-
-    <div class="apps">
-      <div class="app"><a href="/wampo/index_ja.html"><img src="/wampo/images/ja/1_home.png" alt="わんぽ" loading="lazy"><div class="app-body"><h3>わんぽ</h3><p>散歩管理 &middot; GPS &middot; 雨雲レーダー &middot; ウィジェット</p></div></a></div>
-      <div class="app"><a href="/calorithm/index_ja.html"><img src="/calorithm/images/ja/daily.png" alt="カロリズム" loading="lazy"><div class="app-body"><h3>カロリズム</h3><p>カロリー管理 &middot; AI 推定 &middot; HealthKit 連携 &middot; ウィジェット</p></div></a></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">Talks &amp; Writing</h2>
-    </div>
-    <a class="list-item" href="https://speakerdeck.com/duck8823/jing-de-jie-xi-turu-detekt-deren-yi-falsetiao-jian-dejing-gao-saseru" target="_blank" rel="noopener"><span class="label">2022</span><div><h3>detekt で任意の条件で警告させる<span class="arrow">&#x2197;</span></h3><p>Kotlin Fest 2022 LT</p></div></a>
-    <a class="list-item" href="https://speakerdeck.com/duck8823/golangdedockerbesufalseciwozuo-ru" target="_blank" rel="noopener"><span class="label">2019</span><div><h3>Golang で Docker ベースの CI を作る<span class="arrow">&#x2197;</span></h3><p>Go Conference 2019 Spring</p></div></a>
-    <a class="list-item" href="https://www.slideshare.net/slideshow/ossperl/129306353" target="_blank" rel="noopener"><span class="label">2019</span><div><h3>私と OSS 活動と Perl<span class="arrow">&#x2197;</span></h3><p>YAPC::Tokyo 2019</p></div></a>
-    <a class="list-item" href="https://www.slideshare.net/ShunsukeMaeda/ss-110757746" target="_blank" rel="noopener"><span class="label">2018</span><div><h3>外部環境への依存をテストする<span class="arrow">&#x2197;</span></h3><p>golang.tokyo</p></div></a>
-    <a class="list-item" href="https://www.slideshare.net/slideshow/droidkaigidevicefarm/87573170" target="_blank" rel="noopener"><span class="label">2018</span><div><h3>Android で利用できるデバイスファームの紹介<span class="arrow">&#x2197;</span></h3><p>DroidKaigi 2018</p></div></a>
-    <a class="list-item" href="https://www.slideshare.net/slideshow/ios-79834769/79834769" target="_blank" rel="noopener"><span class="label">2017</span><div><h3>iOS で利用できるデバイスファームのメリット・デメリット<span class="arrow">&#x2197;</span></h3><p>iOSDC 2017</p></div></a>
-    <a class="list-item" href="https://findy-tools.io/companies/asashi/25/35" target="_blank" rel="noopener"><span class="label">Article</span><div><h3>朝日新聞デジタルのデータアーキテクチャ<span class="arrow">&#x2197;</span></h3><p>Findy Tools</p></div></a>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">Blog</h2>
-      <a class="more" href="https://duck8823.hatenablog.com/archive" target="_blank" rel="noopener">All posts &rarr;</a>
-    </div>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2026/03/20/080436" target="_blank" rel="noopener"><span class="label">2026.03</span><div><h3>AI と個人開発する話<span class="arrow">&#x2197;</span></h3></div></a>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2020/08/10/113844" target="_blank" rel="noopener"><span class="label">2020.08</span><div><h3>aibo 用にバーチャルウォールを作る<span class="arrow">&#x2197;</span></h3></div></a>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2020/07/08/154740" target="_blank" rel="noopener"><span class="label">2020.07</span><div><h3>aibo と Nature Remo で電気を消してもらう<span class="arrow">&#x2197;</span></h3></div></a>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2018/09/01/104130" target="_blank" rel="noopener"><span class="label">2018.09</span><div><h3>Golang で CI を作っている話<span class="arrow">&#x2197;</span></h3></div></a>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2018/05/06/174537" target="_blank" rel="noopener"><span class="label">2018.05</span><div><h3>300 行弱のコードで簡易 CI サーバーを作った<span class="arrow">&#x2197;</span></h3></div></a>
-    <a class="list-item" href="https://duck8823.hatenablog.com/entry/2016/06/24/221625" target="_blank" rel="noopener"><span class="label">2016.06</span><div><h3>perl で Slack Bot を作るモジュールを公開した<span class="arrow">&#x2197;</span></h3></div></a>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2026 Shunsuke Maeda (@duck8823)</p>
-  </footer>
-
-</div>
+<script type="text/babel" src="data.js?v=13"></script>
+<script type="text/babel" src="hero.jsx?v=13"></script>
+<script type="text/babel" src="sections.jsx?v=13"></script>
+<script type="text/babel" src="app.jsx?v=13"></script>
 
 </body>
 </html>
