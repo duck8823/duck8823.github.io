@@ -1,171 +1,666 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>サポート — わんぽ</title>
-    <meta name="description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート — わんぽ</title>
+<meta name="description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/wampo/support_ja.html">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/wampo/support_ja.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/wampo/support.html">
+<!-- Canonical & Hreflang -->
+<link rel="canonical" href="https://duck8823.net/wampo/support_ja.html">
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/wampo/support_ja.html">
+<link rel="alternate" hreflang="en" href="https://duck8823.net/wampo/support.html">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/icon.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/icon.png">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://duck8823.net/wampo/support_ja.html">
-    <meta property="og:title" content="サポート — わんぽ">
-    <meta property="og:description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
-    <meta property="og:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:site_name" content="わんぽ">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://duck8823.net/wampo/support_ja.html">
+<meta property="og:title" content="サポート — わんぽ">
+<meta property="og:description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
+<meta property="og:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="わんぽ">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="サポート — わんぽ">
-    <meta name="twitter:description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
-    <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="サポート — わんぽ">
+<meta name="twitter:description" content="愛犬の散歩管理アプリ、わんぽのサポートページです。よくある質問とお問い合わせ先をご案内しています。">
+<meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
 
-    <link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>
+const TWEAKS = /*EDITMODE-BEGIN*/{
+  "theme": "light",
+  "accent": "cobalt"
+}/*EDITMODE-END*/;
+</script>
+
+<style>
+:root {
+  --bg:#F6F5F2; --surface:#FFFFFF; --surface-2:#F1EFEA;
+  --ink:#0E0E0C; --ink-2:#1F1E1B; --muted:#6B6963;
+  --line:rgba(14,14,12,0.08); --line-2:rgba(14,14,12,0.14);
+  --accent:#2F5BFF; --accent-ink:#1C3DCC; --accent-soft:#E3EAFF;
+  --good:#3AA877; --warn:#E5793B;
+  --sans:'Inter','Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+  --nav-h:64px;
+}
+:root[data-theme="dark"] {
+  --bg:#0B0B0A; --surface:#141413; --surface-2:#1C1C1A;
+  --ink:#F4F2EC; --ink-2:#E4E1D9; --muted:#8E8B83;
+  --line:rgba(244,242,236,0.08); --line-2:rgba(244,242,236,0.14);
+  --accent-soft:#1C2650;
+}
+:root[data-accent="cobalt"]{--accent:#2F5BFF;--accent-ink:#1C3DCC;--accent-soft:#E3EAFF}
+:root[data-accent="emerald"]{--accent:#2E8463;--accent-ink:#1F5F47;--accent-soft:#DDEFE6}
+:root[data-accent="amber"]{--accent:#D77A28;--accent-ink:#A85B15;--accent-soft:#F8E6D0}
+:root[data-accent="violet"]{--accent:#6E49D6;--accent-ink:#4E30A3;--accent-soft:#EAE3F8}
+:root[data-theme="dark"][data-accent="cobalt"]{--accent-soft:#1C2650}
+:root[data-theme="dark"][data-accent="emerald"]{--accent-soft:#0F2E22}
+:root[data-theme="dark"][data-accent="amber"]{--accent-soft:#3B2810}
+:root[data-theme="dark"][data-accent="violet"]{--accent-soft:#231B46}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss01";font-size:15px;text-wrap:pretty}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+
+/* Nav */
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:calc(100% - 32px);max-width:1180px;height:var(--nav-h);background:color-mix(in srgb,var(--surface) 80%,transparent);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:1px solid var(--line);border-radius:999px;padding:0 20px 0 22px;z-index:100;display:flex;align-items:center;justify-content:space-between;box-shadow:0 10px 28px -14px rgba(14,14,12,0.12)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em;white-space:nowrap}
+.brand .mk { width:28px; height:28px; border-radius:8px; display:block; object-fit:cover; }
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:13px;font-weight:500;color:var(--ink-2);transition:color .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap;transition:.15s}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-primary:hover{background:var(--accent);transform:translateY(-1px)}
+.btn-primary svg{width:13px;height:13px;fill:currentColor}
+.btn-outline{background:var(--surface);border:1px solid var(--line-2);color:var(--ink)}
+.btn-outline:hover{border-color:var(--ink)}
+.menu-btn{display:none;width:38px;height:38px;border-radius:999px}
+.menu-btn span{display:block;width:16px;height:1.5px;background:var(--ink);margin:3.5px auto;transition:.2s}
+.mobile-nav{display:none;position:fixed;inset:calc(var(--nav-h) + 32px) 16px auto;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px;z-index:99;box-shadow:0 20px 40px -20px rgba(14,14,12,0.2)}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:12px 10px;font-weight:500;border-bottom:1px solid var(--line)}
+.mobile-nav a:last-child{border:0}
+@media (max-width:880px){.nav-links{display:none}.menu-btn{display:block}}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* Hero */
+.sup-hero{
+  padding: calc(var(--nav-h) + 72px) 0 56px;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 12% 20%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 45%),
+    var(--bg);
+}
+.crumbs{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;display:flex;align-items:center;gap:10px;margin-bottom:24px}
+.crumbs a{color:var(--muted);transition:color .15s}
+.crumbs a:hover{color:var(--accent)}
+.crumbs .sep{opacity:.4}
+.sup-hero h1{font-size:clamp(36px,5.6vw,64px);line-height:1.05;letter-spacing:-0.03em;font-weight:700;margin-bottom:18px;max-width:820px}
+.sup-hero .lead{font-size:17px;color:var(--muted);max-width:640px;line-height:1.65}
+
+/* Search */
+.search{
+  margin-top: 32px; max-width: 560px;
+  position:relative;
+}
+.search input{
+  width:100%; padding:16px 20px 16px 48px;
+  background:var(--surface);
+  border:1px solid var(--line-2);
+  border-radius:999px;
+  font:inherit; font-size:14.5px; color:var(--ink);
+  transition:border-color .15s, box-shadow .15s;
+}
+.search input:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 15%, transparent);
+}
+.search input::placeholder{color:var(--muted)}
+.search svg{
+  position:absolute; left:18px; top:50%; transform:translateY(-50%);
+  width:18px; height:18px; stroke:var(--muted); fill:none; stroke-width:1.8; stroke-linecap:round;
+}
+
+/* Topic cards */
+.topics{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
+  margin-top: 28px;
+}
+.topic{
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:18px; padding:20px;
+  display:flex; align-items:center; gap:14px;
+  cursor:pointer; transition:border-color .15s, transform .15s;
+}
+.topic:hover{border-color:var(--line-2);transform:translateY(-2px)}
+.topic .ico{
+  width:40px;height:40px;border-radius:12px;
+  background:var(--accent-soft);color:var(--accent-ink);
+  display:grid;place-items:center;flex-shrink:0;
+}
+.topic .ico svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.topic h4{font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.topic span{font-size:12.5px;color:var(--muted)}
+
+/* Body layout */
+.sup-body{
+  display:grid; grid-template-columns: 220px 1fr;
+  gap: 72px; padding: 72px 0 120px; align-items:start;
+}
+.toc{
+  position:sticky; top: calc(var(--nav-h) + 40px);
+  font-family:var(--mono); font-size:11px;
+  letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);
+}
+.toc .toc-label{font-size:10px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.toc .toc-label::before{content:"";width:20px;height:1px;background:var(--muted)}
+.toc ol{display:flex;flex-direction:column;gap:2px;counter-reset:toc}
+.toc li{counter-increment:toc}
+.toc a{
+  display:flex;align-items:baseline;gap:10px;
+  padding:10px 12px; border-radius:10px;
+  font-size:12px; text-transform:none; letter-spacing:0;
+  color:var(--ink-2); font-family:var(--sans); font-weight:500;
+  transition:.15s; border:1px solid transparent;
+}
+.toc a::before{content:counter(toc, decimal-leading-zero);font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.05em}
+.toc a:hover{background:var(--surface-2);color:var(--ink)}
+.toc a.on{background:var(--surface);border-color:var(--line-2);color:var(--ink)}
+.toc a.on::before{color:var(--accent)}
+
+.sup-content{max-width:760px}
+.sup-content > section{
+  padding-top:48px; padding-bottom:48px;
+  border-bottom:1px solid var(--line);
+}
+.sup-content > section:first-child{padding-top:0}
+.sup-content > section:last-child{border-bottom:0}
+.sec-n{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sec-n::before{content:"";width:20px;height:1px;background:var(--accent)}
+.sup-content h2{font-size:clamp(24px,2.6vw,32px);line-height:1.2;letter-spacing:-0.02em;font-weight:700;color:var(--ink);margin-bottom:20px;scroll-margin-top:120px}
+.sup-content p{font-size:15.5px;line-height:1.75;color:var(--ink-2);margin-bottom:14px}
+.sup-content p.mute{color:var(--muted);font-size:14.5px}
+.sup-content strong{color:var(--ink);font-weight:600}
+.sup-content a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+
+/* FAQ — accordion */
+.faq-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.faq{
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:16px; overflow:hidden;
+  transition:border-color .15s, box-shadow .15s;
+}
+.faq.open{border-color:var(--line-2); box-shadow:0 10px 30px -18px rgba(14,14,12,0.14)}
+.faq-q{
+  width:100%; padding:20px 22px; text-align:left;
+  display:flex; align-items:center; gap:16px;
+  font-size:15px; font-weight:600; color:var(--ink);
+  line-height:1.4;
+}
+.faq-q .qn{
+  flex-shrink:0; width:28px; height:28px; border-radius:999px;
+  background:var(--surface-2); color:var(--muted);
+  display:grid; place-items:center;
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  letter-spacing:0;
+}
+.faq.open .faq-q .qn{background:var(--accent-soft);color:var(--accent-ink)}
+.faq-q .qt{flex:1}
+.faq-q .plus{width:20px;height:20px;position:relative;flex-shrink:0;color:var(--muted)}
+.faq-q .plus::before,.faq-q .plus::after{content:"";position:absolute;inset:0;margin:auto;background:currentColor;transition:transform .25s}
+.faq-q .plus::before{width:12px;height:1.5px}
+.faq-q .plus::after{width:1.5px;height:12px}
+.faq.open .faq-q .plus::after{transform:rotate(90deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a-inner{padding:0 22px 22px 66px;color:var(--ink-2);font-size:14.5px;line-height:1.75}
+.faq-a-inner p{font-size:14.5px;margin-bottom:10px;color:var(--ink-2)}
+.faq-a-inner p:last-child{margin-bottom:0}
+.faq-a-inner ol{
+  counter-reset: step; margin-top:12px;
+  display:flex; flex-direction:column; gap:8px;
+}
+.faq-a-inner ol li{
+  counter-increment: step;
+  position:relative; padding:10px 14px 10px 44px;
+  background:var(--surface-2); border-radius:10px;
+  font-size:14px; color:var(--ink-2); line-height:1.6;
+}
+.faq-a-inner ol li::before{
+  content: counter(step);
+  position:absolute; left:12px; top:50%; transform:translateY(-50%);
+  width:22px; height:22px; border-radius:999px;
+  background:var(--accent); color:#fff;
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  display:grid; place-items:center;
+}
+@media (max-width:640px){ .faq-a-inner{padding:0 22px 22px} }
+
+/* Troubleshooting cards */
+.trouble-grid{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.trouble{
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:18px; padding:22px 24px;
+}
+.trouble h3{
+  font-size:16px;font-weight:600;color:var(--ink);
+  display:flex;align-items:center;gap:10px;margin-bottom:12px;
+}
+.trouble h3 .badge{
+  font-family:var(--mono);font-size:10px;
+  color:var(--warn); background:color-mix(in srgb, var(--warn) 14%, transparent);
+  padding:3px 8px;border-radius:999px;letter-spacing:0.04em;
+  font-weight:600; text-transform:uppercase;
+}
+.trouble p{font-size:14.5px;color:var(--ink-2);line-height:1.7;margin-bottom:10px}
+.trouble ol{counter-reset:step;display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.trouble ol li{
+  counter-increment:step; position:relative;
+  padding:10px 14px 10px 44px; background:var(--surface-2);
+  border-radius:10px; font-size:14px; color:var(--ink-2); line-height:1.6;
+}
+.trouble ol li::before{
+  content: counter(step);
+  position:absolute; left:12px; top:50%; transform:translateY(-50%);
+  width:22px; height:22px; border-radius:999px;
+  background:var(--accent); color:#fff;
+  font-family:var(--mono); font-size:11px; font-weight:600;
+  display:grid; place-items:center;
+}
+
+/* Contact panel */
+.contact-panel{
+  background: linear-gradient(140deg, var(--accent-soft) 0%, var(--surface) 100%);
+  border:1px solid var(--line);
+  border-radius:24px; padding:36px;
+  display:grid; grid-template-columns: 1fr auto; gap:28px;
+  align-items:center; margin-top: 8px;
+}
+:root[data-theme="dark"] .contact-panel{background:linear-gradient(140deg, var(--accent-soft) 0%, var(--surface-2) 100%)}
+.contact-panel h3{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-0.015em;margin-bottom:8px}
+.contact-panel p{font-size:14px;color:var(--muted);margin-bottom:16px;max-width:440px}
+.contact-panel p:last-child{margin-bottom:0}
+.contact-panel .mail{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:13px;color:var(--ink);
+  background:var(--surface); border:1px solid var(--line-2);
+  padding:10px 14px; border-radius:999px;
+}
+.contact-panel .mail::before{
+  content:""; width:8px;height:8px;border-radius:999px;
+  background:var(--good);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--good) 25%, transparent);
+}
+.contact-panel .btn{align-self:start}
+@media (max-width:640px){.contact-panel{grid-template-columns:1fr;padding:28px}}
+
+/* Feedback card */
+.feedback-card{
+  margin-top:18px;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:18px; padding:22px 24px;
+  display:flex; align-items:flex-start; gap:16px;
+}
+.feedback-card .ico{
+  flex-shrink:0;width:36px;height:36px;border-radius:10px;
+  background:var(--accent-soft);color:var(--accent-ink);
+  display:grid;place-items:center;
+}
+.feedback-card .ico svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.feedback-card h4{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.feedback-card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
+
+/* App info */
+.app-info{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;
+  margin-top:8px;
+}
+.app-info .info{
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:16px; padding:18px 20px;
+}
+.app-info .info .k{
+  font-family:var(--mono);font-size:10px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;
+}
+.app-info .info .v{font-size:15px;font-weight:600;color:var(--ink)}
+@media (max-width:640px){ .app-info{grid-template-columns:1fr} }
+
+/* Responsive body */
+@media (max-width:1040px){
+  .sup-body{grid-template-columns:1fr;gap:40px;padding:48px 0 96px}
+  .toc{position:static}
+  .toc ol{display:grid;grid-template-columns:repeat(2,1fr);gap:4px}
+  .topics{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .topics{grid-template-columns:1fr}
+  .toc ol{grid-template-columns:1fr}
+  .sup-hero{padding: calc(var(--nav-h) + 52px) 0 44px}
+}
+
+/* Footer */
+.footer{padding:72px 0 32px;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;padding-bottom:48px}
+.footer-brand .brand{margin-bottom:16px}
+.footer-brand p{font-size:13.5px;color:var(--muted);max-width:320px;line-height:1.6}
+.footer-col h5{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:14px;font-weight:500}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:13.5px;color:var(--ink-2);transition:color .15s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{padding-top:24px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.04em;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:720px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.footer-grid{grid-template-columns:1fr}}
+
+/* Tweaks panel */
+
+.lang-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 8px 12px; font-size: 12px; font-weight: 600; letter-spacing: .08em;
+  color: var(--ink); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg); transition: background .15s;
+}
+.lang-toggle:hover{ background: var(--bg-2); }
+@media (max-width: 820px){ .lang-toggle{ display:none; } }
+
+</style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index_ja.html" class="logo">わんぽ</a>
-            <nav class="desktop-nav" aria-label="メインナビゲーション">
-                <a href="index_ja.html#features">機能</a>
-                <a href="index_ja.html#screenshots">スクリーンショット</a>
-                <a href="privacy_ja.html">プライバシー</a>
-                <a href="support_ja.html">サポート</a>
-            </nav>
-            <div class="header-actions">
-                <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+<!-- NAV -->
+<nav class="nav">
+  <a href="index_ja.html" class="brand"><img class="mk" src="assets/icon.png" alt="">わんぽ</a>
+  <div class="nav-links">
+    <a href="index_ja.html#how">使い方</a>
+    <a href="index_ja.html#faq">Q&amp;A</a>
+    <a href="support_ja.html" class="active">サポート</a>
+    <a href="privacy_ja.html">プライバシー</a>
+  </div>
+  <div class="nav-right">
+    <a href="support.html" class="lang-toggle" aria-label="English">EN</a>
+    <a href="https://apps.apple.com/app/id6759406324" class="btn btn-primary">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      入手
+    </a>
+    <button class="menu-btn" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index_ja.html#how">使い方</a>
+  <a href="index_ja.html#tour">プレビュー</a>
+  <a href="privacy_ja.html">プライバシー</a>
+  <a href="support_ja.html">サポート</a>
+</div>
+
+<!-- HERO -->
+<header class="sup-hero">
+  <div class="wrap">
+    <div class="crumbs">
+      <a href="index_ja.html">わんぽ</a>
+      <span class="sep">/</span>
+      <span>サポート</span>
+    </div>
+    <h1>サポート</h1>
+    <p class="lead">わんぽのサポートへようこそ。よくある質問への回答とお問い合わせ方法をご案内しています。</p>
+
+    <div class="search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="searchInput" type="search" placeholder="質問のキーワードで絞り込む（例：記録、愛犬、データ）" aria-label="FAQ検索">
+    </div>
+
+    <div class="topics">
+      <a class="topic" href="#faq">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div><h4>よくある質問</h4><span>まずはここをチェック</span></div>
+      </a>
+      <a class="topic" href="#contact">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><h4>お問い合わせ</h4><span>メールでサポート</span></div>
+      </a>
+      <a class="topic" href="#app-info">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+        <div><h4>アプリ情報</h4><span>対応環境を確認</span></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- BODY -->
+<main class="wrap">
+  <div class="sup-body">
+
+    <aside class="toc">
+      <div class="toc-label">目次</div>
+      <ol>
+        <li><a href="#faq" class="on">よくある質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="#app-info">アプリ情報</a></li>
+      </ol>
+    </aside>
+
+    <article class="sup-content">
+
+      <section id="faq">
+        <div class="sec-n">FAQ · よくある質問</div>
+        <h2>よくある質問</h2>
+
+        <div class="faq-list">
+          <div class="faq" data-q="散歩 記録 されない 位置情報 許可">
+            <button class="faq-q">
+              <span class="qn">Q1</span>
+              <span class="qt">散歩が記録されない</span>
+              <span class="plus"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>位置情報の許可設定を確認してください。バックグラウンドでも記録するには「常に許可」が必要です。</p>
+              <ol>
+                <li>iPhoneの「設定」アプリを開く</li>
+                <li>「プライバシーとセキュリティ」→「位置情報サービス」を開く</li>
+                <li>「わんぽ」を選択する</li>
+                <li>「常に」を選択する</li>
+              </ol>
+            </div></div>
+          </div>
+
+          <div class="faq" data-q="バックグラウンド 止まる 低電力 更新">
+            <button class="faq-q">
+              <span class="qn">Q2</span>
+              <span class="qt">バックグラウンド記録が止まる</span>
+              <span class="plus"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>バックグラウンドアプリの更新が無効になっている可能性があります。以下の手順で有効にしてください。</p>
+              <ol>
+                <li>iPhoneの「設定」アプリを開く</li>
+                <li>「一般」→「Appのバックグラウンド更新」を開く</li>
+                <li>「わんぽ」のトグルをオンにする</li>
+              </ol>
+              <p>また、低電力モードがオンになっているとバックグラウンド処理が制限される場合があります。「設定」→「バッテリー」から低電力モードをオフにしてお試しください。</p>
+            </div></div>
+          </div>
+
+          <div class="faq" data-q="愛犬 登録 プロフィール 犬種 多頭飼い">
+            <button class="faq-q">
+              <span class="qn">Q3</span>
+              <span class="qt">愛犬を登録するには</span>
+              <span class="plus"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>設定タブから愛犬のプロフィールを追加できます。名前・犬種・生年月日を入力して保存すると、散歩の記録と紐づけられるようになります。複数の愛犬を登録することも可能です。</p>
+            </div></div>
+          </div>
+
+          <div class="faq" data-q="データ 消えた バックアップ 復元">
+            <button class="faq-q">
+              <span class="qn">Q4</span>
+              <span class="qt">データが消えた</span>
+              <span class="plus"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">
+              <p>現在、バックアップ機能はありません。将来のアップデートでバックアップ・復元機能の追加を予定しています。アプリを削除するとデータも削除されますのでご注意ください。</p>
+            </div></div>
+          </div>
         </div>
-        <nav class="mobile-nav" aria-label="モバイルナビゲーション">
-            <a href="index_ja.html#features">機能</a>
-            <a href="index_ja.html#screenshots">スクリーンショット</a>
-            <a href="privacy_ja.html">プライバシー</a>
-            <a href="support_ja.html">サポート</a>
-        </nav>
-    </header>
+      </section>
 
-    <main>
-        <section class="content-page">
-            <div class="content-container">
-                <h1 class="content-title">サポート</h1>
+      <section id="contact">
+        <div class="sec-n">CONTACT · お問い合わせ</div>
+        <h2>お問い合わせ</h2>
 
-                <div class="content-section">
-                    <p>わんぽのサポートへようこそ。よくある質問への回答とお問い合わせ方法をご案内しています。</p>
-                </div>
-
-                <div id="faq" class="content-section">
-                    <h2>よくある質問</h2>
-
-                    <div class="faq-item">
-                        <h3>散歩が記録されない</h3>
-                        <p>位置情報の許可設定を確認してください。バックグラウンドでも記録するには「常に許可」が必要です。</p>
-                        <ol>
-                            <li>iPhoneの「設定」アプリを開く</li>
-                            <li>「プライバシーとセキュリティ」→「位置情報サービス」を開く</li>
-                            <li>「わんぽ」を選択する</li>
-                            <li>「常に」を選択する</li>
-                        </ol>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>バックグラウンド記録が止まる</h3>
-                        <p>バックグラウンドアプリの更新が無効になっている可能性があります。以下の手順で有効にしてください。</p>
-                        <ol>
-                            <li>iPhoneの「設定」アプリを開く</li>
-                            <li>「一般」→「Appのバックグラウンド更新」を開く</li>
-                            <li>「わんぽ」のトグルをオンにする</li>
-                        </ol>
-                        <p>また、低電力モードがオンになっているとバックグラウンド処理が制限される場合があります。「設定」→「バッテリー」から低電力モードをオフにしてお試しください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>愛犬を登録するには</h3>
-                        <p>設定タブから愛犬のプロフィールを追加できます。名前・犬種・生年月日を入力して保存すると、散歩の記録と紐づけられるようになります。複数の愛犬を登録することも可能です。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>データが消えた</h3>
-                        <p>現在、バックアップ機能はありません。将来のアップデートでバックアップ・復元機能の追加を予定しています。アプリを削除するとデータも削除されますのでご注意ください。</p>
-                    </div>
-                </div>
-
-                <div id="contact" class="content-section">
-                    <h2>お問い合わせ</h2>
-                    <p>上記の FAQ で解決しない場合は、メールにてお問い合わせください。バグ報告・機能要望・ご意見をお待ちしています。</p>
-
-                    <div class="contact-info">
-                        <p><strong>メール：</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
-                    </div>
-
-                    <div class="feedback">
-                        <h3>フィードバックと提案</h3>
-                        <p>わんぽをより良くするためのご意見・ご提案は上記メールアドレスまでお寄せください。いただいたフィードバックを参考に、機能改善を進めてまいります。</p>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>アプリ情報</h2>
-                    <p><strong>互換性：</strong> iOS 16.0以降</p>
-                    <p><strong>必要条件：</strong> iOS 16.0以降を搭載したiPhone</p>
-                    <p><strong>対応言語：</strong> 日本語</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">わんぽ</span>
-                    <p>GPSで散歩ルートを自動記録する、愛犬の散歩管理アプリ。</p>
-                </div>
-                <div class="footer-col">
-                    <h4>プロダクト</h4>
-                    <ul>
-                        <li><a href="index_ja.html">ホーム</a></li>
-                        <li><a href="index_ja.html#features">機能</a></li>
-                        <li><a href="index_ja.html#screenshots">スクリーンショット</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>法的情報</h4>
-                    <ul>
-                        <li><a href="privacy_ja.html">プライバシーポリシー</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="support_ja.html">ヘルプセンター</a></li>
-                        <li><a href="support_ja.html#faq">よくある質問</a></li>
-                        <li><a href="support_ja.html#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
+        <div class="contact-panel">
+          <div>
+            <p>上記の FAQ で解決しない場合は、メールにてお問い合わせください。バグ報告・機能要望・ご意見をお待ちしています。</p>
+            <p><strong>メール：</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
+          </div>
+          <a href="mailto:duck8823@gmail.com" class="btn btn-primary">
+            メールを送る →
+          </a>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div class="feedback-card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h4>フィードバックと提案</h4>
+            <p>わんぽをより良くするためのご意見・ご提案は上記メールアドレスまでお寄せください。いただいたフィードバックを参考に、機能改善を進めてまいります。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="app-info">
+        <div class="sec-n">APP INFO · アプリ情報</div>
+        <h2>アプリ情報</h2>
+
+        <div class="app-info">
+          <div class="info">
+            <div class="k">互換性：</div>
+            <div class="v">iOS 16.0以降</div>
+          </div>
+          <div class="info">
+            <div class="k">必要条件：</div>
+            <div class="v">iOS 16.0以降を搭載したiPhone</div>
+          </div>
+          <div class="info">
+            <div class="k">対応言語：</div>
+            <div class="v">日本語</div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index_ja.html" class="brand"><img class="mk" src="assets/icon.png" alt="">わんぽ</a>
+        <p>GPSで散歩ルートを自動記録する、愛犬のための iOS アプリ。</p>
+      </div>
+      <div class="footer-col">
+        <h5>プロダクト</h5>
+        <ul>
+          <li><a href="index_ja.html">ホーム</a></li>
+          <li><a href="index_ja.html#how">使い方</a></li>
+          <li><a href="index_ja.html#tour">プレビュー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>法的情報</h5>
+        <ul>
+          <li><a href="privacy_ja.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>サポート</h5>
+        <ul>
+          <li><a href="support_ja.html">ヘルプセンター</a></li>
+          <li><a href="support_ja.html#faq">FAQ</a></li>
+          <li><a href="support_ja.html#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shunsuke Maeda</span>
+      <span>わんぽ — Walking with your dog.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  function applyTweaks(){
+    document.documentElement.setAttribute('data-theme', TWEAKS.theme);
+    document.documentElement.setAttribute('data-accent', TWEAKS.accent);
+  }
+  applyTweaks();
+
+  // Mobile menu
+  var mt = document.querySelector('.menu-btn');
+  var mn = document.querySelector('.mobile-nav');
+  if(mt){
+    mt.addEventListener('click', function(){ mn.classList.toggle('open'); });
+    mn.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mn.classList.remove('open'); }); });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq').forEach(function(it){
+    var q = it.querySelector('.faq-q'), a = it.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var open = it.classList.toggle('open');
+      a.style.maxHeight = open ? a.scrollHeight + 'px' : '0';
+    });
+  });
+
+  // FAQ search filter
+  var searchInput = document.getElementById('searchInput');
+  if(searchInput){
+    searchInput.addEventListener('input', function(){
+      var q = searchInput.value.trim().toLowerCase();
+      document.querySelectorAll('.faq').forEach(function(it){
+        var txt = (it.textContent + ' ' + (it.dataset.q || '')).toLowerCase();
+        it.style.display = (!q || txt.indexOf(q) !== -1) ? '' : 'none';
+      });
+    });
+  }
+
+  // Active TOC highlighting
+  var tocLinks = document.querySelectorAll('.toc a');
+  var sections = document.querySelectorAll('.sup-content > section');
+  var byId = {}; tocLinks.forEach(function(a){ byId[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        tocLinks.forEach(function(a){ a.classList.remove('on'); });
+        var id = e.target.id; if(byId[id]) byId[id].classList.add('on');
+      }
+    });
+  }, { rootMargin:'-40% 0px -55% 0px', threshold:0 });
+  sections.forEach(function(s){ io.observe(s); });
+
+})();
+</script>
+
 </body>
 </html>
