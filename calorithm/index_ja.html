@@ -1,530 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ</title>
-    <meta name="description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>カロリズム — カロリー収支管理アプリ (iOS / Android)</title>
+<meta name="description" content="Apple ヘルスケア / Google ヘルスコネクトと連携。摂取と消費を並べてカロリー収支を可視化するシンプルな管理アプリ。"/>
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/calorithm/index_ja.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/index_ja.html">
-    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/">
+<link rel="canonical" href="https://duck8823.net/calorithm/index_ja.html"/>
+<link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/"/>
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/index_ja.html"/>
+<link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/"/>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ">
-    <meta property="og:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
-    <meta property="og:image" content="https://duck8823.net/calorithm/images/ja/daily.png">
-    <meta property="og:url" content="https://duck8823.net/calorithm/index_ja.html">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:site_name" content="カロリズム">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="カロリズム — カロリー収支管理アプリ (iOS / Android)"/>
+<meta property="og:description" content="Apple ヘルスケア / Google ヘルスコネクトと連携。摂取と消費を並べてカロリー収支を可視化するシンプルな管理アプリ。"/>
+<meta property="og:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
+<meta property="og:url" content="https://duck8823.net/calorithm/index_ja.html"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<meta property="og:site_name" content="カロリズム"/>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="カロリズム — Apple ヘルスケアと連携するカロリー管理アプリ">
-    <meta name="twitter:description" content="カロリズムはApple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。iOS対応。">
-    <meta name="twitter:image" content="https://duck8823.net/calorithm/images/ja/daily.png">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="カロリズム — カロリー収支管理アプリ"/>
+<meta name="twitter:description" content="Apple ヘルスケア / Google ヘルスコネクトと連携。摂取と消費を並べてカロリー収支を可視化するシンプルな管理アプリ。"/>
+<meta name="twitter:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Calorithm",
-      "alternateName": "カロリズム",
-      "description": "Apple ヘルスケアと自動連携してカロリー収支を可視化。AIカロリー推定、タイムライン、週間トレンド、体重管理、ウィジェットなど充実機能。",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "iOS 16.0+",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "JPY"
-      },
-      "downloadUrl": "https://apps.apple.com/app/id6746127712",
-      "featureList": [
-        "Apple ヘルスケア連携",
-        "AIカロリー推定",
-        "デイリーカロリー収支表示",
-        "週間トレンドグラフ",
-        "体重トラッキング",
-        "タイムライン表示",
-        "プリセットお気に入り",
-        "ホーム画面ウィジェット",
-        "カロリー収支プッシュ通知"
-      ],
-      "softwareVersion": "1.15.1",
-      "inLanguage": ["en", "ja"],
-      "author": {
-        "@type": "Person",
-        "name": "Shunsuke Maeda"
-      }
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Calorithm",
+  "alternateName": "カロリズム",
+  "description": "Apple ヘルスケア / Google ヘルスコネクトと連携。摂取と消費を並べてカロリー収支を可視化するシンプルな管理アプリ。",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "iOS 16.0+, Android",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "downloadUrl": "https://apps.apple.com/app/id6746127712",
+  "softwareVersion": "1.16.0",
+  "inLanguage": ["ja", "en"],
+  "author": { "@type": "Person", "name": "Shunsuke Maeda" }
+}
+</script>
 
-    <!-- JSON-LD FAQ Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "本当に無料ですか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい、カロリズムは無料でダウンロードしてご利用いただけます。アプリ内に広告が表示されます。将来のアップデートでオプションの有料機能が追加される可能性があります。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "AIカロリー推定はどのように動作しますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "食品名を入力するだけで、大規模言語モデルを活用したAIがカロリーを推定します。保存前にいつでも値を調整できます。1日の利用回数に制限があります。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apple Watchに対応していますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "現在カロリズムはiPhoneのみ対応です。Apple Watchへの対応は将来のアップデートで予定しています。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "データのプライバシーは守られますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。健康データや食事記録はすべてお使いのデバイス上にローカル保存され、外部サーバーに送信されることはありません。"
-          }
-        }
-      ]
-    }
-    </script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Firebase Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
-        authDomain: "calorie-balance-1b683.firebaseapp.com",
-        projectId: "calorie-balance-1b683",
-        storageBucket: "calorie-balance-1b683.firebasestorage.app",
-        messagingSenderId: "75295278625",
-        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
-        measurementId: "G-HQL6V430FS"
-      });
-      window.calorithmAnalytics = firebase.analytics();
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<div id="root"></div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index_ja.html" class="logo">カロリズム</a>
-            <nav class="desktop-nav" aria-label="メインナビゲーション">
-                <a href="#features">機能</a>
-                <a href="#screenshots">スクリーンショット</a>
-                <a href="privacy_ja.html">プライバシー</a>
-                <a href="support_ja.html">サポート</a>
-            </nav>
-            <div class="header-actions">
-                <a href="index.html" class="lang-link" aria-label="Switch to English">English</a>
-                <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <nav class="mobile-nav" aria-label="モバイルナビゲーション">
-            <a href="#features">機能</a>
-            <a href="#screenshots">スクリーンショット</a>
-            <a href="privacy_ja.html">プライバシー</a>
-            <a href="support_ja.html">サポート</a>
-            <a href="index.html" class="lang-link">English</a>
-        </nav>
-    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
-    <main>
+<script src="dist/components/i18n.js"></script>
+<script src="dist/components/Icons.js"></script>
+<script src="dist/components/Sections.js"></script>
+<script src="dist/pages/landing.js"></script>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-text">
-                        <h1>カロリー収支を、手間なく管理</h1>
-                        <p>カロリズムはApple ヘルスケアと自動連携し、カロリー収支を可視化。AIカロリー推定、週間トレンド、体重管理など — すべてひとつのアプリで。</p>
-                        <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                            App Storeからダウンロード
-                        </a>
-                        <span class="free-badge">無料ダウンロード</span>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/ja/daily.png" alt="カロリズムのデイリーカロリー収支画面（iPhone）" width="300" height="649">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Grid -->
-        <section id="features" class="features-section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>カロリー管理に必要なすべてを</h2>
-                    <p>エネルギーバランスを一目で把握できる、シンプルで強力なツール。</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        </div>
-                        <h3>ヘルスケア連携</h3>
-                        <p>活動データと体重を自動取得</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        </div>
-                        <h3>AIカロリー推定</h3>
-                        <p>食品名を入力するだけでAIが推定</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                        </div>
-                        <h3>デイリー収支</h3>
-                        <p>今日の摂取と消費を一目で確認</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                        </div>
-                        <h3>週間トレンド</h3>
-                        <p>グラフで週間の収支推移を把握</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <!-- Clock / Timeline icon -->
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <h3>タイムライン</h3>
-                        <p>食事・運動・体重の記録を時系列で確認</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4c0 .74.2 1.44.56 2.03L2 22h20L15.44 9.03c.36-.6.56-1.29.56-2.03a4 4 0 0 0-4-4z"/><line x1="5" y1="22" x2="19" y2="22"/></svg>
-                        </div>
-                        <h3>体重トラッキング</h3>
-                        <p>体重変化を週間グラフで確認</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                        </div>
-                        <h3>プリセット</h3>
-                        <p>よく食べるメニューをワンタップで記録</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                        </div>
-                        <h3>ウィジェット</h3>
-                        <p>ホーム画面でカロリー収支を確認</p>
-                    </div>
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-                        </div>
-                        <h3>通知</h3>
-                        <p>カロリー収支を通知でお知らせ</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mid CTA -->
-        <section class="cta-section">
-            <div class="container fade-in">
-                <h2>今日からカロリー管理を始めよう</h2>
-                <p>アカウント登録不要。データはあなたのデバイスに保存されます。</p>
-                <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                    App Storeからダウンロード
-                </a>
-                <span class="free-badge">無料ダウンロード</span>
-            </div>
-        </section>
-
-        <!-- Feature Showcase 1: Daily Balance -->
-        <section class="feature-showcase">
-            <div class="container">
-                <div class="showcase-grid fade-in">
-                    <div class="showcase-text">
-                        <h2>デイリー収支</h2>
-                        <p>Apple ヘルスケアと自動連携し、カロリーの摂取量と消費量を並べて表示。活動量の手動入力は不要 — エネルギーバランスを一目で確認できます。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <img src="images/ja/daily.png" alt="デイリーカロリー収支画面 — 摂取と消費の比較表示" width="300" height="649" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase: Timeline -->
-        <section class="feature-showcase feature-showcase--alt">
-            <div class="container">
-                <div class="showcase-grid showcase-grid--reverse fade-in">
-                    <div class="showcase-text">
-                        <h2>タイムライン</h2>
-                        <p>食事・運動・体重の記録をひとつの時系列フィードで確認。いつ何を記録したかをすぐに振り返れるので、日々の生活パターンの把握に役立ちます。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <img src="images/ja/timeline.png" alt="タイムライン画面 — 食事・運動・体重の記録を時系列表示" width="300" height="649" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase: AI Calorie Estimation -->
-        <section class="feature-showcase">
-            <div class="container">
-                <div class="showcase-grid fade-in">
-                    <div class="showcase-text">
-                        <h2>AIカロリー推定</h2>
-                        <p>食品名を入力するだけで、AIがカロリーを推定。運動の活動エネルギーもAIで推定できます。データベースを検索する手間なし — 素早く、スマートに記録できます。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <video autoplay muted loop playsinline poster="images/ja/input_estimation.png" width="300" height="652">
-                            <source src="images/ja/demo_estimation.mp4" type="video/mp4">
-                            <img src="images/ja/input_estimation.png" alt="AIカロリー推定画面 — 食品名入力でカロリーを自動推定" width="300" height="649" loading="lazy">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase: Weekly Trends & Weight -->
-        <section class="feature-showcase feature-showcase--alt">
-            <div class="container">
-                <div class="showcase-grid showcase-grid--reverse fade-in">
-                    <div class="showcase-text">
-                        <h2>週間トレンドと体重管理</h2>
-                        <p>カロリー収支のトレンドと体重変化を直感的なグラフで確認。パターンを発見し、モチベーションを維持して食事プランの改善に役立てましょう。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <img src="images/ja/weekly.png" alt="週間カロリートレンドグラフと体重変化チャート" width="300" height="649" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase: Preset Favorites -->
-        <section class="feature-showcase">
-            <div class="container">
-                <div class="showcase-grid fade-in">
-                    <div class="showcase-text">
-                        <h2>プリセット</h2>
-                        <p>よく食べるメニューをプリセットとして保存し、ワンタップで記録。毎日同じ食品を入力する手間が省けます — 素早く便利なカロリー記録。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <img src="images/ja/preset.png" alt="プリセットお気に入り画面 — よく食べるメニューをワンタップで記録" width="300" height="649" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase: Widget & Notifications -->
-        <section class="feature-showcase feature-showcase--alt">
-            <div class="container">
-                <div class="showcase-grid showcase-grid--reverse fade-in">
-                    <div class="showcase-text">
-                        <h2>ウィジェットと通知</h2>
-                        <p>ホーム画面にウィジェットを追加して、カロリー収支を一目で確認。プッシュ通知で毎日のカロリー収支サマリーを受け取れます。</p>
-                    </div>
-                    <div class="showcase-image">
-                        <img src="images/ja/widget.png" alt="ホーム画面ウィジェット — カロリー収支を表示" width="300" height="649" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Screenshot Gallery -->
-        <section id="screenshots" class="gallery-section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>スクリーンショット</h2>
-                </div>
-                <div class="screenshot-gallery">
-                    <div class="screenshot-gallery-item"><img src="images/ja/daily.png" alt="デイリーカロリー収支" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/weekly.png" alt="週間カロリートレンド" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/weekly_weight.png" alt="週間体重トラッキング" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/input_estimation.png" alt="AIカロリー推定入力" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/preset.png" alt="プリセットお気に入り" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/darkmode.png" alt="ダークモード" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/timeline.png" alt="タイムライン — 食事・運動・体重の時系列表示" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/achievement.png" alt="達成状況 — ストリーク・コントリビューショングラフ" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/notification.png" alt="カロリー収支プッシュ通知" width="300" height="649" loading="lazy"></div>
-                    <div class="screenshot-gallery-item"><img src="images/ja/widget.png" alt="ホーム画面ウィジェット" width="300" height="649" loading="lazy"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Comparison -->
-        <section class="comparison-section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>カロリズムが選ばれる理由</h2>
-                </div>
-                <div class="comparison-table-wrapper fade-in">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th class="col-other">一般的なカロリー管理アプリ</th>
-                                <th class="col-app-head">カロリズム</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>主な指標</td>
-                                <td class="col-other">目標に対する残りカロリー</td>
-                                <td class="col-app">摂取と消費のカロリー収支</td>
-                            </tr>
-                            <tr>
-                                <td>消費カロリーの扱い</td>
-                                <td class="col-other">食べられる量の調整に使用</td>
-                                <td class="col-app">収支グラフの中心要素</td>
-                            </tr>
-                            <tr>
-                                <td>週間の振り返り</td>
-                                <td class="col-other">摂取カロリーの履歴</td>
-                                <td class="col-app">収支トレンド＋体重変化をグラフ表示</td>
-                            </tr>
-                            <tr>
-                                <td>カロリー入力</td>
-                                <td class="col-other">データベースから食品を検索</td>
-                                <td class="col-app">食品名からAIが推定</td>
-                            </tr>
-                            <tr>
-                                <td>アカウント・データ</td>
-                                <td class="col-other">登録必須・クラウドに保存</td>
-                                <td class="col-app">登録不要・デバイスにローカル保存</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>よくある質問</h2>
-                </div>
-                <div class="faq-accordion fade-in">
-                    <div class="faq-accordion-item">
-                        <button class="faq-question" aria-expanded="false">
-                            本当に無料ですか？
-                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p class="faq-answer-inner">はい、カロリズムは無料でダウンロードしてご利用いただけます。アプリ内に広告が表示されます。将来のアップデートでオプションの有料機能が追加される可能性があります。</p>
-                        </div>
-                    </div>
-                    <div class="faq-accordion-item">
-                        <button class="faq-question" aria-expanded="false">
-                            AIカロリー推定はどのように動作しますか？
-                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p class="faq-answer-inner">食品名を入力するだけで、大規模言語モデルを活用したAIがカロリーを推定します。保存前にいつでも値を調整できます。1日の利用回数に制限があります。</p>
-                        </div>
-                    </div>
-                    <div class="faq-accordion-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Apple Watchに対応していますか？
-                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p class="faq-answer-inner">現在カロリズムはiPhoneのみ対応です。Apple Watchへの対応は将来のアップデートで予定しています。</p>
-                        </div>
-                    </div>
-                    <div class="faq-accordion-item">
-                        <button class="faq-question" aria-expanded="false">
-                            データのプライバシーは守られますか？
-                            <svg class="faq-question-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p class="faq-answer-inner">はい。健康データや食事記録はすべてお使いのデバイス上にローカル保存され、外部サーバーに送信されることはありません。詳しくは<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bottom CTA -->
-        <section class="cta-section">
-            <div class="container fade-in">
-                <h2>今日から健康管理を始めましょう</h2>
-                <p>カロリズムをダウンロードして、カロリー収支の管理を始めましょう。</p>
-                <a href="https://apps.apple.com/app/id6746127712" class="app-store-badge app-store-badge--white">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                    App Storeからダウンロード
-                </a>
-                <span class="free-badge">無料ダウンロード</span>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">カロリズム</span>
-                    <p>Apple ヘルスケアと連携する、シンプルなカロリー収支管理アプリ。</p>
-                </div>
-                <div class="footer-col">
-                    <h4>プロダクト</h4>
-                    <ul>
-                        <li><a href="index_ja.html">ホーム</a></li>
-                        <li><a href="#features">機能</a></li>
-                        <li><a href="#screenshots">スクリーンショット</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>法的情報</h4>
-                    <ul>
-                        <li><a href="privacy_ja.html">プライバシーポリシー</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="support_ja.html">ヘルプセンター</a></li>
-                        <li><a href="support_ja.html#faq">よくある質問</a></li>
-                        <li><a href="support_ja.html#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(LandingApp, { lang: 'ja' })
+);
+</script>
 </body>
 </html>

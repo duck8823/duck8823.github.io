@@ -1,260 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>サポート — カロリズム</title>
-    <meta name="description" content="Apple ヘルスケアと連動するカロリー管理アプリ、カロリズムのサポート。よくある質問、トラブルシューティング、お問い合わせ情報。">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>サポート — カロリズム</title>
+<meta name="description" content="セットアップ手順・トラブルシューティング・問い合わせ方法。"/>
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/calorithm/support_ja.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/support.html">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/support_ja.html">
-    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html">
+<link rel="canonical" href="https://duck8823.net/calorithm/support_ja.html"/>
+<link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/support.html"/>
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/support_ja.html"/>
+<link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html"/>
 
-    <link rel="stylesheet" href="css/styles.css">
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="サポート — カロリズム"/>
+<meta property="og:description" content="セットアップ手順・トラブルシューティング・問い合わせ方法。"/>
+<meta property="og:url" content="https://duck8823.net/calorithm/support_ja.html"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:site_name" content="カロリズム"/>
 
-    <!-- Firebase Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
-        authDomain: "calorie-balance-1b683.firebaseapp.com",
-        projectId: "calorie-balance-1b683",
-        storageBucket: "calorie-balance-1b683.firebasestorage.app",
-        messagingSenderId: "75295278625",
-        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
-        measurementId: "G-HQL6V430FS"
-      });
-      window.calorithmAnalytics = firebase.analytics();
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<div id="root"></div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index_ja.html" class="logo">カロリズム</a>
-            <nav class="desktop-nav" aria-label="メインナビゲーション">
-                <a href="index_ja.html#features">機能</a>
-                <a href="index_ja.html#screenshots">スクリーンショット</a>
-                <a href="privacy_ja.html">プライバシー</a>
-                <a href="support_ja.html">サポート</a>
-            </nav>
-            <div class="header-actions">
-                <a href="support.html" class="lang-link" aria-label="Switch to English">English</a>
-                <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <nav class="mobile-nav" aria-label="モバイルナビゲーション">
-            <a href="index_ja.html#features">機能</a>
-            <a href="index_ja.html#screenshots">スクリーンショット</a>
-            <a href="privacy_ja.html">プライバシー</a>
-            <a href="support_ja.html">サポート</a>
-            <a href="support.html" class="lang-link">English</a>
-        </nav>
-    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
-    <main>
-        <section class="content-page">
-            <div class="content-container">
-                <h1 class="content-title">サポート</h1>
+<script src="dist/components/i18n.js"></script>
+<script src="dist/components/subpage-i18n.js"></script>
+<script src="dist/components/Icons.js"></script>
+<script src="dist/components/Sections.js"></script>
+<script src="dist/components/SubpageShell.js"></script>
+<script src="dist/pages/subpage.js"></script>
 
-                <div class="content-section">
-                    <p>カロリズムのサポートへようこそ。ここでは、よくある質問への回答、トラブルシューティングのヒント、さらなるサポートが必要な場合のお問い合わせ方法をご案内しています。</p>
-                </div>
-
-                <div id="faq" class="content-section">
-                    <h2>よくある質問</h2>
-
-                    <div class="faq-item">
-                        <h3>カロリズムはApple ヘルスケアとどのように連携していますか？</h3>
-                        <p>カロリズムはApple ヘルスケアとシームレスに連携し、活動データ（アクティブエネルギーと安静時エネルギー）と体重情報を取得します。アプリを初めて起動すると、カロリズムがヘルスケアからこのデータにアクセスするための許可を求められます。これらの許可はデバイスの設定アプリのプライバシーとセキュリティ &gt; ヘルスケアから随時調整できます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>食事の摂取カロリーはどのように記録しますか？</h3>
-                        <p>食事の摂取カロリーを記録するには、デイリービュー画面の「+」ボタンをタップします。カロリー量を入力し、必要に応じて食事に関するメモを追加します。入力内容は保存され、すぐに日々のカロリー収支に反映されます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>食事の記録を編集または削除できますか？</h3>
-                        <p>タイムライン画面で記録を左にスワイプして、削除の確認後に削除できます。カロリー量やメモを修正する場合は、一度削除してから新しく入力し直してください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>タイムライン表示とは何ですか？</h3>
-                        <p>タイムライン表示は、その日の食事・運動・体重の記録を時系列で一覧表示する機能です。何をいつ記録したかが一目でわかります。記録を左にスワイプすると削除できます。画面下部のタイムラインタブから切り替えてご利用ください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>達成状況（ストリーク）とは何ですか？</h3>
-                        <p>達成状況は、日次カロリー収支目標を連続何日達成したかを記録する機能です。設定画面で計測開始日と日次カロリー収支目標を設定すると計測が始まります。ダッシュボードにコントリビューショングラフと連続日数が表示されます。3・7・14・30・60・100・365日のマイルストーンに達すると、アプリ内でお祝いメッセージが表示されます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>AIカロリー推定はどのように機能しますか？</h3>
-                        <p>食事を記録する際に、食品名を入力するだけでカロリズムのAIがカロリーを推定します。AIは大規模言語モデルを使用し、一般的な量に基づいたおおよそのカロリー値を提供します。また、運動の活動エネルギーもAIで推定できます。運動名と時間を入力するだけで推定値が表示されます。保存する前にいつでも推定値を調整できます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>AIのカロリー推定を修正できますか？</h3>
-                        <p>はい。AIが推定値を提示した後、保存前にカロリー値を自由に編集できます。量や調理方法がAIの想定と異なる場合は、実際の摂取量に合わせて数値を調整してください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>プリセット（お気に入り）の使い方は？</h3>
-                        <p>プリセットは、よく食べるメニューを保存して素早く記録できる機能です。食事を記録した後、ブックマークアイコンをタップして保存します。保存したプリセットは入力画面に表示され、タップするだけで詳細を再入力せずに即座に記録できます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>ホーム画面ウィジェットの設定方法は？</h3>
-                        <p>iPhoneのホーム画面を長押しし、左上の「+」ボタンをタップして「カロリズム」を検索します。お好みのウィジェットサイズを選択し、「ウィジェットを追加」をタップします。ウィジェットにはその日のカロリー収支が表示されます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>プッシュ通知はどのように機能しますか？</h3>
-                        <p>カロリズムは毎日のカロリー収支サマリーをプッシュ通知で送信できます。アプリの設定で通知を有効にしてください。通知の時間はお好みに合わせてカスタマイズできます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>収支サマリーとは何ですか？</h3>
-                        <p>収支サマリーは、カロリー摂取量（記録した食事）とカロリー消費量（Apple ヘルスケアからのアクティブエネルギー＋安静時エネルギー）の差を表示します。マイナスの収支は消費が摂取を上回っていることを、プラスの収支は摂取が消費を上回っていることを意味します。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>活動データが表示されないのはなぜですか？</h3>
-                        <p>いくつかの理由が考えられます：</p>
-                        <ul>
-                            <li>カロリズムにヘルスケアデータへのアクセス許可を与えていない</li>
-                            <li>Apple Watchやその他のフィットネスデバイスがヘルスケアと正しく同期されていない</li>
-                            <li>選択した日付に記録された活動データがない</li>
-                        </ul>
-                        <p>ヘルスケアアプリでデータが記録されていることを確認し、設定 &gt; プライバシーとセキュリティ &gt; ヘルスケアでカロリズムに必要な権限が付与されていることを確認してください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>カロリー収支の計算はどれくらい正確ですか？</h3>
-                        <p>カロリズムのカロリー収支計算は、Apple ヘルスケアから提供されるエネルギー消費データと手動で入力した食事摂取量に基づいています。精度はいくつかの要因に依存します。これには、フィットネスデバイスの測定精度や食事記録の正確さが含まれます。最良の結果を得るには、食事の記録を一貫して行い、フィットネスデバイスが適切に調整されていることを確認してください。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>カロリズムはApple Watchなしでも機能しますか？</h3>
-                        <p>はい、カロリズムはApple Watchなしでも機能します。iPhoneそのものがいくつかの活動データを追跡できますが、Apple Watchやヘルスケアと同期する他のフィットネスデバイスを使用すると、より包括的なデータが提供されます。また、ヘルスケアアプリで運動を手動で記録することもでき、それがカロリズムに反映されます。</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>私のデータは安全ですか？</h3>
-                        <p>はい、お客様のプライバシーとデータセキュリティは最優先事項です。すべての健康データと食事摂取データはお客様のデバイス上にローカルに保存され、当社のサーバーには送信されません。詳細については、<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</p>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>トラブルシューティング</h2>
-
-                    <div class="faq-item">
-                        <h3>アプリがクラッシュまたはフリーズする</h3>
-                        <p>クラッシュやフリーズが発生した場合：</p>
-                        <ol>
-                            <li>iOSが最新バージョンに更新されていることを確認してください</li>
-                            <li>バックグラウンドのすべてのアプリを閉じ、カロリズムを再起動してください</li>
-                            <li>問題が解決しない場合は、デバイスを再起動してみてください</li>
-                            <li>問題が続く場合は、アプリをアンインストールして再インストールしてください（注：ヘルスケアと同期されていないデータはリセットされます）</li>
-                        </ol>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>ヘルスケアデータが同期されない</h3>
-                        <p>ヘルスケアデータがカロリズムに表示されない場合：</p>
-                        <ol>
-                            <li>デバイスの設定アプリを開きます</li>
-                            <li>プライバシーとセキュリティ &gt; ヘルスケア &gt; カロリズムに移動します</li>
-                            <li>必要なすべての権限が有効になっていることを確認します</li>
-                            <li>ヘルスケアアプリを開き、データが記録されていることを確認します</li>
-                            <li>ヘルスケアアプリとカロリズムの両方を再起動します</li>
-                        </ol>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>カロリー計算が正しくない</h3>
-                        <p>カロリー計算に不一致がある場合：</p>
-                        <ol>
-                            <li>ヘルスケアの体重情報が最新であることを確認してください</li>
-                            <li>ヘルスケアの活動データが正確であることを確認してください</li>
-                            <li>すべての食事摂取量を正確に記録していることを確認してください</li>
-                            <li>アプリは閲覧時に利用可能なデータに基づいて計算することを覚えておいてください</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="contact" class="content-section">
-                    <h2>お問い合わせ</h2>
-                    <p>質問の回答が見つからない場合や、上記でカバーされていない問題が発生している場合は、サポートチームにお問い合わせください：</p>
-
-                    <div class="contact-info">
-                        <p><strong>メール：</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
-                    </div>
-
-                    <div class="feedback">
-                        <h3>フィードバックと提案</h3>
-                        <p>私たちは常にカロリズムの改善に取り組んでおり、お客様のご意見を大切にしています。新機能や改善点の提案がある場合は、<a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>までお送りください。</p>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>アプリ情報</h2>
-                    <p><strong>現在のバージョン：</strong> v1.15.1</p>
-                    <p><strong>互換性：</strong> iOS 16.0以降</p>
-                    <p><strong>必要条件：</strong> iOS 16.0以降を搭載したiPhone</p>
-                    <p><strong>対応言語：</strong> 英語、日本語</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">カロリズム</span>
-                    <p>Apple ヘルスケアと連携する、シンプルなカロリー収支管理アプリ。</p>
-                </div>
-                <div class="footer-col">
-                    <h4>プロダクト</h4>
-                    <ul>
-                        <li><a href="index_ja.html">ホーム</a></li>
-                        <li><a href="index_ja.html#features">機能</a></li>
-                        <li><a href="index_ja.html#screenshots">スクリーンショット</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>法的情報</h4>
-                    <ul>
-                        <li><a href="privacy_ja.html">プライバシーポリシー</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="support_ja.html">ヘルプセンター</a></li>
-                        <li><a href="support_ja.html#faq">よくある質問</a></li>
-                        <li><a href="support_ja.html#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(SubpageApp, { lang: 'ja', page: 'support' })
+);
+</script>
 </body>
 </html>

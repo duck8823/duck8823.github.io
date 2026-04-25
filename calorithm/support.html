@@ -1,260 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Support — Calorithm</title>
-    <meta name="description" content="Get help and support for Calorithm, a calorie tracking app that integrates with Apple Health. FAQ, troubleshooting, and contact information.">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Support — Calorithm</title>
+<meta name="description" content="Setup guide, troubleshooting, and how to contact Calorithm support."/>
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/calorithm/support.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/support.html">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/support_ja.html">
-    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html">
+<link rel="canonical" href="https://duck8823.net/calorithm/support.html"/>
+<link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/support.html"/>
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/support_ja.html"/>
+<link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/support.html"/>
 
-    <link rel="stylesheet" href="css/styles.css">
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Support — Calorithm"/>
+<meta property="og:description" content="Setup guide, troubleshooting, and how to contact Calorithm support."/>
+<meta property="og:url" content="https://duck8823.net/calorithm/support.html"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Calorithm"/>
 
-    <!-- Firebase Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
-        authDomain: "calorie-balance-1b683.firebaseapp.com",
-        projectId: "calorie-balance-1b683",
-        storageBucket: "calorie-balance-1b683.firebasestorage.app",
-        messagingSenderId: "75295278625",
-        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
-        measurementId: "G-HQL6V430FS"
-      });
-      window.calorithmAnalytics = firebase.analytics();
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<div id="root"></div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">Calorithm</a>
-            <nav class="desktop-nav" aria-label="Main navigation">
-                <a href="index.html#features">Features</a>
-                <a href="index.html#screenshots">Screenshots</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="support.html">Support</a>
-            </nav>
-            <div class="header-actions">
-                <a href="support_ja.html" class="lang-link" aria-label="Switch to Japanese">日本語</a>
-                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-            <a href="index.html#features">Features</a>
-            <a href="index.html#screenshots">Screenshots</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="support.html">Support</a>
-            <a href="support_ja.html" class="lang-link">日本語</a>
-        </nav>
-    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
-    <main>
-        <section class="content-page">
-            <div class="content-container">
-                <h1 class="content-title">Support</h1>
+<script src="dist/components/i18n.js"></script>
+<script src="dist/components/subpage-i18n.js"></script>
+<script src="dist/components/Icons.js"></script>
+<script src="dist/components/Sections.js"></script>
+<script src="dist/components/SubpageShell.js"></script>
+<script src="dist/pages/subpage.js"></script>
 
-                <div class="content-section">
-                    <p>Welcome to Calorithm Support. Here you'll find answers to frequently asked questions, troubleshooting tips, and ways to contact us if you need further assistance.</p>
-                </div>
-
-                <div id="faq" class="content-section">
-                    <h2>Frequently Asked Questions</h2>
-
-                    <div class="faq-item">
-                        <h3>How does Calorithm integrate with Apple Health?</h3>
-                        <p>Calorithm seamlessly connects with Apple Health to retrieve your activity data (Active Energy and Resting Energy) and weight information. When you first launch the app, you'll be prompted to grant permission for Calorithm to access this data from Health. You can adjust these permissions at any time in your device's Settings app under Privacy &amp; Security &gt; Health.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How do I log my food intake?</h3>
-                        <p>To log your food intake, tap the "+" button on the daily view screen. Enter the calorie amount and optionally add a note about the meal. Your entry will be saved and immediately reflected in your daily calorie balance.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Can I edit or delete a food entry?</h3>
-                        <p>You can delete any entry by swiping it left on the Timeline screen and confirming the deletion. To correct a calorie amount or note, delete the entry and add a new one.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>What is the Timeline view?</h3>
-                        <p>The Timeline view shows a chronological list of all your meals, exercises, and weight entries for the day, making it easy to see what you recorded and when. Swipe an entry left to delete it. Switch to the Timeline tab at the bottom of the screen to access this view.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>What is the Achievement streak?</h3>
-                        <p>The Achievement streak tracks how many consecutive days you have met your daily calorie balance goal. It requires a measurement start date and a daily calorie balance goal set in Settings. Your streak is shown on the dashboard as a contribution graph and a day count. When you reach a milestone, a celebration message appears in the app at 3, 7, 14, 30, 60, 100, and 365 days.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How does AI calorie estimation work?</h3>
-                        <p>When logging food, simply type the name of the food item and Calorithm's AI will estimate its calorie content. The AI uses a large language model to provide approximate calorie values based on common portion sizes. AI can also estimate active energy burned for exercises — just type the activity name and duration. You can always adjust the estimated value before saving.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Can I correct the AI's calorie estimation?</h3>
-                        <p>Yes. After the AI provides an estimate, you can freely edit the calorie value before saving. If the portion size or preparation method differs from what the AI assumed, simply adjust the number to match your actual intake.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How do I use preset favorites?</h3>
-                        <p>Presets let you save frequently eaten meals for quick logging. To create a preset, log a food entry and tap the bookmark icon to save it. Your presets appear in the input screen — just tap one to instantly log it without re-entering the details.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How do I add the home screen widget?</h3>
-                        <p>Long-press on your iPhone's home screen, tap the "+" button in the top-left corner, and search for "Calorithm". Choose the widget size you prefer and tap "Add Widget". The widget displays your current calorie balance for the day.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How do push notifications work?</h3>
-                        <p>Calorithm can send you daily notifications with your calorie balance summary. Go to the app's settings and enable notifications. You can customize the notification time to receive your daily summary at a convenient time.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>What is the calorie balance summary?</h3>
-                        <p>The calorie balance summary shows the difference between your calorie intake (food logged) and your calorie expenditure (Active Energy + Resting Energy from Apple Health). A negative balance means you burned more than you consumed, while a positive balance means you consumed more than you burned.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Why isn't my activity data showing up?</h3>
-                        <p>There could be several reasons:</p>
-                        <ul>
-                            <li>You haven't granted Calorithm permission to access your Health data</li>
-                            <li>Your Apple Watch or other fitness device isn't properly synced with Health</li>
-                            <li>There's no activity data recorded for the selected date</li>
-                        </ul>
-                        <p>Check your Health app to ensure data is being recorded, and verify that Calorithm has the necessary permissions in Settings &gt; Privacy &amp; Security &gt; Health.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>How accurate is the calorie balance calculation?</h3>
-                        <p>Calorithm's calorie balance calculation is based on the data provided by Apple Health for your energy expenditure and your manually entered food intake. The accuracy depends on several factors, including the accuracy of your fitness device's measurements and the precision of your food logging. For best results, be consistent with logging your meals and ensure your fitness devices are properly calibrated.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Does Calorithm work without an Apple Watch?</h3>
-                        <p>Yes, Calorithm can work without an Apple Watch. The iPhone itself can track some activity data, though an Apple Watch or other fitness device that syncs with Health will provide more comprehensive data. You can also manually log your exercise in the Health app, which will then be reflected in Calorithm.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Is my data secure?</h3>
-                        <p>Yes, your privacy and data security are our top priorities. All health and food intake data is stored locally on your device and is not transmitted to our servers. For more information, please see our <a href="privacy.html">Privacy Policy</a>.</p>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Troubleshooting</h2>
-
-                    <div class="faq-item">
-                        <h3>App Crashes or Freezes</h3>
-                        <p>If you experience crashes or freezes:</p>
-                        <ol>
-                            <li>Ensure your iOS is updated to the latest version</li>
-                            <li>Close all background apps and restart Calorithm</li>
-                            <li>If the issue persists, try restarting your device</li>
-                            <li>If problems continue, uninstall and reinstall the app (note: this will reset any data not synced with Health)</li>
-                        </ol>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Health Data Not Syncing</h3>
-                        <p>If your Health data isn't appearing in Calorithm:</p>
-                        <ol>
-                            <li>Open the Settings app on your device</li>
-                            <li>Navigate to Privacy &amp; Security &gt; Health &gt; Calorithm</li>
-                            <li>Ensure that all necessary permissions are enabled</li>
-                            <li>Open the Health app and verify that data is being recorded</li>
-                            <li>Restart both the Health app and Calorithm</li>
-                        </ol>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>Incorrect Calorie Calculations</h3>
-                        <p>If you notice discrepancies in calorie calculations:</p>
-                        <ol>
-                            <li>Check that your weight information in Health is up-to-date</li>
-                            <li>Verify that your activity data in Health is accurate</li>
-                            <li>Ensure you're logging all food intake accurately</li>
-                            <li>Remember that the app calculates based on data available at the time of viewing</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="contact" class="content-section">
-                    <h2>Contact Us</h2>
-                    <p>If you couldn't find the answer to your question or are experiencing issues not covered above, please contact our support team:</p>
-
-                    <div class="contact-info">
-                        <p><strong>Email:</strong> <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></p>
-                    </div>
-
-                    <div class="feedback">
-                        <h3>Feedback and Suggestions</h3>
-                        <p>We're constantly working to improve Calorithm and value your input. If you have suggestions for new features or improvements, please send them to <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</p>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>App Information</h2>
-                    <p><strong>Current Version:</strong> v1.15.1</p>
-                    <p><strong>Compatible with:</strong> iOS 16.0 or later</p>
-                    <p><strong>Requires:</strong> iPhone with iOS 16.0 or later</p>
-                    <p><strong>Languages:</strong> English, Japanese</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">Calorithm</span>
-                    <p>A simple calorie balance tracker that integrates with Apple Health.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#screenshots">Screenshots</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="support.html">Help Center</a></li>
-                        <li><a href="support.html#faq">FAQ</a></li>
-                        <li><a href="support.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(SubpageApp, { lang: 'en', page: 'support' })
+);
+</script>
 </body>
 </html>
