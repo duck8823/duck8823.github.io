@@ -1,218 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>プライバシーポリシー — カロリズム</title>
-    <meta name="description" content="Apple ヘルスケアと連動するカロリー管理アプリ、カロリズムのプライバシーポリシーです。">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>プライバシーポリシー — カロリズム</title>
+<meta name="description" content="カロリズムが個人情報・健康データをどう扱うかについて。"/>
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/calorithm/privacy_ja.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/privacy.html">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/privacy_ja.html">
-    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html">
+<link rel="canonical" href="https://duck8823.net/calorithm/privacy_ja.html"/>
+<link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/privacy.html"/>
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/privacy_ja.html"/>
+<link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html"/>
 
-    <link rel="stylesheet" href="css/styles.css">
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="プライバシーポリシー — カロリズム"/>
+<meta property="og:description" content="カロリズムが個人情報・健康データをどう扱うかについて。"/>
+<meta property="og:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
+<meta property="og:url" content="https://duck8823.net/calorithm/privacy_ja.html"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:site_name" content="カロリズム"/>
 
-    <!-- Firebase Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
-        authDomain: "calorie-balance-1b683.firebaseapp.com",
-        projectId: "calorie-balance-1b683",
-        storageBucket: "calorie-balance-1b683.firebasestorage.app",
-        messagingSenderId: "75295278625",
-        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
-        measurementId: "G-HQL6V430FS"
-      });
-      window.calorithmAnalytics = firebase.analytics();
-    </script>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="プライバシーポリシー — カロリズム"/>
+<meta name="twitter:description" content="カロリズムが個人情報・健康データをどう扱うかについて。"/>
+<meta name="twitter:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<div id="root"></div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index_ja.html" class="logo">カロリズム</a>
-            <nav class="desktop-nav" aria-label="メインナビゲーション">
-                <a href="index_ja.html#features">機能</a>
-                <a href="index_ja.html#screenshots">スクリーンショット</a>
-                <a href="privacy_ja.html">プライバシー</a>
-                <a href="support_ja.html">サポート</a>
-            </nav>
-            <div class="header-actions">
-                <a href="privacy.html" class="lang-link" aria-label="Switch to English">English</a>
-                <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <nav class="mobile-nav" aria-label="モバイルナビゲーション">
-            <a href="index_ja.html#features">機能</a>
-            <a href="index_ja.html#screenshots">スクリーンショット</a>
-            <a href="privacy_ja.html">プライバシー</a>
-            <a href="support_ja.html">サポート</a>
-            <a href="privacy.html" class="lang-link">English</a>
-        </nav>
-    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
-    <main>
-        <section class="content-page">
-            <div class="content-container">
-                <h1 class="content-title">プライバシーポリシー</h1>
+<script src="dist/components/i18n.js"></script>
+<script src="dist/components/subpage-i18n.js"></script>
+<script src="dist/components/Icons.js"></script>
+<script src="dist/components/Sections.js"></script>
+<script src="dist/components/SubpageShell.js"></script>
+<script src="dist/pages/subpage.js"></script>
 
-                <div class="content-section">
-                    <p>最終更新日: 2026年03月09日</p>
-                    <p>カロリズムは当方が個人で開発したアプリです。このプライバシーポリシーは、モバイルアプリケーション「カロリズム」（以下「本アプリ」）をご利用いただく際に、お客様の個人情報がどのように収集、使用、共有されるかについて説明するものです。</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>収集される情報</h2>
-                    <p>当方はお客様のプライバシー保護に取り組んでいます。本アプリでは、以下の種類の情報が収集されます：</p>
-
-                    <h3>健康データ</h3>
-                    <p>カロリズムはApple ヘルスケアと連携して、以下の健康関連データにアクセスし表示します：</p>
-                    <ul>
-                        <li>アクティブエネルギー（読み取り）</li>
-                        <li>安静時エネルギー（読み取り）</li>
-                        <li>体重（読み取り）</li>
-                        <li>食事エネルギー（読み取り・書き込み）</li>
-                        <li>体脂肪率（読み取り）</li>
-                    </ul>
-                    <p>このデータは、カロリー収支、体組成、および体重変化の把握をサポートするためにのみ使用されます。この健康データは外部サーバーに保存されず、お客様のデバイス上に保持され、ローカルで処理されます。</p>
-                    <p><strong>健康データは広告、マーケティング、データマイニングの目的で使用されることはありません。</strong></p>
-
-                    <h3>ユーザー提供情報</h3>
-                    <p>本アプリでは、カロリー摂取に関する情報を手動で入力することができます。この情報はお客様のデバイス上にローカルに保存され、外部サーバーには送信されません。</p>
-                    <p>お客様が入力された身体情報（身長、性別、年齢など）は、デバイス上の暗号化されたローカルデータベースに保存されます。このデータはカロリー収支の推定にのみ使用され、外部サーバーには送信されません。</p>
-
-                    <h3>カメラ・フォトライブラリ</h3>
-                    <p>カロリズムは、食事の写真からカロリーを推定する際に、お客様のデバイスのカメラまたはフォトライブラリにアクセスすることがあります。写真は AI によるカロリー推定のためにのみ Google サーバー（Vertex AI / Gemini）に送信されます。本アプリは写真を外部サーバーに保存しません。Google による Vertex AI への送信データの取り扱い・保持については、<a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google のデータガバナンスポリシー</a>に準じます。</p>
-
-                    <h3>使用状況データ</h3>
-                    <p>アプリおよび本ウェブサイトの機能性とユーザーエクスペリエンスを向上させるために、匿名の使用状況データが収集されます。これには以下が含まれる場合があります：</p>
-                    <ul>
-                        <li>アプリ機能の使用統計</li>
-                        <li>アプリのパフォーマンスデータ</li>
-                        <li>クラッシュレポート</li>
-                        <li>ウェブサイトのページビューおよびボタンクリック</li>
-                    </ul>
-                    <p>このデータは、お客様を個人的に特定しない方法で収集されます。カロリーや体重などの健康指標は、分析サービスに送信される前に範囲値に匿名化されます。</p>
-                    <p>本ウェブサイトでは、Firebase Analytics（Google 提供）を使用して、ページビューやクリックイベントなどの匿名の使用状況データを収集しています。個人を特定できる情報は収集されません。<a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google アナリティクス オプトアウト アドオン</a>をインストールすることで、収集を無効化できます。</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>情報の使用方法</h2>
-                    <p>収集された情報は以下の目的で使用されます：</p>
-                    <ul>
-                        <li>アプリの機能の提供、維持、改善</li>
-                        <li>新機能やサービスの開発</li>
-                        <li>ユーザーがアプリとどのように相互作用するかの理解</li>
-                        <li>技術的問題の検出、防止、対処</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>情報の共有</h2>
-                    <p>お客様の個人情報は外部に販売、取引、または譲渡されることはありません。業界分析やアプリの改善のために、匿名化された集計情報（個人情報を含まないもの）が第三者と共有される場合があります。</p>
-
-                    <h3>第三者サービスプロバイダー</h3>
-                    <p>本アプリでは以下の第三者サービスを使用しています：</p>
-                    <ul>
-                        <li><strong>Firebase Analytics</strong>（Google）：機能の利用状況などの匿名のアプリ利用統計を収集します。アプリの設定からオプトアウトできます。</li>
-                        <li><strong>Firebase Crashlytics</strong>（Google）：クラッシュログ、スタックトレース、デバイス情報（デバイスモデル、OSバージョン、アプリバージョン）を収集し、問題の診断と修正に役立てます。このデータはお客様の個人情報と紐付けられません。</li>
-                        <li><strong>Google AdMob</strong>：アプリ内に広告を表示します。広告のパーソナライズはApp Tracking Transparency（ATT）の許可に基づきます。iOS設定 &gt; プライバシーとセキュリティ &gt; トラッキング、またはアプリの設定から管理できます。</li>
-                        <li><strong>Google Vertex AI（Gemini）</strong>：入力された食品名や食事の写真を Google サーバーに送信してカロリーを推定します。本アプリはこれらのデータを外部に保存しません。Google による送信データの保持については、<a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google のデータガバナンスポリシー</a>に準じます。推定結果と入力テキストはお客様のデバイス上にローカル保存されます。</li>
-                    </ul>
-                    <p>これらの第三者は、これらのタスクを実行するためにのみお客様の情報にアクセスでき、他の目的で開示または使用することは禁止されています。</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>データの保持</h2>
-                    <ul>
-                        <li><strong>健康データ</strong>：お客様のデバイスにローカル保存されます。外部サーバーには送信されません。</li>
-                        <li><strong>分析データ</strong>：Googleの標準データ保持ポリシーに従って保持されます。</li>
-                        <li><strong>クラッシュデータ</strong>：Googleのデータ保持ポリシーに従いFirebase Crashlyticsにより保持されます（現在90日間）。</li>
-                        <li><strong>AI推定データ</strong>：入力テキストおよび写真は Google Vertex AI で処理されます。本アプリはこれらのデータを外部に保存しません。Google による送信データの保持については、<a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google のデータガバナンスポリシー</a>に準じます。推定結果と入力テキストはお客様のデバイス上にローカル保存されます。</li>
-                        <li><strong>広告関連データ</strong>：Google AdMobのプライバシーポリシーに従って管理されます。</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>データセキュリティ</h2>
-                    <p>お客様が個人情報を提供してくださる信頼を大切にし、商業的に受け入れられる手段でそれを保護するよう努めています。機密性の高い個人データ（身体情報やAI推定履歴を含む）は、デバイス上のAES-256暗号化データベースに保存されます。ただし、インターネット上の送信方法や電子的保存方法は100%安全ではなく、絶対的なセキュリティを保証することはできません。</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>お客様のデータ権利</h2>
-                    <p>お客様には個人データに関する以下の権利があります：</p>
-                    <ul>
-                        <li><strong>分析のオプトアウト</strong>：アプリの設定（設定 &gt; 広告設定 &gt; 利用状況の分析）から利用状況の分析を無効にできます。</li>
-                        <li><strong>広告のパーソナライズ</strong>：iOS設定 &gt; プライバシーとセキュリティ &gt; トラッキングで変更するか、アプリの設定でパーソナライズド広告を切り替えることができます。</li>
-                        <li><strong>クラッシュレポート</strong>：アプリの安定性維持のためクラッシュデータは自動的に収集され、個別にオプトアウトすることはできません。このデータはお客様の個人情報と紐付けられません。</li>
-                        <li><strong>データの削除</strong>：データの削除をご希望の場合は、下記の「お問い合わせ」セクションの連絡先までご連絡ください。</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>プライバシーポリシーの変更</h2>
-                    <p>このプライバシーポリシーは随時更新されることがあります。変更があった場合は、このページに新しいプライバシーポリシーを掲載し、このプライバシーポリシーの冒頭にある「最終更新日」を更新することでお知らせします。</p>
-                    <p>変更を確認するために、このプライバシーポリシーを定期的に確認することをお勧めします。このプライバシーポリシーの変更は、このページに掲載された時点で有効となります。</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>お問い合わせ</h2>
-                    <p>このプライバシーポリシーについてご質問がある場合は、以下の連絡先までご連絡ください：</p>
-                    <ul>
-                        <li>メール: <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">カロリズム</span>
-                    <p>Apple ヘルスケアと連携する、シンプルなカロリー収支管理アプリ。</p>
-                </div>
-                <div class="footer-col">
-                    <h4>プロダクト</h4>
-                    <ul>
-                        <li><a href="index_ja.html">ホーム</a></li>
-                        <li><a href="index_ja.html#features">機能</a></li>
-                        <li><a href="index_ja.html#screenshots">スクリーンショット</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>法的情報</h4>
-                    <ul>
-                        <li><a href="privacy_ja.html">プライバシーポリシー</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="support_ja.html">ヘルプセンター</a></li>
-                        <li><a href="support_ja.html#faq">よくある質問</a></li>
-                        <li><a href="support_ja.html#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(SubpageApp, { lang: 'ja', page: 'privacy' })
+);
+</script>
 </body>
 </html>

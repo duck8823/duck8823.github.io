@@ -1,218 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Privacy Policy — Calorithm</title>
-    <meta name="description" content="Privacy Policy for Calorithm, a calorie tracking app that integrates with Apple Health.">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Calorithm</title>
+<meta name="description" content="How Calorithm handles personal information and health data."/>
 
-    <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://duck8823.net/calorithm/privacy.html">
-    <link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/privacy.html">
-    <link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/privacy_ja.html">
-    <link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html">
+<link rel="canonical" href="https://duck8823.net/calorithm/privacy.html"/>
+<link rel="alternate" hreflang="en" href="https://duck8823.net/calorithm/privacy.html"/>
+<link rel="alternate" hreflang="ja" href="https://duck8823.net/calorithm/privacy_ja.html"/>
+<link rel="alternate" hreflang="x-default" href="https://duck8823.net/calorithm/privacy.html"/>
 
-    <link rel="stylesheet" href="css/styles.css">
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Privacy Policy — Calorithm"/>
+<meta property="og:description" content="How Calorithm handles personal information and health data."/>
+<meta property="og:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
+<meta property="og:url" content="https://duck8823.net/calorithm/privacy.html"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Calorithm"/>
 
-    <!-- Firebase Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics-compat.js"></script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBTqhuFm6-m5vuWMJ8cYEEnMQLqp8NeBv8",
-        authDomain: "calorie-balance-1b683.firebaseapp.com",
-        projectId: "calorie-balance-1b683",
-        storageBucket: "calorie-balance-1b683.firebasestorage.app",
-        messagingSenderId: "75295278625",
-        appId: "1:75295278625:web:1d6020c503769cb6d9c560",
-        measurementId: "G-HQL6V430FS"
-      });
-      window.calorithmAnalytics = firebase.analytics();
-    </script>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Privacy Policy — Calorithm"/>
+<meta name="twitter:description" content="How Calorithm handles personal information and health data."/>
+<meta name="twitter:image" content="https://duck8823.net/calorithm/images/ja/daily.png"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<div id="root"></div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">Calorithm</a>
-            <nav class="desktop-nav" aria-label="Main navigation">
-                <a href="index.html#features">Features</a>
-                <a href="index.html#screenshots">Screenshots</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="support.html">Support</a>
-            </nav>
-            <div class="header-actions">
-                <a href="privacy_ja.html" class="lang-link" aria-label="Switch to Japanese">日本語</a>
-                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-            <a href="index.html#features">Features</a>
-            <a href="index.html#screenshots">Screenshots</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="support.html">Support</a>
-            <a href="privacy_ja.html" class="lang-link">日本語</a>
-        </nav>
-    </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
-    <main>
-        <section class="content-page">
-            <div class="content-container">
-                <h1 class="content-title">Privacy Policy</h1>
+<script src="dist/components/i18n.js"></script>
+<script src="dist/components/subpage-i18n.js"></script>
+<script src="dist/components/Icons.js"></script>
+<script src="dist/components/Sections.js"></script>
+<script src="dist/components/SubpageShell.js"></script>
+<script src="dist/pages/subpage.js"></script>
 
-                <div class="content-section">
-                    <p>Last Updated: March 9, 2026</p>
-                    <p>Calorithm is an independently developed personal project, not a company. This Privacy Policy describes how your personal information is collected, used, and shared when you use the mobile application Calorithm (the "App").</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Information Collected</h2>
-                    <p>As the developer of this personal project, I am committed to protecting your privacy. The app collects the following types of information:</p>
-
-                    <h3>Health Data</h3>
-                    <p>Calorithm integrates with Apple Health to access and display the following health-related data:</p>
-                    <ul>
-                        <li>Active Energy (read)</li>
-                        <li>Resting Energy (read)</li>
-                        <li>Weight (read)</li>
-                        <li>Dietary Energy Consumed (read and write)</li>
-                        <li>Body Fat Percentage (read)</li>
-                    </ul>
-                    <p>This data is used solely to provide you with insights about your calorie balance, body composition, and weight trends. This health data is not stored on any external servers; it remains on your device and is processed locally.</p>
-                    <p><strong>Health data is never used for advertising, marketing, or data mining purposes.</strong></p>
-
-                    <h3>User-Provided Information</h3>
-                    <p>The app allows you to manually input information about your calorie intake. This information is stored locally on your device and is not transmitted to any external servers.</p>
-                    <p>Body measurements you provide (such as height, gender, and age) are stored in an encrypted local database on your device. This data is used solely for calorie balance estimation and is never transmitted to external servers.</p>
-
-                    <h3>Camera and Photo Library</h3>
-                    <p>Calorithm may access your device's camera or photo library when you choose to estimate calories from a food photo. Photos are sent to Google servers (Vertex AI / Gemini) solely for AI-powered calorie estimation. The app does not store your photos on any external server. Google's handling and retention of data sent to Vertex AI is governed by <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google's data governance policies</a>.</p>
-
-                    <h3>Usage Data</h3>
-                    <p>The app and this website collect anonymous usage data to help improve functionality and user experience. This may include:</p>
-                    <ul>
-                        <li>App feature usage statistics</li>
-                        <li>App performance data</li>
-                        <li>Crash reports</li>
-                        <li>Website page views and button clicks</li>
-                    </ul>
-                    <p>This data is collected in a way that does not personally identify you. Health metrics such as calorie and weight values are anonymized into ranges before being sent to analytics services.</p>
-                    <p>This website uses Firebase Analytics (provided by Google) to collect anonymous usage data such as page views and click events. No personally identifiable information is collected. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>How Your Information is Used</h2>
-                    <p>The information collected is used to:</p>
-                    <ul>
-                        <li>Provide, maintain, and improve the App's functionality</li>
-                        <li>Develop new features and services</li>
-                        <li>Understand how users interact with the App</li>
-                        <li>Detect, prevent, and address technical issues</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>Sharing Your Information</h2>
-                    <p>Your personal information is not sold, traded, or otherwise transferred to outside parties. Anonymous, aggregated information (that does not include any personal information) may be shared with third parties for industry analysis and improvement of the App.</p>
-
-                    <h3>Third-Party Service Providers</h3>
-                    <p>The App uses the following third-party services:</p>
-                    <ul>
-                        <li><strong>Firebase Analytics</strong> (Google): Collects anonymous app usage statistics such as feature interactions. You can opt out in the App's settings.</li>
-                        <li><strong>Firebase Crashlytics</strong> (Google): Collects crash logs, stack traces, and device information (device model, OS version, app version) to help diagnose and fix issues. This data is not linked to your identity.</li>
-                        <li><strong>Google AdMob</strong>: Displays ads within the App. Ad personalization depends on your App Tracking Transparency (ATT) permission. You can manage this in iOS Settings &gt; Privacy &amp; Security &gt; Tracking, or in the App's settings.</li>
-                        <li><strong>Google Vertex AI (Gemini)</strong>: Processes food descriptions and food photos you provide for AI-based calorie estimation. Your input text and photos are sent to Google servers for processing. The app does not store this data externally. Google's retention of data sent to Vertex AI is subject to <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">Google's data governance policies</a>. Estimation results and input text are stored locally on your device.</li>
-                    </ul>
-                    <p>These third parties have access to your information only to perform these tasks and are obligated not to disclose or use it for any other purpose.</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Data Retention</h2>
-                    <ul>
-                        <li><strong>Health data</strong>: Stored locally on your device. Never transmitted to external servers.</li>
-                        <li><strong>Analytics data</strong>: Retained by Google in accordance with their standard data retention policies.</li>
-                        <li><strong>Crash data</strong>: Retained by Firebase Crashlytics in accordance with Google's data retention policies (currently 90 days).</li>
-                        <li><strong>AI estimation data</strong>: Your input text and photos are sent to Google Vertex AI for processing. The app does not store this data externally. Google's retention of transmitted data is subject to their <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance" rel="noopener noreferrer" target="_blank">data governance policies</a>. Estimation results and input text are stored locally on your device.</li>
-                        <li><strong>Ad-related data</strong>: Managed by Google AdMob in accordance with their privacy policy.</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>Data Security</h2>
-                    <p>Your trust in providing your personal information is valued, and commercially acceptable means are used to protect it. Sensitive personal data (including body measurements and AI estimation history) is stored in an AES-256 encrypted database on your device. However, no method of transmission over the internet or method of electronic storage is 100% secure, and absolute security cannot be guaranteed.</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Your Data Rights</h2>
-                    <p>You have certain rights regarding your personal data:</p>
-                    <ul>
-                        <li><strong>Analytics opt-out</strong>: You can disable usage analytics in the App's settings (Settings &gt; Ad Settings &gt; Usage Analytics).</li>
-                        <li><strong>Ad personalization</strong>: You can change your tracking preference in iOS Settings &gt; Privacy &amp; Security &gt; Tracking, or toggle personalized ads in the App's settings.</li>
-                        <li><strong>Crash reporting</strong>: Crash data is collected automatically to maintain app stability and cannot be opted out of independently. It is not linked to your identity.</li>
-                        <li><strong>Data deletion</strong>: To request deletion of your data, please contact us using the information in the "Contact" section below.</li>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h2>Changes to This Privacy Policy</h2>
-                    <p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated "Last Updated" date at the top of this Privacy Policy.</p>
-                    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Contact</h2>
-                    <p>If you have any questions about this Privacy Policy, please contact:</p>
-                    <ul>
-                        <li>By email: <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo">Calorithm</span>
-                    <p>A simple calorie balance tracker that integrates with Apple Health.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#screenshots">Screenshots</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="support.html">Help Center</a></li>
-                        <li><a href="support.html#faq">FAQ</a></li>
-                        <li><a href="support.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Shunsuke Maeda</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(SubpageApp, { lang: 'en', page: 'privacy' })
+);
+</script>
 </body>
 </html>
