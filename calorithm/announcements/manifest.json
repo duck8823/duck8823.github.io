@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "v1_18_food_data_download_ja",
+      "type": "food_data",
+      "title": "食品データを追加できます",
+      "body": "食事提案や栄養内訳で使う食品データを追加・更新できます。食品データベースから日本向け基本食品パックを確認してください。",
+      "publishedAt": "2026-05-05T00:00:00Z",
+      "locale": "ja",
+      "minBuild": 125,
+      "action": {
+        "type": "open_food_data_management",
+        "label": "食品データを確認"
+      }
+    },
+    {
+      "id": "v1_18_food_data_download_en",
+      "type": "food_data",
+      "title": "Additional food data is available",
+      "body": "You can add or update food data used by meal suggestions and nutrition summaries. Open Food Database to review the Japanese Basic Food Pack.",
+      "publishedAt": "2026-05-05T00:00:00Z",
+      "locale": "en",
+      "minBuild": 125,
+      "action": {
+        "type": "open_food_data_management",
+        "label": "Manage food data"
+      }
+    }
+  ]
+}

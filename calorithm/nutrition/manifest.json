@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-10T12:00:00Z",
+  "packs": [
+    {
+      "id": "ja_basic_v1",
+      "version": 3,
+      "locale": "ja",
+      "url": "https://calorie-balance-1b683.web.app/nutrition/packs/ja_basic_v1.json?v=3",
+      "sizeBytes": 339668,
+      "sha256": "d413a01512c10f6f44435cbd7a99983ca6ffc7355cc81defceb416bbcc265bf3",
+      "minAppBuild": 125,
+      "entrySchemaVersion": "curated-nutrition-v2",
+      "entryCount": 354,
+      "aliasCount": 526,
+      "source": "curated_generic_mext2023_v1.18",
+      "license": "internal-curated-generic-estimates-and-mext-official-data"
+    },
+    {
+      "id": "ja_fast_food_v1",
+      "version": 1,
+      "locale": "ja",
+      "url": "https://calorie-balance-1b683.web.app/nutrition/packs/ja_fast_food_v1.json?v=1",
+      "sizeBytes": 58837,
+      "sha256": "e8a19a6b2d26badf70f76ce118a6492566391d1c6c83c4f1952748061d681eb7",
+      "minAppBuild": 125,
+      "entrySchemaVersion": "curated-nutrition-v2",
+      "entryCount": 61,
+      "aliasCount": 40,
+      "source": "fast_food_mcdonalds_jp_official_v1.18",
+      "license": "official-nutrition-facts-mcdonalds-jp"
+    },
+    {
+      "id": "ja_convenience_v1",
+      "version": 1,
+      "locale": "ja",
+      "url": "https://calorie-balance-1b683.web.app/nutrition/packs/ja_convenience_v1.json?v=1",
+      "sizeBytes": 24427,
+      "sha256": "ea3e8084ee46064766aca8a6993a6e669cca9a431f760bf301a1d7e3e916efdd",
+      "minAppBuild": 125,
+      "entrySchemaVersion": "curated-nutrition-v2",
+      "entryCount": 32,
+      "aliasCount": 32,
+      "source": "internal_curated_convenience_v1.19",
+      "license": "internal-curated-convenience-estimates"
+    }
+  ]
+}
