@@ -1,0 +1,2325 @@
+{
+  "entrySchemaVersion": "curated-nutrition-v2",
+  "id": "ja_fast_food_v1",
+  "version": 1,
+  "locale": "ja",
+  "source": "fast_food_mcdonalds_jp_official_v1.18",
+  "dataVersion": "v1.18.0+pack.ja_fast_food.1",
+  "entries": [
+    {
+      "id": "pack_mcdonalds_jp_1030",
+      "nameJa": "えびフィレオ®",
+      "nameEn": "McDonald's Japan えびフィレオ",
+      "aliasesJa": [
+        "えびフィレオ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "えびフィレオ®"
+        ],
+        [
+          "えびフィレオ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 408.0,
+        "protein": 11.4,
+        "fat": 18.6,
+        "carbs": 49.5,
+        "sodium": 2.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3604",
+      "nameJa": "Qoo 白ぶどう(M)",
+      "nameEn": "McDonald's Japan Qoo 白ぶどう(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "Qoo 白ぶどう(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 149.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 37.9,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3081",
+      "nameJa": "アイスカフェラテ(M)",
+      "nameEn": "McDonald's Japan アイスカフェラテ(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "アイスカフェラテ(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 103.0,
+        "protein": 5.1,
+        "fat": 5.7,
+        "carbs": 7.6,
+        "sodium": 0.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3080",
+      "nameJa": "アイスカフェラテ(S)",
+      "nameEn": "McDonald's Japan アイスカフェラテ(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "アイスカフェラテ(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 72.0,
+        "protein": 3.5,
+        "fat": 4.0,
+        "carbs": 5.3,
+        "sodium": 0.1
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_100_m",
+      "nameJa": "野菜生活100(M)",
+      "nameEn": "McDonald's Japan 野菜生活100(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "野菜生活100(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 121.0,
+        "protein": 0.8,
+        "fat": 0.5,
+        "carbs": 28.3,
+        "sodium": 0.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1170",
+      "nameJa": "てりやきチキンフィレオ",
+      "nameEn": "McDonald's Japan てりやきチキンフィレオ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "てりやきチキンフィレオ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 496.0,
+        "protein": 20.1,
+        "fat": 23.0,
+        "carbs": 52.8,
+        "sodium": 3.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1070",
+      "nameJa": "てりやきマックバーガー",
+      "nameEn": "McDonald's Japan てりやきマックバーガー",
+      "aliasesJa": [
+        "てりやきマクドバーガー"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "てりやきマックバーガー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 477.0,
+        "protein": 14.5,
+        "fat": 30.2,
+        "carbs": 37.5,
+        "sodium": 2.1
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_7070",
+      "nameJa": "エグチ(エッグチーズバーガー)",
+      "nameEn": "McDonald's Japan エグチ(エッグチーズバーガー)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "エグチ(エッグチーズバーガー)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 390.0,
+        "protein": 22.4,
+        "fat": 19.0,
+        "carbs": 31.2,
+        "sodium": 2.1
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1410",
+      "nameJa": "エッグマックマフィン®",
+      "nameEn": "McDonald's Japan エッグマックマフィン",
+      "aliasesJa": [
+        "エッグマックマフィン",
+        "エッグマクドマフィン"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "エッグマックマフィン®"
+        ],
+        [
+          "エッグマックマフィン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 310.0,
+        "protein": 18.6,
+        "fat": 13.6,
+        "carbs": 27.2,
+        "sodium": 1.5
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4040",
+      "nameJa": "ソーセージエッグマフィン",
+      "nameEn": "McDonald's Japan ソーセージエッグマフィン",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ソーセージエッグマフィン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 477.0,
+        "protein": 21.9,
+        "fat": 30.6,
+        "carbs": 27.3,
+        "sodium": 1.8
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4030",
+      "nameJa": "ソーセージマフィン",
+      "nameEn": "McDonald's Japan ソーセージマフィン",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ソーセージマフィン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 397.0,
+        "protein": 15.5,
+        "fat": 25.1,
+        "carbs": 27.1,
+        "sodium": 1.7
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_6120",
+      "nameJa": "タルタル油淋鶏風チキンタツタ",
+      "nameEn": "McDonald's Japan タルタル油淋鶏風チキンタツタ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "タルタル油淋鶏風チキンタツタ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 421.0,
+        "protein": 18.0,
+        "fat": 19.7,
+        "carbs": 43.8,
+        "sodium": 3.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1360",
+      "nameJa": "ダブルチーズバーガー",
+      "nameEn": "McDonald's Japan ダブルチーズバーガー",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ダブルチーズバーガー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 459.0,
+        "protein": 26.4,
+        "fat": 25.1,
+        "carbs": 31.8,
+        "sodium": 2.9
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_6110",
+      "nameJa": "チーズチキンタツタ",
+      "nameEn": "McDonald's Japan チーズチキンタツタ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チーズチキンタツタ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 423.0,
+        "protein": 20.5,
+        "fat": 20.3,
+        "carbs": 40.7,
+        "sodium": 2.8
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1020",
+      "nameJa": "チーズバーガー",
+      "nameEn": "McDonald's Japan チーズバーガー",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チーズバーガー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 310.0,
+        "protein": 15.9,
+        "fat": 13.5,
+        "carbs": 31.0,
+        "sodium": 1.9
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8000",
+      "nameJa": "チキチー® (マックチキン® チーズ)",
+      "nameEn": "McDonald's Japan チキチー (マックチキン チーズ)",
+      "aliasesJa": [
+        "チキチー (マックチキン チーズ)",
+        "チキチー (マクドチキン チーズ)"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキチー® (マックチキン® チーズ)"
+        ],
+        [
+          "チキチー (マックチキン チーズ)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 433.0,
+        "protein": 16.4,
+        "fat": 23.2,
+        "carbs": 40.3,
+        "sodium": 2.6
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_6100",
+      "nameJa": "チキンタツタ®",
+      "nameEn": "McDonald's Japan チキンタツタ",
+      "aliasesJa": [
+        "チキンタツタ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキンタツタ®"
+        ],
+        [
+          "チキンタツタ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 373.0,
+        "protein": 17.6,
+        "fat": 16.2,
+        "carbs": 39.9,
+        "sodium": 2.3
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1050",
+      "nameJa": "チキンフィレオ®",
+      "nameEn": "McDonald's Japan チキンフィレオ",
+      "aliasesJa": [
+        "チキンフィレオ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキンフィレオ®"
+        ],
+        [
+          "チキンフィレオ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 479.0,
+        "protein": 19.9,
+        "fat": 23.8,
+        "carbs": 47.0,
+        "sodium": 3.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1430",
+      "nameJa": "チキンマックマフィン",
+      "nameEn": "McDonald's Japan チキンマックマフィン",
+      "aliasesJa": [
+        "チキンマクドマフィン"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキンマックマフィン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 398.0,
+        "protein": 15.0,
+        "fat": 20.4,
+        "carbs": 38.4,
+        "sodium": 2.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1010",
+      "nameJa": "ハンバーガー",
+      "nameEn": "McDonald's Japan ハンバーガー",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ハンバーガー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 259.0,
+        "protein": 13.0,
+        "fat": 9.5,
+        "carbs": 30.3,
+        "sodium": 1.4
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1210",
+      "nameJa": "ビッグマック®",
+      "nameEn": "McDonald's Japan ビッグマック",
+      "aliasesJa": [
+        "ビッグマック",
+        "ビッグマクド"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ビッグマック®"
+        ],
+        [
+          "ビッグマック"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 525.0,
+        "protein": 26.1,
+        "fat": 28.0,
+        "carbs": 42.1,
+        "sodium": 2.7
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1110",
+      "nameJa": "フィレオフィッシュ®",
+      "nameEn": "McDonald's Japan フィレオフィッシュ",
+      "aliasesJa": [
+        "フィレオフィッシュ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "フィレオフィッシュ®"
+        ],
+        [
+          "フィレオフィッシュ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 338.0,
+        "protein": 15.0,
+        "fat": 14.2,
+        "carbs": 37.4,
+        "sodium": 1.6
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1420",
+      "nameJa": "ベーコンエッグマックサンド",
+      "nameEn": "McDonald's Japan ベーコンエッグマックサンド",
+      "aliasesJa": [
+        "ベーコンエッグマクドサンド"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ベーコンエッグマックサンド"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 294.0,
+        "protein": 16.3,
+        "fat": 12.6,
+        "carbs": 27.9,
+        "sodium": 1.5
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1040",
+      "nameJa": "ベーコンレタスバーガー",
+      "nameEn": "McDonald's Japan ベーコンレタスバーガー",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ベーコンレタスバーガー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 362.0,
+        "protein": 17.4,
+        "fat": 19.4,
+        "carbs": 30.1,
+        "sodium": 2.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4010",
+      "nameJa": "ホットケーキ",
+      "nameEn": "McDonald's Japan ホットケーキ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ホットケーキ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 323.0,
+        "protein": 8.3,
+        "fat": 9.3,
+        "carbs": 53.5,
+        "sodium": 1.4
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8640",
+      "nameJa": "マックグリドル® ソーセージ",
+      "nameEn": "McDonald's Japan マックグリドル ソーセージ",
+      "aliasesJa": [
+        "マックグリドル ソーセージ",
+        "マクドグリドル ソーセージ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックグリドル® ソーセージ"
+        ],
+        [
+          "マックグリドル ソーセージ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 414.0,
+        "protein": 10.5,
+        "fat": 23.4,
+        "carbs": 40.4,
+        "sodium": 2.4
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8642",
+      "nameJa": "マックグリドル® ソーセージエッグ",
+      "nameEn": "McDonald's Japan マックグリドル ソーセージエッグ",
+      "aliasesJa": [
+        "マックグリドル ソーセージエッグ",
+        "マクドグリドル ソーセージエッグ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックグリドル® ソーセージエッグ"
+        ],
+        [
+          "マックグリドル ソーセージエッグ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 545.0,
+        "protein": 19.8,
+        "fat": 32.9,
+        "carbs": 41.3,
+        "sodium": 3.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8641",
+      "nameJa": "マックグリドル® ベーコンエッグ",
+      "nameEn": "McDonald's Japan マックグリドル ベーコンエッグ",
+      "aliasesJa": [
+        "マックグリドル ベーコンエッグ",
+        "マクドグリドル ベーコンエッグ"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックグリドル® ベーコンエッグ"
+        ],
+        [
+          "マックグリドル ベーコンエッグ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 382.0,
+        "protein": 15.6,
+        "fat": 16.7,
+        "carbs": 41.3,
+        "sodium": 2.6
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1250",
+      "nameJa": "マックチキン®",
+      "nameEn": "McDonald's Japan マックチキン",
+      "aliasesJa": [
+        "マックチキン",
+        "マクドチキン"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックチキン®"
+        ],
+        [
+          "マックチキン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 383.0,
+        "protein": 13.5,
+        "fat": 19.2,
+        "carbs": 39.5,
+        "sodium": 2.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1270",
+      "nameJa": "マックポーク®",
+      "nameEn": "McDonald's Japan マックポーク",
+      "aliasesJa": [
+        "マックポーク",
+        "マクドポーク"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックポーク®"
+        ],
+        [
+          "マックポーク"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 401.0,
+        "protein": 15.1,
+        "fat": 22.7,
+        "carbs": 34.3,
+        "sodium": 1.9
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8637",
+      "nameJa": "メガマフィン",
+      "nameEn": "McDonald's Japan メガマフィン",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "メガマフィン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 693.0,
+        "protein": 30.0,
+        "fat": 49.3,
+        "carbs": 31.2,
+        "sodium": 3.1
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4740",
+      "nameJa": "炙り醤油風 たまごベーコンダブル肉厚ビーフ",
+      "nameEn": "McDonald's Japan 炙り醤油風 たまごベーコンダブル肉厚ビーフ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "炙り醤油風 たまごベーコンダブル肉厚ビーフ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 685.0,
+        "protein": 40.0,
+        "fat": 41.5,
+        "carbs": 37.3,
+        "sodium": 3.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1260",
+      "nameJa": "炙り醤油風 たまごベーコン肉厚ビーフ",
+      "nameEn": "McDonald's Japan 炙り醤油風 たまごベーコン肉厚ビーフ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "炙り醤油風 たまごベーコン肉厚ビーフ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 511.0,
+        "protein": 30.8,
+        "fat": 26.2,
+        "carbs": 37.5,
+        "sodium": 3.3
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1220",
+      "nameJa": "炙り醤油風 ダブル肉厚ビーフ",
+      "nameEn": "McDonald's Japan 炙り醤油風 ダブル肉厚ビーフ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "炙り醤油風 ダブル肉厚ビーフ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 620.0,
+        "protein": 38.1,
+        "fat": 35.6,
+        "carbs": 37.6,
+        "sodium": 3.8
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2220",
+      "nameJa": "えだまめコーン",
+      "nameEn": "McDonald's Japan えだまめコーン",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "えだまめコーン"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 83.0,
+        "protein": 5.2,
+        "fat": 3.0,
+        "carbs": 9.6,
+        "sodium": 0.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2200",
+      "nameJa": "サイドサラダ",
+      "nameEn": "McDonald's Japan サイドサラダ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "サイドサラダ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 10.0,
+        "protein": 0.5,
+        "fat": 0.1,
+        "carbs": 2.3,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_9014",
+      "nameJa": "シャカチキ",
+      "nameEn": "McDonald's Japan シャカチキ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "シャカチキ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 246.0,
+        "protein": 14.7,
+        "fat": 13.3,
+        "carbs": 16.9,
+        "sodium": 1.7
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8611",
+      "nameJa": "ソフトツイスト",
+      "nameEn": "McDonald's Japan ソフトツイスト",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ソフトツイスト"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 146.0,
+        "protein": 4.0,
+        "fat": 3.7,
+        "carbs": 24.2,
+        "sodium": 0.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_9030",
+      "nameJa": "チキンマックナゲット® 15ピース",
+      "nameEn": "McDonald's Japan チキンマックナゲット 15ピース",
+      "aliasesJa": [
+        "チキンマックナゲット 15ピース",
+        "チキンマクドナゲット 15ピース"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキンマックナゲット® 15ピース"
+        ],
+        [
+          "チキンマックナゲット 15ピース"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 786.0,
+        "protein": 46.0,
+        "fat": 47.8,
+        "carbs": 43.2,
+        "sodium": 3.5
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_1610",
+      "nameJa": "チキンマックナゲット® 5ピース",
+      "nameEn": "McDonald's Japan チキンマックナゲット 5ピース",
+      "aliasesJa": [
+        "チキンマックナゲット 5ピース",
+        "チキンマクドナゲット 5ピース"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "チキンマックナゲット® 5ピース"
+        ],
+        [
+          "チキンマックナゲット 5ピース"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 262.0,
+        "protein": 15.3,
+        "fat": 15.9,
+        "carbs": 14.4,
+        "sodium": 1.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_5010",
+      "nameJa": "ハッシュポテト",
+      "nameEn": "McDonald's Japan ハッシュポテト",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ハッシュポテト"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 157.0,
+        "protein": 1.4,
+        "fat": 10.2,
+        "carbs": 14.8,
+        "sodium": 0.8
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2888",
+      "nameJa": "プチパンケーキ",
+      "nameEn": "McDonald's Japan プチパンケーキ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プチパンケーキ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 161.0,
+        "protein": 3.8,
+        "fat": 4.4,
+        "carbs": 26.4,
+        "sodium": 0.8
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2510",
+      "nameJa": "ベーコンポテトパイ",
+      "nameEn": "McDonald's Japan ベーコンポテトパイ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ベーコンポテトパイ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 230.0,
+        "protein": 3.5,
+        "fat": 13.7,
+        "carbs": 23.2,
+        "sodium": 1.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2110",
+      "nameJa": "ホットアップルパイ",
+      "nameEn": "McDonald's Japan ホットアップルパイ",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "ホットアップルパイ"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 211.0,
+        "protein": 2.1,
+        "fat": 10.9,
+        "carbs": 26.2,
+        "sodium": 0.6
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2050",
+      "nameJa": "マックフライポテト®(L)",
+      "nameEn": "McDonald's Japan マックフライポテト(L)",
+      "aliasesJa": [
+        "マックフライポテト(L)",
+        "マクドフライポテト(L)",
+        "ポテト(L)"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックフライポテト®(L)"
+        ],
+        [
+          "マックフライポテト(L)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 515.0,
+        "protein": 7.0,
+        "fat": 25.0,
+        "carbs": 66.0,
+        "sodium": 0.9
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2020",
+      "nameJa": "マックフライポテト®(M)",
+      "nameEn": "McDonald's Japan マックフライポテト(M)",
+      "aliasesJa": [
+        "マックフライポテト(M)",
+        "マクドフライポテト(M)",
+        "ポテト(M)"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックフライポテト®(M)"
+        ],
+        [
+          "マックフライポテト(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 409.0,
+        "protein": 5.5,
+        "fat": 19.8,
+        "carbs": 52.4,
+        "sodium": 0.7
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2010",
+      "nameJa": "マックフライポテト®(S)",
+      "nameEn": "McDonald's Japan マックフライポテト(S)",
+      "aliasesJa": [
+        "マックフライポテト(S)",
+        "マクドフライポテト(S)",
+        "ポテト(S)"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックフライポテト®(S)"
+        ],
+        [
+          "マックフライポテト(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 224.0,
+        "protein": 3.0,
+        "fat": 10.9,
+        "carbs": 28.7,
+        "sodium": 0.4
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8614",
+      "nameJa": "マックフルーリー® オレオ® クッキー",
+      "nameEn": "McDonald's Japan マックフルーリー オレオ クッキー",
+      "aliasesJa": [
+        "マックフルーリー オレオ クッキー",
+        "マクドフルーリー オレオ クッキー"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックフルーリー® オレオ® クッキー"
+        ],
+        [
+          "マックフルーリー オレオ クッキー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 233.0,
+        "protein": 5.9,
+        "fat": 6.7,
+        "carbs": 37.4,
+        "sodium": 0.4
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_2810",
+      "nameJa": "マックフルーリー® 超 オレオ® クッキー",
+      "nameEn": "McDonald's Japan マックフルーリー 超 オレオ クッキー",
+      "aliasesJa": [
+        "マックフルーリー 超 オレオ クッキー",
+        "マクドフルーリー 超 オレオ クッキー"
+      ],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "マックフルーリー® 超 オレオ® クッキー"
+        ],
+        [
+          "マックフルーリー 超 オレオ クッキー"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 352.0,
+        "protein": 7.9,
+        "fat": 10.7,
+        "carbs": 56.6,
+        "sodium": 0.6
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8558",
+      "nameJa": "アールグレイ アイスティー(ミルク)(L)",
+      "nameEn": "McDonald's Japan アールグレイ アイスティー(ミルク)(L)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "アールグレイ アイスティー(ミルク)(L)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 9.0,
+        "protein": 0.2,
+        "fat": 0.9,
+        "carbs": 0.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8557",
+      "nameJa": "アールグレイ アイスティー(ミルク)(M)",
+      "nameEn": "McDonald's Japan アールグレイ アイスティー(ミルク)(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "アールグレイ アイスティー(ミルク)(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 9.0,
+        "protein": 0.2,
+        "fat": 0.9,
+        "carbs": 0.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_8556",
+      "nameJa": "アールグレイ アイスティー(ミルク)(S)",
+      "nameEn": "McDonald's Japan アールグレイ アイスティー(ミルク)(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "アールグレイ アイスティー(ミルク)(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 9.0,
+        "protein": 0.2,
+        "fat": 0.9,
+        "carbs": 0.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3051",
+      "nameJa": "カフェラテ(M)",
+      "nameEn": "McDonald's Japan カフェラテ(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "カフェラテ(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 116.0,
+        "protein": 5.7,
+        "fat": 6.5,
+        "carbs": 8.6,
+        "sodium": 0.2
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3050",
+      "nameJa": "カフェラテ(S)",
+      "nameEn": "McDonald's Japan カフェラテ(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "カフェラテ(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 82.0,
+        "protein": 4.0,
+        "fat": 4.6,
+        "carbs": 6.0,
+        "sodium": 0.1
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3120",
+      "nameJa": "コカ・コーラ(M)",
+      "nameEn": "McDonald's Japan コカ・コーラ(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "コカ・コーラ(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 145.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 36.5,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_3110",
+      "nameJa": "コカ・コーラ(S)",
+      "nameEn": "McDonald's Japan コカ・コーラ(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "コカ・コーラ(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 94.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 23.5,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4112",
+      "nameJa": "プレミアムローストアイスコーヒー(L)",
+      "nameEn": "McDonald's Japan プレミアムローストアイスコーヒー(L)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プレミアムローストアイスコーヒー(L)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 12.0,
+        "protein": 0.6,
+        "fat": 0.0,
+        "carbs": 2.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4111",
+      "nameJa": "プレミアムローストアイスコーヒー(M)",
+      "nameEn": "McDonald's Japan プレミアムローストアイスコーヒー(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プレミアムローストアイスコーヒー(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 9.0,
+        "protein": 0.5,
+        "fat": 0.0,
+        "carbs": 1.6,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_4110",
+      "nameJa": "プレミアムローストアイスコーヒー(S)",
+      "nameEn": "McDonald's Japan プレミアムローストアイスコーヒー(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プレミアムローストアイスコーヒー(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 6.0,
+        "protein": 0.3,
+        "fat": 0.0,
+        "carbs": 1.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_5110",
+      "nameJa": "プレミアムローストコーヒー(M)",
+      "nameEn": "McDonald's Japan プレミアムローストコーヒー(M)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プレミアムローストコーヒー(M)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 12.0,
+        "protein": 0.6,
+        "fat": 0.0,
+        "carbs": 2.1,
+        "sodium": 0.0
+      }
+    },
+    {
+      "id": "pack_mcdonalds_jp_5100",
+      "nameJa": "プレミアムローストコーヒー(S)",
+      "nameEn": "McDonald's Japan プレミアムローストコーヒー(S)",
+      "aliasesJa": [],
+      "aliasesEn": [],
+      "matchTokenGroups": [
+        [
+          "プレミアムローストコーヒー(S)"
+        ]
+      ],
+      "negativeTokens": [
+        "風味",
+        "ソース",
+        "だけ",
+        "レビュー",
+        "香料",
+        "メーカー",
+        "瓶",
+        "サンプル",
+        "ドレッシング",
+        "ショップ",
+        "予定"
+      ],
+      "excludesCategories": [],
+      "category": "fast_food",
+      "kind": "chain_menu",
+      "citation": "McDonald's Japan nutrition facts, per serving, accessed 2026-05-05",
+      "nutrition": {
+        "kcal": 7.0,
+        "protein": 0.4,
+        "fat": 0.0,
+        "carbs": 1.2,
+        "sodium": 0.0
+      }
+    }
+  ]
+}
