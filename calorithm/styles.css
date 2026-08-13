@@ -7,6 +7,7 @@
 */
 
 :root {
+  color-scheme: light;
   --bg: #FBFBFA;
   --bg-2: #F3F3F0;
   --bg-3: #ECECE8;
@@ -1251,30 +1252,36 @@ a { color: inherit; text-decoration: none; }
 }
 .sub-provider .role { color: var(--ink-2); font-size: 13.5px; }
 
-/* Contact card embedded in privacy */
+/* Contact card embedded in privacy — same paper card as the rest of the page */
 .sub-contact-card {
   display: flex; align-items: center; justify-content: space-between;
   margin: 18px 0 4px;
   padding: 22px 24px;
-  background: var(--ink); color: var(--bg);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  transition: opacity .15s;
+  transition: border-color .15s, background .15s;
 }
-.sub-contact-card:hover { opacity: 0.92; }
+.sub-contact-card:hover {
+  background: var(--bg-2);
+  border-color: var(--line-2);
+}
 .sub-contact-label {
   font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
-  color: rgba(251,251,250,0.55);
+  color: var(--ink-3);
   margin: 0 0 4px;
 }
 .sub-contact-email {
   font-size: 18px; font-weight: 500; margin: 0 0 4px;
   font-family: "JetBrains Mono", monospace;
+  color: var(--teal);
 }
 .sub-contact-note {
-  font-size: 13px; color: rgba(251,251,250,0.6);
+  font-size: 13px; color: var(--ink-2);
   margin: 0;
 }
-.sub-contact-arrow { font-size: 22px; }
+.sub-contact-arrow { font-size: 22px; color: var(--ink-3); }
 
 /* ---- Support FAQ ---- */
 .sub-faq-list {
@@ -1446,7 +1453,7 @@ a { color: inherit; text-decoration: none; }
   display: flex; flex-direction: column; justify-content: center;
   gap: 10px;
   padding: 0 28px;
-  z-index: -1;
+  z-index: 0;
 }
 .env-line {
   height: 5px;
