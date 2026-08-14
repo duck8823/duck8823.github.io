@@ -389,7 +389,7 @@ ul,ol{list-style:none}
     <h1>Privacy Policy</h1>
 
     <div class="doc-meta">
-      <span class="chip"><span class="dot"></span><strong>Last updated</strong> March 10, 2026</span>
+      <span class="chip"><span class="dot"></span><strong>Last updated</strong> August 14, 2026</span>
       <span class="chip"><strong>Scope</strong> Wampo for iOS</span>
       <span class="chip"><strong>Operator</strong> Shunsuke Maeda</span>
     </div>
@@ -397,15 +397,15 @@ ul,ol{list-style:none}
     <div class="principles">
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>Stored on device</h5><span>Nothing sent to the cloud</span></div>
+        <div class="pt"><h5>Walks stay on the device</h5><span>Routes and profiles are not uploaded</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>No account</h5><span>No personal info collected</span></div>
+        <div class="pt"><h5>No account</h5><span>There is no sign-up</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>No advertising use</h5><span>location is used only for features</span></div>
+        <div class="pt"><h5>Not used for ads</h5><span>Location is only for walks and weather</span></div>
       </div>
     </div>
   </div>
@@ -420,13 +420,13 @@ ul,ol{list-style:none}
       <div class="toc-label">Contents</div>
       <ol>
         <li><a href="#intro" class="on">Introduction</a></li>
-        <li><a href="#collect">Information collected</a></li>
-        <li><a href="#use">How info is used</a></li>
-        <li><a href="#sharing">Information sharing</a></li>
-        <li><a href="#storage">Data storage</a></li>
-        <li><a href="#security">Data security</a></li>
-        <li><a href="#rights">Your data rights</a></li>
-        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#location">How we use location</a></li>
+        <li><a href="#external">Data we send outside the app</a></li>
+        <li><a href="#storage">Storage</a></li>
+        <li><a href="#sharing">Sharing</a></li>
+        <li><a href="#deletion">Deleting data and withdrawing consent</a></li>
+        <li><a href="#changes">Changes</a></li>
         <li><a href="#contact">Contact</a></li>
       </ol>
     </aside>
@@ -437,95 +437,130 @@ ul,ol{list-style:none}
       <section id="intro">
         <div class="sec-n">01 · Introduction</div>
         <h2>Introduction</h2>
-        <p>Last updated: March 10, 2026</p>
-        <p>Wampo is a personally developed app. This Privacy Policy describes how your personal information is collected, used, and shared when you use the mobile application "Wampo" (the "App").</p>
+        <p>Last updated: August 14, 2026</p>
+        <p>Wampo is a personal project by Shunsuke Maeda. This policy explains what the Wampo app collects, how it uses that information, and where it is sent.</p>
       </section>
 
       <section id="collect">
-        <div class="sec-n">02 · Information collected</div>
-        <h2>Information Collected</h2>
-        <p>We are committed to protecting your privacy. The App uses the following types of information:</p>
+        <div class="sec-n">02 · Information we collect</div>
+        <h2>Information we collect</h2>
+        <p>Here is what the app handles.</p>
 
-        <h3>Location Data (GPS)</h3>
-        <p>The App uses location data to record walking routes and to retrieve weather information. Walking route data is stored locally on your device. For weather features, your latitude and longitude are sent to the Open-Meteo weather service, and map tile coordinates are sent to the Japan Meteorological Agency for rain radar display.</p>
+        <h3>Location (GPS)</h3>
+        <p>We use location to record walk routes and to show weather and rain radar.</p>
+        <ul class="bullets">
+          <li>Walk routes: stored on the device.</li>
+          <li>Weather and suggested walk times: we send the latitude and longitude of your current location, or a place you saved, to Open-Meteo. The Home Screen widget sends latitude and longitude for the same reason.</li>
+          <li>Rain radar: we send nearby map tile coordinates to the Japan Meteorological Agency.</li>
+          <li>Arrival notification: the app checks on the device whether you are near a home location you saved. That home location stays on the device.</li>
+        </ul>
 
-        <h3>Camera &amp; Photo Library</h3>
-        <p>The App may request access to your camera or photo library for setting dog profile photos. Images are stored locally on your device and are not transmitted to any external servers.</p>
+        <h3>Camera and photos</h3>
+        <p>We use the camera and photo library for your dog's profile photo and for photos you attach to a walk. On a walk's detail screen, the app may look at timestamps of photos on the device to suggest shots from around that walk. Photos stay on the device. We do not upload them.</p>
 
-        <h3>Weather Information</h3>
-        <p>The App retrieves weather information from Open-Meteo (latitude and longitude) and rain radar tiles from the Japan Meteorological Agency (map tile coordinates) to suggest suitable walking times. No personally identifiable information is transmitted in this communication.</p>
+        <h3>Notifications</h3>
+        <p>Home-arrival alerts and reminders are local notifications. We do not send identifiers or location to a developer server to push them.</p>
 
-        <h3>Map Display</h3>
-        <p>The App uses Google Maps to display walking routes. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies to the use of Google Maps. The App does not provide personally identifiable information to Google.</p>
+        <h3>Apple Watch, Live Activity, and widgets</h3>
+        <p>Walk progress and marker actions can appear on your Apple Watch, Lock Screen, and Home Screen widget. This stays between your own devices (Watch Connectivity and App Groups). Walk records are not sent to our servers this way.</p>
+
+        <h3>Usage analytics (Firebase Analytics)</h3>
+        <p>Only if you agree, we send a device identifier and in-app actions (starting or finishing a walk, switching tabs, adding a marker, and similar) to Firebase Analytics (Google). We use this only to understand usage and improve the app. We do not send walk distance or duration, route coordinates, photos, or dog profiles. Nothing is sent until you agree. You can turn it off later in Settings.</p>
       </section>
 
-      <section id="use">
-        <div class="sec-n">03 · How info is used</div>
-        <h2>How Information Is Used</h2>
-        <p>Information collected is used solely for the following purposes:</p>
-        <ul class="bullets">
-          <li>Recording and displaying walking routes</li>
-          <li>Managing dog profiles</li>
-          <li>Suggesting suitable walking times</li>
-          <li>Displaying walk history and statistics</li>
-          <li>Measuring app usage to improve features (Firebase Analytics)</li>
-        </ul>
+      <section id="location">
+        <div class="sec-n">03 · How we use location</div>
+        <h2>How we use location</h2>
+        <p>Location is used only for the features above. We do not use it for ads, marketing, or to build a list of who walked where.</p>
+        <p>If you choose Always Allow, the app can keep recording the route while the phone is in your pocket. You can still start a walk with While Using the App.</p>
       </section>
 
-      <section id="sharing">
-        <div class="sec-n">04 · Information sharing</div>
-        <h2>Information Sharing</h2>
-        <p>Your personal information is never sold, traded, or transferred to third parties.</p>
+      <section id="external">
+        <div class="sec-n">04 · Data we send outside the app</div>
+        <h2>Data we send outside the app</h2>
+        <p>We send data to these services for features, or for analytics after you agree. We do not send location or profiles anywhere else.</p>
 
-        <h3>Third-Party Service Providers</h3>
-        <p>The App uses the following third-party services:</p>
+        <div class="svc-grid">
+          <article class="svc">
+            <h4>Open-Meteo<span class="badge">weather and suggested times</span></h4>
+            <dt>Data</dt>
+            <dd>latitude and longitude of your current location or a saved place</dd>
+            <dt>Purpose</dt>
+            <dd>hourly forecast such as temperature, rain chance, and wind</dd>
+            <dt>Stored by them</dt>
+            <dd>no (Open-Meteo does not keep request logs to identify people)</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></dd>
+          </article>
+          <article class="svc">
+            <h4>Japan Meteorological Agency<span class="badge">rain radar</span></h4>
+            <dt>Data</dt>
+            <dd>map tile coordinates (zoom and X/Y)</dd>
+            <dt>Purpose</dt>
+            <dd>rain nowcast images</dd>
+            <dt>Stored by them</dt>
+            <dd>no (image requests to a public API only)</dd>
+          </article>
+          <article class="svc">
+            <h4>Google Maps<span class="badge">map display</span></h4>
+            <dt>Data</dt>
+            <dd>coordinates needed to show the map</dd>
+            <dt>Purpose</dt>
+            <dd>displaying the walk route</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
+          </article>
+          <article class="svc">
+            <h4>Firebase Analytics (Google)<span class="badge">usage</span></h4>
+            <dt>Data</dt>
+            <dd>only after you agree; a device identifier and in-app actions (starting or finishing a walk, switching tabs, adding a marker, and similar)</dd>
+            <dt>Not sent</dt>
+            <dd>walk distance or duration, route coordinates, photos, dog profiles</dd>
+            <dt>Purpose</dt>
+            <dd>understanding usage and improving the app</dd>
+            <dt>Consent</dt>
+            <dd>we ask the first time. Turning it off in Settings stops later sends</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
+          </article>
+        </div>
 
-        <ul class="bullets">
-          <li><strong>Google Maps</strong>: Used for displaying walking route maps. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies.</li>
-          <li><strong>Open-Meteo</strong>: Used for retrieving weather forecasts (temperature, precipitation, wind speed). Your latitude and longitude are sent. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo's terms</a> apply.</li>
-          <li><strong>Japan Meteorological Agency API</strong>: Used for rain radar display. Only map tile coordinates are transmitted.</li>
-          <li><strong>Firebase Analytics (Google)</strong>: Used to measure app usage (e.g., walk start/complete, tab selection) and improve features. Device identifiers and in-app events are collected. You can opt out by enabling "Stop sending usage data" in the App's settings. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> applies.</li>
-        </ul>
+        <p>These services handle the data under their own privacy policies, with protection at least as strong as what this policy describes.</p>
       </section>
 
       <section id="storage">
-        <div class="sec-n">05 · Data storage</div>
-        <h2>Data Storage</h2>
-        <ul class="bullets">
-          <li><strong>Walk Data</strong>: Routes, markers, and statistics are all stored locally on your device. No data is sent to external servers.</li>
-          <li><strong>Dog Profiles</strong>: Names, photos, and other profile information are stored locally on your device.</li>
-        </ul>
-        <p>The App does not have an account registration feature. All data is stored exclusively on your device.</p>
+        <div class="sec-n">05 · Storage</div>
+        <h2>Storage</h2>
+        <p>Walk records (routes, distance, duration, markers, dog profiles, photos) stay in a database on the device. We do not upload them to a developer cloud. There is no sign-up.</p>
       </section>
 
-      <section id="security">
-        <div class="sec-n">06 · Data security</div>
-        <h2>Data Security</h2>
-        <p>All data is stored locally on your device and is not transmitted to external servers. However, the physical security of your device is under your control.</p>
+      <section id="sharing">
+        <div class="sec-n">06 · Sharing</div>
+        <h2>Sharing</h2>
+        <p>We do not sell personal data, and we do not give it to anyone except as described above. What leaves the device is the minimum location needed for features, plus usage analytics after you agree.</p>
       </section>
 
-      <section id="rights">
-        <div class="sec-n">07 · Your data rights</div>
-        <h2>Your Data Rights</h2>
+      <section id="deletion">
+        <div class="sec-n">07 · Deleting data and withdrawing consent</div>
+        <h2>Deleting data and withdrawing consent</h2>
         <ul class="bullets">
-          <li><strong>Data Deletion</strong>: Uninstalling the App will delete all data.</li>
-          <li><strong>Disabling Location Access</strong>: You can disable the App's access to location data at any time through iOS Settings.</li>
+          <li>Records on the device: deleting the app deletes the walk records and profiles stored on the device.</li>
+          <li>Usage analytics: turn it off in Settings to withdraw consent. After that, we do not send new data to Firebase Analytics. How long Google keeps older data follows Google's policy.</li>
+          <li>Location, camera, photos, and notifications: you can turn off access for this app in iOS Settings at any time.</li>
         </ul>
+        <p>There is no in-app account deletion step, because there is no account.</p>
       </section>
 
       <section id="changes">
-        <div class="sec-n">08 · Policy changes</div>
-        <h2>Changes to This Policy</h2>
-        <p>This Privacy Policy may be updated from time to time. Changes will be communicated by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+        <div class="sec-n">08 · Changes</div>
+        <h2>Changes</h2>
+        <p>If we change this policy, we will post the update here and change the date at the top.</p>
       </section>
 
       <section id="contact">
         <div class="sec-n">09 · Contact</div>
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <ul class="bullets">
-          <li>Email: <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a></li>
-        </ul>
+        <h2>Contact</h2>
+        <p>Questions: the <a href="support.html">support page</a>, or <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</p>
 
         <div class="contact-card">
           <a href="support.html" class="btn btn-primary">Support →</a>

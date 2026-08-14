@@ -388,7 +388,7 @@ ul,ol{list-style:none}
     <h1>プライバシーポリシー</h1>
 
     <div class="doc-meta">
-      <span class="chip"><span class="dot"></span><strong>最終更新日</strong> 2026年3月10日</span>
+      <span class="chip"><span class="dot"></span><strong>最終更新日</strong> 2026年8月14日</span>
       <span class="chip"><strong>対象</strong> わんぽ iOS アプリ</span>
       <span class="chip"><strong>運営</strong> Shunsuke Maeda</span>
     </div>
@@ -396,15 +396,15 @@ ul,ol{list-style:none}
     <div class="principles">
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>端末内に保存</h5><span>クラウドには送信しません</span></div>
+        <div class="pt"><h5>散歩記録は端末の中</h5><span>ルートやプロフィールはクラウドに上げません</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>アカウント不要</h5><span>個人情報は受け取りません</span></div>
+        <div class="pt"><h5>アカウント不要</h5><span>会員登録はありません</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>広告目的の利用なし</h5><span>位置情報は機能のためだけに使用</span></div>
+        <div class="pt"><h5>広告には使いません</h5><span>位置情報は散歩と天気のためだけ</span></div>
       </div>
     </div>
   </div>
@@ -421,10 +421,11 @@ ul,ol{list-style:none}
         <li><a href="#intro" class="on">はじめに</a></li>
         <li><a href="#collect">収集する情報</a></li>
         <li><a href="#location">位置情報について</a></li>
-        <li><a href="#external">外部サービスへの送信</a></li>
+        <li><a href="#external">外部サービスへのデータ送信</a></li>
         <li><a href="#storage">データの保存</a></li>
         <li><a href="#third-party">第三者への提供</a></li>
-        <li><a href="#changes">ポリシーの変更</a></li>
+        <li><a href="#deletion">データの削除と同意の撤回</a></li>
+        <li><a href="#changes">プライバシーポリシーの変更</a></li>
         <li><a href="#contact">お問い合わせ</a></li>
       </ol>
     </aside>
@@ -435,90 +436,130 @@ ul,ol{list-style:none}
       <section id="intro">
         <div class="sec-n">01 · はじめに</div>
         <h2>はじめに</h2>
-        <p>最終更新日: 2026年3月10日</p>
-        <p>わんぽは Shunsuke Maeda が個人で開発したアプリです。このプライバシーポリシーは、モバイルアプリケーション「わんぽ」（以下「本アプリ」）をご利用いただく際に、お客様の個人情報がどのように収集、使用、共有されるかについて説明するものです。</p>
+        <p>最終更新日: 2026年8月14日</p>
+        <p>わんぽは Shunsuke Maeda が個人で開発したアプリです。このプライバシーポリシーでは、アプリ「わんぽ」（以下「本アプリ」）がどのような情報を取得し、どう使い、どこへ送るかを説明します。</p>
       </section>
 
       <section id="collect">
         <div class="sec-n">02 · 収集する情報</div>
         <h2>収集する情報</h2>
-        <p>本アプリで収集する情報は以下のとおりです。</p>
+        <p>本アプリが扱う情報は次のとおりです。</p>
 
         <h3>位置情報（GPS）</h3>
-        <p>本アプリは、散歩中のGPSルートを記録するため、および天気情報の取得・雨雲レーダー表示のために位置情報を使用します。</p>
-
+        <p>散歩中のルート記録と、天気・雨雲レーダーのために位置情報を使います。</p>
         <ul class="bullets">
-          <li><strong>散歩ルート記録</strong>: 収集された位置情報はお使いのデバイスにローカル保存されます。</li>
-          <li><strong>天気情報取得</strong>: 散歩に適した時間帯の提案・天気表示のため、現在地の緯度・経度を天気予報サービス（Open-Meteo）へ、および現在地周辺のマップタイル座標を雨雲レーダーサービス（気象庁）へ送信します。</li>
+          <li>散歩ルート: 端末の中に保存します。</li>
+          <li>天気とおすすめ時間帯: 現在地、または設定した地点の緯度・経度を Open-Meteo へ送ります。ホーム画面のウィジェットも同じ目的で緯度・経度を送ります。</li>
+          <li>雨雲レーダー: 現在地付近のマップタイル座標を気象庁へ送ります。</li>
+          <li>帰宅通知: 設定した自宅の近くにいるかを、端末の中で判定します。自宅の位置は端末の中に保存します。</li>
         </ul>
+
+        <h3>カメラと写真</h3>
+        <p>愛犬のプロフィール写真や、散歩中の写真マーカーのために、カメラと写真ライブラリを使います。散歩の詳細画面では、散歩していた時間に近い写真を候補として出すため、端末内の写真の撮影日時を見ることがあります。写真は端末の中に保存し、外部には送りません。</p>
+
+        <h3>通知</h3>
+        <p>帰宅のお知らせやリマインダーは、端末のローカル通知です。開発者のサーバーへ識別子や位置を送って通知する仕組みはありません。</p>
+
+        <h3>Apple Watch・Live Activity・ウィジェット</h3>
+        <p>散歩の経過やマーカー操作を、同じ持ち主の Apple Watch、ロック画面、ホーム画面ウィジェットに出します。受け渡しは、その人の端末同士（Watch Connectivity や App Groups）に限ります。この経路で散歩記録を開発者のサーバーへは送りません。</p>
+
+        <h3>利用状況（Firebase Analytics）</h3>
+        <p>同意したときだけ、端末の識別子とアプリ内の操作（散歩の開始・完了、タブの切り替え、マーカーの追加など）を Firebase Analytics（Google）へ送ります。使い方を見て、アプリを良くするためだけに使います。散歩の距離や時間、ルートの座標、写真、愛犬のプロフィールは送りません。同意するまでは送りません。あとから設定で止められます。</p>
       </section>
 
       <section id="location">
         <div class="sec-n">03 · 位置情報について</div>
         <h2>位置情報について</h2>
-        <p>位置情報（GPS）は、散歩中のルート記録および天気情報取得にのみ使用します。位置情報の許可を「常に許可」に設定することで、スマホをポケットにしまったままでもバックグラウンドでルートを記録し続けることができます。</p>
-        <p>位置情報は、ルート記録・天気取得以外の目的（広告、マーケティング、分析など）には一切使用しません。</p>
+        <p>位置情報は、上に書いた機能にだけ使います。広告やマーケティング、誰がどこを歩いたかの名簿づくりには使いません。</p>
+        <p>位置情報の許可を「常に許可」にすると、スマホをポケットに入れたままでも、背面でルートを記録し続けられます。「使用中のみ許可」でも散歩は始められます。</p>
       </section>
 
       <section id="external">
-        <div class="sec-n">04 · 外部サービスへの送信</div>
+        <div class="sec-n">04 · 外部サービスへのデータ送信</div>
         <h2>外部サービスへのデータ送信</h2>
-        <p>アプリの機能提供のため、以下の外部サービスにデータを送信します。</p>
+        <p>機能のため、または同意したあとの計測のため、次の外部サービスにデータを送ります。これ以外へ位置情報やプロフィールを送ることはありません。</p>
 
-        <ul class="bullets">
-          <li>
-            <strong>Open-Meteo</strong>（天気予報・推奨散歩時間帯の計算）<br>
-            送信データ: 現在地の緯度・経度<br>
-            利用目的: 気温・降水確率・風速などの時間帯別予報の取得<br>
-            外部保存: なし（Open-Meteo はリクエストログを個人識別目的で保存しません）<br>
-            プライバシーポリシー: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a>
-          </li>
-          <li>
-            <strong>気象庁（Japan Meteorological Agency）</strong>（雨雲レーダー表示）<br>
-            送信データ: マップタイル座標（ズームレベル・X/Yタイル番号）<br>
-            利用目的: リアルタイム降水ナウキャストタイル画像の取得<br>
-            外部保存: なし（タイル取得は公開APIへのHTTPリクエストのみ）
-          </li>
-          <li>
-            <strong>Google Maps</strong>（地図表示）<br>
-            送信データ: マップ表示に必要な座標データ<br>
-            利用目的: 散歩ルートの地図表示<br>
-            プライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
-          </li>
-          <li>
-            <strong>Firebase Analytics（Google）</strong>（利用状況の計測）<br>
-            送信データ: デバイス識別子、アプリ内操作イベント（散歩開始・完了、タブ切替など）<br>
-            利用目的: アプリの利用状況を計測し、機能改善に役立てるため<br>
-            オプトアウト: アプリの設定画面から「利用状況の送信を停止」をオンにすることで、データ送信を停止できます<br>
-            プライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
-          </li>
-        </ul>
+        <div class="svc-grid">
+          <article class="svc">
+            <h4>Open-Meteo<span class="badge">天気とおすすめ時間帯</span></h4>
+            <dt>送信データ</dt>
+            <dd>現在地または設定地点の緯度・経度</dd>
+            <dt>利用目的</dt>
+            <dd>気温・降水確率・風速などの時間帯別予報</dd>
+            <dt>外部保存</dt>
+            <dd>なし（Open-Meteo はリクエストログを個人の特定には使いません）</dd>
+            <dt>ポリシー</dt>
+            <dd><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></dd>
+          </article>
+          <article class="svc">
+            <h4>気象庁<span class="badge">雨雲レーダー</span></h4>
+            <dt>送信データ</dt>
+            <dd>マップタイル座標（ズームレベルと X/Y）</dd>
+            <dt>利用目的</dt>
+            <dd>降水ナウキャストの画像取得</dd>
+            <dt>外部保存</dt>
+            <dd>なし（公開APIへの画像取得だけです）</dd>
+          </article>
+          <article class="svc">
+            <h4>Google Maps<span class="badge">地図表示</span></h4>
+            <dt>送信データ</dt>
+            <dd>地図を出すのに必要な座標</dd>
+            <dt>利用目的</dt>
+            <dd>散歩ルートの表示</dd>
+            <dt>ポリシー</dt>
+            <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
+          </article>
+          <article class="svc">
+            <h4>Firebase Analytics（Google）<span class="badge">利用状況の計測</span></h4>
+            <dt>送信データ</dt>
+            <dd>同意したあとだけ。端末の識別子と、アプリ内の操作（散歩の開始・完了、タブの切り替え、マーカーの追加など）</dd>
+            <dt>送らないもの</dt>
+            <dd>散歩の距離・時間、ルートの座標、写真、愛犬のプロフィール</dd>
+            <dt>利用目的</dt>
+            <dd>使い方の把握と、アプリの改善</dd>
+            <dt>同意と撤回</dt>
+            <dd>初回に許可を取ります。設定からオフにすると、それ以降は送りません</dd>
+            <dt>ポリシー</dt>
+            <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
+          </article>
+        </div>
 
-        <p>上記以外の外部サービスへ位置情報を送信することはありません。</p>
+        <p>これらの外部サービスは、各社のプライバシーポリシーに沿ってデータを扱い、このポリシーで書いているのと同程度の保護を行います。</p>
       </section>
 
       <section id="storage">
         <div class="sec-n">05 · データの保存</div>
         <h2>データの保存</h2>
-        <p>散歩データ（ルート、距離、時間、愛犬プロフィールなど）はすべてお使いのデバイス内のSQLiteデータベースに保存されます。クラウドへの同期や外部サーバーへの保存は行いません。</p>
+        <p>散歩の記録（ルート、距離、時間、マーカー、愛犬のプロフィール、写真）は、すべて端末の中のデータベースに保存します。開発者のクラウドには上げません。会員登録はありません。</p>
       </section>
 
       <section id="third-party">
         <div class="sec-n">06 · 第三者への提供</div>
         <h2>第三者への提供</h2>
-        <p>お客様の個人データを第三者に提供、販売、または共有することはありません。ただし、上記「外部サービスへのデータ送信」に記載のとおり、機能提供に必要な最小限の位置情報を当該APIサービスへ送信します。この送信はアプリの機能提供のためのみであり、第三者への販売・共有には該当しません。</p>
+        <p>個人データを売ったり、上に書いていない相手へ渡したりしません。外部へ送るのは、機能に必要な最小限の位置情報と、同意したあとの利用状況だけです。</p>
+      </section>
+
+      <section id="deletion">
+        <div class="sec-n">07 · データの削除と同意の撤回</div>
+        <h2>データの削除と同意の撤回</h2>
+        <ul class="bullets">
+          <li>端末の中の記録: アプリを削除すると、端末に保存した散歩記録とプロフィールも削除されます。</li>
+          <li>利用状況の送信: 設定からオフにすると同意を取り下げられます。取り下げたあと、Firebase Analytics へ新たに送ることはありません。Google 側に残る期間は、Google のポリシーに従います。</li>
+          <li>位置情報・カメラ・写真・通知: iOS の設定から、このアプリのアクセスをいつでもオフにできます。</li>
+        </ul>
+        <p>会員登録がないので、アプリの中にアカウント削除の手順はありません。</p>
       </section>
 
       <section id="changes">
-        <div class="sec-n">07 · ポリシーの変更</div>
+        <div class="sec-n">08 · プライバシーポリシーの変更</div>
         <h2>プライバシーポリシーの変更</h2>
-        <p>このプライバシーポリシーは随時更新されることがあります。変更があった場合は、このページに新しいプライバシーポリシーを掲載し、冒頭の「最終更新日」を更新することでお知らせします。</p>
+        <p>内容を変えるときは、このページに掲載し、冒頭の最終更新日を更新します。</p>
       </section>
 
       <section id="contact">
-        <div class="sec-n">08 · お問い合わせ</div>
+        <div class="sec-n">09 · お問い合わせ</div>
         <h2>お問い合わせ</h2>
-        <p>このプライバシーポリシーについてご質問がある場合は、<a href="support_ja.html">サポートページ</a>よりお問い合わせください。</p>
+        <p>ご質問は<a href="support_ja.html">サポートページ</a>、または <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a> へお願いします。</p>
 
         <div class="contact-card">
           <a href="support_ja.html" class="btn btn-primary">サポートを見る →</a>
