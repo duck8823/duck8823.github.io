@@ -30,6 +30,55 @@
 <meta name="twitter:description" content="Wampo is a simple iOS app that records your dog walks with GPS, letting you review routes, distances, and duration.">
 <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp.png">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Wampo is currently free to use, with no in-app purchases at this time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work in the background?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Keep your phone in your pocket and Wampo keeps recording. Set location permission to \"Always\" in iOS Settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I register multiple dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can register multiple dogs and link each walk to a specific one. Multi-dog households are fully supported."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my privacy protected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your walk records (location, routes, photos) stay on your device. With your consent, basic usage data is sent to Google Analytics, and you can turn it off anytime in Settings. See the privacy policy for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Android supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Currently iOS 16.0 or later only. Android support may be considered in the future."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -788,32 +837,23 @@ ul,ol { list-style: none; }
   <div class="wrap">
     <div class="hero-eyebrow fd">
       <span class="live"></span>
-      <span>iOS 16.0+</span>
-      <span class="chip">v1.8 · 2026</span>
+      <span>A walking record for your dog</span>
     </div>
 
     <h1 class="hero-title fd">
-      Make every dog walk<br>
-      <span class="acc">memorable</span>.
+      Walks with your dog,<br>
+      kept <span class="acc">simply</span>.
     </h1>
 
     <p class="hero-sub fd">
-      Automatically records walking routes with GPS. Distance, duration, and frequency at a glance. Minimal settings, data stays on your device.
+      Distance, time, photos, and notes — let wampo keep the record, so you can just walk with your dog.
     </p>
 
     <div class="hero-actions fd">
       <a href="https://apps.apple.com/app/id6759406324" class="btn btn-primary btn-lg">
         <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download on App Store
+        View on the App Store
       </a>
-      <a href="#how" class="btn btn-outline btn-lg">See how it works →</a>
-    </div>
-
-    <!-- HERO SHOWCASE -->
-    <div class="showcase fd">
-      <div class="show-phone"><img src="images/phone/home.png" alt="Homescreen" fetchpriority="high"></div>
-      <div class="show-phone tilt-l"><img src="images/phone/walk_detail.png" alt="Walk details"></div>
-      <div class="show-phone tilt-r"><img src="images/phone/history.png" alt="Walk history"></div>
     </div>
   </div>
 </section>
@@ -824,7 +864,6 @@ ul,ol { list-style: none; }
     <div class="sec-head fd">
       <div class="sec-eyebrow">HOW IT WORKS</div>
       <h2 class="sec-title">Simple by design.</h2>
-      <p class="sec-lead">No account needed. Open the app and start walking. Registering your dog is optional.</p>
     </div>
 
     <div class="how fd">
@@ -833,129 +872,69 @@ ul,ol { list-style: none; }
           <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
         </div>
         <div class="num">STEP 01</div>
-        <h4>Start walking</h4>
-        <p>Just tap Start on the home screen. GPS records your route automatically.</p>
+        <h4>Head out</h4>
+        <p>Just go for a walk as usual. No setup needed.</p>
       </div>
       <div class="step">
         <div class="ico">
           <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
         </div>
         <div class="num">STEP 02</div>
-        <h4>Review the walk</h4>
-        <p>Check distance, duration, and the full route on the detail screen. All past walks live in history.</p>
+        <h4>It records</h4>
+        <p>Distance, time, and route are recorded by GPS. Cart and vehicle sections are kept separate.</p>
       </div>
-      <div class="step opt">
+      <div class="step">
         <div class="ico">
           <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <div class="num">OPTION</div>
-        <h4>Register your dog (optional)</h4>
-        <p>Add name, breed, and birthday to link each walk to a dog. Multi-dog households supported.</p>
+        <div class="num">STEP 03</div>
+        <h4>Look back and share</h4>
+        <p>Review each walk as a card and share it in a charming frame.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT TOUR (interactive tabs) -->
-<section id="tour" class="sec" style="padding-top: 0;">
+<!-- WINDOW -->
+<section id="window" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">PRODUCT TOUR</div>
-      <h2 class="sec-title">Crafted screen by screen.</h2>
-      <p class="sec-lead">Tap a tab to switch screens. Follow the walk flow from start to finish.</p>
-    </div>
-
-    <div class="tour fd">
-      <div class="tour-tabs">
-        <button class="tab active" data-tab="0">
-          <span class="n">01</span>
-          <span class="inner">
-            <span class="tt">Home / Home & quick-start</span>
-            <span class="desc">Check your location on the map and start a walk in one tap. Suggested walking times live here too.</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="1">
-          <span class="n">02</span>
-          <span class="inner">
-            <span class="tt">History / Weekly report</span>
-            <span class="desc">Visualize this week’s walk count and distance as a bar chart. Browse past logs in chronological order.</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="2">
-          <span class="n">03</span>
-          <span class="inner">
-            <span class="tt">Detail & route playback</span>
-            <span class="desc">Review your route in detail on the map. Distance, duration, and pace at a glance.</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="3">
-          <span class="n">04</span>
-          <span class="inner">
-            <span class="tt">Profile / Dog management</span>
-            <span class="desc">Add name, breed, and birthday; each walk links to a dog.</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="5" data-dark="1">
-          <span class="n">05</span>
-          <span class="inner">
-            <span class="tt">Dark mode</span>
-            <span class="desc">Dark UI for comfortable night walks. Follows system appearance automatically.</span>
-          </span>
-        </button>
-      </div>
-
-      <div class="tour-phone">
-        <div class="phone">
-          <img id="tourImg" src="images/phone/home.png" alt="Current screen">
-        </div>
-      </div>
+      <div class="sec-eyebrow">WALK WINDOW</div>
+      <h2 class="sec-title">Suggested walk times</h2>
+      <p class="sec-lead">It quietly lets you know good times to walk — between showers, or when it cools down.</p>
     </div>
   </div>
 </section>
 
-<!-- SCREENSHOT STRIP (auto-scroll) -->
-<section class="strip-sec">
-  <div class="strip" id="strip">
-    <div class="phone"><img src="images/phone/home.png" alt="Home"></div>
-    <div class="phone"><img src="images/phone/history.png" alt="History"></div>
-    <div class="phone"><img src="images/phone/walk_detail.png" alt="Detail"></div>
-    <div class="phone"><img src="images/phone/dog_profile.png" alt="Profile"></div>
-    <div class="phone"><img src="images/phone/walk_completion.png" alt="Done"></div>
-    <div class="phone"><img src="images/phone/dark_home.png" alt="Dark"></div>
-    <!-- duplicate for loop -->
-    <div class="phone"><img src="images/phone/home.png" alt=""></div>
-    <div class="phone"><img src="images/phone/history.png" alt=""></div>
-    <div class="phone"><img src="images/phone/walk_detail.png" alt=""></div>
-    <div class="phone"><img src="images/phone/dog_profile.png" alt=""></div>
-    <div class="phone"><img src="images/phone/walk_completion.png" alt=""></div>
-    <div class="phone"><img src="images/phone/dark_home.png" alt=""></div>
-  </div>
-</section>
-
-<!-- PRIVACY -->
-<section class="sec">
+<!-- NOT INCLUDED -->
+<section id="not-included" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="privacy fd">
       <div class="privacy-grid">
         <div>
-          <div class="tag">PRIVACY FIRST</div>
-          <h2>Your data stays on your device.</h2>
-          <p>Walks and location data stay on your device. Wampo doesn’t send anything to a server. No account required.</p>
+          <div class="tag">NOT INCLUDED</div>
+          <h2>What this app is not</h2>
+          <p>No accounts, no social feeds, no rankings, no comparisons. Walk records stay on your device.</p>
         </div>
-        <div class="privacy-list">
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>Local storage only</h5><span>No cloud sync, no sharing</span></div>
-          </div>
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>No account</h5><span>No email, no password</span></div>
-          </div>
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>Works offline</h5><span>Record walks anywhere, no signal needed</span></div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE / FRAMES -->
+<section id="tour" class="sec" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-head fd">
+      <div class="sec-eyebrow">SHARE</div>
+      <h2 class="sec-title">Share in a charming frame</h2>
+      <p class="sec-lead">Review each walk as a card and share it in a charming frame.</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/walk_completion.png" alt="Completion card"></div>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/phone/walk_detail.png" alt="Walk details"></div>
       </div>
     </div>
   </div>
@@ -985,7 +964,7 @@ ul,ol { list-style: none; }
       </div>
       <div class="faq-item">
         <button class="faq-q">Is my privacy protected? <span class="plus"></span></button>
-        <div class="faq-a"><div class="faq-a-inner">Walks are stored locally on your device and never sent to external servers. For details, see the <a href="privacy.html">Privacy Policy</a>.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Your walk records (location, routes, photos) stay on your device. With your consent, basic usage data is sent to Google Analytics, and you can turn it off anytime in Settings. See the <a href="privacy.html">privacy policy</a> for details.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Is Android supported? <span class="plus"></span></button>
@@ -1072,34 +1051,6 @@ ul,ol { list-style: none; }
       a.style.maxHeight = open ? a.scrollHeight + 'px' : '0';
     });
   });
-
-  // Product tour tabs
-  var tabImages = [
-    'images/phone/home.png',
-    'images/phone/history.png',
-    'images/phone/walk_detail.png',
-    'images/phone/dog_profile.png',
-    'images/phone/walk_completion.png',
-    'images/phone/dark_home.png'
-  ];
-  var tourImg = document.getElementById('tourImg');
-  document.querySelectorAll('.tab').forEach(function(t){
-    t.addEventListener('click', function(){
-      document.querySelectorAll('.tab').forEach(function(x){ x.classList.remove('active'); });
-      t.classList.add('active');
-      var idx = parseInt(t.dataset.tab, 10);
-      // map index 5 → 5 in tabImages (darkmode)
-      if(idx === 5) idx = 5;
-      if(tourImg) {
-        tourImg.style.opacity = '0';
-        setTimeout(function(){
-          tourImg.src = tabImages[idx];
-          tourImg.style.opacity = '1';
-        }, 150);
-      }
-    });
-  });
-  if(tourImg){ tourImg.style.transition = 'opacity .2s'; }
 
   // Mobile menu
   var mt = document.querySelector('.menu-btn');

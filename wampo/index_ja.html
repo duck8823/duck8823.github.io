@@ -96,7 +96,7 @@
       "name": "データのプライバシーは守られますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "散歩データは端末にローカル保存されます。外部サーバーへは送信されません。"
+        "text": "散歩の記録（位置・ルート・写真）は端末の中に保存されます。アプリの使い方の計測は、同意した場合だけ Google の計測へ送られ、設定からいつでも止められます。詳しくはプライバシーポリシーをご覧ください。"
       }
     },
     {
@@ -869,8 +869,7 @@ ul,ol { list-style: none; }
   <div class="wrap">
     <div class="hero-eyebrow fd">
       <span class="live"></span>
-      <span>iOS 16.0+</span>
-      <span class="chip">v1.8 · 2026</span>
+      <span>愛犬との散歩記録</span>
     </div>
 
     <h1 class="hero-title fd">
@@ -879,22 +878,14 @@ ul,ol { list-style: none; }
     </h1>
 
     <p class="hero-sub fd">
-      GPSで散歩ルートを自動記録し、距離・時間・頻度をわかりやすく振り返り。設定は最小限、データはすべて端末内に。
+      歩いた距離と時間、写真やメモ。散歩の記録はわんぽに任せて、犬と歩く時間に戻りましょう。
     </p>
 
     <div class="hero-actions fd">
       <a href="https://apps.apple.com/app/id6759406324" class="btn btn-primary btn-lg">
         <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        App Storeでダウンロード
+        App Store で見る
       </a>
-      <a href="#tour" class="btn btn-outline btn-lg">機能を見る →</a>
-    </div>
-
-    <!-- HERO SHOWCASE -->
-    <div class="showcase fd">
-      <div class="show-phone"><img src="images/phone/ja_home.png" alt="ホーム画面" fetchpriority="high"></div>
-      <div class="show-phone tilt-l"><img src="images/phone/ja_walk_detail.png" alt="散歩の詳細"></div>
-      <div class="show-phone tilt-r"><img src="images/phone/ja_history.png" alt="散歩履歴"></div>
     </div>
   </div>
 </section>
@@ -905,7 +896,6 @@ ul,ol { list-style: none; }
     <div class="sec-head fd">
       <div class="sec-eyebrow">HOW IT WORKS</div>
       <h2 class="sec-title">使い方は、シンプルに。</h2>
-      <p class="sec-lead">アカウント登録は不要。アプリを開いて、散歩を始めるだけ。愛犬の登録は任意です。</p>
     </div>
 
     <div class="how fd">
@@ -914,129 +904,69 @@ ul,ol { list-style: none; }
           <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
         </div>
         <div class="num">STEP 01</div>
-        <h4>散歩をはじめる</h4>
-        <p>ホームのスタートボタンをタップするだけ。GPSがルートを自動で記録し続けます。</p>
+        <h4>連れて出る</h4>
+        <p>いつもどおり散歩に出るだけ。特別な準備はいりません。</p>
       </div>
       <div class="step">
         <div class="ico">
           <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
         </div>
         <div class="num">STEP 02</div>
-        <h4>記録を振り返る</h4>
-        <p>距離・時間・ルートを詳細画面で確認。過去の散歩は履歴からいつでも見返せます。</p>
+        <h4>自動で記録</h4>
+        <p>距離・時間・ルートを GPS で記録します。カートや乗り物の区間も分かれます。</p>
       </div>
-      <div class="step opt">
+      <div class="step">
         <div class="ico">
           <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <div class="num">OPTION</div>
-        <h4>愛犬を登録（任意）</h4>
-        <p>名前・犬種・生年月日を登録すれば、散歩と紐づけて管理できます。多頭飼いも対応。</p>
+        <div class="num">STEP 03</div>
+        <h4>見返す・シェアする</h4>
+        <p>散歩ごとのカードで振り返り、かわいいフレームで共有できます。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT TOUR (interactive tabs) -->
-<section id="tour" class="sec" style="padding-top: 0;">
+<!-- WINDOW -->
+<section id="window" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">PRODUCT TOUR</div>
-      <h2 class="sec-title">画面ごとの、こだわり。</h2>
-      <p class="sec-lead">主要な画面をタップして切り替えられます。散歩の流れに沿って、ひとつずつ見ていきましょう。</p>
-    </div>
-
-    <div class="tour fd">
-      <div class="tour-tabs">
-        <button class="tab active" data-tab="0">
-          <span class="n">01</span>
-          <span class="inner">
-            <span class="tt">ホーム / 現在地と散歩スタート</span>
-            <span class="desc">地図で現在地を確認し、ワンタップで散歩を開始。おすすめの散歩時間帯もここから確認できます。</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="1">
-          <span class="n">02</span>
-          <span class="inner">
-            <span class="tt">履歴 / 週間レポート</span>
-            <span class="desc">今週の散歩回数・距離をバーチャートで可視化。過去ログも時系列で探せます。</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="2">
-          <span class="n">03</span>
-          <span class="inner">
-            <span class="tt">詳細 / ルート再生</span>
-            <span class="desc">歩いたコースを地図上で詳細確認。距離・時間・ペースを一覧表示します。</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="3">
-          <span class="n">04</span>
-          <span class="inner">
-            <span class="tt">プロフィール / 愛犬管理</span>
-            <span class="desc">名前・犬種・生年月日を登録して、散歩記録と紐づけます。</span>
-          </span>
-        </button>
-        <button class="tab" data-tab="5" data-dark="1">
-          <span class="n">05</span>
-          <span class="inner">
-            <span class="tt">ダークモード</span>
-            <span class="desc">夜の散歩にも快適な暗色UI。システム設定に自動追従します。</span>
-          </span>
-        </button>
-      </div>
-
-      <div class="tour-phone">
-        <div class="phone">
-          <img id="tourImg" src="images/phone/ja_home.png" alt="現在の画面">
-        </div>
-      </div>
+      <div class="sec-eyebrow">WALK WINDOW</div>
+      <h2 class="sec-title">おすすめの散歩タイム</h2>
+      <p class="sec-lead">雨の合間や涼しい時間帯など、「いま歩きどき」をそっと知らせます。</p>
     </div>
   </div>
 </section>
 
-<!-- SCREENSHOT STRIP (auto-scroll) -->
-<section class="strip-sec">
-  <div class="strip" id="strip">
-    <div class="phone"><img src="images/phone/ja_home.png" alt="ホーム"></div>
-    <div class="phone"><img src="images/phone/ja_history.png" alt="履歴"></div>
-    <div class="phone"><img src="images/phone/ja_walk_detail.png" alt="詳細"></div>
-    <div class="phone"><img src="images/phone/ja_dog_profile.png" alt="プロフィール"></div>
-    <div class="phone"><img src="images/phone/ja_walk_completion.png" alt="完了"></div>
-    <div class="phone"><img src="images/phone/ja_darkmode.png" alt="ダーク"></div>
-    <!-- duplicate for loop -->
-    <div class="phone"><img src="images/phone/ja_home.png" alt=""></div>
-    <div class="phone"><img src="images/phone/ja_history.png" alt=""></div>
-    <div class="phone"><img src="images/phone/ja_walk_detail.png" alt=""></div>
-    <div class="phone"><img src="images/phone/ja_dog_profile.png" alt=""></div>
-    <div class="phone"><img src="images/phone/ja_walk_completion.png" alt=""></div>
-    <div class="phone"><img src="images/phone/ja_darkmode.png" alt=""></div>
-  </div>
-</section>
-
-<!-- PRIVACY -->
-<section class="sec">
+<!-- NOT INCLUDED -->
+<section id="not-included" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="privacy fd">
       <div class="privacy-grid">
         <div>
-          <div class="tag">PRIVACY FIRST</div>
-          <h2>データは、端末の中だけに。</h2>
-          <p>散歩データや位置情報はすべて端末にローカル保存。わんぽはサーバーに何も送りません。アカウント登録もいりません。</p>
+          <div class="tag">NOT INCLUDED</div>
+          <h2>ないものも、書いておきます。</h2>
+          <p>アカウント登録、SNS 機能、ランキング、他人との比較はありません。散歩の記録は端末の中に保存されます。</p>
         </div>
-        <div class="privacy-list">
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>ローカル保存のみ</h5><span>クラウド送信・共有はいっさい行いません</span></div>
-          </div>
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>アカウント不要</h5><span>メールアドレスも、パスワードも要りません</span></div>
-          </div>
-          <div class="privacy-item">
-            <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="pi-text"><h5>オフラインで動作</h5><span>ネットに繋がらない場所でも記録できます</span></div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE / FRAMES -->
+<section id="tour" class="sec" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-head fd">
+      <div class="sec-eyebrow">SHARE</div>
+      <h2 class="sec-title">かわいいフレームで共有</h2>
+      <p class="sec-lead">散歩ごとのカードで振り返り、かわいいフレームで共有できます。</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/ja_walk_completion.png" alt="完了カード"></div>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/phone/ja_walk_detail.png" alt="散歩の詳細"></div>
       </div>
     </div>
   </div>
@@ -1066,7 +996,7 @@ ul,ol { list-style: none; }
       </div>
       <div class="faq-item">
         <button class="faq-q">データのプライバシーは守られますか？ <span class="plus"></span></button>
-        <div class="faq-a"><div class="faq-a-inner">散歩データは端末にローカル保存されます。外部サーバーへは送信されません。詳しくは<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</div></div>
+        <div class="faq-a"><div class="faq-a-inner">散歩の記録（位置・ルート・写真）は端末の中に保存されます。アプリの使い方の計測は、同意した場合だけ Google の計測へ送られ、設定からいつでも止められます。詳しくは<a href="privacy_ja.html">プライバシーポリシー</a>をご覧ください。</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Androidには対応していますか？ <span class="plus"></span></button>
@@ -1153,34 +1083,6 @@ ul,ol { list-style: none; }
       a.style.maxHeight = open ? a.scrollHeight + 'px' : '0';
     });
   });
-
-  // Product tour tabs
-  var tabImages = [
-    'images/phone/ja_home.png',
-    'images/phone/ja_history.png',
-    'images/phone/ja_walk_detail.png',
-    'images/phone/ja_dog_profile.png',
-    'images/phone/ja_walk_completion.png',
-    'images/phone/ja_darkmode.png'
-  ];
-  var tourImg = document.getElementById('tourImg');
-  document.querySelectorAll('.tab').forEach(function(t){
-    t.addEventListener('click', function(){
-      document.querySelectorAll('.tab').forEach(function(x){ x.classList.remove('active'); });
-      t.classList.add('active');
-      var idx = parseInt(t.dataset.tab, 10);
-      // map index 5 → 5 in tabImages (darkmode)
-      if(idx === 5) idx = 5;
-      if(tourImg) {
-        tourImg.style.opacity = '0';
-        setTimeout(function(){
-          tourImg.src = tabImages[idx];
-          tourImg.style.opacity = '1';
-        }, 150);
-      }
-    });
-  });
-  if(tourImg){ tourImg.style.transition = 'opacity .2s'; }
 
   // Mobile menu
   var mt = document.querySelector('.menu-btn');
