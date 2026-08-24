@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wampo — Dog Walking Tracker</title>
-<meta name="description" content="Wampo is a simple iOS app that records your dog walks with GPS, letting you review routes, distances, and duration.">
+<title>Wampo — A good walk day with your dog</title>
+<meta name="description" content="See how walkable today is before you go. The route stays on the phone, markers and all. Free on iOS.">
 
 <!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://duck8823.net/wampo/index.html">
@@ -18,16 +18,16 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://duck8823.net/wampo/index.html">
-<meta property="og:title" content="Wampo — Dog Walking Tracker">
-<meta property="og:description" content="Wampo is a simple iOS app that records your dog walks with GPS, letting you review routes, distances, and duration.">
+<meta property="og:title" content="Wampo — A good walk day with your dog">
+<meta property="og:description" content="See how walkable today is before you go. The route stays on the phone, markers and all.">
 <meta property="og:image" content="https://duck8823.net/wampo/assets/ogp.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Wampo">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wampo — Dog Walking Tracker">
-<meta name="twitter:description" content="Wampo is a simple iOS app that records your dog walks with GPS, letting you review routes, distances, and duration.">
+<meta name="twitter:title" content="Wampo — A good walk day with your dog">
+<meta name="twitter:description" content="See how walkable today is before you go. The route stays on the phone, markers and all.">
 <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp.png">
 
 <script type="application/ld+json">
@@ -320,9 +320,14 @@ ul,ol { list-style: none; }
   background: linear-gradient(140deg, #1a1a1a, #2e2e2e);
   border-radius: 44px;
   box-shadow: 0 30px 60px -20px rgba(14,14,12,0.35), inset 0 2px 0 rgba(255,255,255,0.08);
-  margin-bottom: -80px;
   width: 78%;
   max-width: 280px;
+}
+.card-phone .phone { margin-bottom: -80px; }
+.step .phone {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 16px;
 }
 .phone img { border-radius: 36px; width:100%; }
 
@@ -429,7 +434,7 @@ ul,ol { list-style: none; }
   .card-map   { grid-column: span 6; grid-row: span 4; }
   .card-feature { grid-column: span 3; grid-row: span 3; }
   .card-bar { grid-column: span 6; grid-row: span 3; }
-  .phone { margin-bottom: -60px; max-width: 240px; }
+  .card-phone .phone { margin-bottom: -60px; max-width: 240px; }
 }
 @media (max-width: 600px){
   .bento { grid-auto-rows: auto; gap: 10px; }
@@ -837,16 +842,15 @@ ul,ol { list-style: none; }
   <div class="wrap">
     <div class="hero-eyebrow fd">
       <span class="live"></span>
-      <span>A walking record for your dog</span>
+      <span>iOS · Free</span>
     </div>
 
     <h1 class="hero-title fd">
-      Walks with your dog,<br>
-      kept <span class="acc">simply</span>.
+      A good walk day with your dog
     </h1>
 
     <p class="hero-sub fd">
-      Distance, time, photos, and notes — let wampo keep the record, so you can just walk with your dog.
+      See how walkable today is before you go.<br>The route stays on the phone, markers and all.
     </p>
 
     <div class="hero-actions fd">
@@ -855,53 +859,85 @@ ul,ol { list-style: none; }
         View on the App Store
       </a>
     </div>
+
+    <div class="showcase fd">
+      <div class="show-phone tilt-l"><img src="images/phone/home_rain.jpg" alt="Where the rain is"></div>
+      <div class="show-phone"><img src="images/phone/home.jpg" alt="Before the leash"></div>
+      <div class="show-phone tilt-r"><img src="images/phone/walking_shade.jpg" alt="Pick shadier roads"></div>
+    </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- Before you go -->
 <section id="how" class="sec">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">HOW IT WORKS</div>
-      <h2 class="sec-title">Simple by design.</h2>
+      <div class="sec-eyebrow">BEFORE YOU GO</div>
+      <h2 class="sec-title">Before the leash</h2>
+      <p class="sec-lead">See when today suits a walk with your dog, before you head out.</p>
     </div>
-
     <div class="how fd">
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
-        </div>
-        <div class="num">STEP 01</div>
-        <h4>Head out</h4>
-        <p>Just go for a walk as usual. No setup needed.</p>
+        <div class="phone"><img src="images/phone/home.jpg" alt="Walk window"></div>
+        <h4>Before the leash</h4>
+        <p>See when today suits a walk with your dog, before you head out.</p>
       </div>
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
-        </div>
-        <div class="num">STEP 02</div>
-        <h4>It records</h4>
-        <p>Distance, time, and route are recorded by GPS. Cart and vehicle sections are kept separate.</p>
+        <div class="phone"><img src="images/phone/home_rain.jpg" alt="Rain on the map"></div>
+        <h4>Where the rain is</h4>
+        <p>Rain clouds on the map, so you decide to go now or wait. Not a precision forecast.</p>
       </div>
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <div class="num">STEP 03</div>
-        <h4>Look back and share</h4>
-        <p>Review each walk as a card and share it in a charming frame.</p>
+        <div class="phone"><img src="images/phone/walking_shade.jpg" alt="Shade on the map"></div>
+        <h4>Pick shadier roads</h4>
+        <p>Estimated building shade on the map for hot-day routes with your dog.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WINDOW -->
-<section id="window" class="sec" style="padding-top: 0;">
+<!-- Walking -->
+<section id="walk" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">WALK WINDOW</div>
-      <h2 class="sec-title">Suggested walk times</h2>
-      <p class="sec-lead">It quietly lets you know good times to walk — between showers, or when it cools down.</p>
+      <div class="sec-eyebrow">WHILE YOU WALK</div>
+      <h2 class="sec-title">Stopped here</h2>
+      <p class="sec-lead">Drop a marker where your dog stopped, right on the route as you walk.</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/walking.jpg" alt="Walking"></div>
+        <h4>Stopped here</h4>
+        <p>You place the markers. Route, distance, and time stay with them.</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/watch/watch_start_en.jpg" alt="Apple Watch"></div>
+        <h4>Start from your wrist</h4>
+        <p>Progress on your wrist. Your phone can stay in your pocket.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- After -->
+<section id="tour" class="sec" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-head fd">
+      <div class="sec-eyebrow">LOOK BACK</div>
+      <h2 class="sec-title">Markers and all</h2>
+      <p class="sec-lead">Look back at the route you walked with your dog, with distance and time.</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/walk_detail.jpg" alt="Walk details"></div>
+        <h4>Markers and all</h4>
+        <p>Today’s route stays, with the numbers beside it.</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/phone/history.jpg" alt="Weekly history"></div>
+        <h4>Week by week</h4>
+        <p>Walks and distance per week show the habit you built with your dog.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -914,27 +950,8 @@ ul,ol { list-style: none; }
         <div>
           <div class="tag">NOT INCLUDED</div>
           <h2>What this app is not</h2>
-          <p>No accounts, no social feeds, no rankings, no comparisons. Walk records stay on your device.</p>
+          <p>No accounts, rankings, live tracking of other people, or in-app social. Analytics only with consent. Walk records stay on your device.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SHARE / FRAMES -->
-<section id="tour" class="sec" style="padding-top: 0;">
-  <div class="wrap">
-    <div class="sec-head fd">
-      <div class="sec-eyebrow">SHARE</div>
-      <h2 class="sec-title">Share in a charming frame</h2>
-      <p class="sec-lead">Review each walk as a card and share it in a charming frame.</p>
-    </div>
-    <div class="how fd">
-      <div class="step">
-        <div class="phone"><img src="images/phone/walk_completion.png" alt="Completion card"></div>
-      </div>
-      <div class="step">
-        <div class="phone"><img src="images/phone/walk_detail.png" alt="Walk details"></div>
       </div>
     </div>
   </div>
@@ -979,7 +996,7 @@ ul,ol { list-style: none; }
   <div class="wrap">
     <div class="cta fd">
       <h2>Start with today’s walk.</h2>
-      <p>No account needed. A small habit for your everyday walk.</p>
+      <p>No account needed. Check before you go. The route stays on the phone.</p>
       <a href="https://apps.apple.com/app/id6759406324" class="btn btn-primary btn-lg">
         <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         Download on App Store
@@ -994,7 +1011,7 @@ ul,ol { list-style: none; }
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="brand"><img class="mk" src="assets/icon.png" alt="">Wampo</a>
-        <p>An iOS app for dog walks that records routes with GPS automatically.</p>
+        <p>A good walk day with your dog. See how walkable it is before you go.</p>
       </div>
       <div class="footer-col">
         <h5>Product</h5>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>わんぽ — 愛犬との散歩を記録する iOS アプリ</title>
-<meta name="description" content="わんぽはGPSで散歩ルートを自動記録し、歩いた距離・時間を振り返れる愛犬の散歩管理アプリです。iOS対応・無料。">
+<title>わんぽ — 愛犬とおさんぽ日和</title>
+<meta name="description" content="出る前に、今日いつ歩きやすいかを地図で見る。歩いた道は、印ごと端末に残る。iOS対応・無料。">
 
 <!-- Canonical & Hreflang -->
 <link rel="canonical" href="https://duck8823.net/wampo/index_ja.html">
@@ -17,16 +17,16 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://duck8823.net/wampo/index_ja.html">
-<meta property="og:title" content="わんぽ — 愛犬との散歩を記録する iOS アプリ">
-<meta property="og:description" content="GPSで散歩ルートを自動記録。歩いた距離・時間を振り返れる愛犬の散歩管理アプリ。週間レポートで散歩の習慣が一目でわかります。">
+<meta property="og:title" content="わんぽ — 愛犬とおさんぽ日和">
+<meta property="og:description" content="出る前に、今日いつ歩きやすいかを地図で見る。歩いた道は、印ごと端末に残る。">
 <meta property="og:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="わんぽ">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="わんぽ — 愛犬との散歩を記録する iOS アプリ">
-<meta name="twitter:description" content="GPSで散歩ルートを自動記録。歩いた距離・時間を振り返れる愛犬の散歩管理アプリ。週間レポートで散歩の習慣が一目でわかります。">
+<meta name="twitter:title" content="わんぽ — 愛犬とおさんぽ日和">
+<meta name="twitter:description" content="出る前に、今日いつ歩きやすいかを地図で見る。歩いた道は、印ごと端末に残る。">
 <meta name="twitter:image" content="https://duck8823.net/wampo/assets/ogp_ja.png">
 
 <!-- JSON-LD Structured Data -->
@@ -35,7 +35,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "わんぽ",
-  "description": "GPSで散歩ルートを自動記録し、歩いた距離・時間を振り返れる愛犬の散歩管理アプリ。週間レポートで散歩の習慣が一目でわかります。",
+  "description": "出る前に、今日いつ歩きやすいかを地図で見る。歩いた道は、印ごと端末に残る。",
   "applicationCategory": "HealthFitnessApplication",
   "operatingSystem": "iOS 16.0+",
   "offers": {
@@ -45,13 +45,13 @@
   },
   "downloadUrl": "https://apps.apple.com/app/id6759406324",
   "featureList": [
+    "おさんぽ窓",
+    "雨雲",
+    "日陰の目安",
     "GPSルート記録",
+    "マーカー",
     "週間レポート",
-    "散歩履歴",
-    "ルート確認",
-    "愛犬プロフィール登録",
-    "散歩中のイベント記録",
-    "ダークモード対応"
+    "Apple Watch"
   ],
   "inLanguage": ["ja"],
   "author": {
@@ -352,9 +352,14 @@ ul,ol { list-style: none; }
   background: linear-gradient(140deg, #1a1a1a, #2e2e2e);
   border-radius: 44px;
   box-shadow: 0 30px 60px -20px rgba(14,14,12,0.35), inset 0 2px 0 rgba(255,255,255,0.08);
-  margin-bottom: -80px;
   width: 78%;
   max-width: 280px;
+}
+.card-phone .phone { margin-bottom: -80px; }
+.step .phone {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 16px;
 }
 .phone img { border-radius: 36px; width:100%; display:block; }
 
@@ -461,7 +466,7 @@ ul,ol { list-style: none; }
   .card-map   { grid-column: span 6; grid-row: span 4; }
   .card-feature { grid-column: span 3; grid-row: span 3; }
   .card-bar { grid-column: span 6; grid-row: span 3; }
-  .phone { margin-bottom: -60px; max-width: 240px; }
+  .card-phone .phone { margin-bottom: -60px; max-width: 240px; }
 }
 @media (max-width: 600px){
   .bento { grid-auto-rows: auto; gap: 10px; }
@@ -869,16 +874,15 @@ ul,ol { list-style: none; }
   <div class="wrap">
     <div class="hero-eyebrow fd">
       <span class="live"></span>
-      <span>愛犬との散歩記録</span>
+      <span>iOS · 無料</span>
     </div>
 
     <h1 class="hero-title fd">
-      愛犬との散歩を、<br>
-      <span class="acc">すっきり</span>記録するアプリ。
+      愛犬とおさんぽ日和
     </h1>
 
     <p class="hero-sub fd">
-      歩いた距離と時間、写真やメモ。散歩の記録はわんぽに任せて、犬と歩く時間に戻りましょう。
+      出る前に、今日いつ歩きやすいかを地図で見る。<br>歩いた道は、印ごと端末に残る。
     </p>
 
     <div class="hero-actions fd">
@@ -887,53 +891,85 @@ ul,ol { list-style: none; }
         App Store で見る
       </a>
     </div>
+
+    <div class="showcase fd">
+      <div class="show-phone tilt-l"><img src="images/phone/ja_home_rain.jpg" alt="雨雲はどこにいる"></div>
+      <div class="show-phone"><img src="images/phone/ja_home.jpg" alt="リードを持つ前に"></div>
+      <div class="show-phone tilt-r"><img src="images/phone/ja_walking_shade.jpg" alt="影の多い道を選ぶ"></div>
+    </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- 出る前 -->
 <section id="how" class="sec">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">HOW IT WORKS</div>
-      <h2 class="sec-title">使い方は、シンプルに。</h2>
+      <div class="sec-eyebrow">BEFORE YOU GO</div>
+      <h2 class="sec-title">リードを持つ前に</h2>
+      <p class="sec-lead">今日はいつ愛犬と歩きやすいかを、地図で見る。</p>
     </div>
-
     <div class="how fd">
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
-        </div>
-        <div class="num">STEP 01</div>
-        <h4>連れて出る</h4>
-        <p>いつもどおり散歩に出るだけ。特別な準備はいりません。</p>
+        <div class="phone"><img src="images/phone/ja_home.jpg" alt="おさんぽ窓"></div>
+        <h4>リードを持つ前に</h4>
+        <p>今日はいつ愛犬と歩きやすいか、地図で見る。</p>
       </div>
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
-        </div>
-        <div class="num">STEP 02</div>
-        <h4>自動で記録</h4>
-        <p>距離・時間・ルートを GPS で記録します。カートや乗り物の区間も分かれます。</p>
+        <div class="phone"><img src="images/phone/ja_home_rain.jpg" alt="雨雲"></div>
+        <h4>雨雲はどこにいる</h4>
+        <p>近づく雨雲を地図に重ねて、出るか待つかを自分で決める。精度の保証ではありません。</p>
       </div>
       <div class="step">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <div class="num">STEP 03</div>
-        <h4>見返す・シェアする</h4>
-        <p>散歩ごとのカードで振り返り、かわいいフレームで共有できます。</p>
+        <div class="phone"><img src="images/phone/ja_walking_shade.jpg" alt="日陰"></div>
+        <h4>影の多い道を選ぶ</h4>
+        <p>建物の影の目安を地図に重ねて、暑い日の道を愛犬と決める。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WINDOW -->
-<section id="window" class="sec" style="padding-top: 0;">
+<!-- 歩く -->
+<section id="walk" class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="sec-head fd">
-      <div class="sec-eyebrow">WALK WINDOW</div>
-      <h2 class="sec-title">おすすめの散歩タイム</h2>
-      <p class="sec-lead">雨の合間や涼しい時間帯など、「いま歩きどき」をそっと知らせます。</p>
+      <div class="sec-eyebrow">WHILE YOU WALK</div>
+      <h2 class="sec-title">ここで止まった</h2>
+      <p class="sec-lead">愛犬が立ち止まった場所を、歩きながらルートの上に残せる。</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/ja_walking.jpg" alt="散歩中"></div>
+        <h4>ここで止まった</h4>
+        <p>印は自分で残す。ルートと距離と時間が一緒に残る。</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/watch/watch_start.jpg" alt="Apple Watch"></div>
+        <h4>手首から始める</h4>
+        <p>経過は手首で。iPhone はポケットのままでよい。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- あとから -->
+<section id="tour" class="sec" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-head fd">
+      <div class="sec-eyebrow">LOOK BACK</div>
+      <h2 class="sec-title">印ごと残る</h2>
+      <p class="sec-lead">愛犬と歩いた道を、距離と時間と一緒に見返せる。</p>
+    </div>
+    <div class="how fd">
+      <div class="step">
+        <div class="phone"><img src="images/phone/ja_walk_detail.jpg" alt="散歩の詳細"></div>
+        <h4>印ごと残る</h4>
+        <p>今日の道が、地図と数字で残る。</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="images/phone/ja_history.jpg" alt="週間の履歴"></div>
+        <h4>週ごとに積み上がる</h4>
+        <p>週ごとの回数と距離で、愛犬との習慣が形になる。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -946,27 +982,8 @@ ul,ol { list-style: none; }
         <div>
           <div class="tag">NOT INCLUDED</div>
           <h2>ないものも、書いておきます。</h2>
-          <p>アカウント登録、SNS 機能、ランキング、他人との比較はありません。散歩の記録は端末の中に保存されます。</p>
+          <p>アカウント登録、ランキング、他人の現在地追跡、アプリ内 SNS はありません。計測は同意したときだけです。散歩の記録は端末の中に保存されます。</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SHARE / FRAMES -->
-<section id="tour" class="sec" style="padding-top: 0;">
-  <div class="wrap">
-    <div class="sec-head fd">
-      <div class="sec-eyebrow">SHARE</div>
-      <h2 class="sec-title">かわいいフレームで共有</h2>
-      <p class="sec-lead">散歩ごとのカードで振り返り、かわいいフレームで共有できます。</p>
-    </div>
-    <div class="how fd">
-      <div class="step">
-        <div class="phone"><img src="images/phone/ja_walk_completion.png" alt="完了カード"></div>
-      </div>
-      <div class="step">
-        <div class="phone"><img src="images/phone/ja_walk_detail.png" alt="散歩の詳細"></div>
       </div>
     </div>
   </div>
@@ -1010,8 +1027,8 @@ ul,ol { list-style: none; }
 <section class="sec" style="padding-top: 0;">
   <div class="wrap">
     <div class="cta fd">
-      <h2>今日の散歩から、記録しよう。</h2>
-      <p>アカウント登録不要。いつもの散歩に、小さな習慣を。</p>
+      <h2>今日の散歩から。</h2>
+      <p>アカウント登録不要。出る前に見て、歩いた道は端末に残る。</p>
       <a href="https://apps.apple.com/app/id6759406324" class="btn btn-primary btn-lg">
         <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         App Store でダウンロード
@@ -1026,7 +1043,7 @@ ul,ol { list-style: none; }
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="brand"><img class="mk" src="assets/icon.png" alt="">わんぽ</a>
-        <p>GPSで散歩ルートを自動記録する、愛犬のための iOS アプリ。</p>
+        <p>愛犬とおさんぽ日和。出る前の歩きやすさを、地図で見る iOS アプリ。</p>
       </div>
       <div class="footer-col">
         <h5>プロダクト</h5>
