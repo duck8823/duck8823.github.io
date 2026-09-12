@@ -1,0 +1,38 @@
+[
+  {
+    "source": "user-reference-based generated illustration; approved local design",
+    "source_sha256": "8af978a67a019bbd5d65fcd8a5f35b7ee5ebefe6002509d942ccdaceb731e232",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "rgba_sha256": "489002a6af248a264117a0da163e8a2305ba9e01e9852dce0d2ae5a5da9d60c5",
+    "output": "assets/okaka-standing-grounded-v4.webp",
+    "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+    "approval": "user approved design; no separate publishing authorization"
+  },
+  {
+    "source": "user-reference-based generated illustration; approved local design",
+    "source_sha256": "e9eeb70850513437b1703e3e492cb6581d435e822a1536cff8618e9c44a6d665",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "rgba_sha256": "a83646331f326216fb9c44f972b0acd8dc9ad7b9c217fdba4620f339f2863eb5",
+    "output": "assets/okaka-sitting-clean-v3.webp",
+    "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+    "approval": "user approved design; no separate publishing authorization"
+  },
+  {
+    "source": "user-reference-based generated illustration; approved local design",
+    "source_sha256": "85b0fcb28bfaa59734188ab82e25355f9419da480733f63ad7977a49c7bccf30",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "rgba_sha256": "66426fcdbd8806e288357048e86bc7636a2674ab5da6316beceb0c3fc77c56a1",
+    "output": "assets/sleep-curled-v4.webp",
+    "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+    "approval": "user approved design; no separate publishing authorization"
+  }
+]

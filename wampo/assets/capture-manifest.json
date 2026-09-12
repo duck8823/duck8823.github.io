@@ -1,0 +1,366 @@
+{
+  "source_main_commit": "90b51f8c15a7f1c4dc3e5e770258b6fe5e7cc3c9",
+  "pillow": "12.2.0",
+  "status": "user-approved design; captures not certified as released build; publication gate separate",
+  "assets": [
+    {
+      "source": "fastlane/screenshots-source/ja/timeline_walk.png",
+      "source_sha256": "cd26a12148f46380689761d581a6f7b0b4ef040d4ca3a1aafd05ddd0ff6a4ef3",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/timeline_walk.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "ddd5e3a9575b86d1e867599c589af89cea00a1fb77d4b62414311f41b77179ca",
+      "bytes": 135458,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/walk_detail.png",
+      "source_sha256": "e9a2a1b21b7149aea9a7e98ea4059a3fceea8d977b9e31d28ea1c9ee4f476b82",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/walk_detail.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "6346fed2444bc8b371828a2b28e9ede77a74209322d003005f6e6e3dedbf5282",
+      "bytes": 80470,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/home_rain.png",
+      "source_sha256": "95f2e7868f77442b61285d093bd035279885961e16490186c34a8199cbba0487",
+      "source_size": [
+        1206,
+        2622
+      ],
+      "output": "assets/screenshots/ja/home_rain.webp",
+      "output_size": [
+        792,
+        1722
+      ],
+      "output_sha256": "f1e333e165c8a0ac47d1de39aa9b0c64fe48f2f0891e5d15d84ca83d6a9f788e",
+      "bytes": 167900,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/home_shade.png",
+      "source_sha256": "f7197531ac99f6f36fd26cd7d880c9d63c48ece89b2abab37fbc1547d0ad0983",
+      "source_size": [
+        1206,
+        2622
+      ],
+      "output": "assets/screenshots/ja/home_shade.webp",
+      "output_size": [
+        792,
+        1722
+      ],
+      "output_sha256": "3c48616e736203a79bce9b629d26e2e8fc11e2aebf533e1e92d23b1efc5c5467",
+      "bytes": 196352,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/walk_timing.png",
+      "source_sha256": "cced8c309b3c566fc1bc9696001f3931b284916936dc2710df65b8f59830ab02",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/walk_timing.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "49ae3ac382a693318133a05b3a2d09fa54efe6b9347e275a7e016f6bbceed47a",
+      "bytes": 80232,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/dog_timeline.png",
+      "source_sha256": "0dfad2ba42f396eb9b58d17cb69ba84ab760bad4ed091c0c135b119ccabbb14b",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/dog_timeline.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "5d0f16e43e5a342f03cdfbffd2aab727fbaa1dad179a9c952a18b2c2a72685ef",
+      "bytes": 113256,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/observation.png",
+      "source_sha256": "972cfe219daa1959c5d0f9f668befa34c155cc38b98a971886efb35f91c2c795",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/observation.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "e95efc59ce309e18c2b768fef93ec6bc41909fcb3516287174e23a5d65cfd876",
+      "bytes": 44428,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/gallery.png",
+      "source_sha256": "af1c1370141be061e69be6c653f4ef3a160986b99743a473b4d2fddb4446bf6a",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/gallery.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "78592d2809578ccd2aa76eb0f3da7dbe233872111bac92a4a524bc65082abff3",
+      "bytes": 264902,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/watch_walking.png",
+      "source_sha256": "c65329b6c86acd2e2395facf4960155d347fecd7cc45f7c461311e6a273d9603",
+      "source_size": [
+        416,
+        496
+      ],
+      "output": "assets/screenshots/ja/watch_walking.webp",
+      "output_size": [
+        416,
+        496
+      ],
+      "output_sha256": "163251127cb683efb70839a5290b24b9874b0a8bb75f2e3eb9fafe0bc44626bb",
+      "bytes": 7826,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/timeline_walk.png",
+      "source_sha256": "8ae9fe066c86acd6d4b41a7118efd454e71a10265d4b3d31872fe9dd3fbdf128",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/timeline_walk.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "82699c409e03f4bcb9d2d7f50c55bb91d3a9aa76e440c56ddeca5191768bccab",
+      "bytes": 134308,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/walk_detail.png",
+      "source_sha256": "13f9e2b7f962bd2a76374e2c156d66d459c20afea73f45f36658c5c169f3c6d5",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/walk_detail.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "a42c59afcd8ae65ae03912f3e9e0a4a3322f212bdee4f020b86f430772949ca3",
+      "bytes": 84610,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/home_rain.png",
+      "source_sha256": "d0f7fe3b7dc06bb78643e9edabde3c2d14f16aa5c4bc5c5bb129a7cbfba4eef6",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/home_rain.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "4d5f189a9fc1957ce4b49a8e57af08ad0d4079993e51629b90637e6db2aed46d",
+      "bytes": 196054,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/home_shade.png",
+      "source_sha256": "9a1da773a9f10e1057a7e751c8d55c70b55f9e9947b77fefb716599b94e58284",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/home_shade.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "e14798942d2176db5afeee0173645c9344b593d2dd84a8f3727da8a26018a04b",
+      "bytes": 226374,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/walk_timing.png",
+      "source_sha256": "69b3371b0255f69d8c358a8217084298f84998f343a71e972dd289ebd58cca0e",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/walk_timing.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "fba5c205ca10669a4be20a23f0d61fb94250e09631797482310905831d099832",
+      "bytes": 80638,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/dog_timeline.png",
+      "source_sha256": "65bdcddac5b14d825a78c79638862e4af5e0873b2ffac376c220caaeb91a8506",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/dog_timeline.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "d62ee49a028d2e8b3ddef3b54aacd7ecbfbeb30592762cf1e0ca923fdd90965e",
+      "bytes": 110196,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/observation.png",
+      "source_sha256": "25504e03ec98bde0258b6df808fccc3f3f7d8d8e2078d9cd87d2619246c82b41",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/observation.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "0694c7ccfa0bbf09a9831df8c68028ecca884c3b1cf66953f8cdef52500ccee8",
+      "bytes": 44716,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/gallery.png",
+      "source_sha256": "2c38ba6860a16930f7eeda15825350d1a1716408dd7e971aac90f3728d508730",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/en/gallery.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "309aacab224ff254d2cf75630e8a5ab3e1e23621af3d5c887811d95547db14cf",
+      "bytes": 264662,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/en-US/watch_walking.png",
+      "source_sha256": "144bbe590773b6c028ceafaa7c659fc67477c75add9e046e55361df45495a67b",
+      "source_size": [
+        416,
+        496
+      ],
+      "output": "assets/screenshots/en/watch_walking.webp",
+      "output_size": [
+        416,
+        496
+      ],
+      "output_sha256": "5961b968f442e8050023d3addb6f252de4f46650a090d34fe0dc144985bdbd0a",
+      "bytes": 7594,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "user-reference-based generated illustration; approved local design",
+      "source_sha256": "8af978a67a019bbd5d65fcd8a5f35b7ee5ebefe6002509d942ccdaceb731e232",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "489002a6af248a264117a0da163e8a2305ba9e01e9852dce0d2ae5a5da9d60c5",
+      "output": "assets/okaka-standing-grounded-v4.webp",
+      "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+      "approval": "user approved design; no separate publishing authorization",
+      "output_size": [
+        1254,
+        1254
+      ],
+      "output_sha256": "76b33e5e3cdd6041d7b009993f41cc158463e04841c0e447d284ad309ad1c962",
+      "bytes": 707838
+    },
+    {
+      "source": "user-reference-based generated illustration; approved local design",
+      "source_sha256": "e9eeb70850513437b1703e3e492cb6581d435e822a1536cff8618e9c44a6d665",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "rgba_sha256": "a83646331f326216fb9c44f972b0acd8dc9ad7b9c217fdba4620f339f2863eb5",
+      "output": "assets/okaka-sitting-clean-v3.webp",
+      "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+      "approval": "user approved design; no separate publishing authorization",
+      "output_size": [
+        1254,
+        1254
+      ],
+      "output_sha256": "37084a845fd95513e6a526009faac2d6e2b6cea124427da4de3715b8e1e5ff82",
+      "bytes": 723458
+    },
+    {
+      "source": "user-reference-based generated illustration; approved local design",
+      "source_sha256": "85b0fcb28bfaa59734188ab82e25355f9419da480733f63ad7977a49c7bccf30",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "rgba_sha256": "66426fcdbd8806e288357048e86bc7636a2674ab5da6316beceb0c3fc77c56a1",
+      "output": "assets/sleep-curled-v4.webp",
+      "transform": "lossless WebP exact=True; decoded RGBA byte-identical to approved PNG",
+      "approval": "user approved design; no separate publishing authorization",
+      "output_size": [
+        1536,
+        1024
+      ],
+      "output_sha256": "ed593fc72f804ae7baeb5ad6ba17a56c1b05c9b05f42db71616caaf83ff883dd",
+      "bytes": 1246428
+    },
+    {
+      "source": "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83",
+      "output": "assets/app-store-ja.svg",
+      "source_sha256": "988fe0a48015c5a56dac88172487a1f5cda96340b34d80fd94312d02e9f67865",
+      "output_sha256": "988fe0a48015c5a56dac88172487a1f5cda96340b34d80fd94312d02e9f67865",
+      "bytes": 9880,
+      "transform": "unaltered copy"
+    },
+    {
+      "source": "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",
+      "output": "assets/app-store-en.svg",
+      "source_sha256": "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f",
+      "output_sha256": "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f",
+      "bytes": 10804,
+      "transform": "unaltered copy"
+    }
+  ],
+  "total_bytes": 4938384
+}
