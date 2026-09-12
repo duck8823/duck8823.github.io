@@ -1,0 +1,1453 @@
+:root {
+  --paper: #faf6eb;
+  --ink: #243955;
+  --accent: #a15a38;
+  --green: #58734b;
+  --muted: #656b6c;
+  --line: #cec8ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang='en'] body {
+  font-family: 'Avenir Next', Avenir, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  touch-action: manipulation;
+}
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: fixed;
+  z-index: 20;
+  top: -100px;
+  left: 12px;
+  background: white;
+  padding: 15px;
+}
+
+.skip:focus {
+  top: 10px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 1320px;
+  margin: auto;
+  padding: 24px 5%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -.05em;
+}
+
+.brand img {
+  border-radius: 9px;
+}
+
+.brand-note {
+  font: italic 12px Baskerville, Georgia, serif;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  line-height: 1.8;
+  margin: 0 0 25px;
+}
+
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: -.065em;
+}
+
+html[lang='en'] h1, html[lang='en'] h2 {
+  font-family: Baskerville, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -.04em;
+}
+
+h1 em, h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: clamp(32px, 3.7vw, 52px);
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+p {
+  line-height: 2;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 7%;
+  position: relative;
+  max-width: 1320px;
+  margin: auto;
+  padding: 55px 7% 100px;
+}
+
+.hero-copy {
+  padding-top: 25px;
+  min-width: 0;
+}
+
+.hero h1 {
+  font-size: clamp(37px, 4.3vw, 60px);
+  line-height: 1.55;
+  margin: 0 0 25px;
+}
+
+.hero .intro {
+  font-size: 14px;
+  line-height: 2;
+  margin: 0 0 15px;
+}
+
+.hero-action {
+  position: relative;
+  min-height: 240px;
+  padding-top: 15px;
+}
+
+.download {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.app-store-badge {
+  display: inline-block;
+  padding: 13px;
+  margin-left: -13px;
+}
+
+.app-store-badge img {
+  height: 52px;
+  width: auto;
+  max-width: none;
+}
+
+.download p {
+  font-size: 10px;
+  margin: 0;
+  letter-spacing: .04em;
+}
+
+.hero-companion {
+  position: absolute;
+  width: 210px;
+  right: -8px;
+  top: 80px;
+}
+
+.pet-hint {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  margin-top: -4px;
+}
+
+.companion {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.okaka-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 280;
+  object-fit: contain;
+}
+
+.companion.is-moving {
+  animation: little-steps .65s ease-in-out 2;
+}
+
+@keyframes little-steps {
+  50% {
+    transform: translate(5px, -3px);
+  }
+}
+
+.hero-journal {
+  position: relative;
+  padding-left: 28px;
+  border-left: 1px solid var(--accent);
+}
+
+.journal-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: .12em;
+  margin-bottom: 18px;
+}
+
+.capture {
+  margin: 0;
+  min-width: 0;
+}
+
+.capture img {
+  width: 100%;
+  border: 1px solid #d5d2c8;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px #2439550a;
+}
+
+.capture figcaption {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 15px;
+}
+
+.hero-capture {
+  max-width: 318px;
+}
+
+.hero-capture img {
+  border-radius: 25px;
+}
+
+.scroll-note {
+  position: absolute;
+  left: 7%;
+  bottom: 35px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: .05em;
+}
+
+.chapter {
+  max-width: 1200px;
+  margin: auto;
+  padding: 110px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+  align-items: center;
+}
+
+.chapter-copy {
+  min-width: 0;
+}
+
+.chapter-copy > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+.editorial-note {
+  display: block;
+  font: italic 17px Baskerville, 'Yu Mincho', serif;
+  color: var(--accent);
+  margin-top: 35px;
+}
+
+.route-chapter {
+  border-top: 1px solid var(--line);
+}
+
+.route-capture {
+  width: min(100%, 310px);
+  justify-self: center;
+}
+
+.weather-section {
+  padding: 85px max(6%, calc((100vw - 1150px) / 2));
+  background: #e5e9dc;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-heading > p:not(.eyebrow) {
+  font-size: 14px;
+}
+
+.weather-spread {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  align-items: start;
+}
+
+.weather-primary h3, .weather-detail summary {
+  min-height: 42px;
+  margin: 0 0 18px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.weather-primary h3 {
+  padding: 10px 0;
+}
+
+.weather-detail summary, .observation-detail summary {
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 1px solid #929b87;
+  padding: 10px 25px 10px 0;
+  position: relative;
+}
+
+.weather-detail summary::-webkit-details-marker, .observation-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.weather-detail summary span, .observation-detail summary span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.weather-detail[open] summary span, .observation-detail[open] summary span {
+  transform: rotate(45deg);
+}
+
+.weather-detail .capture {
+  margin-top: 20px;
+}
+
+.weather-section > .fine-print {
+  margin: 35px auto 0;
+  max-width: 800px;
+}
+
+.fine-print {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.daily-chapter {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.daily-evidence {
+  width: min(100%, 330px);
+  justify-self: center;
+}
+
+.daily-companion {
+  width: 175px;
+  margin: 30px 0 -25px;
+}
+
+.observation-detail {
+  margin-top: 28px;
+}
+
+.observation-detail summary {
+  font-size: 12px;
+}
+
+.observation-detail .capture {
+  margin-top: 20px;
+}
+
+.gallery-chapter {
+  background: #eaddcf;
+  max-width: none;
+  padding-left: max(8%, calc((100vw - 1010px) / 2));
+  padding-right: max(8%, calc((100vw - 1010px) / 2));
+}
+
+.gallery-chapter .chapter-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.gallery-capture {
+  grid-column: 1;
+  grid-row: 1;
+  width: min(100%, 345px);
+  justify-self: center;
+}
+
+.watch-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 12%;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 8%;
+}
+
+.watch-section h2 {
+  font-size: clamp(30px, 3.6vw, 46px);
+}
+
+.watch-section .chapter-copy > p {
+  font-size: 13px;
+}
+
+.watch-capture {
+  width: min(100%, 235px);
+  justify-self: center;
+}
+
+.watch-capture img {
+  border: 9px solid #25292a;
+  border-radius: 47px;
+  box-shadow: 0 4px 0 #85878a;
+}
+
+.features-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 85px 7% 95px;
+  border-top: 1px solid var(--line);
+}
+
+.feature-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.feature-table caption {
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.feature-table thead th {
+  text-align: left;
+  font-size: 10px;
+  border-bottom: 1px solid var(--ink);
+  padding: 12px 10px;
+}
+
+.feature-table thead th:first-child {
+  width: 34%;
+}
+
+.feature-table thead th:last-child {
+  width: 50px;
+  text-align: center;
+}
+
+.feature-table tbody th[scope='row'] {
+  text-align: left;
+  font-weight: 600;
+}
+
+.feature-table td, .feature-table tbody th {
+  padding: 16px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.feature-table .feature-group th {
+  padding: 30px 10px 10px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 650;
+  text-align: left;
+  border-bottom-color: var(--accent);
+}
+
+.feature-table .included {
+  color: var(--green);
+  text-align: center;
+  font-size: 18px;
+}
+
+.ai-note {
+  margin-top: 25px;
+}
+
+.faq-list {
+  margin-top: 42px;
+}
+
+.faq-list details {
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.faq-list p {
+  font-size: 12px;
+}
+
+.closing {
+  text-align: center;
+  position: relative;
+  overflow: clip;
+  padding: 70px 20px 40px;
+  background: #e9e7d6;
+}
+
+.closing h2 {
+  font-size: clamp(44px, 5vw, 68px);
+  margin-bottom: 26px;
+}
+
+.closing-link {
+  font-size: 13px;
+  text-underline-offset: 7px;
+}
+
+.rest-companion {
+  position: relative;
+  width: 250px;
+  margin: 15px auto -12px;
+}
+
+.sleep-note {
+  position: absolute;
+  right: -2px;
+  top: 45px;
+  font: italic 18px Georgia, serif;
+}
+
+.closing > p:last-child {
+  font-size: 11px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px 7%;
+}
+
+footer p {
+  font: italic 12px Baskerville, Georgia, serif;
+}
+
+footer nav {
+  display: flex;
+  gap: 25px;
+  font-size: 11px;
+  margin-left: auto;
+}
+
+footer small {
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .hero {
+    gap: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero-companion {
+    right: -5px;
+    top: 95px;
+    width: 180px;
+  }
+  .chapter {
+    gap: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .weather-spread {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    padding: 20px 6%;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 24px;
+  }
+  .brand img {
+    width: 32px;
+    height: 32px;
+  }
+  .brand-note {
+    display: none;
+  }
+  .site-header nav {
+    gap: 18px;
+    font-size: 10px;
+  }
+  .hero {
+    display: block;
+    padding: 27px 7% 70px;
+  }
+  .hero-copy {
+    padding-top: 0;
+  }
+  .eyebrow {
+    font-size: 9px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(31px, 8.4vw, 52px);
+    line-height: 1.65;
+    margin-bottom: 22px;
+  }
+  .hero .intro {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .hero-action {
+    min-height: 230px;
+    padding-top: 5px;
+  }
+  .hero-companion {
+    width: 172px;
+    right: -8px;
+    top: 83px;
+  }
+  .download p {
+    font-size: 9px;
+  }
+  .app-store-badge img {
+    height: 48px;
+  }
+  .pet-hint {
+    font-size: 9px;
+  }
+  .hero-journal {
+    border-left: 1px solid var(--accent);
+    margin-top: 35px;
+    padding: 0 0 0 20px;
+  }
+  .hero-capture {
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+  }
+  .journal-label {
+    font-size: 9px;
+    margin-bottom: 16px;
+  }
+  .scroll-note {
+    bottom: 20px;
+    font-size: 10px;
+  }
+  h2 {
+    font-size: clamp(29px, 7.5vw, 42px);
+    line-height: 1.6;
+  }
+  .chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    padding: 70px 8%;
+  }
+  .chapter-copy > p:not(.eyebrow) {
+    font-size: 12px;
+    line-height: 2.15;
+  }
+  .editorial-note {
+    margin-top: 22px;
+    font-size: 15px;
+  }
+  .capture {
+    align-self: center;
+  }
+  .capture figcaption {
+    font-size: 10px;
+    margin-top: 13px;
+  }
+  .route-capture {
+    width: min(100%, 325px);
+  }
+  .weather-section {
+    padding: 70px 8%;
+  }
+  .section-heading {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .section-heading > p:not(.eyebrow) {
+    font-size: 12px;
+    line-height: 2.1;
+  }
+  .weather-spread {
+    display: block;
+    max-width: 340px;
+    margin: auto;
+  }
+  .weather-primary h3, .weather-detail summary {
+    font-size: 13px;
+  }
+  .weather-detail {
+    margin-top: 30px;
+  }
+  .weather-detail summary {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .weather-detail summary span {
+    top: 16px;
+  }
+  .weather-section > .fine-print {
+    margin-top: 25px;
+  }
+  .fine-print {
+    font-size: 10px;
+  }
+  .daily-evidence {
+    width: min(100%, 340px);
+    align-self: center;
+  }
+  .daily-companion {
+    width: 140px;
+    margin: 5px 0 -15px auto;
+  }
+  .daily-chapter {
+    gap: 20px;
+  }
+  .gallery-capture {
+    width: min(100%, 340px);
+  }
+  .watch-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 70px 8%;
+  }
+  .watch-section h2 {
+    font-size: 30px;
+  }
+  .watch-section .chapter-copy > p {
+    font-size: 12px;
+  }
+  .watch-capture {
+    width: 220px;
+    align-self: center;
+  }
+  .features-section {
+    padding: 65px 6% 60px;
+  }
+  .features-section .section-heading {
+    padding: 0 2%;
+  }
+  .feature-table {
+    font-size: 10px;
+    line-height: 1.85;
+  }
+  .feature-table caption {
+    font-size: 10px;
+  }
+  .feature-table thead th {
+    padding: 10px 5px;
+    font-size: 9px;
+  }
+  .feature-table thead th:first-child {
+    width: 36%;
+  }
+  .feature-table thead th:last-child {
+    width: 33px;
+  }
+  .feature-table td, .feature-table tbody th {
+    padding: 14px 5px;
+  }
+  .feature-table .feature-group th {
+    font-size: 11px;
+    padding: 27px 5px 10px;
+  }
+  .feature-table .included {
+    font-size: 15px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+  }
+  .closing {
+    padding-top: 65px;
+  }
+  .closing h2 {
+    font-size: 43px;
+  }
+  .rest-companion {
+    width: 225px;
+  }
+  footer {
+    padding: 30px 7%;
+    gap: 15px;
+  }
+  footer nav {
+    width: 100%;
+    margin: 10px 0 0;
+    font-size: 10px;
+    gap: 20px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer small {
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}
+
+/* Design proposal: a winding walk, loose sketches and real app windows. */
+.hero-journal {
+  border-left: 0;
+  padding-left: 18px;
+  transform: rotate(2deg);
+}
+.hero-journal::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 55%;
+  left: -12%;
+  top: 10%;
+  border-radius: 48% 52% 40% 55%;
+  background: #f0d66d;
+  z-index: -1;
+  transform: rotate(-12deg);
+}
+.hero-capture {
+  position: relative;
+}
+.handwritten {
+  font-family: 'Hiragino Maru Gothic ProN', 'Yu Mincho', Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--green);
+  letter-spacing: .03em;
+}
+.hero-scribble {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+  transform: rotate(-9deg);
+}
+.journal-label {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #82916d;
+  color: var(--green);
+  border-radius: 47% 3% 40% 4% / 5% 30% 4% 40%;
+  transform: rotate(-4deg);
+  background: var(--paper);
+}
+.hero-companion {
+  width: 225px;
+  top: 95px;
+  right: -15px;
+  transform: rotate(-3deg);
+}
+.phone-frame {
+  position: relative;
+  padding: 7px;
+  border: 2px solid #535754;
+  background: #242b29;
+  border-radius: 37px;
+  box-shadow: 3px 5px 0 #d4d3c6, 8px 16px 24px #293f2714;
+}
+.phone-frame::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 18%;
+  width: 3px;
+  height: 42px;
+  border-radius: 3px;
+  background: #505851;
+}
+.phone-frame img {
+  border: 0;
+  border-radius: 27px;
+  box-shadow: none;
+}
+.stroll-route {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+}
+.winding-trail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #a4ac86;
+  stroke-width: 3;
+  stroke-dasharray: 8 11;
+  opacity: .65;
+  pointer-events: none;
+  z-index: -1;
+}
+.stroll-route section {
+  position: relative;
+}
+.route-chapter {
+  border-top: 0;
+  padding-top: 140px;
+  padding-bottom: 95px;
+}
+.route-capture {
+  transform: rotate(-3deg) translateY(18px);
+}
+.route-chapter .editorial-note {
+  transform: rotate(-5deg);
+  display: inline-block;
+  background: #f5dfa0;
+  padding: 8px 12px;
+}
+.trail-companion {
+  position: relative;
+  width: 195px;
+  margin: -25px 0 35px 15%;
+  transform: rotate(-4deg);
+}
+.trail-companion .handwritten {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  margin-top: -5px;
+}
+.pawprints {
+  position: absolute;
+  width: 95px;
+  height: 70px;
+  left: -75px;
+  bottom: -20px;
+  color: #889971;
+  transform: rotate(16deg);
+}
+.weather-section {
+  background: #e5e9dcaa;
+  border-radius: 44% 3% 35% 2% / 2% 3% 2% 3%;
+}
+.weather-primary .capture {
+  transform: rotate(-2deg);
+}
+.weather-detail .capture {
+  transform: rotate(2deg);
+}
+.timing-detail {
+  margin-top: 38px;
+}
+.timing-detail .capture {
+  transform: rotate(-1deg);
+}
+.daily-evidence > .capture {
+  transform: rotate(3deg);
+}
+.daily-companion {
+  transform: rotate(-5deg);
+  margin-left: auto;
+  margin-right: -15px;
+}
+.gallery-chapter {
+  background: #f3dfb355;
+}
+.gallery-capture {
+  transform: rotate(-3deg);
+}
+.gallery-chapter .editorial-note {
+  transform: rotate(4deg);
+}
+.watch-capture {
+  transform: rotate(8deg) translateY(20px);
+}
+.eyebrow {
+  color: var(--green);
+}
+
+
+
+
+
+
+
+
+.closing {
+  background: #e7ead7;
+}
+.rest-companion {
+  width: 285px;
+  transform: rotate(-3deg);
+}
+@media (max-width: 767px) {
+  .hero-journal {
+    margin-top: 48px;
+    padding-left: 8px;
+    padding-right: 6px;
+  }
+  .hero-scribble {
+    right: 8px;
+    top: -28px;
+    font-size: 13px;
+  }
+  .hero-companion {
+    width: 192px;
+    top: 80px;
+    right: -10px;
+  }
+  .hero-action {
+    min-height: 222px;
+  }
+  .phone-frame {
+    padding: 6px;
+    border-radius: 34px;
+  }
+  .phone-frame img {
+    border-radius: 25px;
+  }
+  .route-chapter {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .route-capture {
+    width: min(94%, 315px);
+  }
+  .trail-companion {
+    width: 155px;
+    margin: 0 0 25px 24%;
+  }
+  .pawprints {
+    width: 72px;
+    left: -57px;
+  }
+  .winding-trail {
+    width: 155%;
+    left: -28%;
+    stroke-width: 2.7;
+  }
+  .weather-spread {
+    padding: 0 5px;
+  }
+  .timing-detail {
+    margin-top: 30px;
+  }
+  .daily-evidence {
+    width: min(94%, 325px);
+  }
+  .gallery-capture {
+    width: min(94%, 325px);
+  }
+  .watch-capture {
+    transform: rotate(7deg);
+    margin-bottom: 12px;
+  }
+
+.plus-proposal h3 {
+    font-size: 23px;
+  }
+
+.plan-comparison th, .plan-comparison td {
+    padding: 12px 4px;
+  }
+
+.plan-comparison small {
+    font-size: 8px;
+  }
+  .rest-companion {
+    width: 255px;
+  }
+}
+
+/* Design proposal: phrase-aware Japanese copy and a single plan comparison. */
+.phrase {
+  display: inline-block;
+  white-space: nowrap;
+}
+html[lang='ja'] h1,
+html[lang='ja'] h2 {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  html[lang='ja'] .hero h1 {
+    font-size: clamp(28px, 8vw, 43px);
+    line-height: 1.65;
+  }
+  html[lang='ja'] h2 {
+    font-size: clamp(27px, 7.2vw, 38px);
+    line-height: 1.65;
+  }
+
+.plan-comparison th:nth-child(2) {
+    width: 18%;
+  }
+
+.plan-comparison thead th {
+    padding: 12px 3px;
+  }
+
+.free-feature-details > summary {
+    font-size: 12px;
+  }
+
+}
+
+/* Three separately illustrated, alpha-transparent scenes; no image processing. */
+.daily-companion {
+  width: 190px;
+}
+.trail-companion {
+  min-height: 65px;
+  padding-top: 12px;
+}
+@media (max-width: 767px) {
+  .daily-companion {
+    width: 175px;
+  }
+}
+
+/* Design proposal: an exterior iPhone-like bezel, without a second UI island. */
+.phone-frame {
+  padding: 8px 7px;
+  border: 2px solid #777b7b;
+  border-radius: 42px;
+  background: #181b1e;
+  box-shadow: inset 0 0 0 1px #090a0b, 1px 2px 0 #383c40, 7px 14px 24px #2439551a;
+}
+.phone-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 31px;
+  box-shadow: none;
+}
+.phone-frame::before {
+  content: '';
+  position: absolute;
+  top: 19%;
+  left: -5px;
+  width: 3px;
+  height: 34px;
+  border-radius: 2px 0 0 2px;
+  background: #55595c;
+  box-shadow: 0 44px 0 #55595c;
+}
+.phone-frame::after {
+  content: '';
+  position: absolute;
+  top: 24%;
+  right: -5px;
+  width: 3px;
+  height: 53px;
+  border-radius: 0 2px 2px 0;
+  background: #55595c;
+}
+@media (max-width: 767px) {
+  .phone-frame {
+    padding: 7px 6px;
+    border-radius: 38px;
+  }
+  .phone-frame img {
+    border-radius: 28px;
+  }
+  .phone-frame::before {
+    height: 28px;
+    box-shadow: 0 37px 0 #55595c;
+  }
+  .phone-frame::after {
+    height: 45px;
+  }
+}
+
+/* Closing-only new landscape sleeping artwork; preserve the entire illustration. */
+.rest-companion .okaka-art {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+/* A feature ledger: named capabilities, useful detail, and a quiet free stamp. */
+.feature-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.feature-table caption {
+  font-size: 12px;
+  letter-spacing: .06em;
+  margin-bottom: 22px;
+}
+.feature-table thead th {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  padding: 15px 14px;
+  color: var(--muted);
+}
+.feature-table thead th:first-child {
+  width: 35%;
+}
+.feature-table thead th:last-child {
+  width: 90px;
+}
+.feature-table .feature-group th {
+  position: relative;
+  padding: 35px 14px 15px;
+  border-bottom: 2px solid #a6b58c;
+  color: var(--green);
+  text-align: left;
+}
+.category-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 44px;
+  height: 44px;
+  margin-right: 13px;
+  background: #e6ebd5;
+  border-radius: 47% 53% 45% 55%;
+  transform: rotate(-5deg);
+}
+.feature-icon {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.category-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: .025em;
+}
+.category-number {
+  float: right;
+  margin-top: 10px;
+  font: italic 25px Baskerville, Georgia, serif;
+  color: #8b9c75;
+}
+.feature-table tbody th[scope='row'],
+.feature-table tbody td {
+  padding: 22px 14px;
+  background: #fffdf533;
+  border-bottom: 1px solid #d8d4c6;
+  vertical-align: middle;
+}
+.feature-name {
+  display: block;
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 700;
+  color: var(--ink);
+}
+.feature-table td:not(.included) {
+  color: #5d6566;
+  font-size: 12px;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .feature-table,
+  .feature-table tbody {
+    display: block;
+    width: 100%;
+  }
+  .feature-table caption {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 11px;
+  }
+  .feature-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .feature-table .feature-group {
+    display: block;
+  }
+  .feature-table .feature-group th {
+    display: block;
+    width: 100%;
+    padding: 29px 8px 14px;
+  }
+  .category-mark {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+  }
+  .category-title {
+    font-size: 15px;
+  }
+  .category-number {
+    font-size: 22px;
+    margin-top: 7px;
+  }
+  .feature-table tr[data-feature-row] {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 7px 12px;
+    padding: 19px 10px;
+    border-bottom: 1px solid #d8d4c6;
+    background: #fffdf54d;
+  }
+  .feature-table tr[data-feature-row] > th,
+  .feature-table tr[data-feature-row] > td {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  .feature-table tr[data-feature-row] > th {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .feature-table tr[data-feature-row] > td:not(.included) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 12px;
+    line-height: 1.95;
+  }
+  .feature-table tr[data-feature-row] > .included {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+  }
+  .feature-name {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.feature-check {
+  color: var(--green);
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+/* Keep the oversized decorative trail inside its own painted page region. */
+.stroll-route {
+  contain: paint;
+}
+
+/* Rotation needs a little breathing room; do not create a sideways page. */
+.hero {
+  overflow: clip;
+}
+@media (max-width: 767px) {
+  .hero-journal {
+    width: calc(100% - 26px);
+    margin-inline: auto;
+  }
+}
