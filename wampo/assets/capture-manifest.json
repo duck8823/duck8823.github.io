@@ -37,50 +37,50 @@
     },
     {
       "source": "fastlane/screenshots-source/ja/home_rain.png",
-      "source_sha256": "95f2e7868f77442b61285d093bd035279885961e16490186c34a8199cbba0487",
-      "source_size": [
-        1206,
-        2622
-      ],
-      "output": "assets/screenshots/ja/home_rain.webp",
-      "output_size": [
-        792,
-        1722
-      ],
-      "output_sha256": "f1e333e165c8a0ac47d1de39aa9b0c64fe48f2f0891e5d15d84ca83d6a9f788e",
-      "bytes": 167900,
-      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
-    },
-    {
-      "source": "fastlane/screenshots-source/ja/home_shade.png",
-      "source_sha256": "f7197531ac99f6f36fd26cd7d880c9d63c48ece89b2abab37fbc1547d0ad0983",
-      "source_size": [
-        1206,
-        2622
-      ],
-      "output": "assets/screenshots/ja/home_shade.webp",
-      "output_size": [
-        792,
-        1722
-      ],
-      "output_sha256": "3c48616e736203a79bce9b629d26e2e8fc11e2aebf533e1e92d23b1efc5c5467",
-      "bytes": 196352,
-      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
-    },
-    {
-      "source": "fastlane/screenshots-source/ja/walk_timing.png",
-      "source_sha256": "cced8c309b3c566fc1bc9696001f3931b284916936dc2710df65b8f59830ab02",
+      "source_sha256": "2862f2dc1c0a0853b434d8ba423383adbe0ae982f530d3606b11d1a05d257cab",
       "source_size": [
         1320,
         2868
       ],
-      "output": "assets/screenshots/ja/walk_timing.webp",
+      "output": "assets/screenshots/ja/home_rain.webp",
       "output_size": [
         792,
         1721
       ],
-      "output_sha256": "49ae3ac382a693318133a05b3a2d09fa54efe6b9347e275a7e016f6bbceed47a",
-      "bytes": 80232,
+      "output_sha256": "2fac599ca416f3c4f639b9af5aeae90a2bb6f63408c271667f10b8cb4ab69ea9",
+      "bytes": 149946,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/home_shade.png",
+      "source_sha256": "28da8b1208477ea0d1712f13b2019caa439d851f6401f1cdd6ff3ee1eb9fc4da",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/home_shade.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "9c53cb01ed91a9965e4b1d6d58b6399a73dcb683e0238d2bf492e60a29251883",
+      "bytes": 218648,
+      "transform": "uniform resize; WebP quality 88; no crop or UI edits"
+    },
+    {
+      "source": "fastlane/screenshots-source/ja/walk_timing_grid.png",
+      "source_sha256": "6f8437598d553bb8712ff6dfd2192f70849fc524ea5f152a8f65f0b1f9d9fb52",
+      "source_size": [
+        1320,
+        2868
+      ],
+      "output": "assets/screenshots/ja/walk_timing_grid.webp",
+      "output_size": [
+        792,
+        1721
+      ],
+      "output_sha256": "4926905b6a2c8ba1c75f34c3d8ff9b98d1fac25714ce7bc5a7e8347719ab7538",
+      "bytes": 65094,
       "transform": "uniform resize; WebP quality 88; no crop or UI edits"
     },
     {
@@ -181,7 +181,7 @@
     },
     {
       "source": "fastlane/screenshots-source/en-US/home_rain.png",
-      "source_sha256": "d0f7fe3b7dc06bb78643e9edabde3c2d14f16aa5c4bc5c5bb129a7cbfba4eef6",
+      "source_sha256": "4c2c24483a44059c144d5a469c302c2be5880961a21d60f776657332f69966dd",
       "source_size": [
         1320,
         2868
@@ -191,13 +191,13 @@
         792,
         1721
       ],
-      "output_sha256": "4d5f189a9fc1957ce4b49a8e57af08ad0d4079993e51629b90637e6db2aed46d",
-      "bytes": 196054,
+      "output_sha256": "d8c148b9c81c26dab5808f28e0d58f24ba6edfd31739e2576f6192f72207d0f6",
+      "bytes": 150560,
       "transform": "uniform resize; WebP quality 88; no crop or UI edits"
     },
     {
       "source": "fastlane/screenshots-source/en-US/home_shade.png",
-      "source_sha256": "9a1da773a9f10e1057a7e751c8d55c70b55f9e9947b77fefb716599b94e58284",
+      "source_sha256": "e6ac4d523fb3ce6862af92ac78717be7ba8bffb2240bbf3e85a98132b6d2d269",
       "source_size": [
         1320,
         2868
@@ -207,24 +207,24 @@
         792,
         1721
       ],
-      "output_sha256": "e14798942d2176db5afeee0173645c9344b593d2dd84a8f3727da8a26018a04b",
-      "bytes": 226374,
+      "output_sha256": "4cd25592beea9fbe602b0ef96d5ea7a5953bae9083a05bc3047dd32039544dfb",
+      "bytes": 217710,
       "transform": "uniform resize; WebP quality 88; no crop or UI edits"
     },
     {
-      "source": "fastlane/screenshots-source/en-US/walk_timing.png",
-      "source_sha256": "69b3371b0255f69d8c358a8217084298f84998f343a71e972dd289ebd58cca0e",
+      "source": "fastlane/screenshots-source/en-US/walk_timing_grid.png",
+      "source_sha256": "b39892bac3b557ad0421f4cc2be8599fb685cb287a10bf3d4403299a74804cf1",
       "source_size": [
         1320,
         2868
       ],
-      "output": "assets/screenshots/en/walk_timing.webp",
+      "output": "assets/screenshots/en/walk_timing_grid.webp",
       "output_size": [
         792,
         1721
       ],
-      "output_sha256": "fba5c205ca10669a4be20a23f0d61fb94250e09631797482310905831d099832",
-      "bytes": 80638,
+      "output_sha256": "15d6d5c1744144d7731eef1152f524f3a20ffe4180632cd06437cdacff948dc4",
+      "bytes": 61950,
       "transform": "uniform resize; WebP quality 88; no crop or UI edits"
     },
     {
@@ -362,5 +362,5 @@
       "transform": "unaltered copy"
     }
   ],
-  "total_bytes": 4938384
+  "total_bytes": 4854742
 }
