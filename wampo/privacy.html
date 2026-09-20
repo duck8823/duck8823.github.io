@@ -73,7 +73,7 @@
     <h1>Privacy Policy</h1>
 
     <div class="doc-meta">
-      <span class="chip"><span class="dot"></span><strong>Last updated</strong> September 12, 2026</span>
+      <span class="chip"><span class="dot"></span><strong>Last updated</strong> September 20, 2026</span>
       <span class="chip"><strong>Scope</strong> Wampo for iOS</span>
       <span class="chip"><strong>Operator</strong> Shunsuke Maeda</span>
     </div>
@@ -121,7 +121,7 @@
       <section id="intro">
         <div class="sec-n">01 · Introduction</div>
         <h2>Introduction</h2>
-        <p>Last updated: September 12, 2026</p>
+        <p>Last updated: September 20, 2026</p>
         <p>Wampo is a personal project by Shunsuke Maeda. This policy explains what the Wampo app collects, how it uses that information, and where it is sent.</p>
       </section>
 
@@ -154,8 +154,12 @@
         <h3>Usage analytics (Firebase Analytics)</h3>
         <p>Only if you agree, we send a device identifier and in-app actions (starting or finishing a walk, switching tabs, adding a marker, and similar) to Firebase Analytics (Google). We use this only to understand usage and improve the app. We do not send walk distance or duration, route coordinates, photos, or dog profiles. Nothing is sent until you agree. You can turn it off later in Settings.</p>
 
-        <h3>Walk comments</h3>
-        <p>Only for completed walks with at least 20 minutes of total elapsed time, and only with your separate consent, the app checks eligibility on the device and sends walk totals directly to Google’s Gemini through Firebase AI Logic to create a short comment. It sends only rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language (Japanese or English). It does not send coordinates, routes, photos, videos, your dog’s name, free-form text such as notes, walk IDs, or exact start/end times. If you do not consent, the walk is under 20 minutes, generation fails, or the response is empty, invalid, or contains a prohibited expression, the app selects from varied on-device templates based on the walk. Gemini and template comments are saved once and are not generated or selected again for the same walk. The app checks Gemini text for prohibited expressions on the device, but cannot guarantee that every unintended expression is prevented. You can change this setting anytime in the app.</p>
+        <h3>Automatic walk comments retired</h3>
+        <p>In 1.16.0 (213) and later, AI-generated and on-device template comments have been retired. The app no longer generates or displays automatic comments, sends data to Gemini, or offers the dedicated setting. Manually entered marker comments, notes, and walk records remain available.</p>
+        <h3>Older versions and past transmissions</h3>
+        <p>In feature-bearing versions 1.16.0 (212) and earlier, automatic comments and external transmissions may continue until you update. Returning to an older version may also resume transmissions under previously saved consent. The following describes the feature immediately before retirement; sent fields and consent scope vary with the older implementation. Retirement does not mean previously sent data has been deleted from Google’s systems.</p>
+        <p>Only for completed walks with at least 20 minutes of total elapsed time, and only with your separate consent, the app checks eligibility on the device and sends walk categories directly to Google’s Gemini through Firebase AI Logic to create a short comment. It sends only the combination of walk topics and, depending on those topics, how you moved (walking or cart), a category for how long you paused, weather category, daylight, time of day, built-in marker types (pee, poop, favorite, or caution), a wording number, and display language (Japanese or English). These are categories only; no numbers such as distance, time, or counts are sent. Marker types and marker-derived topic categories are sent only for walks that end after you consent to this version. It does not send coordinates, routes, photos, videos, your dog’s name, free-form text such as notes, walk IDs, or exact start/end times. If you do not consent, the walk is under 20 minutes, generation fails, or the response is empty, invalid, or contains a prohibited expression, the app selects from varied on-device templates based on the walk. Gemini and template comments are saved once and are not generated or selected again for the same walk. The app checks Gemini text for prohibited expressions on the device, but cannot guarantee that every unintended expression is prevented. You can change this setting anytime in the app.</p>
+        <p>Earlier implementations sent rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language (Japanese or English), as disclosed in the previous policy. The category-only description above does not apply to those earlier implementations or their past transmissions.</p>
       </section>
 
       <section id="location">
@@ -201,13 +205,15 @@
             <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
           </article>
           <article class="svc">
-            <h4>Firebase AI Logic / Google Gemini<span class="badge">walk comments</span></h4>
+            <h4>Firebase AI Logic / Google Gemini<span class="badge">older-version walk comments</span></h4>
             <dt>When sent</dt>
             <dd>only with separate consent and after a completed walk reaches 20 minutes of total elapsed time</dd>
             <dt>Purpose</dt>
             <dd>creating one short dog’s-voice comment for that walk</dd>
             <dt>Data</dt>
-            <dd>rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language (Japanese or English)</dd>
+            <dd>combination of walk topics, how you moved (walking or cart), a category for how long you paused, weather category, daylight, time of day, built-in marker types (counts are not sent), a wording number, and display language (Japanese or English)</dd>
+            <dt>Earlier implementations</dt>
+            <dd>rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language, as disclosed in the previous policy</dd>
             <dt>Not sent</dt>
             <dd>coordinates, routes, photos, videos, your dog’s name, free-form text such as notes, walk IDs, or exact start/end times. The app does not add a user ID or advertising ID to this request; as with any network request, ordinary connection metadata such as your IP address and App Check app-identification data can still reach Google.</dd>
             <dt>Connection and retention</dt>
@@ -242,7 +248,7 @@
       <section id="sharing">
         <div class="sec-n">06 · Sharing</div>
         <h2>Sharing</h2>
-        <p>We do not sell personal data, and we do not give it to anyone except as described above. What leaves the device is the minimum location needed for features, usage analytics after you agree, and the walk totals listed above when you separately consent to Gemini comments for walks of 20 minutes or more. If you use voice input, audio may go to the OS speech recognizer (Apple or Google). We do not send audio to our own servers.</p>
+        <p>We do not sell personal data, and we do not give it to anyone except as described above. What leaves the device is the minimum location needed for features, usage analytics after you agree, and the walk data described above in older feature-bearing apps when you separately consent to Gemini comments for walks of 20 minutes or more. Version 1.16.0 (213) and later does not send data to Gemini. If you use voice input, audio may go to the OS speech recognizer (Apple or Google). We do not send audio to our own servers.</p>
       </section>
 
       <section id="deletion">
@@ -251,7 +257,7 @@
         <ul class="bullets">
           <li>Records on the device: deleting the app deletes the walk records and profiles stored on the device.</li>
           <li>Usage analytics: turn it off in Settings to withdraw consent. After that, we do not send new data to Firebase Analytics. How long Google keeps older data follows Google's policy.</li>
-          <li>Walk comments: turn this off in Settings to stop sending later walk totals to Gemini. The app will show an on-device template, as it does for walks under 20 minutes.</li>
+          <li>Only in feature-bearing versions 1.16.0 (212) and earlier — Walk comments: turn this off in Settings to stop sending further walk data to Gemini. The app will show an on-device template, as it does for walks under 20 minutes.</li>
           <li>Location, camera, photos, notifications, microphone, and speech recognition: you can turn off access for this app in iOS Settings at any time.</li>
         </ul>
         <p>There is no in-app account deletion step, because there is no account.</p>
