@@ -1721,6 +1721,8 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-section h2, .ed-showcase h2 { font-size: clamp(29px, 3.5vw, 43px); font-weight: 550; letter-spacing: -.035em; line-height: 1.45; text-wrap: balance; margin: 0 0 20px; }
 .ed-section p, .ed-showcase p { color: var(--ink-2); font-size: 14px; line-height: 1.9; margin: 0; }
 .ed-concept { border-top: 1px solid var(--line); }
+.ed-concept-guide { display: flex; align-items: center; justify-content: center; min-height: 44px; width: fit-content; margin: 0 auto 12px; color: #246b40; font-size: 14px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.ed-concept-guide:hover, .ed-concept-guide:focus-visible { color: #153e30; }
 .ed-concept-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 85px; }
 .ed-concept-explain { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
 .ed-concept-row { padding-top: 16px; border-top: 2px solid #aeb9ac; }
