@@ -1,0 +1,38 @@
+{
+  "origin": "Existing approved store marketing concept decorations",
+  "source_provenance": "assets/store-marketing/illustrations/provenance.json",
+  "usage": "Decorative only; no generated app UI, numbers or claims. Shared by Japanese and English landing pages.",
+  "conversion": "cwebp -quiet -q 82 -resize <width> <height> source.png -o output.webp; widget height automatically preserves source aspect ratio. No crop or content edits.",
+  "assets": [
+    {
+      "name": "balance",
+      "source": "assets/store-marketing/illustrations/balance.png",
+      "source_sha256": "b3f2ee13123f2d769910586d5a474941cc5b2d8b7ef1150f957dc118ff3dae23",
+      "output": "assets/store-artwork/balance.webp",
+      "sha256": "b8681739bc9cc4932f622affa3164c472df3fc34432be67f4ccfe7b79f01491d",
+      "width": 1086,
+      "height": 362,
+      "bytes": 88208
+    },
+    {
+      "name": "reflection",
+      "source": "assets/store-marketing/illustrations/reflection.png",
+      "source_sha256": "1dcc425ca60809ee992b746356df3f4922f95c371bc71c385b04a6a503ed207a",
+      "output": "assets/store-artwork/reflection.webp",
+      "sha256": "367ea0fb17715b42eaa6ee30403835cfd876d572bf38fac4487a0c66e8261a13",
+      "width": 864,
+      "height": 288,
+      "bytes": 41902
+    },
+    {
+      "name": "widget",
+      "source": "assets/store-marketing/illustrations/widget.png",
+      "source_sha256": "6525fd0fc8dad6638ff71f18ad6de0d9aa59dbb58906363613cccf204090d5bd",
+      "output": "assets/store-artwork/widget.webp",
+      "sha256": "19899bbfe6ab8e2cb7c60edb33b48e50e64df284fe9b0971d5d302acbad29ee6",
+      "width": 648,
+      "height": 218,
+      "bytes": 40962
+    }
+  ]
+}
