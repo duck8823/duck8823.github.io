@@ -1,0 +1,177 @@
+{
+  "source_revision": "1923239904f0c01e17f5893200ca36f2aae7461b",
+  "scope": "Pinned iOS light input-sheet upper portion, with current ARB labels checked independently. Web-only fixed synthetic sample, presets, and editable additional energy; no fabricated output from arbitrary text, storage or network. Nutrition, day fields, camera and history not reproduced as working features.",
+  "reference_capture": "assets/store-marketing/captures/iphone/ja/input_estimation.png",
+  "capture_status": "Inspected old store capture only; current source is authoritative. Old capture lacks new quick-selection subtotal, additional section and group-name structure. Not a current native screenshot or pixel-identical render.",
+  "mapping": {
+    "shell": "InputSheetScaffold / LiquidGlassSheetFrame+Header+Button: grabber, close/title/done, opaque white body, 30px top radius, 44px buttons",
+    "quick_input": "DietaryQuickInputSection: 130x80 cards, selected minus/quantity, no Add Favorite on dietary input",
+    "selected_total": "DietaryEntryTotalCard then MealEntrySectionHeader before estimation",
+    "estimate": "EstimationSectionWidget: history/label, camera/input/button, selected results/checks/total/use value",
+    "additional": "DietaryEnergyInputScreen then MealGroupDisplayNameField: additional kcal and optional record name",
+    "labels": "Exact values from app_ja.arb/app_en.arb under ai.sheet; Web-only notices and synthetic fixture names separated"
+  },
+  "sources": [
+    {
+      "path": "flutter/lib/presentation/view/screen/dietary_energy_input_screen.dart",
+      "sha256": "68e2882d5037e4b4faa58a02fd8de8adb4a6f116f5382301268a59300b2f677c"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/input_sheet_scaffold.dart",
+      "sha256": "4718f1aa017a60564549c0510820d82eff9a4e2483ee3e8673b56c322744b7b6"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/adaptive/app_sheet_frame.dart",
+      "sha256": "0031b2ee229b4d720d47864df9ca5a77bb71dd6afeab4876008c689f6d8c3c05"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/adaptive/liquid_glass_sheet_button.dart",
+      "sha256": "7be464e266ff4e44bc243014839c809b281080bac55268e9e7c620c8e34bc8ac"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/quick_input_section.dart",
+      "sha256": "60de34f23955ca272fa7faa23a8ad32a37bf67b35ac0b4f6caab70ced8f27d2c"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/dietary_entry_total_card.dart",
+      "sha256": "1fd9d9d0b6b77369a9defe4216924e9521df45cfe16d7c536b1416fc13e2c309"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/meal_entry_section_header.dart",
+      "sha256": "750096714e713787c2a1ae690f5bb1fd83a16b63f186a74ad90edce5f1e362d7"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/estimation_section_widget.dart",
+      "sha256": "2f5c0e4613a1eb4f3ede56c8296c63a4ecd4fd586c560960b1cb9812fcca74c6"
+    },
+    {
+      "path": "flutter/lib/presentation/view/widget/meal_group_display_name_field.dart",
+      "sha256": "9232a72b25db1591169f221ee5abe6ae306b15e22303b0f3608dd97658a13103"
+    },
+    {
+      "path": "flutter/lib/presentation/view/styles/app_colors.dart",
+      "sha256": "fa922488a6df943dbc9518ae82970514a91b46423e2f128879b778971b4f351a"
+    },
+    {
+      "path": "flutter/lib/presentation/view/styles/app_theme.dart",
+      "sha256": "431b6319a6e7fe98f6b085ecde49504b95f91e4a973e4d7ca14a6b183bd0d307"
+    },
+    {
+      "path": "flutter/lib/presentation/view/styles/app_radius.dart",
+      "sha256": "66eddea5c97b4f8a4af8e4feef2cfca57a628ecebef7f309dad55581012342c6"
+    },
+    {
+      "path": "flutter/lib/presentation/view/styles/glass_styles.dart",
+      "sha256": "bc92d0a117400fb32121585ced4929ffb7c5d06b55d43ea6e2c57963bd23b457"
+    },
+    {
+      "path": "flutter/lib/application/l10n/app_ja.arb",
+      "sha256": "c8398f5a2f8d7502f2da21e1351330ed35fb48ac147c6a2ede65ea0b299bc9e6"
+    },
+    {
+      "path": "flutter/lib/application/l10n/app_en.arb",
+      "sha256": "5b83b2d827d39013d4f90006b7df33fa40925dda8265ba1d160bb67bdd1317a8"
+    }
+  ],
+  "web_sample": {
+    "producer": "Fixed existing display-only seed rows. Arbitrary text is rejected without producing calorie values.",
+    "locales": {
+      "ja": {
+        "input": "牛丼大盛り、味噌汁（豆腐・わかめ）",
+        "items": [
+          {
+            "name": "牛丼大盛り",
+            "kcal": 870
+          },
+          {
+            "name": "味噌汁（豆腐・わかめ）",
+            "kcal": 45
+          }
+        ],
+        "total": 915
+      },
+      "en": {
+        "input": "Large beef rice bowl, Miso soup (tofu, wakame)",
+        "items": [
+          {
+            "name": "Large beef rice bowl",
+            "kcal": 870
+          },
+          {
+            "name": "Miso soup (tofu, wakame)",
+            "kcal": 45
+          }
+        ],
+        "total": 915
+      }
+    }
+  },
+  "label_validation": {
+    "source_revision": "d344a74ce14fbda0adce60f9e49d436f2eec360a",
+    "scope": "Only the exact ARB keys consumed by this mock are the validation boundary. Full ARB hash is historical metadata, not a requirement for unrelated new keys.",
+    "locales": {
+      "ja": {
+        "path": "flutter/lib/application/l10n/app_ja.arb",
+        "consumed_keys": [
+          "aiEstimationFoodNameLabel",
+          "cancel",
+          "dietaryEnergy",
+          "done",
+          "estimateCalorie",
+          "estimationHistory",
+          "foodNameHint",
+          "inputDietaryEnergy",
+          "mealEntryAdditionalEnergyLabel",
+          "mealEntryAdditionalLabel",
+          "mealEntryAdditionalSectionHelp",
+          "mealEntryAdditionalSectionTitle",
+          "mealEntrySelectedCardsLabel",
+          "mealEntryTotalLabel",
+          "mealGroupDisplayNameHelp",
+          "mealGroupDisplayNameHint",
+          "mealGroupDisplayNameLabel",
+          "photoFromCamera",
+          "quickInput",
+          "quickInputPresetLabel",
+          "refineEstimation",
+          "refinementHint",
+          "total",
+          "useThisValue"
+        ],
+        "projection_sha256": "4d290895bf3a282eb74481dbf78d97897619eb64302f4634d6a22b232d922570",
+        "full_file_sha256_at_validation": "32b89f8b732bb7748fc9c6164d656ab40f5b0b5628167eef404bad56551f0ec5"
+      },
+      "en": {
+        "path": "flutter/lib/application/l10n/app_en.arb",
+        "consumed_keys": [
+          "aiEstimationFoodNameLabel",
+          "cancel",
+          "dietaryEnergy",
+          "done",
+          "estimateCalorie",
+          "estimationHistory",
+          "foodNameHint",
+          "inputDietaryEnergy",
+          "mealEntryAdditionalEnergyLabel",
+          "mealEntryAdditionalLabel",
+          "mealEntryAdditionalSectionHelp",
+          "mealEntryAdditionalSectionTitle",
+          "mealEntrySelectedCardsLabel",
+          "mealEntryTotalLabel",
+          "mealGroupDisplayNameHelp",
+          "mealGroupDisplayNameHint",
+          "mealGroupDisplayNameLabel",
+          "photoFromCamera",
+          "quickInput",
+          "quickInputPresetLabel",
+          "refineEstimation",
+          "refinementHint",
+          "total",
+          "useThisValue"
+        ],
+        "projection_sha256": "05a38bb91f93dff3239facf2e80d17886ccc469c94a055d8f77319bde32dd7a4",
+        "full_file_sha256_at_validation": "bdf3d0678797ad5aaeb6fa892d0db724d2941af0df947ab8ae5bcdd1e30aac5a"
+      }
+    }
+  }
+}

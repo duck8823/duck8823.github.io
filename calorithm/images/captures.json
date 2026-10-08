@@ -1,0 +1,128 @@
+{
+  "schema": "calorithm-web-captures/v1",
+  "source_revision": "d8899c1e500614d0b020500f44001b73aeb1d2d3",
+  "app_version": "2.0.0+356",
+  "device": "existing iPhone 17 Pro Max Simulator",
+  "appearance": "light / LiquidGlass",
+  "method": "flutter drive against exported application source; unmodified production views with temporary in-memory fixture composition",
+  "network": "Firebase, HealthKit, notifications and ads skipped; fixed local consultation gateway, no external AI request",
+  "data": "synthetic fixtures only; individual screen datasets may differ; fixture display date is 2026-09-29",
+  "image_processing": "none; raw PNG bytes copied, phone border and pill are CSS only",
+  "timestamp_note": "timestamps are capture-file modification times, not a separately measured shutter event",
+  "helper_sha256": {
+    "integration_test/lp_v2_capture_test.dart": "e1502ba3c3fcdef53247d4416a680dabbd796d3609dba346cdadb97159907325",
+    "lib/screenshot/lp_capture_fixture.dart": "a1d17308e91d4fdbc3a73654cf7a48450e19ef33390844fcd9a2969a1db6c3f2"
+  },
+  "images": [
+    {
+      "path": "ja/v2/daily.png",
+      "locale": "ja",
+      "screen": "daily",
+      "sha256": "3a8d54aa86d19292d708abc1b5589cc7c1abe8ae81790e870d4518582c0759a2",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:08:10.858386+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:08:10.858386+09:00",
+      "response": null
+    },
+    {
+      "path": "ja/v2/timeline.png",
+      "locale": "ja",
+      "screen": "timeline",
+      "sha256": "d3ddb370d99c15cc3dbd0413570b18625fd71b000dbe5efb4966f5273f25ebfd",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:08:10.869383+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:08:10.869383+09:00",
+      "response": null
+    },
+    {
+      "path": "ja/v2/weekly.png",
+      "locale": "ja",
+      "screen": "weekly",
+      "sha256": "3bbdbfc806f954d9358400aa2103d0c3b218c66716a022d62e6789dd92a3289e",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:08:10.865837+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:08:10.865837+09:00",
+      "response": null
+    },
+    {
+      "path": "ja/v2/reflection.png",
+      "locale": "ja",
+      "screen": "reflection",
+      "sha256": "d64cd62e64226444a41d36f24952a1db05fe3bf63f95ecf88469f8eec1b45531",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:08:10.875123+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:08:10.875123+09:00",
+      "response": null
+    },
+    {
+      "path": "ja/v2/consultation.png",
+      "locale": "ja",
+      "screen": "consultation",
+      "sha256": "69035cf95e81f84bbec95b5f349746380095ef02d6012d06a190cc41d78ada6d",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:08:10.898971+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:08:10.898971+09:00",
+      "response": "fixed_local_fixture_not_live_ai"
+    },
+    {
+      "path": "en/v2/daily.png",
+      "locale": "en",
+      "screen": "daily",
+      "sha256": "d39e6b0cd3125b20c292892aefccbdcfcfaf790ace9b68aad4f49c84ff9ee01e",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:10:24.107226+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:10:24.107226+09:00",
+      "response": null
+    },
+    {
+      "path": "en/v2/timeline.png",
+      "locale": "en",
+      "screen": "timeline",
+      "sha256": "63f6e47cedb1ca16d5eaff8a01651e088a1fa99da1fbc9a305c23880de277123",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:10:24.121364+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:10:24.121364+09:00",
+      "response": null
+    },
+    {
+      "path": "en/v2/weekly.png",
+      "locale": "en",
+      "screen": "weekly",
+      "sha256": "5801cff6e7e2a0ad43ef477413a324e4d46b0124abc9a1b2e1fccbc20f62caf8",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:10:24.116209+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:10:24.116209+09:00",
+      "response": null
+    },
+    {
+      "path": "en/v2/reflection.png",
+      "locale": "en",
+      "screen": "reflection",
+      "sha256": "a058f8c7364054dc41946bcddf92ee2f42274dd0dc6062b6780c59c779ec3fd3",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:10:24.127088+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:10:24.127088+09:00",
+      "response": null
+    },
+    {
+      "path": "en/v2/consultation.png",
+      "locale": "en",
+      "screen": "consultation",
+      "sha256": "d7125baf06b3685188c745e06cfe7db349597481590bcf17d4227c8d0a322233",
+      "width": 1320,
+      "height": 2868,
+      "capture_file_modified_at_utc": "2026-09-29T15:10:24.149179+00:00",
+      "capture_file_modified_at_jst": "2026-09-30T00:10:24.149179+09:00",
+      "response": "fixed_local_fixture_not_live_ai"
+    }
+  ]
+}
