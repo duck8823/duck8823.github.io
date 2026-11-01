@@ -1,0 +1,6 @@
+# Deployed at the origin root, not under /calorithm/.
+# Default crawling behavior is unchanged for all projects.
+User-agent: *
+Disallow:
+
+Sitemap: https://duck8823.net/calorithm/sitemap.xml
