@@ -1,128 +1,215 @@
 {
   "schema": "calorithm-web-captures/v1",
-  "source_revision": "d8899c1e500614d0b020500f44001b73aeb1d2d3",
-  "app_version": "2.0.0+356",
+  "source_revision": "a9d40c4d324c6374b2f68fadb38fffe27d7e382f",
+  "app_version": "2.6.0+455",
+  "release_status": "in-review-preview-not-public-release-confirmation",
+  "human_visual_approval": "approved-for-in-review-preview",
   "device": "existing iPhone 17 Pro Max Simulator",
-  "appearance": "light / LiquidGlass",
-  "method": "flutter drive against exported application source; unmodified production views with temporary in-memory fixture composition",
-  "network": "Firebase, HealthKit, notifications and ads skipped; fixed local consultation gateway, no external AI request",
-  "data": "synthetic fixtures only; individual screen datasets may differ; fixture display date is 2026-09-29",
-  "image_processing": "none; raw PNG bytes copied, phone border and pill are CSS only",
+  "appearance": "light / production AppDisplayShell / LiquidGlass; RC enabled; native reduced transparency false / quality tier full",
+  "method": "flutter drive against pinned application source; unmodified production views with screenshot-only synthetic composition and temporary integration-test harnesses",
+  "network": "Firebase, HealthKit, notifications and ads skipped by existing screenshot entrypoint; consultation uses preloaded synthetic stored turns, local quota and a gateway that throws on send; no external AI request",
+  "data": "synthetic fixtures only; individual screen datasets differ; fixtures are relative to capture date 2026-10-31; reflection displays previous day 2026-10-30",
+  "image_processing": "none; raw PNG bytes copied, framing and crop are CSS only",
   "timestamp_note": "timestamps are capture-file modification times, not a separately measured shutter event",
-  "helper_sha256": {
-    "integration_test/lp_v2_capture_test.dart": "e1502ba3c3fcdef53247d4416a680dabbd796d3609dba346cdadb97159907325",
-    "lib/screenshot/lp_capture_fixture.dart": "a1d17308e91d4fdbc3a73654cf7a48450e19ef33390844fcd9a2969a1db6c3f2"
+  "capture_export": "/private/tmp/calorithm-4416-store/flutter",
+  "capture_only_changes": [
+    "MockCalorieTrendsQueryservice daily assessment fixtures",
+    "screenshot_test submit-key/Favorites-label selectors, native display observation and raster wait",
+    "marketing_260_capture_test and marketing_260_extra_test integration harnesses"
+  ],
+  "capture_validation": {
+    "ja": {
+      "log": "/private/tmp/calorithm-4416-iphone-ja-ready.log",
+      "sha256": "86e2e3f9f3146372b8a40d1902d240e4b76dc687d90843a205773f4656e9890b",
+      "result": "all eight scene tests passed",
+      "run_id": "iphone-ja-ready",
+      "variant": "initial-daily-authority",
+      "helper_sha256": {
+        "lib/screenshot/main_screenshot.dart": "d1436c9d0563112846abd0835a14a07760b16898e2139a9fa961136f4536a5ef",
+        "lib/screenshot/mock_user_preferences_store.dart": "c92d9c8a842db635e3556772c4ff257a90e9408ecde41c69ef57751c959e062f",
+        "test_driver/fixture_screenshot.dart": "61879e27699707b2ddfbecd2602323a6bffc3af6b1d542212c4c5f635cdc8a8d",
+        "lib/screenshot/mock_calorie_trends_queryservice.dart": "43f9702c2eb7c41854f3c4575bbcd15ffe6768348225f7a1b4c70acde3e38887",
+        "integration_test/screenshot_test.dart": "4f1b429176290fad2917c8801273568665d378b5108d42431cca9bcf959f143c",
+        "integration_test/marketing_260_capture_test.dart": "c4d1df02074ea6e70d414c5598dfd082a495c738d3e60a1ff04b5a55db2c8a22",
+        "integration_test/marketing_260_extra_test.dart": "803be43fd199764158349815a87768940fe627ee2a4758a4b93a19beb0d886dd"
+      },
+      "selected_scenes": [
+        "daily",
+        "weekly",
+        "weekly_weight",
+        "preset",
+        "input_estimation",
+        "timeline",
+        "reflection",
+        "consultation"
+      ],
+      "provenance_result": "all_8_pass"
+    },
+    "en": {
+      "log": "/private/tmp/calorithm-4416-iphone-en-ready.log",
+      "sha256": "621c3227cb06f4c89d635db9439590513972d80b091c44e0e687931094c9b74e",
+      "result": "all five Web scenes passed; unrelated preset scene selector failed in the same full run; no full-run PASS claimed",
+      "run_id": "iphone-en-ready",
+      "variant": "initial-daily-authority",
+      "helper_sha256": {
+        "lib/screenshot/main_screenshot.dart": "d1436c9d0563112846abd0835a14a07760b16898e2139a9fa961136f4536a5ef",
+        "lib/screenshot/mock_user_preferences_store.dart": "c92d9c8a842db635e3556772c4ff257a90e9408ecde41c69ef57751c959e062f",
+        "test_driver/fixture_screenshot.dart": "61879e27699707b2ddfbecd2602323a6bffc3af6b1d542212c4c5f635cdc8a8d",
+        "lib/screenshot/mock_calorie_trends_queryservice.dart": "43f9702c2eb7c41854f3c4575bbcd15ffe6768348225f7a1b4c70acde3e38887",
+        "integration_test/screenshot_test.dart": "4f1b429176290fad2917c8801273568665d378b5108d42431cca9bcf959f143c",
+        "integration_test/marketing_260_capture_test.dart": "c4d1df02074ea6e70d414c5598dfd082a495c738d3e60a1ff04b5a55db2c8a22",
+        "integration_test/marketing_260_extra_test.dart": "803be43fd199764158349815a87768940fe627ee2a4758a4b93a19beb0d886dd"
+      },
+      "selected_scenes": [
+        "daily",
+        "weekly",
+        "weekly_weight",
+        "input_estimation",
+        "timeline",
+        "reflection",
+        "consultation"
+      ],
+      "provenance_result": "7_scenes_pass_preset_selector_failed"
+    }
   },
   "images": [
     {
       "path": "ja/v2/daily.png",
       "locale": "ja",
       "screen": "daily",
-      "sha256": "3a8d54aa86d19292d708abc1b5589cc7c1abe8ae81790e870d4518582c0759a2",
+      "sha256": "535fbae656c45325878a93f76a432fc37248c4ba02fb4ced481f86f36e2f0455",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:08:10.858386+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:08:10.858386+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/daily_ja.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:13:18.857921+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:13:18.857921+09:00",
+      "response": null,
+      "capture_run_id": "iphone-ja-ready"
     },
     {
       "path": "ja/v2/timeline.png",
       "locale": "ja",
       "screen": "timeline",
-      "sha256": "d3ddb370d99c15cc3dbd0413570b18625fd71b000dbe5efb4966f5273f25ebfd",
+      "sha256": "40647eb03a9a83527715c1c9e91610fd78a2e797cfc1225ad767ae23cea24f93",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:08:10.869383+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:08:10.869383+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/timeline_ja.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:13:18.884010+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:13:18.884010+09:00",
+      "response": null,
+      "capture_run_id": "iphone-ja-ready"
     },
     {
       "path": "ja/v2/weekly.png",
       "locale": "ja",
       "screen": "weekly",
-      "sha256": "3bbdbfc806f954d9358400aa2103d0c3b218c66716a022d62e6789dd92a3289e",
+      "sha256": "c44c2f4bfe717d417678cc83a8198991be3713b6bffbf0b166505be3c4ecb22c",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:08:10.865837+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:08:10.865837+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/weekly_ja.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:13:18.870817+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:13:18.870817+09:00",
+      "response": null,
+      "capture_run_id": "iphone-ja-ready"
     },
     {
       "path": "ja/v2/reflection.png",
       "locale": "ja",
       "screen": "reflection",
-      "sha256": "d64cd62e64226444a41d36f24952a1db05fe3bf63f95ecf88469f8eec1b45531",
+      "sha256": "ed3c36a6d13365a80e7dfac8b617496a40ef9ae8344e8287ca1318ba44289273",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:08:10.875123+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:08:10.875123+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/reflection_ja.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:13:18.886349+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:13:18.886349+09:00",
+      "response": null,
+      "capture_run_id": "iphone-ja-ready"
     },
     {
       "path": "ja/v2/consultation.png",
       "locale": "ja",
       "screen": "consultation",
-      "sha256": "69035cf95e81f84bbec95b5f349746380095ef02d6012d06a190cc41d78ada6d",
+      "sha256": "6153e542a28be4ed7dede0c4fb460f770d0766841ee9ce40dc7589c4f2857a5c",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:08:10.898971+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:08:10.898971+09:00",
-      "response": "fixed_local_fixture_not_live_ai"
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/consultation_ja.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:13:18.890911+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:13:18.890911+09:00",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "iphone-ja-ready"
     },
     {
       "path": "en/v2/daily.png",
       "locale": "en",
       "screen": "daily",
-      "sha256": "d39e6b0cd3125b20c292892aefccbdcfcfaf790ace9b68aad4f49c84ff9ee01e",
+      "sha256": "7ef51618587689a8bfe1ca477f5ee3b40f113958deed6c6c7009a21858565bc9",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:10:24.107226+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:10:24.107226+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/daily_en.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:18:01.042397+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:18:01.042397+09:00",
+      "response": null,
+      "capture_run_id": "iphone-en-ready"
     },
     {
       "path": "en/v2/timeline.png",
       "locale": "en",
       "screen": "timeline",
-      "sha256": "63f6e47cedb1ca16d5eaff8a01651e088a1fa99da1fbc9a305c23880de277123",
+      "sha256": "cf99def5cb71ac965955a8d135e9d4cae2c2236b0aec26c4f876415c01efe40c",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:10:24.121364+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:10:24.121364+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/timeline_en.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:18:01.070571+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:18:01.070571+09:00",
+      "response": null,
+      "capture_run_id": "iphone-en-ready"
     },
     {
       "path": "en/v2/weekly.png",
       "locale": "en",
       "screen": "weekly",
-      "sha256": "5801cff6e7e2a0ad43ef477413a324e4d46b0124abc9a1b2e1fccbc20f62caf8",
+      "sha256": "bc1a693fa5af9a88a6ca3913ecad475877e838bcc60244d464d221066eba311b",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:10:24.116209+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:10:24.116209+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/weekly_en.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:18:01.053056+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:18:01.053056+09:00",
+      "response": null,
+      "capture_run_id": "iphone-en-ready"
     },
     {
       "path": "en/v2/reflection.png",
       "locale": "en",
       "screen": "reflection",
-      "sha256": "a058f8c7364054dc41946bcddf92ee2f42274dd0dc6062b6780c59c779ec3fd3",
+      "sha256": "1989c7c339379d5cb26bee9b45d7bbed0aee9ef05ce604f42d95e252dc1ea548",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:10:24.127088+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:10:24.127088+09:00",
-      "response": null
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/reflection_en.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:18:01.075199+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:18:01.075199+09:00",
+      "response": null,
+      "capture_run_id": "iphone-en-ready"
     },
     {
       "path": "en/v2/consultation.png",
       "locale": "en",
       "screen": "consultation",
-      "sha256": "d7125baf06b3685188c745e06cfe7db349597481590bcf17d4227c8d0a322233",
+      "sha256": "e7bccd365603a31e02be259ac897e03dcc45a0142648c000a0b349255de69e1f",
       "width": 1320,
       "height": 2868,
-      "capture_file_modified_at_utc": "2026-09-29T15:10:24.149179+00:00",
-      "capture_file_modified_at_jst": "2026-09-30T00:10:24.149179+09:00",
-      "response": "fixed_local_fixture_not_live_ai"
+      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/consultation_en.png",
+      "capture_file_modified_at_utc": "2026-10-31T09:18:01.082373+00:00",
+      "capture_file_modified_at_jst": "2026-10-31T18:18:01.082373+09:00",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "iphone-en-ready"
     }
-  ]
+  ],
+  "capture_export_note": "temporary capture workspace; not a shipped application source change",
+  "capture_provenance_artifact": {
+    "owner_issue": 4416,
+    "validation_report": "assets/store-marketing/capture-validation.json",
+    "variant_archive": "assets/store-marketing/capture-harness/initial-daily-authority/",
+    "note": "Capture-time variant inputs are preserved by the store-image artifact; they differ from the current capture-workspace helper files. Three unchanged shared inputs remain under flutter/."
+  },
+  "approval_note": "User approved the 10 unchanged captures and in-review captions on 2026-11-01. This does not assert a public app release or authorize automated Pages deployment."
 }

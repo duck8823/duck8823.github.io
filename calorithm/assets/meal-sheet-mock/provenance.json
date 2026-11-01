@@ -107,7 +107,6 @@
     }
   },
   "label_validation": {
-    "source_revision": "d344a74ce14fbda0adce60f9e49d436f2eec360a",
     "scope": "Only the exact ARB keys consumed by this mock are the validation boundary. Full ARB hash is historical metadata, not a requirement for unrelated new keys.",
     "locales": {
       "ja": {
@@ -138,7 +137,7 @@
           "total",
           "useThisValue"
         ],
-        "projection_sha256": "4d290895bf3a282eb74481dbf78d97897619eb64302f4634d6a22b232d922570",
+        "projection_sha256": "cc2533ccf5efa032bc2ecf4969343e3587cc87dc2e09808c4d4a39f411df33f7",
         "full_file_sha256_at_validation": "32b89f8b732bb7748fc9c6164d656ab40f5b0b5628167eef404bad56551f0ec5"
       },
       "en": {
@@ -169,9 +168,10 @@
           "total",
           "useThisValue"
         ],
-        "projection_sha256": "05a38bb91f93dff3239facf2e80d17886ccc469c94a055d8f77319bde32dd7a4",
+        "projection_sha256": "31fea9b7c6143a84707ecc16c502497e7b38d6aaa5d1ad99456f5c0450f8151f",
         "full_file_sha256_at_validation": "bdf3d0678797ad5aaeb6fa892d0db724d2941af0df947ab8ae5bcdd1e30aac5a"
       }
-    }
+    },
+    "source": "Current consumed ARB keys; projection hashes validate the live labels independently of the pinned native source."
   }
 }
