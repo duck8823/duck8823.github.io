@@ -68,10 +68,12 @@ test('tool summary contains twelve cards without removed skills', () => {
 test('employment labels retain useful industry and SET role context', () => {
   assert.equal(DATA.ja.xp.items.find(item => item.from === '2021').org, '新聞社');
   assert.equal(DATA.en.xp.items.find(item => item.from === '2021').org, 'Newspaper publisher');
+  const labels = { ja: 'ゲーム・エンターテインメント企業', en: 'Games & entertainment company' };
   for (const lang of ['ja', 'en']) {
     const set = DATA[lang].xp.items.find(item => item.from === '2017');
-    assert.match(set.org, /SET/);
-    assert.match(set.org, /Software Engineer in Test/);
+    assert.equal(set.org, labels[lang]);
+    assert.match(set.desc, /SET/);
+    assert.match(set.desc, /Software Engineer in Test/);
     assert.doesNotMatch(DATA[lang].about.body, /Internet services company/);
   }
 });
