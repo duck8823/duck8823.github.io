@@ -32,7 +32,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "これまでとこれから",
       en: "Background",
-      body: "事業会社の開発基盤チーム で CI/CD 基盤やテスト自動化、ヘルスケアSaaS企業で Kotlin によるレガシーシステムのリプレイス、メディア企業で Go のマイクロサービス開発を経験しました。現在はフリーランスとして、バックエンド・クラウド基盤の設計と実装を担当しています。LLM を使った文書の構造化・条件照合 PoC では、要件整理から実装・評価まで経験しました。基盤が軸ですが、必要なら画面や運用まで手を動かします。個人開発では、Claude Code や Codex を使いながら Flutter アプリの公開後の改善も続けています。"
+      body: "SET（Software Engineer in Test）として CI/CD 基盤やテスト自動化を担当した後、ヘルスケア SaaS での Kotlin へのリプレイス、新聞社での Go のマイクロサービス開発を経験しました。現在はフリーランスとして、バックエンド・クラウド基盤の設計と実装を担当しています。LLM を使った文書の構造化・条件照合 PoC では、要件整理から実装・評価まで経験しました。基盤が軸ですが、必要なら画面や運用まで手を動かします。個人開発では、Claude Code や Codex を使いながら Flutter アプリの公開後の改善も続けています。"
     },
     skillsKicker: "02 — stack",
     skillsTitle: "使っている道具",
@@ -44,10 +44,10 @@ window.DATA = {
       items: [
         { from: "2025", to: "現在", kind: "contract", duration: "継続中", org: "業務委託：バックエンド・クラウド基盤", desc: "Go・AWS・Terraform を用いた基盤の設計・実装・テスト・運用を担当。通知配信、データ連携・移行、業務 UI の再構築に携わり、API と画面の実装、監視・運用手順の整備まで進めています。", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
         { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "業務委託：LLM 活用 PoC", desc: "業務文書の自由記述を構造化し、入力データと条件を照合する PoC の主実装を担当。Python による設計・実装、通常ロジックと LLM 処理の分離、構造化出力の検証・再試行、評価・改善まで取り組みました。", tags: ["Python","LLM","PoC","構造化出力"] },
-        { from: "2021", to: "2025", org: "メディア企業",  desc: "レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
-        { from: "2018", to: "2021", org: "ヘルスケアSaaS企業", desc: "ヘルスケア SaaS のレガシーシステムリプレイスをしていました。", tags: ["Kotlin","Java","PostgreSQL"] },
-        { from: "2017", to: "2018", org: "Internet services company",   desc: "CI/CD 環境の改善や、テストツールの検証・開発をしていました。", tags: ["CI/CD","iOS","Danger"] },
-        { from: "2013", to: "2017", org: "システム開発会社", desc: "ウェブアプリを作っていました。", tags: ["Java","Perl"] }
+        { from: "2021", to: "2025", org: "新聞社", desc: "Go・AWS・Terraform で複数のマイクロサービスを設計・実装・運用。記事推薦や画像生成 API、データ連携、社内業務ツールを開発し、要件整理・関係チームとの調整からリリース後の改善まで担当しました。", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
+        { from: "2018", to: "2021", org: "ヘルスケアSaaS企業", desc: "介護事業者向け SaaS の Java 製レガシー機能を、Kotlin・Spring Boot のマイクロサービスへ段階的に置き換え。Go の補助ツール、Docker 開発環境、AWS 本番環境の整備も担当し、関係チームとスコープを調整しながら開発を進めました。", tags: ["Kotlin","Java","PostgreSQL"] },
+        { from: "2017", to: "2018", org: "SET（Software Engineer in Test）", desc: "SET として、ライブラリ更新の検知・検証実行・結果保存・Web 表示をつなぐ自動検証基盤を設計・開発・運用。モバイル SDK のテストアプリや OSS ライセンス管理ツールも実装し、複数言語・OS にまたがる開発と CI/CD 整備を経験しました。", tags: ["CI/CD","Jenkins","Docker","Go","Ruby"] },
+        { from: "2013", to: "2017", org: "システム開発会社", desc: "Java・Perl による Web アプリの開発・運用と、既存システムのリプレイスを担当。Spring Boot の API や Vue.js・React の画面を実装し、GitLab のレビュー、JUnit・Selenium の自動テスト、Jenkins・Docker による CI も導入しました。", tags: ["Java","Perl","Spring Boot","Vue.js / React","Jenkins","Docker"] }
       ]
     },
     proj: {
@@ -145,7 +145,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "Where I've been",
       en: "About",
-      body: "My background spans CI/CD and test automation at Internet services company, a legacy-to-Kotlin migration at a healthcare SaaS provider, and Go microservices at Media company. As a freelancer, I work on backends and cloud infrastructure. I have also taken an LLM-assisted document structuring and condition-matching PoC from requirements through implementation and evaluation. Platforms are my anchor, but I also implement interfaces and operational tooling when needed. In personal development, I use Claude Code and Codex while continuing to improve my published Flutter apps."
+      body: "My background includes CI/CD and test automation as a Software Engineer in Test (SET), a Java-to-Kotlin migration for a healthcare SaaS, and Go microservices at a newspaper publisher. As a freelancer, I work on backends and cloud infrastructure. I have also taken an LLM-assisted document structuring and condition-matching PoC from requirements through implementation and evaluation. Platforms are my anchor, but I also implement interfaces and operational tooling when needed. In personal development, I use Claude Code and Codex while continuing to improve my published Flutter apps."
     },
     skillsKicker: "02 — stack",
     skillsTitle: "Tools I reach for",
@@ -157,10 +157,10 @@ window.DATA = {
       items: [
         { from: "2025", to: "present", kind: "contract", duration: "ongoing", org: "Contract: backend & cloud infrastructure", desc: "Design, implementation, testing, and operation of Go/AWS/Terraform-based systems. Work spans notification delivery, data integration and migration, and rebuilding internal interfaces, including APIs, frontend implementation, monitoring, and operational documentation.", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
         { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "Contract: LLM-assisted PoC", desc: "Primary implementation of a PoC that structures free-text business documents and matches conditions against input data. Designed and implemented the Python processing, separated deterministic logic from LLM processing, and handled output validation, retries, evaluation, and refinement.", tags: ["Python","LLM","PoC","Structured output"] },
-        { from: "2021", to: "2025", org: "Media company", desc: "Legacy debugging, internal tools, microservice design & delivery — plus picking up whatever was needed.", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
-        { from: "2018", to: "2021", org: "Healthcare SaaS provider", desc: "Replatformed a legacy healthcare SaaS.", tags: ["Kotlin","Java","PostgreSQL"] },
-        { from: "2017", to: "2018", org: "Internet services company", desc: "CI/CD platform work and test-tooling evaluation.", tags: ["CI/CD","iOS","Danger"] },
-        { from: "2013", to: "2017", org: "Software development company", desc: "Built web applications.", tags: ["Java","Perl"] }
+        { from: "2021", to: "2025", org: "Newspaper publisher", desc: "Designed, implemented, and operated Go microservices on AWS with Terraform, including recommendation and image-generation APIs, data integration, and internal business tools. Handled requirements, design, implementation, testing, and operational improvements while coordinating with related teams.", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
+        { from: "2018", to: "2021", org: "Healthcare SaaS provider", desc: "Worked on a staged migration of legacy Java functionality for care providers to Kotlin/Spring Boot microservices. Also built Go tools, Docker-based development environments, and AWS infrastructure, coordinating scope and integration with other teams.", tags: ["Kotlin","Java","PostgreSQL"] },
+        { from: "2017", to: "2018", org: "SET — Software Engineer in Test", desc: "As a Software Engineer in Test (SET), designed, built, and operated a library-update validation pipeline spanning change detection, test execution, result storage, and a web interface. Also developed mobile SDK test apps and OSS license tooling across multiple languages and operating systems.", tags: ["CI/CD","Jenkins","Docker","Go","Ruby"] },
+        { from: "2013", to: "2017", org: "Software development company", desc: "Implemented and maintained Java/Perl web applications and worked on legacy migrations. Built Spring Boot APIs and Vue.js/React interfaces, and introduced GitLab code reviews, JUnit/Selenium automated tests, and Jenkins/Docker CI.", tags: ["Java","Perl","Spring Boot","Vue.js / React","Jenkins","Docker"] }
       ]
     },
     proj: {
