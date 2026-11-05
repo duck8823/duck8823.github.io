@@ -61,11 +61,12 @@ function Experience({ t }) {
       <SectionHead kicker={t.xp.kicker} title={t.xp.title} en={t.xp.en} />
       <div className="xp-list">
         {t.xp.items.map((x, i) => {
-          const dur = parseInt(x.to) - parseInt(x.from);
+          const duration = x.duration || `~${parseInt(x.to) - parseInt(x.from)}y`;
           return (
             <div key={i} className="xp">
               <div className="xp-when">
-                <span className="bullet">●</span> {x.from} <span style={{color:"var(--rule-2)"}}>→</span> {x.to}
+                <span className="bullet">●</span> {x.from}
+                {x.to !== x.from && <><span style={{color:"var(--rule-2)"}}> → </span>{x.to}</>}
               </div>
               <div className="xp-body">
                 <h3>{x.org}</h3>
@@ -74,7 +75,7 @@ function Experience({ t }) {
                   {x.tags && x.tags.map((tg, j) => <span key={j} className="tag-xs">{tg}</span>)}
                 </div>
               </div>
-              <div className="xp-dur">~{dur}y</div>
+              <div className="xp-dur">{duration}</div>
             </div>
           );
         })}

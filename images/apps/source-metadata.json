@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-11-05",
+  "source": "Apple App Store JP / Apple public Lookup API",
+  "note": "Images are the screenshots published on the store on the checked date; no synthetic UI or private screenshots. The published app version is not a claim about the screenshot capture build.",
+  "screenshots": [
+    {
+      "name": "カロリズム",
+      "key": "calorithm",
+      "id": "6746127712",
+      "version": "2.8.0",
+      "url": "https://apps.apple.com/jp/app/%E3%82%AB%E3%83%AD%E3%83%AA%E3%82%BA%E3%83%A0/id6746127712?uo=4",
+      "listed_screenshot_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/bf/7d/56bf7d65-9020-2b46-b187-94ee12ee3f9c/v260-iphone-ja-1-01-balance.png/320x480bb.jpg",
+      "download_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/bf/7d/56bf7d65-9020-2b46-b187-94ee12ee3f9c/v260-iphone-ja-1-01-balance.png/800x0w.jpg",
+      "filename": "calorithm-app-store-20261105.jpg",
+      "bytes": 151420,
+      "sha256": "3d23a95705767d9bb3da7638be404a03776d2b24c998432f1940e9e8e1f938fb"
+    },
+    {
+      "name": "わんぽ",
+      "key": "wampo",
+      "id": "6759406324",
+      "version": "1.17.2",
+      "url": "https://apps.apple.com/jp/app/%E3%82%8F%E3%82%93%E3%81%BD/id6759406324?uo=4",
+      "listed_screenshot_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/b1/ef/94b1ef8d-da5a-2a20-cd5e-0beb4157bdb4/iphone_01-hero.png/320x480bb.jpg",
+      "download_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/b1/ef/94b1ef8d-da5a-2a20-cd5e-0beb4157bdb4/iphone_01-hero.png/800x0w.jpg",
+      "filename": "wampo-app-store-20261105.jpg",
+      "bytes": 220504,
+      "sha256": "4a3febeaf0687a4a61b29b0bfb881b892947429b5efd15a29ce00b3f5d94493b"
+    }
+  ]
+}

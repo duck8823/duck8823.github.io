@@ -14,13 +14,13 @@ window.DATA = {
     ],
     nav: { about: "about", work: "work", projects: "projects", apps: "apps", talks: "writing", contact: "contact" },
     now: { label: "// now", items: [
-      { k: "Working on", v: "フリーランスでぼちぼちやってます。<em>お仕事のご相談どうぞ</em>。" },
-      { k: "Building",   v: "Flutter アプリ「わんぽ」「カロリズム」を Claude Code と一緒に開発" },
+      { k: "Working on", v: "Go のバックエンド、クラウド基盤、CI/CD を中心に活動中。<em>業務委託のご相談どうぞ</em>。" },
+      { k: "Building",   v: "Flutter アプリ「わんぽ」「カロリズム」を公開・運用。カロリズムはアプリ内課金にも対応" },
       { k: "Living with", v: "犬の<em>おかか</em>と猫の<em>ツナマヨ</em>、東京都内" }
     ]},
     intro: {
       label: "/ intro",
-      body: "CI/CD とか開発基盤が好きで、CI サーバーを<em>自作するくらい</em>には好きです。必要なら何でもやります。趣味では Flutter でアプリを作り、犬の<em>おかか</em>と猫の<em>ツナマヨ</em>と暮らしています。",
+      body: "Go のバックエンド、AWS・Terraform によるクラウド基盤、CI/CD を、設計から実装・運用まで担当します。CI サーバーを<em>自作するくらい</em>開発基盤が好きです。個人では Flutter アプリを公開・運用し、犬の<em>おかか</em>と猫の<em>ツナマヨ</em>と暮らしています。",
       meta: [
         { k: "based", v: "Tokyo, JP" },
         { k: "role",  v: "Software Engineer" },
@@ -32,7 +32,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "これまでとこれから",
       en: "Background",
-      body: "DeNA の SWET で CI/CD 基盤やテスト自動化に携わったあたりから、開発プロセスや基盤寄りの仕事が多くなりました。エス・エム・エスではレガシーシステムのリプレイス、朝日新聞社では落ちているボールを拾いながらマイクロサービスの設計・開発をやっていました。基盤が軸ですが、必要なら何でもやるタイプです。最近は Claude Code などを使って AI と一緒に個人開発もしています。これからはフリーランスで、開発基盤や DevEx、AI と開発の交わり方を整えるような仕事をやっていきたいと思っています。"
+      body: "DeNA の SWET で CI/CD 基盤やテスト自動化、エス・エム・エスで Kotlin によるレガシーシステムのリプレイス、朝日新聞社で Go のマイクロサービス開発を経験しました。現在はフリーランスとして、バックエンド・クラウド基盤の設計と実装を担当しています。LLM を使った文書の構造化・条件照合 PoC では、要件整理から実装・評価まで経験しました。基盤が軸ですが、必要なら画面や運用まで手を動かします。個人開発では、Claude Code や Codex を使いながら Flutter アプリの公開後の改善も続けています。"
     },
     skillsKicker: "02 — stack",
     skillsTitle: "使っている道具",
@@ -42,6 +42,8 @@ window.DATA = {
       title: "これまでの仕事",
       en: "Experience",
       items: [
+        { from: "2025", to: "現在", kind: "contract", duration: "継続中", org: "業務委託：バックエンド・クラウド基盤", desc: "Go・AWS・Terraform を用いた基盤の設計・実装・テスト・運用を担当。通知配信、データ連携・移行、業務 UI の再構築に携わり、API と画面の実装、監視・運用手順の整備まで進めています。", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
+        { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "業務委託：LLM 活用 PoC", desc: "業務文書の自由記述を構造化し、入力データと条件を照合する PoC の主実装を担当。Python による設計・実装、通常ロジックと LLM 処理の分離、構造化出力の検証・再試行、評価・改善まで取り組みました。", tags: ["Python","LLM","PoC","構造化出力"] },
         { from: "2021", to: "2025", org: "朝日新聞社",  desc: "レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
         { from: "2018", to: "2021", org: "エス・エム・エス", desc: "ヘルスケア SaaS のレガシーシステムリプレイスをしていました。", tags: ["Kotlin","Java","PostgreSQL"] },
         { from: "2017", to: "2018", org: "DeNA SWET",   desc: "CI/CD 環境の改善や、テストツールの検証・開発をしていました。", tags: ["CI/CD","iOS","Danger"] },
@@ -64,8 +66,8 @@ window.DATA = {
       title: "Flutter で出したアプリ",
       en: "Shipped apps",
       items: [
-        { name: "わんぽ", tag: "DOG WALK TRACKER", img: "https://duck8823.github.io/wampo/images/ja/1_home.png",   feats: ["GPS","雨雲レーダー","ウィジェット","HealthKit"], desc: "おかかのためのお散歩管理アプリ。雨雲レーダーと GPS ログ、ホーム画面のウィジェットで次の散歩を逃さない。", url: "https://duck8823.github.io/wampo/index_ja.html" },
-        { name: "カロリズム", tag: "CALORIE BUDGET",   img: "https://duck8823.github.io/calorithm/images/ja/daily.png", feats: ["収支の可視化","AI推定","HealthKit","ウィジェット"], desc: "摂取カロリーと消費カロリーの収支を一目で見えるカロリー家計簿。写真から AI が自動で推定し、HealthKit と連携して消費を集計。", url: "https://duck8823.github.io/calorithm/index_ja.html" }
+        { name: "わんぽ", tag: "DOG WALK TRACKER", img: "images/apps/wampo-app-store-20261105.jpg", feats: ["GPS","雨雲レーダー","Apple Watch","Live Activity"], desc: "愛犬との散歩を記録・振り返る Flutter アプリ。GPS ルート、天気、写真や日々の記録をまとめ、Apple Watch や Live Activity とも連携。企画・実装からストア公開後の改善・運用まで継続しています。", url: "https://duck8823.github.io/wampo/index_ja.html" },
+        { name: "カロリズム", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-20261105.jpg", feats: ["収支の可視化","AI推定","HealthKit","アプリ内課金"], desc: "摂取・消費カロリーの収支を記録し、グラフやふりかえりで確認する Flutter アプリ。AI 推定と HealthKit 連携に加え、有料プランのアプリ内課金を実装。企画・実装・ストア公開・継続改善まで担当しています。", url: "https://duck8823.github.io/calorithm/index_ja.html" }
       ]
     },
     talks: {
@@ -126,13 +128,13 @@ window.DATA = {
     ],
     nav: { about: "about", work: "work", projects: "projects", apps: "apps", talks: "writing", contact: "contact" },
     now: { label: "// now", items: [
-      { k: "Working on", v: "Freelancing at a steady pace — <em>open to inquiries</em>." },
-      { k: "Building",   v: "Flutter apps with Claude Code as my pair" },
+      { k: "Working on", v: "Go backends, cloud infrastructure, and CI/CD — <em>open to contract inquiries</em>." },
+      { k: "Building",   v: "Shipping and maintaining Wampo and Calorithm in Flutter; Calorithm includes in-app purchases" },
       { k: "Living with", v: "<em>Okaka</em> the dog and <em>Tunamayo</em> the cat, in Tokyo" }
     ]},
     intro: {
       label: "/ intro",
-      body: "I love CI/CD and developer platforms — enough to have <em>built my own CI server</em>. Pragmatic generalist who does whatever the team needs. In my spare time I ship Flutter apps, and I live with <em>Okaka</em> the dog and <em>Tunamayo</em> the cat.",
+      body: "I design, implement, and operate Go backends, AWS infrastructure with Terraform, and CI/CD pipelines. I love developer platforms enough to have <em>built my own CI server</em>. I also ship and maintain Flutter apps, and live with <em>Okaka</em> the dog and <em>Tunamayo</em> the cat.",
       meta: [
         { k: "based", v: "Tokyo, JP" },
         { k: "role",  v: "Software Engineer" },
@@ -144,7 +146,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "Where I've been",
       en: "About",
-      body: "Somewhere around DeNA SWET — CI/CD platforms and test automation — I drifted into platform and developer-experience work, and mostly stayed there. Legacy replatforming of a healthcare SaaS at SMS, then microservices design & delivery at The Asahi Shimbun while picking up whatever balls were rolling past. Platforms are my anchor, but I'll do whatever the work needs. These days I also build personal apps alongside AI — mostly Claude Code. Freelancing from here on, I'd like to keep working on developer platforms, DevEx, and the seams where AI meets software delivery."
+      body: "My background spans CI/CD and test automation at DeNA SWET, a legacy-to-Kotlin migration at SMS, and Go microservices at The Asahi Shimbun. As a freelancer, I work on backends and cloud infrastructure. I have also taken an LLM-assisted document structuring and condition-matching PoC from requirements through implementation and evaluation. Platforms are my anchor, but I also implement interfaces and operational tooling when needed. In personal development, I use Claude Code and Codex while continuing to improve my published Flutter apps."
     },
     skillsKicker: "02 — stack",
     skillsTitle: "Tools I reach for",
@@ -154,6 +156,8 @@ window.DATA = {
       title: "Where I've worked",
       en: "Experience",
       items: [
+        { from: "2025", to: "present", kind: "contract", duration: "ongoing", org: "Contract: backend & cloud infrastructure", desc: "Design, implementation, testing, and operation of Go/AWS/Terraform-based systems. Work spans notification delivery, data integration and migration, and rebuilding internal interfaces, including APIs, frontend implementation, monitoring, and operational documentation.", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
+        { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "Contract: LLM-assisted PoC", desc: "Primary implementation of a PoC that structures free-text business documents and matches conditions against input data. Designed and implemented the Python processing, separated deterministic logic from LLM processing, and handled output validation, retries, evaluation, and refinement.", tags: ["Python","LLM","PoC","Structured output"] },
         { from: "2021", to: "2025", org: "The Asahi Shimbun", desc: "Legacy debugging, internal tools, microservice design & delivery — plus picking up whatever was needed.", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
         { from: "2018", to: "2021", org: "SMS Co., Ltd.", desc: "Replatformed a legacy healthcare SaaS.", tags: ["Kotlin","Java","PostgreSQL"] },
         { from: "2017", to: "2018", org: "DeNA SWET", desc: "CI/CD platform work and test-tooling evaluation.", tags: ["CI/CD","iOS","Danger"] },
@@ -176,8 +180,8 @@ window.DATA = {
       title: "Flutter apps I shipped",
       en: "Shipped apps",
       items: [
-        { name: "Wampo",    tag: "DOG WALK TRACKER", img: "https://duck8823.github.io/wampo/images/ja/1_home.png",   feats: ["GPS","Rain radar","Widgets","HealthKit"], desc: "A walk tracker built for Okaka. GPS logs, rain radar, and home-screen widgets so you never miss the window.", url: "https://duck8823.github.io/wampo/" },
-        { name: "Calorithm",tag: "CALORIE BUDGET",    img: "https://duck8823.github.io/calorithm/images/ja/daily.png", feats: ["Intake vs burn","AI estimate","HealthKit","Widgets"], desc: "A calorie ledger that shows intake vs burn at a glance. AI estimates from photos; HealthKit pulls in activity to complete the balance sheet.", url: "https://duck8823.github.io/calorithm/" }
+        { name: "Wampo", tag: "DOG WALK TRACKER", img: "images/apps/wampo-app-store-20261105.jpg", feats: ["GPS","Rain radar","Apple Watch","Live Activity"], desc: "A Flutter app for recording and reviewing walks with your dog. Combines GPS routes, weather, photos, and daily observations, with Apple Watch and Live Activity support. I handle planning, implementation, store publication, and ongoing improvements and operation.", url: "https://duck8823.github.io/wampo/" },
+        { name: "Calorithm", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-20261105.jpg", feats: ["Intake vs burn","AI estimate","HealthKit","In-app purchases"], desc: "A Flutter app for tracking calorie intake and expenditure through charts and reflections. Includes AI estimation, HealthKit integration, and in-app purchases for a paid plan. I handle planning, implementation, store publication, and ongoing improvements.", url: "https://duck8823.github.io/calorithm/" }
       ]
     },
     talks: {
@@ -229,6 +233,8 @@ window.DATA = {
 window.SKILLS = [
   { k: "lang",     v: "Go" },
   { k: "lang",     v: "Kotlin" },
+  { k: "lang",     v: "Python" },
+  { k: "lang",     v: "TypeScript / React" },
   { k: "mobile",   v: "Flutter / Dart" },
   { k: "platform", v: "Docker" },
   { k: "platform", v: "CI/CD" },
@@ -238,6 +244,7 @@ window.SKILLS = [
   { k: "data",     v: "BigQuery" },
   { k: "data",     v: "PostgreSQL" },
   { k: "ai",       v: "Claude Code" },
+  { k: "ai",       v: "Codex" },
   { k: "proto",    v: "Protocol Buffers" }
 ];
 
