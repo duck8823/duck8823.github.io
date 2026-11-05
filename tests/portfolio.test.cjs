@@ -59,3 +59,8 @@ test('the original four employment records are retained in both languages', () =
     assert.equal(employment.at(-1).from, '2013');
   }
 });
+
+test('tool summary contains twelve cards without removed skills', () => {
+ assert.equal(context.window.SKILLS.length,12);
+ assert.ok(context.window.SKILLS.every(s=>!/Python|TypeScript|Protocol/i.test(s.v)));
+});

@@ -32,7 +32,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "これまでとこれから",
       en: "Background",
-      body: "DeNA の SWET で CI/CD 基盤やテスト自動化、エス・エム・エスで Kotlin によるレガシーシステムのリプレイス、朝日新聞社で Go のマイクロサービス開発を経験しました。現在はフリーランスとして、バックエンド・クラウド基盤の設計と実装を担当しています。LLM を使った文書の構造化・条件照合 PoC では、要件整理から実装・評価まで経験しました。基盤が軸ですが、必要なら画面や運用まで手を動かします。個人開発では、Claude Code や Codex を使いながら Flutter アプリの公開後の改善も続けています。"
+      body: "事業会社の開発基盤チーム で CI/CD 基盤やテスト自動化、ヘルスケアSaaS企業で Kotlin によるレガシーシステムのリプレイス、メディア企業で Go のマイクロサービス開発を経験しました。現在はフリーランスとして、バックエンド・クラウド基盤の設計と実装を担当しています。LLM を使った文書の構造化・条件照合 PoC では、要件整理から実装・評価まで経験しました。基盤が軸ですが、必要なら画面や運用まで手を動かします。個人開発では、Claude Code や Codex を使いながら Flutter アプリの公開後の改善も続けています。"
     },
     skillsKicker: "02 — stack",
     skillsTitle: "使っている道具",
@@ -44,10 +44,10 @@ window.DATA = {
       items: [
         { from: "2025", to: "現在", kind: "contract", duration: "継続中", org: "業務委託：バックエンド・クラウド基盤", desc: "Go・AWS・Terraform を用いた基盤の設計・実装・テスト・運用を担当。通知配信、データ連携・移行、業務 UI の再構築に携わり、API と画面の実装、監視・運用手順の整備まで進めています。", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
         { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "業務委託：LLM 活用 PoC", desc: "業務文書の自由記述を構造化し、入力データと条件を照合する PoC の主実装を担当。Python による設計・実装、通常ロジックと LLM 処理の分離、構造化出力の検証・再試行、評価・改善まで取り組みました。", tags: ["Python","LLM","PoC","構造化出力"] },
-        { from: "2021", to: "2025", org: "朝日新聞社",  desc: "レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
-        { from: "2018", to: "2021", org: "エス・エム・エス", desc: "ヘルスケア SaaS のレガシーシステムリプレイスをしていました。", tags: ["Kotlin","Java","PostgreSQL"] },
-        { from: "2017", to: "2018", org: "DeNA SWET",   desc: "CI/CD 環境の改善や、テストツールの検証・開発をしていました。", tags: ["CI/CD","iOS","Danger"] },
-        { from: "2013", to: "2017", org: "日本ソフトウェアマネジメント", desc: "ウェブアプリを作っていました。", tags: ["Java","Perl"] }
+        { from: "2021", to: "2025", org: "メディア企業",  desc: "レガシーシステムの不具合調査や業務システムの開発・運用、マイクロサービスの設計・開発など、いろいろやっていました。", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
+        { from: "2018", to: "2021", org: "ヘルスケアSaaS企業", desc: "ヘルスケア SaaS のレガシーシステムリプレイスをしていました。", tags: ["Kotlin","Java","PostgreSQL"] },
+        { from: "2017", to: "2018", org: "Internet services company",   desc: "CI/CD 環境の改善や、テストツールの検証・開発をしていました。", tags: ["CI/CD","iOS","Danger"] },
+        { from: "2013", to: "2017", org: "システム開発会社", desc: "ウェブアプリを作っていました。", tags: ["Java","Perl"] }
       ]
     },
     proj: {
@@ -81,7 +81,6 @@ window.DATA = {
         { y: "2018",    t: "外部環境への依存をテストする", v: "golang.tokyo", url: "https://www.slideshare.net/ShunsukeMaeda/ss-110757746" },
         { y: "2018",    t: "Android で利用できるデバイスファームの紹介", v: "DroidKaigi 2018", url: "https://www.slideshare.net/slideshow/droidkaigidevicefarm/87573170" },
         { y: "2017",    t: "iOS で利用できるデバイスファームのメリット・デメリット", v: "iOSDC 2017", url: "https://www.slideshare.net/slideshow/ios-79834769/79834769" },
-        { y: "Article", t: "朝日新聞デジタルのデータアーキテクチャ", v: "Findy Tools", url: "https://findy-tools.io/companies/asashi/25/35" }
       ]
     },
     blog: {
@@ -146,7 +145,7 @@ window.DATA = {
       kicker: "01 — about",
       title: "Where I've been",
       en: "About",
-      body: "My background spans CI/CD and test automation at DeNA SWET, a legacy-to-Kotlin migration at SMS, and Go microservices at The Asahi Shimbun. As a freelancer, I work on backends and cloud infrastructure. I have also taken an LLM-assisted document structuring and condition-matching PoC from requirements through implementation and evaluation. Platforms are my anchor, but I also implement interfaces and operational tooling when needed. In personal development, I use Claude Code and Codex while continuing to improve my published Flutter apps."
+      body: "My background spans CI/CD and test automation at Internet services company, a legacy-to-Kotlin migration at a healthcare SaaS provider, and Go microservices at Media company. As a freelancer, I work on backends and cloud infrastructure. I have also taken an LLM-assisted document structuring and condition-matching PoC from requirements through implementation and evaluation. Platforms are my anchor, but I also implement interfaces and operational tooling when needed. In personal development, I use Claude Code and Codex while continuing to improve my published Flutter apps."
     },
     skillsKicker: "02 — stack",
     skillsTitle: "Tools I reach for",
@@ -158,10 +157,10 @@ window.DATA = {
       items: [
         { from: "2025", to: "present", kind: "contract", duration: "ongoing", org: "Contract: backend & cloud infrastructure", desc: "Design, implementation, testing, and operation of Go/AWS/Terraform-based systems. Work spans notification delivery, data integration and migration, and rebuilding internal interfaces, including APIs, frontend implementation, monitoring, and operational documentation.", tags: ["Go","AWS","Terraform","TypeScript","React","CI/CD"] },
         { from: "2026", to: "2026", kind: "contract", duration: "PoC", org: "Contract: LLM-assisted PoC", desc: "Primary implementation of a PoC that structures free-text business documents and matches conditions against input data. Designed and implemented the Python processing, separated deterministic logic from LLM processing, and handled output validation, retries, evaluation, and refinement.", tags: ["Python","LLM","PoC","Structured output"] },
-        { from: "2021", to: "2025", org: "The Asahi Shimbun", desc: "Legacy debugging, internal tools, microservice design & delivery — plus picking up whatever was needed.", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
-        { from: "2018", to: "2021", org: "SMS Co., Ltd.", desc: "Replatformed a legacy healthcare SaaS.", tags: ["Kotlin","Java","PostgreSQL"] },
-        { from: "2017", to: "2018", org: "DeNA SWET", desc: "CI/CD platform work and test-tooling evaluation.", tags: ["CI/CD","iOS","Danger"] },
-        { from: "2013", to: "2017", org: "Nihon Software Management", desc: "Built web applications.", tags: ["Java","Perl"] }
+        { from: "2021", to: "2025", org: "Media company", desc: "Legacy debugging, internal tools, microservice design & delivery — plus picking up whatever was needed.", tags: ["Go","AWS","Terraform","ProtocolBuffers"] },
+        { from: "2018", to: "2021", org: "Healthcare SaaS provider", desc: "Replatformed a legacy healthcare SaaS.", tags: ["Kotlin","Java","PostgreSQL"] },
+        { from: "2017", to: "2018", org: "Internet services company", desc: "CI/CD platform work and test-tooling evaluation.", tags: ["CI/CD","iOS","Danger"] },
+        { from: "2013", to: "2017", org: "Software development company", desc: "Built web applications.", tags: ["Java","Perl"] }
       ]
     },
     proj: {
@@ -195,7 +194,6 @@ window.DATA = {
         { y: "2018",    t: "Testing against external dependencies", v: "golang.tokyo", url: "https://www.slideshare.net/ShunsukeMaeda/ss-110757746" },
         { y: "2018",    t: "Device farms for Android", v: "DroidKaigi 2018", url: "https://www.slideshare.net/slideshow/droidkaigidevicefarm/87573170" },
         { y: "2017",    t: "iOS device farms: pros and cons", v: "iOSDC 2017", url: "https://www.slideshare.net/slideshow/ios-79834769/79834769" },
-        { y: "Article", t: "Data architecture at Asahi Shimbun Digital", v: "Findy Tools", url: "https://findy-tools.io/companies/asashi/25/35" }
       ]
     },
     blog: {
@@ -233,8 +231,6 @@ window.DATA = {
 window.SKILLS = [
   { k: "lang",     v: "Go" },
   { k: "lang",     v: "Kotlin" },
-  { k: "lang",     v: "Python" },
-  { k: "lang",     v: "TypeScript / React" },
   { k: "mobile",   v: "Flutter / Dart" },
   { k: "platform", v: "Docker" },
   { k: "platform", v: "CI/CD" },
@@ -245,7 +241,6 @@ window.SKILLS = [
   { k: "data",     v: "PostgreSQL" },
   { k: "ai",       v: "Claude Code" },
   { k: "ai",       v: "Codex" },
-  { k: "proto",    v: "Protocol Buffers" }
 ];
 
 // ── Deterministic contribution heatmap (53 weeks × 7 days) ──

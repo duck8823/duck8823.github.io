@@ -468,7 +468,7 @@ body.hovering .cursor-ring { width: 44px; height: 44px; border-color: var(--acce
 /* ═══ Skills grid (stacked chips) ═══ */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1px;
   background: var(--rule);
   border: 1px solid var(--rule);
@@ -488,6 +488,8 @@ body.hovering .cursor-ring { width: 44px; height: 44px; border-color: var(--acce
 .skill-cell .k { color: var(--fg-3); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
 .skill-cell .v { color: var(--fg); font-weight: 500; }
 
+@media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* ═══ Experience ═══ */
 .xp-list {}
 .xp {
