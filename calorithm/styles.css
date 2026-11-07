@@ -225,21 +225,13 @@ a { color: inherit; text-decoration: none; }
 .cta-cluster {
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
 }
-.store-btn {
-  display: inline-flex; align-items: center; gap: 10px;
-  background: var(--ink); color: var(--bg);
-  padding: 12px 18px;
-  border-radius: 10px;
-  font-size: 14px; font-weight: 500;
-  transition: opacity .15s;
-}
-.store-btn:hover { opacity: 0.92; }
-.store-btn svg { width: 18px; height: 18px; }
-.store-btn .ico { display: inline-flex; }
-.store-btn { white-space: nowrap; }
-.store-btn .lines { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
-.store-btn .lines small { font-size: 10px; opacity: 0.7; letter-spacing: 0.04em; white-space: nowrap;}
-.store-btn .lines strong { font-size: 14px; font-weight: 600; white-space: nowrap; }
+/* Apple・Google の公式バッジ。高さをそろえ、間はバッジの高さの 1/4 以上あける */
+.store-badges { gap: 12px; }
+.store-badge { display: inline-flex; flex: none; line-height: 0; border-radius: 8px; transition: opacity .15s; }
+.store-badge:hover { opacity: 0.88; }
+.store-badge img { display: block; height: 48px; width: auto; }
+@media (max-width: 600px) { .store-badge img { height: 44px; } .store-badges { gap: 11px; } }
+@media (max-width: 360px) { .store-badge img { height: 40px; } .store-badges { gap: 10px; } }
 
 .hero-meta-row {
   display: flex; gap: 18px;
@@ -270,14 +262,6 @@ a { color: inherit; text-decoration: none; }
   .hero-sub {
     font-size: 16px;
     max-width: none;
-  }
-  .cta-cluster { gap: 10px; }
-  .store-btn {
-    flex: 1 1 150px;
-    justify-content: center;
-    min-width: 0;
-    padding-left: 14px;
-    padding-right: 14px;
   }
   .hero-meta-row { gap: 10px 12px; }
 }
@@ -858,7 +842,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
   color: var(--bg);
 }
 .cta-band p { color: rgba(251,251,250,.65); max-width: 48ch; margin: 0 auto 32px; font-size: 16px;}
-.cta-band .store-btn { background: var(--bg); color: var(--ink); }
 .cta-band .cta-cluster { justify-content: center; }
 
 /* ============ Footer ============ */
@@ -950,7 +933,7 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .sub-eyebrow.centered { justify-content: center; }
 
 .sub-title {
-  font-size: clamp(36px, 5.4vw, 64px);
+  font-size: clamp(32px, 5.4vw, 64px);
   font-weight: 600;
   line-height: 1.04;
   letter-spacing: -0.025em;
@@ -1714,7 +1697,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-example-note { display: flex; justify-content: center; gap: 8px; align-items: center; font-size: 11px; color: var(--ink-2); margin: 9px 0 27px; }
 .ed-example-note span { border: 1px solid #adbba7; border-radius: 3px; padding: 1px 6px; }
 .ed-hero-bottom { display: flex; flex-wrap: wrap; gap: 26px; align-items: center; justify-content: center; }
-.ed-hero .store-btn, .ed-cta .store-btn { background: #153e30; color: #fffefa; border-radius: 6px; padding: 12px 18px; }
 .ed-hero-facts { display: flex; flex-direction: column; align-items: flex-start; font-size: 11px; gap: 2px; color: var(--ink-2); }
 .ed-privacy { color: var(--ink-2); margin: 18px auto 0; max-width: 690px; font-size: 11px; line-height: 1.8; }
 .ed-section { padding: 65px 0; background: #fffefa; scroll-margin-top: 20px; }
@@ -1848,8 +1830,7 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
   .ed-meter { height: 7px; }
   .ed-example-note { font-size: 10px; margin-top: 2px; margin-bottom: 22px; }
   .ed-hero-bottom { gap: 15px; }
-  .ed-hero-bottom .cta-cluster { width: 100%; gap: 10px; }
-  .ed-hero .store-btn { padding-left: 10px; padding-right: 10px; flex-basis: 140px; }
+  .ed-hero-bottom .cta-cluster { width: 100%; }
   .ed-hero-facts { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 4px 12px; font-size: 10px; }
   .ed-privacy { font-size: 11px; margin-top: 12px; }
   .ed-section { padding: 42px 0; }
@@ -1917,17 +1898,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 
 .ed-device::before { content: ""; position: absolute; z-index: 1; top: 12px; left: 50%; transform: translateX(-50%); width: 28%; height: 12px; border-radius: 20px; background: #111713; pointer-events: none; }
 
-/* Three quiet store-artwork accents; normal flow keeps copy and screenshots clear. */
-.ed-artwork { pointer-events: none; }
-.ed-artwork img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.ed-artwork-hero { width: min(100%, 450px); aspect-ratio: 3 / 1; margin: -8px auto 16px; }
-.ed-artwork-reflection { width: min(100%, 240px); aspect-ratio: 3 / 1; align-self: center; margin: 0 auto; }
-.ed-artwork-cta { width: min(100%, 230px); aspect-ratio: 648 / 218; margin: 0 auto 20px; }
-@media (max-width: 600px) {
-  .ed-artwork-hero { width: min(100%, 330px); margin: -4px auto 14px; }
-  .ed-artwork-reflection { width: min(100%, 210px); }
-  .ed-artwork-cta { width: min(100%, 190px); margin-bottom: 16px; }
-}
 
 
 /* Current iOS light input-sheet portion; source/token mapping is in assets/meal-sheet-mock/provenance.json. */
@@ -2023,10 +1993,9 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-hero .ed-equation-item small { margin: 6px 0 10px; }
 .ed-hero .ed-operation { font-size: 24px; margin-top: 38px; text-align: center; }
 .ed-hero .ed-example-note { justify-content: flex-start; margin: 4px 0 18px; }
-.ed-hero .cta-cluster { justify-content: flex-start; gap: 10px; }
+.ed-hero .cta-cluster { justify-content: flex-start; }
 .ed-hero-facts { flex-direction: row; flex-wrap: wrap; gap: 4px 14px; margin-top: 12px; }
 .ed-privacy { margin: 12px 0 0; }
-.ed-artwork-hero { width: min(100%, 230px); margin: 12px 0 0; }
 .ed-hero-capture { width: 100%; max-width: 390px; margin: 0; justify-self: end; }
 .ed-capture-upper { aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid #d7dfd5; border-radius: 14px; background: #e8eee8; }
 .ed-capture-upper img, .ed-capture-full img, .ed-capture-graph img { display: block; width: 100%; height: auto; }
@@ -2056,7 +2025,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-capture-graph { aspect-ratio: 1.18; overflow: hidden; border: 1px solid #d7dfd5; border-radius: 14px; background: #e8eee8; }
 .ed-capture-graph img { margin-top: -35%; }
 .ed-review-flow { background: #f8f7f1; }
-.ed-review-flow .ed-artwork-reflection { margin: -8px auto 26px; }
 .ed-review-captures { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 70px; align-items: start; max-width: 930px; margin: auto; }
 .ed-review-captures > .ed-real-capture { max-width: 410px; }
 .ed-consultation-story { min-width: 0; padding-top: 34px; }
@@ -2070,7 +2038,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-middle-cta { background: #e3eadd; padding: 34px 0; }
 .ed-middle-cta > .ed-shell { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
 .ed-middle-cta h2 { font-size: 26px; margin-bottom: 7px; }
-.ed-middle-cta .store-btn { background: #153e30; color: #fffefa; border-radius: 6px; padding: 12px 18px; }
 .ed-plus-layout { grid-template-columns: 1fr; gap: 24px; }
 .ed-plus-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .ed-plus-benefits article { min-width: 0; }
@@ -2093,8 +2060,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
   .ed-hero .ed-equation-item strong { font-size: clamp(29px, 8.4vw, 42px); }
   .ed-hero .ed-equation-item { padding: 0; }
   .ed-hero .ed-operation { font-size: 19px; margin-top: 36px; }
-  .ed-hero .store-btn { flex-basis: 140px; padding-left: 10px; padding-right: 10px; }
-  .ed-artwork-hero { width: 150px; margin-top: 8px; }
   .ed-hero-capture, .ed-record-layout .ed-real-capture { justify-self: center; max-width: 390px; }
   .ed-trend-captures { grid-template-columns: 1fr; gap: 24px; }
   .ed-trend-captures > .ed-real-capture:first-child { max-width: 260px; margin: auto; }
@@ -2103,7 +2068,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
   .ed-consultation-story { padding-top: 0; }
   .ed-consultation-story .ed-real-capture { margin: auto; }
   .ed-plus-benefits { grid-template-columns: 1fr; gap: 0; }
-  .ed-middle-cta .cta-cluster { gap: 10px; }
 }
 @media (max-width: 600px) {
   /* Reading/action first, then the real screen; keep the full equation below rather than shrinking it. */
@@ -2118,7 +2082,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
   .ed-hero-copy > .ed-equation { order: 6; margin-top: 22px; }
   .ed-hero-copy > .ed-example-note { order: 7; }
   .ed-hero-copy > .ed-privacy { order: 8; }
-  .ed-hero-copy > .ed-artwork-hero { order: 9; }
 }
 @media (max-width: 900px) {
   /* Keep every term legible under narrow layouts and user text-spacing overrides. */
@@ -2133,7 +2096,9 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 }
 .ed-hero-ending { display: inline-block; white-space: nowrap; }
 .ed-hero-intro { text-wrap: pretty; }
-.ed-hero:lang(en) .ed-hero-ending { margin-left: .2em; }
+/* The word gap is a real space before the no-wrap ending, so a wrapped line starts flush. */
+.ed-hero:lang(en) h1 > span { text-wrap: balance; }
+.ed-hero:lang(en) h1 em { white-space: nowrap; }
 
 /* #4580: comparison groups and nutrition scope; keep natural narrow reflow. */
 .ed-plus-table .ed-plus-group th { padding-top: 1.4em; font-weight: 600; color: var(--ink-3); }
