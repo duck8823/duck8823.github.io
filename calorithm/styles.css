@@ -2134,3 +2134,9 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-hero-ending { display: inline-block; white-space: nowrap; }
 .ed-hero-intro { text-wrap: pretty; }
 .ed-hero:lang(en) .ed-hero-ending { margin-left: .2em; }
+
+/* #4580: comparison groups and nutrition scope; keep natural narrow reflow. */
+.ed-plus-table .ed-plus-group th { padding-top: 1.4em; font-weight: 600; color: var(--ink-3); }
+.ed-plus-feature-detail { display: block; font-weight: 400; }
+
+.ed-plus-comparison .ed-plus-condition { color: var(--ink-2); }
