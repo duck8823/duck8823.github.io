@@ -2105,3 +2105,6 @@ details.faq-item .faq-a { max-height: none; overflow: visible; }
 .ed-plus-feature-detail { display: block; font-weight: 400; }
 
 .ed-plus-comparison .ed-plus-condition { color: var(--ink-2); }
+
+/* 日本語の本文は文節で改行し、最後の行に「す。」だけが残らないようにする。 */
+:lang(ja) :is(p, li, dd, details div) { word-break: auto-phrase; text-wrap: pretty; }
