@@ -77,14 +77,13 @@
       "path": "ja/v2/daily.png",
       "locale": "ja",
       "screen": "daily",
-      "sha256": "535fbae656c45325878a93f76a432fc37248c4ba02fb4ced481f86f36e2f0455",
+      "sha256": "b00b705995672a012cda1f75c430cc6c225891c3a7fef22bb4ec86256865a6d7",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/daily_ja.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:13:18.857921+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:13:18.857921+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/daily_ja.png",
       "response": null,
-      "capture_run_id": "iphone-ja-ready"
+      "capture_run_id": "store-2.10.0-iphone-ja",
+      "app_version": "2.10.0"
     },
     {
       "path": "ja/v2/timeline.png",
@@ -103,53 +102,49 @@
       "path": "ja/v2/weekly.png",
       "locale": "ja",
       "screen": "weekly",
-      "sha256": "c44c2f4bfe717d417678cc83a8198991be3713b6bffbf0b166505be3c4ecb22c",
+      "sha256": "eee40ac55154fc05127d2d34a922c90e9d30dfe84c4b9b991930b039ee1aa31a",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/weekly_ja.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:13:18.870817+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:13:18.870817+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/weekly_ja.png",
       "response": null,
-      "capture_run_id": "iphone-ja-ready"
+      "capture_run_id": "store-2.10.0-iphone-ja",
+      "app_version": "2.10.0"
     },
     {
       "path": "ja/v2/reflection.png",
       "locale": "ja",
       "screen": "reflection",
-      "sha256": "ed3c36a6d13365a80e7dfac8b617496a40ef9ae8344e8287ca1318ba44289273",
+      "sha256": "b6a9dce753945d747ef0908012734a56b92799aa58f0fe00cb581ab12471ba7e",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/reflection_ja.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:13:18.886349+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:13:18.886349+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/reflection_ja.png",
       "response": null,
-      "capture_run_id": "iphone-ja-ready"
+      "capture_run_id": "store-2.10.0-iphone-ja",
+      "app_version": "2.10.0"
     },
     {
       "path": "ja/v2/consultation.png",
       "locale": "ja",
       "screen": "consultation",
-      "sha256": "6153e542a28be4ed7dede0c4fb460f770d0766841ee9ce40dc7589c4f2857a5c",
+      "sha256": "491a5bfa5d2aaf23d43b3f25be6ade4bc681e6dfafb69ebf20cea3eb9d9def40",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/ja-ready/consultation_ja.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:13:18.890911+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:13:18.890911+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/consultation_ja.png",
       "response": "fixed_local_fixture_not_live_ai",
-      "capture_run_id": "iphone-ja-ready"
+      "capture_run_id": "store-2.10.0-iphone-ja",
+      "app_version": "2.10.0"
     },
     {
       "path": "en/v2/daily.png",
       "locale": "en",
       "screen": "daily",
-      "sha256": "7ef51618587689a8bfe1ca477f5ee3b40f113958deed6c6c7009a21858565bc9",
+      "sha256": "fb13850c17b22dc686166f9c164d2e788737937d9353d746cb47848377f06141",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/daily_en.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:18:01.042397+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:18:01.042397+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/daily_en.png",
       "response": null,
-      "capture_run_id": "iphone-en-ready"
+      "capture_run_id": "store-2.10.0-iphone-en",
+      "app_version": "2.10.0"
     },
     {
       "path": "en/v2/timeline.png",
@@ -168,40 +163,37 @@
       "path": "en/v2/weekly.png",
       "locale": "en",
       "screen": "weekly",
-      "sha256": "bc1a693fa5af9a88a6ca3913ecad475877e838bcc60244d464d221066eba311b",
+      "sha256": "46320f281f973e12375bb1b102842997406b6859cf8fd11b183100dfc2328059",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/weekly_en.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:18:01.053056+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:18:01.053056+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/weekly_en.png",
       "response": null,
-      "capture_run_id": "iphone-en-ready"
+      "capture_run_id": "store-2.10.0-iphone-en",
+      "app_version": "2.10.0"
     },
     {
       "path": "en/v2/reflection.png",
       "locale": "en",
       "screen": "reflection",
-      "sha256": "1989c7c339379d5cb26bee9b45d7bbed0aee9ef05ce604f42d95e252dc1ea548",
+      "sha256": "103090760b4b423628f1cf5118b4ebb7e214bdd0279ec0a6dbcea52ffc32f50d",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/reflection_en.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:18:01.075199+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:18:01.075199+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/reflection_en.png",
       "response": null,
-      "capture_run_id": "iphone-en-ready"
+      "capture_run_id": "store-2.10.0-iphone-en",
+      "app_version": "2.10.0"
     },
     {
       "path": "en/v2/consultation.png",
       "locale": "en",
       "screen": "consultation",
-      "sha256": "e7bccd365603a31e02be259ac897e03dcc45a0142648c000a0b349255de69e1f",
+      "sha256": "9b4af35137d8e72f0fafecc29035fbd42397af2243371de9ed673d4194b7a4f4",
       "width": 1320,
       "height": 2868,
-      "capture_source_path": "/private/tmp/calorithm-260-captures/iphone/en-ready/consultation_en.png",
-      "capture_file_modified_at_utc": "2026-10-31T09:18:01.082373+00:00",
-      "capture_file_modified_at_jst": "2026-10-31T18:18:01.082373+09:00",
+      "capture_source_path": "tools/store-visuals/captures/iphone/consultation_en.png",
       "response": "fixed_local_fixture_not_live_ai",
-      "capture_run_id": "iphone-en-ready"
+      "capture_run_id": "store-2.10.0-iphone-en",
+      "app_version": "2.10.0"
     }
   ],
   "capture_export_note": "temporary capture workspace; not a shipped application source change",
@@ -211,5 +203,18 @@
     "variant_archive": "assets/store-marketing/capture-harness/initial-daily-authority/",
     "note": "Capture-time variant inputs are preserved by the store-image artifact; they differ from the current capture-workspace helper files. Three unchanged shared inputs remain under flutter/."
   },
-  "approval_note": "User approved the 10 unchanged captures and in-review captions on 2026-11-01. This does not assert a public app release or authorize automated Pages deployment."
+  "approval_note": "User approved the 10 unchanged captures and in-review captions on 2026-11-01. This does not assert a public app release or authorize automated Pages deployment.",
+  "refresh_2_10_0": {
+    "screens": [
+      "consultation",
+      "daily",
+      "reflection",
+      "weekly"
+    ],
+    "source": "tools/store-visuals/captures/iphone/ (raw captures used for the 2.10.0 store images, #4810)",
+    "source_revision": "248f28bdf7f48a6ee5b2e6bc9c1d7682f579d2f0",
+    "method": "flutter drive with flutter/integration_test/store_2_10_0_capture_test.dart; synthetic fixtures; production display; no external AI request",
+    "image_processing": "none; raw PNG bytes copied, framing and crop are CSS only",
+    "note": "timeline stays the 2.6.0 capture because the 2.10.0 capture set has no timeline scene."
+  }
 }
