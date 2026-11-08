@@ -67,7 +67,7 @@ window.DATA = {
       en: "Shipped apps",
       items: [
         { name: "わんぽ", tag: "DOG WALK TRACKER", img: "images/apps/wampo-app-store-20261105.jpg", feats: ["GPS","雨雲レーダー","Apple Watch","Live Activity"], desc: "愛犬との散歩を記録・振り返る Flutter アプリ。GPS ルート、天気、写真や日々の記録をまとめ、Apple Watch や Live Activity とも連携。企画・実装からストア公開後の改善・運用まで継続しています。", url: "https://duck8823.github.io/wampo/index_ja.html" },
-        { name: "カロリズム", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-20261105.jpg", feats: ["収支の可視化","AI推定","HealthKit","アプリ内課金"], desc: "摂取・消費カロリーの収支を記録し、グラフやふりかえりで確認する Flutter アプリ。AI 推定と HealthKit 連携に加え、有料プランのアプリ内課金を実装。企画・実装・ストア公開・継続改善まで担当しています。", url: "https://duck8823.github.io/calorithm/index_ja.html" }
+        { name: "カロリズム", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-v2.10.0.jpg", feats: ["収支の可視化","AI推定","HealthKit","アプリ内課金"], desc: "摂取・消費カロリーの収支を記録し、グラフやふりかえりで確認する Flutter アプリ。AI 推定と HealthKit 連携に加え、有料プランのアプリ内課金を実装。企画・実装・ストア公開・継続改善まで担当しています。", url: "https://duck8823.github.io/calorithm/index_ja.html" }
       ]
     },
     talks: {
@@ -180,7 +180,7 @@ window.DATA = {
       en: "Shipped apps",
       items: [
         { name: "Wampo", tag: "DOG WALK TRACKER", img: "images/apps/wampo-app-store-20261105.jpg", feats: ["GPS","Rain radar","Apple Watch","Live Activity"], desc: "A Flutter app for recording and reviewing walks with your dog. Combines GPS routes, weather, photos, and daily observations, with Apple Watch and Live Activity support. I handle planning, implementation, store publication, and ongoing improvements and operation.", url: "https://duck8823.github.io/wampo/" },
-        { name: "Calorithm", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-20261105.jpg", feats: ["Intake vs burn","AI estimate","HealthKit","In-app purchases"], desc: "A Flutter app for tracking calorie intake and expenditure through charts and reflections. Includes AI estimation, HealthKit integration, and in-app purchases for a paid plan. I handle planning, implementation, store publication, and ongoing improvements.", url: "https://duck8823.github.io/calorithm/" }
+        { name: "Calorithm", tag: "CALORIE BUDGET", img: "images/apps/calorithm-app-store-v2.10.0.jpg", feats: ["Intake vs burn","AI estimate","HealthKit","In-app purchases"], desc: "A Flutter app for tracking calorie intake and expenditure through charts and reflections. Includes AI estimation, HealthKit integration, and in-app purchases for a paid plan. I handle planning, implementation, store publication, and ongoing improvements.", url: "https://duck8823.github.io/calorithm/" }
       ]
     },
     talks: {

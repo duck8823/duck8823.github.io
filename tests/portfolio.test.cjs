@@ -94,3 +94,11 @@ test('older employment summaries describe confirmed implementation and delivery 
     assert.match(healthcare.desc, /AWS/);
   }
 });
+
+// v2.10.0 の公開済みストア画像へ更新し、両言語の参照を揃える。
+test('Calorithm uses the v2.10.0 store image in both languages', () => {
+  for (const lang of ['ja', 'en']) {
+    const app = DATA[lang].apps.items.find(item => item.tag === 'CALORIE BUDGET');
+    assert.equal(app.img, 'images/apps/calorithm-app-store-v2.10.0.jpg');
+  }
+});
