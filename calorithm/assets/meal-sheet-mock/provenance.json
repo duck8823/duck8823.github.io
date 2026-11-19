@@ -122,13 +122,13 @@
           "inputDietaryEnergy",
           "mealEntryAdditionalEnergyLabel",
           "mealEntryAdditionalLabel",
-          "mealEntryAdditionalSectionHelp",
           "mealEntryAdditionalSectionTitle",
           "mealEntrySelectedCardsLabel",
           "mealEntryTotalLabel",
           "mealGroupDisplayNameHelp",
           "mealGroupDisplayNameHint",
           "mealGroupDisplayNameLabel",
+          "mealInputAdditionalHelp",
           "photoFromCamera",
           "quickInput",
           "quickInputPresetLabel",
@@ -137,8 +137,8 @@
           "total",
           "useThisValue"
         ],
-        "projection_sha256": "cc2533ccf5efa032bc2ecf4969343e3587cc87dc2e09808c4d4a39f411df33f7",
-        "full_file_sha256_at_validation": "32b89f8b732bb7748fc9c6164d656ab40f5b0b5628167eef404bad56551f0ec5"
+        "projection_sha256": "3e0487fdbd12cafb4e4527ad960d90d254e9bc9af73903d83a7f2843ae9f51da",
+        "full_file_sha256_at_validation": "7c0dd7ba5e195630f12246b90b33a5d7a31dd6b6b1d14c826c19bdf56aa409a2"
       },
       "en": {
         "path": "flutter/lib/application/l10n/app_en.arb",
@@ -153,13 +153,13 @@
           "inputDietaryEnergy",
           "mealEntryAdditionalEnergyLabel",
           "mealEntryAdditionalLabel",
-          "mealEntryAdditionalSectionHelp",
           "mealEntryAdditionalSectionTitle",
           "mealEntrySelectedCardsLabel",
           "mealEntryTotalLabel",
           "mealGroupDisplayNameHelp",
           "mealGroupDisplayNameHint",
           "mealGroupDisplayNameLabel",
+          "mealInputAdditionalHelp",
           "photoFromCamera",
           "quickInput",
           "quickInputPresetLabel",
@@ -168,8 +168,8 @@
           "total",
           "useThisValue"
         ],
-        "projection_sha256": "31fea9b7c6143a84707ecc16c502497e7b38d6aaa5d1ad99456f5c0450f8151f",
-        "full_file_sha256_at_validation": "bdf3d0678797ad5aaeb6fa892d0db724d2941af0df947ab8ae5bcdd1e30aac5a"
+        "projection_sha256": "e1ba09d39adbcb3a4b89779ab4ea4386df06a018f27b4e002ad7b1ff5ad21fde",
+        "full_file_sha256_at_validation": "c6afb737d3967ad601262d36e3a3755f8e6f896b3441e011f299be4119213932"
       }
     },
     "source": "Current consumed ARB keys; projection hashes validate the live labels independently of the pinned native source."

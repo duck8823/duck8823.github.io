@@ -194,6 +194,54 @@
       "response": "fixed_local_fixture_not_live_ai",
       "capture_run_id": "store-2.10.0-iphone-en",
       "app_version": "2.10.0"
+    },
+    {
+      "path": "ja/v2/assistant_score.png",
+      "locale": "ja",
+      "screen": "assistant_score",
+      "sha256": "066c978b57c5abd74a58e69eaed7a206b189f4870b5eeb3a1f09311124ee1f41",
+      "width": 1320,
+      "height": 2868,
+      "capture_source_path": "tools/store-visuals/captures/iphone/assistant_score_ja.png",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "store-2.15.0-iphone-ja",
+      "app_version": "2.15.0"
+    },
+    {
+      "path": "ja/v2/input_label_item.png",
+      "locale": "ja",
+      "screen": "input_label_item",
+      "sha256": "41fc382bc869df0be9dfc7cde83de2aa1115c643a195101a07961dadea59237c",
+      "width": 1320,
+      "height": 2868,
+      "capture_source_path": "tools/store-visuals/captures/iphone/input_label_item_ja.png",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "store-2.15.0-iphone-ja",
+      "app_version": "2.15.0"
+    },
+    {
+      "path": "en/v2/assistant_score.png",
+      "locale": "en",
+      "screen": "assistant_score",
+      "sha256": "32067824bbba72b89f5d1cd93962a5b6523769d0ba0fa424f4980a742daebeec",
+      "width": 1320,
+      "height": 2868,
+      "capture_source_path": "tools/store-visuals/captures/iphone/assistant_score_en.png",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "store-2.15.0-iphone-en",
+      "app_version": "2.15.0"
+    },
+    {
+      "path": "en/v2/input_label_item.png",
+      "locale": "en",
+      "screen": "input_label_item",
+      "sha256": "11f5a7b3d5d6d8b68f5bce51645c9bb4c55b0699ca54b0567486669985f66ccd",
+      "width": 1320,
+      "height": 2868,
+      "capture_source_path": "tools/store-visuals/captures/iphone/input_label_item_en.png",
+      "response": "fixed_local_fixture_not_live_ai",
+      "capture_run_id": "store-2.15.0-iphone-en",
+      "app_version": "2.15.0"
     }
   ],
   "capture_export_note": "temporary capture workspace; not a shipped application source change",
@@ -216,5 +264,17 @@
     "method": "flutter drive with flutter/integration_test/store_2_10_0_capture_test.dart; synthetic fixtures; production display; no external AI request",
     "image_processing": "none; raw PNG bytes copied, framing and crop are CSS only",
     "note": "timeline stays the 2.6.0 capture because the 2.10.0 capture set has no timeline scene."
+  },
+  "refresh_2_15_0": {
+    "screens": [
+      "assistant_score",
+      "input_label_item"
+    ],
+    "source": "raw captures taken for the 2.15.0 store images (#4973); they move to tools/store-visuals/captures/iphone/ with that change",
+    "source_revision": "6f35a00384f6ea046cd57f6455656801c7558fdb",
+    "method": "flutter drive with flutter/integration_test/store_2_15_0_capture_test.dart; synthetic fixtures; production display; the comment and the label reading are fixed local text, no external AI request",
+    "image_processing": "none; raw PNG bytes copied, framing and crop are CSS only",
+    "human_visual_approval": "pending",
+    "note": "the five 2.10.0 / 2.6.0 screens above are unchanged."
   }
 }

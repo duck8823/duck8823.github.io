@@ -1,0 +1,161 @@
+{
+  "origin": "OpenAI built-in image_gen (Codex)",
+  "usage": "アシスタントの「見た目」に利用者が選ぶ写真・絵の見本。アプリの画面や文字は生成していない",
+  "generated_on": "2026-11-19",
+  "assets": [
+    {
+      "name": "cat",
+      "file": "cat.jpg",
+      "prompt": "An authentic-looking casual smartphone family snapshot of one adult domestic orange tabby cat, indoors in soft natural window light. Calm, attentive expression; natural ginger stripes and lifelike fur and whiskers. Show the head and upper chest, both upright ears fully visible. Uncluttered light warm-cream interior backdrop, softly out of focus. Everyday photo realism, not an illustration or posed studio portrait. Create one standalone 1024 × 1024 square opaque PNG, an example avatar for the assistant feature of a meal-logging app, for its store listing and website. Center a single subject on both axes by placing the face just above the midpoint; face looking straight at the viewer with the eyes clearly visible. Leave generous empty space around the whole head, especially above and at both sides. The entire head, ears or hair, and chin must fit well within a centered circular crop with comfortable breathing room; keep the head roughly within the middle 60% of the frame width. No circular border or mask: fill the full square with a simple, bright background. No writing, logos, trademarks, signature, overlay, or watermark. No resemblance to public figures, specific real individuals, or existing characters.",
+      "postprocessing": "1254 × 1254 の生成原本を、切り抜きなしで 1024 × 1024 に縮小、512 × 512 の JPEG に変換"
+    },
+    {
+      "name": "dog",
+      "file": "dog.jpg",
+      "prompt": "An authentic-looking casual smartphone family snapshot of one adult red Shiba Inu looking at the camera, in gentle natural light in a garden. Relaxed expression, realistic red-and-cream fur, eyes and muzzle. Show the head and upper chest with both ears fully visible. Bright, subdued pale-green garden backdrop, smoothly blurred and uncluttered. Everyday photo realism, not an illustration or posed studio portrait. Create one standalone 1024 × 1024 square opaque PNG, an example avatar for the assistant feature of a meal-logging app, for its store listing and website. Center a single subject on both axes by placing the face just above the midpoint; face looking straight at the viewer with the eyes clearly visible. Leave generous empty space around the whole head, especially above and at both sides. The entire head, ears or hair, and chin must fit well within a centered circular crop with comfortable breathing room; keep the head roughly within the middle 60% of the frame width. No circular border or mask: fill the full square with a simple, bright background. No writing, logos, trademarks, signature, overlay, or watermark. No resemblance to public figures, specific real individuals, or existing characters.",
+      "postprocessing": "1254 × 1254 の生成原本を、切り抜きなしで 1024 × 1024 に縮小、512 × 512 の JPEG に変換"
+    },
+    {
+      "name": "character",
+      "file": "character.jpg",
+      "prompt": "食事記録アプリの相談相手アイコンの見本。正方形1024×1024のPNGを1枚。日本のアニメ調のオリジナルキャラクター。人でも動物でもない、不思議な小さなマスコット。ふっくらした丸いやわらかいクリーム色の体と、同じクリーム色のごく小さな手足。頭のてっぺんに小さな緑の若葉がちょうど1枚。大きくきらきらした濃いブラウンの瞳、ほんのり赤いほお、明るく親しみやすい小さな笑顔。読み取りやすい輪郭と控えめなセル塗りで、アプリアイコンの小さい表示でも顔がはっきり見える。正面向きで中央に1体だけ。胸から上ではなく、足先から葉先まで全身を表示。円形に切り抜いても全身と葉が余裕を持って収まるよう、全周に十分な余白を確保する。背景はやわらかい淡い水色の完全な単色で、模様、グラデーション、影、床、装飾はない。既存のアニメ、ゲーム、企業、自治体のキャラクターに似せない。文字、ロゴ、透かし、枠なし。",
+      "postprocessing": "1254 × 1254 の生成原本を、切り抜きなしで 1024 × 1024 に縮小、512 × 512 の JPEG に変換"
+    },
+    {
+      "name": "person",
+      "file": "person.jpg",
+      "prompt": "Natural photorealistic chest-up portrait of a fictional woman in her thirties with the calm, approachable manner of a registered dietitian. Gentle relaxed smile, natural face and skin texture, tidy hair and a simple light neutral blouse without accessories or branding. Near-white, bright uncluttered interior with soft window light. Unposed, lifelike and warmly professional; invent her face from scratch, without a real-person reference. Create one standalone 1024 × 1024 square opaque PNG, an example avatar for the assistant feature of a meal-logging app, for its store listing and website. Center a single subject on both axes by placing the face just above the midpoint; face looking straight at the viewer with the eyes clearly visible. Leave generous empty space around the whole head, especially above and at both sides. The entire head, ears or hair, and chin must fit well within a centered circular crop with comfortable breathing room; keep the head roughly within the middle 60% of the frame width. No circular border or mask: fill the full square with a simple, bright background. No writing, logos, trademarks, signature, overlay, or watermark. No resemblance to public figures, specific real individuals, or existing characters.",
+      "postprocessing": "1254 × 1254 の生成原本を、切り抜きなしで 1024 × 1024 に縮小、512 × 512 の JPEG に変換"
+    },
+    {
+      "name": "cat-faces",
+      "file": "cat-faces.webp",
+      "reference_image": "cat",
+      "prompt_source": "server/ai-functions/src/avatar-provider.ts の PROMPT と同じ依頼文（表情 9 つの一覧）",
+      "postprocessing": "1024 × 1024 に縮小し、サーバーの normalizeAvatarImage と同じ加工（背景を抜いて 9 つに切り分け、768 × 768 の WebP）を通した",
+      "generation": {
+        "reference_image": "chars/cat.png",
+        "generation_attempts": 3,
+        "regenerations": 2,
+        "selected_attempt": 3,
+        "selection_reason": "9体の区別と参照の特徴を保ち、背景サンプルと外周の平均色差が3候補で最小。",
+        "native_dimensions_px": [
+          1254,
+          1254
+        ],
+        "output_dimensions_px": [
+          1024,
+          1024
+        ],
+        "checks": {
+          "png_1024x1024": true,
+          "nine_subjects_in_3x3": true,
+          "recognizable_as_same_subject_as_reference": true,
+          "adjacent_subjects_do_not_touch": true,
+          "background_flat_exact_ff00ff": false,
+          "border_exact_ff00ff": false,
+          "cell_padding_at_least_15_percent_on_all_sides": false
+        },
+        "final_color_measurements": {
+          "background_grid_gap_samples": {
+            "exact_ff00ff_pixels": 0,
+            "sampled_pixels": 616,
+            "most_frequent_rgb": [
+              252,
+              2,
+              250
+            ],
+            "mean_rgb_l1_distance_to_ff00ff": 12.276
+          },
+          "complete_outermost_pixel_border": {
+            "exact_ff00ff_pixels": 0,
+            "sampled_pixels": 4092,
+            "most_frequent_rgb": [
+              251,
+              3,
+              248
+            ],
+            "mean_rgb_l1_distance_to_ff00ff": 18.287
+          }
+        },
+        "unmet_requirements": [
+          "背景と外周は目視ではマゼンタだが、RGB値は一様な #FF00FF ではない。",
+          "一部のセルで被写体とセル境界の間隔が15%未満。"
+        ],
+        "attempt_color_measurements": [
+          {
+            "attempt": 1,
+            "background_grid_gap_samples": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 760,
+              "most_frequent_rgb": [
+                252,
+                3,
+                249
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 12.983
+            },
+            "complete_outermost_pixel_border": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 5012,
+              "most_frequent_rgb": [
+                251,
+                5,
+                250
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 19.95
+            }
+          },
+          {
+            "attempt": 2,
+            "background_grid_gap_samples": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 760,
+              "most_frequent_rgb": [
+                252,
+                3,
+                250
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 11.882
+            },
+            "complete_outermost_pixel_border": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 5012,
+              "most_frequent_rgb": [
+                251,
+                4,
+                248
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 18.798
+            }
+          },
+          {
+            "attempt": 3,
+            "background_grid_gap_samples": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 760,
+              "most_frequent_rgb": [
+                252,
+                3,
+                250
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 11.488
+            },
+            "complete_outermost_pixel_border": {
+              "exact_ff00ff_pixels": 0,
+              "sampled_pixels": 5012,
+              "most_frequent_rgb": [
+                251,
+                3,
+                248
+              ],
+              "mean_rgb_l1_distance_to_ff00ff": 18.534
+            }
+          }
+        ],
+        "output_sha256": "b9bc08162d330c6889f8d525a34c36051bb5beae4607b541efb1ce24212d7aec",
+        "reference_sha256": "7cf7db50ec9a027cbfa9d20672dc216539ac1e1ceae23f139556e43179b5fdc2"
+      }
+    }
+  ]
+}
