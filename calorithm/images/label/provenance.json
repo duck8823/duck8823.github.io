@@ -1,0 +1,17 @@
+{
+  "origin": "OpenAI built-in image_gen (Codex) の包装の写真に、成分表示の文字を手元で描き足した",
+  "usage": "成分表示を撮った写真の見本（架空の商品）。アプリの画面は生成していない",
+  "generated_on": "2026-11-19",
+  "base_prompt": "Close-up smartphone photo, shot straight from above, of the back side of a chocolate protein bar wrapper lying on a light wooden kitchen table. The wrapper is matte dark-brown foil with crimped sealed ends at the top and bottom, slightly wrinkled, with soft natural window light and a gentle shadow. Most of the wrapper's back is covered by one large plain white rectangular panel, completely blank and flat, with its edges parallel to the image edges; the panel fills roughly 60% of the image width and 55% of the image height and sits in the center. There is absolutely no text, no letters, no numbers, no barcode, no logo and no icons anywhere in the image. Realistic, slightly imperfect everyday photo, shallow depth of field at the edges, portrait orientation.",
+  "text_overlay": "白い枠の中の品名と栄養成分表示は、生成ではなく Pillow でヒラギノの文字を描いて重ねた。数字: 1本（40g）当たり エネルギー 183kcal・たんぱく質 15.0g・脂質 8.4g・炭水化物 12.5g（内訳に糖質 9.3g・食物繊維 3.2g。英語は食物繊維だけ）・食塩相当量 0.3g",
+  "assets": [
+    {
+      "file": "label-ja.jpg",
+      "language": "ja"
+    },
+    {
+      "file": "label-en.jpg",
+      "language": "en"
+    }
+  ]
+}
