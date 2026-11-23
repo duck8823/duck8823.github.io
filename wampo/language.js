@@ -5,7 +5,7 @@
   const valid = value => value === 'ja' || value === 'en';
   function resolveRoute(href, saved, languages = [], fallback = '') {
     const url = new URL(href);
-    const match = url.pathname.match(/(?:^|\/)(index|support|privacy)(_ja)?\.html$/);
+    const match = url.pathname.match(/(?:^|\/)(index|support|privacy|terms)(_ja)?\.html$/);
     const directory = url.pathname.endsWith('/');
     const explicit = url.searchParams.get('lang');
     const first = languages[0] || fallback || 'en';
@@ -32,7 +32,7 @@
       // Keep an explicit choice through local navigation even if storage is blocked.
       if (valid(explicit)) win.document.querySelectorAll('a[href]').forEach(link => {
         const target = new URL(link.href, win.location.href);
-        if (target.origin === new URL(win.location.href).origin && /\/(index|support|privacy)(_ja)?\.html$/.test(target.pathname) && !link.hasAttribute('data-language')) {
+        if (target.origin === new URL(win.location.href).origin && /\/(index|support|privacy|terms)(_ja)?\.html$/.test(target.pathname) && !link.hasAttribute('data-language')) {
           link.href = switchUrl(target.href, explicit);
         }
       });

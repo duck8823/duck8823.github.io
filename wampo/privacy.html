@@ -73,7 +73,7 @@
     <h1>Privacy Policy</h1>
 
     <div class="doc-meta">
-      <span class="chip"><span class="dot"></span><strong>Last updated</strong> September 20, 2026</span>
+      <span class="chip"><span class="dot"></span><strong>Last updated</strong> November 19, 2026</span>
       <span class="chip"><strong>Scope</strong> Wampo for iOS</span>
       <span class="chip"><strong>Operator</strong> Shunsuke Maeda</span>
     </div>
@@ -81,11 +81,11 @@
     <div class="principles">
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>Walks stay on the device</h5><span>Routes and profiles are not uploaded</span></div>
+        <div class="pt"><h5>Everyday walks stay on the device</h5><span>Only records of dogs you add to a group go to our server</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div class="pt"><h5>No account</h5><span>There is no sign-up</span></div>
+        <div class="pt"><h5>No account needed to walk</h5><span>You sign in only for groups and Plus</span></div>
       </div>
       <div class="principle">
         <div class="chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -106,12 +106,17 @@
         <li><a href="#intro" class="on">Introduction</a></li>
         <li><a href="#collect">Information we collect</a></li>
         <li><a href="#location">How we use location</a></li>
+        <li><a href="#group">Account and groups</a></li>
         <li><a href="#external">Data we send outside the app</a></li>
-        <li><a href="#storage">Storage</a></li>
+        <li><a href="#storage">Storage and retention</a></li>
         <li><a href="#sharing">Sharing</a></li>
         <li><a href="#deletion">Deleting data and withdrawing consent</a></li>
+        <li><a href="#security">Security measures</a></li>
+        <li><a href="#requests">Your requests</a></li>
+        <li><a href="#gdpr">EEA and UK users</a></li>
         <li><a href="#changes">Changes</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#in-app-contact">In-app contact</a></li>
       </ol>
     </aside>
 
@@ -121,7 +126,7 @@
       <section id="intro">
         <div class="sec-n">01 · Introduction</div>
         <h2>Introduction</h2>
-        <p>Last updated: September 20, 2026</p>
+        <p>Last updated: November 19, 2026</p>
         <p>Wampo is a personal project by Shunsuke Maeda. This policy explains what the Wampo app collects, how it uses that information, and where it is sent.</p>
       </section>
 
@@ -133,33 +138,33 @@
         <h3>Location (GPS)</h3>
         <p>We use location to record walk routes and to show weather and rain radar.</p>
         <ul class="bullets">
-          <li>Walk routes: stored on the device.</li>
+          <li>Walk routes: stored on the device. For a walk with a dog you added to a group, the route and marker locations are sent to that group after the walk ends, unless Privacy Mode is on (see <a href="#group">Account and groups</a>). Your location is never sent live during a walk.</li>
           <li>Weather and suggested walk times: we send the latitude and longitude of your current location, or a place you saved, to Open-Meteo. The Home Screen widget sends latitude and longitude for the same reason.</li>
           <li>Rain radar: we send nearby map tile coordinates to the Japan Meteorological Agency.</li>
-          <li>Arrival notification: the app checks on the device whether you are near a home location you saved. That home location stays on the device.</li>
+          <li>Arrival notification: the app checks on the device whether you are near a home location you saved. That home location stays on the device and is not sent to groups.</li>
         </ul>
 
         <h3>Camera and photos</h3>
-        <p>We use the camera and photo library for your dog's profile photo and for photos you attach to a walk. On a walk's detail screen, the app may look at timestamps of photos on the device to suggest shots from around that walk. Photos stay on the device. We do not upload them.</p>
+        <p>We use the camera and photo library for your dog's profile photo and for photos you attach to a walk. On a walk's detail screen, the app may look at timestamps of photos on the device to suggest shots from around that walk. Photos stay on the device. Only the photos and videos you choose for a group post are sent to that group. Capture location and other metadata are removed from the files we send. The capture location is sent to that group separately from the file, and only while Privacy Mode is off (see <a href="#group">Account and groups</a>).</p>
 
         <h3>Microphone and speech recognition</h3>
         <p>We use the microphone and the OS speech recognizer only when you start voice input for a walk-marker memo. Opening the app does not prompt for these permissions. Recognized text goes into the memo field. The app does not keep audio files or raw recognition logs. Speech recognition is an Apple or Google OS feature. We do not send audio to our own servers.</p>
 
         <h3>Notifications</h3>
-        <p>Home-arrival alerts and reminders are local notifications. We do not send identifiers or location to a developer server to push them.</p>
+        <p>Home-arrival alerts and reminders are local notifications. We do not send identifiers or location to a developer server for them.</p>
+        <p>If you are in a group, we send push notifications for new posts and replies, and Plus deadline notices to the group admin. For this, we store the registration of each device that allows notifications (a Firebase Cloud Messaging registration token and an identifier for each app installation) and which notifications you want to receive on our server. Notifications contain fixed text only. They never include post text, names, photos, or location.</p>
 
         <h3>Apple Watch, Live Activity, and widgets</h3>
         <p>Walk progress and marker actions can appear on your Apple Watch, Lock Screen, and Home Screen widget. This stays between your own devices (Watch Connectivity and App Groups). Walk records are not sent to our servers this way.</p>
 
         <h3>Usage analytics (Firebase Analytics)</h3>
-        <p>Only if you agree, we send a device identifier and in-app actions (starting or finishing a walk, switching tabs, adding a marker, and similar) to Firebase Analytics (Google). We use this only to understand usage and improve the app. We do not send walk distance or duration, route coordinates, photos, or dog profiles. Nothing is sent until you agree. You can turn it off later in Settings.</p>
+        <p>Only if you agree, we send a device identifier and in-app actions (starting or finishing a walk, switching tabs, adding a marker, and similar) to Firebase Analytics (Google). We use this only to understand usage and improve the app. We do not send walk distance or duration, route coordinates, photos, dog profiles, or the identifier of your signed-in account. Nothing is sent until you agree. You can turn it off later in Settings.</p>
 
         <h3>Automatic walk comments retired</h3>
         <p>In 1.16.0 (213) and later, AI-generated and on-device template comments have been retired. The app no longer generates or displays automatic comments, sends data to Gemini, or offers the dedicated setting. Manually entered marker comments, notes, and walk records remain available.</p>
         <h3>Older versions and past transmissions</h3>
         <p>In feature-bearing versions 1.16.0 (212) and earlier, automatic comments and external transmissions may continue until you update. Returning to an older version may also resume transmissions under previously saved consent. The following describes the feature immediately before retirement; sent fields and consent scope vary with the older implementation. Retirement does not mean previously sent data has been deleted from Google’s systems.</p>
         <p>Only for completed walks with at least 20 minutes of total elapsed time, and only with your separate consent, the app checks eligibility on the device and sends walk categories directly to Google’s Gemini through Firebase AI Logic to create a short comment. It sends only the combination of walk topics and, depending on those topics, how you moved (walking or cart), a category for how long you paused, weather category, daylight, time of day, built-in marker types (pee, poop, favorite, or caution), a wording number, and display language (Japanese or English). These are categories only; no numbers such as distance, time, or counts are sent. Marker types and marker-derived topic categories are sent only for walks that end after you consent to this version. It does not send coordinates, routes, photos, videos, your dog’s name, free-form text such as notes, walk IDs, or exact start/end times. If you do not consent, the walk is under 20 minutes, generation fails, or the response is empty, invalid, or contains a prohibited expression, the app selects from varied on-device templates based on the walk. Gemini and template comments are saved once and are not generated or selected again for the same walk. The app checks Gemini text for prohibited expressions on the device, but cannot guarantee that every unintended expression is prevented. You can change this setting anytime in the app.</p>
-        <p>Earlier implementations sent rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language (Japanese or English), as disclosed in the previous policy. The category-only description above does not apply to those earlier implementations or their past transmissions.</p>
       </section>
 
       <section id="location">
@@ -169,23 +174,55 @@
         <p>If you choose Always Allow, the app can keep recording the route while the phone is in your pocket. You can still start a walk with While Using the App.</p>
       </section>
 
+      <section id="group">
+        <div class="sec-n">04 · Account and groups</div>
+        <h2>Account and groups</h2>
+        <p>You can record walks and keep profiles of your own dogs without an account. You sign in with Apple only to create a group, join a group, or buy Plus. The information in this section is stored on our server only when you sign in and use groups or Plus.</p>
+
+        <h3>Sign-in</h3>
+        <p>We use Sign in with Apple with Firebase Authentication. Firebase Authentication stores the user identifier issued by Apple and the email address Apple provides (an Apple relay address if you choose Hide My Email). Wampo does not use this email address for any feature and does not contact you with it.</p>
+
+        <h3>What you share in a group</h3>
+        <p>What you put in a group is visible to that group's members. It is not shown to anyone outside the group.</p>
+        <ul class="bullets">
+          <li>Your name: the name shown in the group, in the member list and on your posts and replies.</li>
+          <li>Group: the group name, members, invitations, and which groups you are in.</li>
+          <li>Dog profiles: for a dog you add to a group, its name, breed, birthday, photo, the setting for whether its round icon shows the photo or an avatar (with the avatar's parts, if one was made in an earlier version), and its goal. The photo is re-encoded as a JPEG of up to 1024 px on its long side and is sent without capture location or other metadata. Walk safety settings, such as a short nose or sensitivity to heat or cold, are not sent. Only the dog's owner, who is the group's admin, can add a dog to a group. The dog stays the owner's dog, and other members can only view its profile and goal.</li>
+          <li>Walk posts: a walk with a dog you added to a group is sent to that group when you tap Done on the walk's finish screen. You do not choose whether to send each walk. This includes the dog, start and end times, distance, duration, markers (type and location), route, and the photos and videos you choose on that screen with their capture locations. Past walks that have not been sent are sent only when you tap Send under "Unsent walks" in the group.</li>
+          <li>Updates and replies: the text and time of an update, the photos and videos you choose with their capture locations, and the text of a reply. An update is sent to the group when you save it.</li>
+          <li>Records kept on the owner's device: walks, updates, and replies that members send about the owner's dog are also saved on the owner's device, with their route, markers, photos, videos, and who recorded them, for what arrives while the group continues. They stay on the device as the owner's dog's records, even after the group ends. After the person who recorded them leaves or is removed from the group, their name is hidden and shown as "No name". If the person who recorded them deletes their account, the owner's device deletes their records the next time it opens the app signed in.</li>
+        </ul>
+        <h3 id="report">Reporting and blocking</h3>
+        <p>You can report another member's post or reply to the Operator with Report in its menu. A report goes the same way as <a href="#in-app-contact">In-app contact</a> and sends whether it is a post or a reply, plus the identifiers needed to find it (the group, the post, the reply, and the account identifier of the person who wrote it). It does not include the text, photos or videos, or the account identifier of the person who reported it. The Operator uses the identifiers to review the post and handles it under the Terms of Use. The person who wrote it is not told that you reported it.</p>
+        <p>The list of people you block (their account identifiers and the names shown for them) is stored on that device. To stop notifications about their posts and replies, only the account identifier of the person you block is saved with your own notification settings on the server, and it is removed when you unblock them. The names shown for them are not sent to the server. They are not told that you blocked them.</p>
+
+        <p>You can keep locations out with Privacy Mode in Settings. Posts sent while it is on include no route, marker locations, or photo and video capture locations (marker types, distance, and duration are still sent). While it is off, these are sent as they are. The app does not automatically hide the area around the start point or your home. Changing the setting does not change posts already sent. The new setting applies to posts sent after the change. Capture locations are never written into the photo or video files and are sent as separate information. When you attach photos from the share sheet while Privacy Mode is on, their capture locations are also removed (photos whose locations cannot be removed are not attached). Whether an image made from the share sheet shows the roads and place names of the map is chosen separately from Privacy Mode, each time you share, with “Hide map” on the share sheet.</p>
+        <p>To show photos, videos, and routes, we issue short-lived links each time they are viewed, and we count the amount downloaded for the monthly per-person limit. Files left unfinished during upload expire and are removed after 24 hours.</p>
+
+        <h3>Buying Plus</h3>
+        <p>You buy Plus on the App Store. We check the purchase with RevenueCat, which receives your Wampo user identifier, used to match the purchase, and the App Store purchase record. Our server stores your Plus status, its expiry, when it was checked, and a record linking the group to the purchase. Neither Wampo nor RevenueCat receives your payment details, such as card numbers.</p>
+      </section>
+
       <section id="external">
-        <div class="sec-n">04 · Data we send outside the app</div>
+        <div class="sec-n">05 · Data we send outside the app</div>
         <h2>Data we send outside the app</h2>
-        <p>We send data to these services for features, or for analytics after you agree. We do not send location or profiles anywhere else.</p>
+        <p>We send data to these services for features, or for analytics after you agree. We do not send location or profiles anywhere else. The services used for in-app contact are described in <a href="#in-app-contact">In-app contact</a>.</p>
+        <p>This list also serves as our notice of what information the app sends from your device, to whom, and why (Article 27-12 of Japan's Telecommunications Business Act). Apart from usage analytics, these transmissions are needed for features, so some happen before you agree to anything or sign in. Every request also delivers ordinary connection information, such as your IP address and device and OS type, to its recipient.</p>
 
         <div class="svc-grid">
           <article class="svc">
             <h4>Open-Meteo<span class="badge">weather and suggested times</span></h4>
             <dt>Data</dt>
-            <dd>latitude and longitude of your current location or a saved place</dd>
+            <dd>latitude and longitude of your current location or a saved place; when you search for a weather location by name, the name you type</dd>
             <dt>Purpose</dt>
-            <dd>hourly forecast such as temperature, rain chance, and wind</dd>
+            <dd>hourly forecast such as temperature, rain chance, and wind, and location search</dd>
+            <dt>Recipient</dt>
+            <dd>OpenMeteo GmbH (Switzerland)</dd>
             <dt>Stored by them</dt>
-            <dd>no (Open-Meteo does not keep request logs to identify people)</dd>
+            <dd>yes. Open-Meteo says it may collect IP addresses for maintenance and misuse prevention, deletes server logs, which may contain coordinates, after 90 days, and does not link them to user identities</dd>
             <dt>Policy</dt>
             <dd><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></dd>
-          </article>
+    </article>
           <article class="svc">
             <h4>Japan Meteorological Agency<span class="badge">rain radar</span></h4>
             <dt>Data</dt>
@@ -198,11 +235,69 @@
           <article class="svc">
             <h4>Google Maps<span class="badge">map display</span></h4>
             <dt>Data</dt>
-            <dd>coordinates needed to show the map</dd>
+            <dd>coordinates needed to show the map (the area on screen). The Google Maps SDK sends device and app identifiers, map usage, and crash and performance information to Google</dd>
             <dt>Purpose</dt>
-            <dd>displaying the walk route</dd>
+            <dd>displaying the walk route and maps. What the SDK sends is handled under Google's policies</dd>
+            <dt>When sent</dt>
+            <dd>whenever a map is shown, including before you agree to anything</dd>
+            <dt>Recipient</dt>
+            <dd>Google LLC (United States)</dd>
             <dt>Policy</dt>
             <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></dd>
+          </article>
+          <article class="svc">
+            <h4>Overpass API (OpenStreetMap)<span class="badge">shade</span></h4>
+            <dt>Data</dt>
+            <dd>the bounds (latitude and longitude) of the roughly 1 km square tiles around the area shown on the map</dd>
+            <dt>Purpose</dt>
+            <dd>getting building shapes to calculate shade</dd>
+            <dt>Recipient</dt>
+            <dd>overpass-api.de, operated by FOSSGIS e.V. (Germany)</dd>
+            <dt>Stored by them</dt>
+            <dd>we do not control how the operator keeps its logs. No account or dog information is sent</dd>
+          </article>
+          <article class="svc">
+            <h4>Firebase (Google)<span class="badge">account and groups</span></h4>
+            <dt>Services</dt>
+            <dd>Firebase Authentication, Cloud Firestore, Cloud Storage for Firebase, Cloud Functions, Firebase Cloud Messaging, Firebase App Check, Firebase Remote Config, Firebase Installations</dd>
+            <dt>Data</dt>
+            <dd>Sign-in information, your name, groups and dog profiles, posts, updates and replies, photos, videos and routes, notification device registrations, and Plus status (as described in <a href="#group">Account and groups</a>). For App Check, information that confirms requests come from the genuine app (created with Apple's App Attest or DeviceCheck). For Remote Config and Installations, an identifier for each app installation and information used to choose which settings to deliver (such as the app version and device language)</dd>
+            <dt>Purpose</dt>
+            <dd>Sharing in groups, notifications, checking Plus, blocking illegitimate requests, and fetching in-app announcements and Plus sales settings (Remote Config)</dd>
+            <dt>When sent</dt>
+            <dd>Remote Config and Installations connect when you open the app and at similar times, even before you sign in or agree to anything. App Check connects when you use features that need our server (groups, viewing photos, in-app contact, and similar)</dd>
+            <dt>Recipient</dt>
+            <dd>Google LLC (United States). Data is handled in Google data centers in the United States and other countries</dd>
+            <dt>Stored externally</dt>
+            <dd>Yes (see <a href="#storage">Storage and retention</a>)</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></dd>
+          </article>
+          <article class="svc">
+            <h4>RevenueCat<span class="badge">checking Plus purchases</span></h4>
+            <dt>Data</dt>
+            <dd>Your Wampo user identifier and the App Store purchase record</dd>
+            <dt>Purpose</dt>
+            <dd>Checking Plus purchases and expiry</dd>
+            <dt>Recipient</dt>
+            <dd>RevenueCat, Inc. (United States). The app connects after you sign in, when buying Plus or checking its status</dd>
+            <dt>Stored externally</dt>
+            <dd>Yes. When you delete your account, we ask RevenueCat to delete your customer record</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">https://www.revenuecat.com/privacy/</a></dd>
+          </article>
+          <article class="svc">
+            <h4>Apple<span class="badge">sign-in, purchases, notifications</span></h4>
+            <dt>Services</dt>
+            <dd>Sign in with Apple, App Store purchases, Apple Push Notification service, App Attest and DeviceCheck, place names (iOS reverse geocoding)</dd>
+            <dt>Data</dt>
+            <dd>Information for sign-in and purchases, the registration of the device that receives notifications, and information that confirms the app is genuine. To show a place name, the latitude and longitude of that place</dd>
+            <dt>Purpose</dt>
+            <dd>Sign-in, buying Plus, delivering push notifications, blocking illegitimate requests (App Check), and showing place names for walks and weather locations. When you delete your account, we ask Apple to revoke Sign in with Apple for Wampo</dd>
+            <dt>Recipient</dt>
+            <dd>Apple Inc. (United States)</dd>
+            <dt>Policy</dt>
+            <dd><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></dd>
           </article>
           <article class="svc">
             <h4>Firebase AI Logic / Google Gemini<span class="badge">older-version walk comments</span></h4>
@@ -212,8 +307,6 @@
             <dd>creating one short dog’s-voice comment for that walk</dd>
             <dt>Data</dt>
             <dd>combination of walk topics, how you moved (walking or cart), a category for how long you paused, weather category, daylight, time of day, built-in marker types (counts are not sent), a wording number, and display language (Japanese or English)</dd>
-            <dt>Earlier implementations</dt>
-            <dd>rounded distance, total elapsed time including stops and stays, movement-mode breakdown, marker count, whether there was a stay, weather category, and display language, as disclosed in the previous policy</dd>
             <dt>Not sent</dt>
             <dd>coordinates, routes, photos, videos, your dog’s name, free-form text such as notes, walk IDs, or exact start/end times. The app does not add a user ID or advertising ID to this request; as with any network request, ordinary connection metadata such as your IP address and App Check app-identification data can still reach Google.</dd>
             <dt>Connection and retention</dt>
@@ -236,49 +329,131 @@
           </article>
         </div>
 
-        <p>These services handle the data under their own privacy policies, with protection at least as strong as what this policy describes.</p>
+        <p>These services handle the data under their own privacy policies, with protection at least as strong as what this policy describes. Google, RevenueCat, Apple, and Resend are US companies, and data may be handled outside Japan.</p>
       </section>
 
       <section id="storage">
-        <div class="sec-n">05 · Storage</div>
-        <h2>Storage</h2>
-        <p>Walk records (routes, distance, duration, markers, dog profiles, photos) stay in a database on the device. We do not upload them to a developer cloud. There is no sign-up.</p>
+        <div class="sec-n">06 · Storage and retention</div>
+        <h2>Storage and retention</h2>
+        <p>Walk records (routes, distance, duration, markers, dog profiles, photos) are stored in a database on the device. What you send to a group is stored on our server (Firebase), separately from the records on your device. Deleting a group post or leaving a group does not delete the records on your device.</p>
+        <p>We keep what is stored on our server until:</p>
+        <ul class="bullets">
+          <li>Posts, updates, and replies: you delete them, or the group ends. Once deleted, no one in the group can see them. Records of the owner's dog that already reached the owner's device stay on that device. If you leave a group, your posts and replies stay in it. The names of people who left are hidden and shown as "No name". A post you withdraw while you are in the group stays on the owner's device with your name. You can still delete them later from Settings → Groups.</li>
+          <li>A group whose admin's Plus has ended: members can view and reply for 90 days from the day we confirm Plus has ended. After that, the group can no longer be viewed and its data is deleted.</li>
+          <li>A disbanded group: all members lose access at once, and the group's data is deleted. There is no 90-day period.</li>
+          <li>Notification device registrations: while you receive notifications. They are deleted when you delete your account.</li>
+          <li>Your account: until you delete it. What is deleted is described in <a href="#deletion">Deleting data and withdrawing consent</a>.</li>
+        </ul>
+        <p>Data of a group that can no longer be viewed is deleted, as a rule, within 7 days. Backups and copies inside services such as Firebase are removed when each service's retention period ends. Deletion in Wampo is complete without waiting for them.</p>
+        <p>A backup you export from the app's settings contains the records on your device. It does not include the text or photos of group posts and replies, except for the copies below. Copies saved on your device of walks and moments that other members sent about your dogs are included with their text, photos, videos, comments, and the members' names and account identifiers. However, the names of people who left the group or deleted their account are not included. It also includes the last fetched name of each dog you added to a group, and a note of each post you sent (such as the group's name), with the identifiers that link them to your groups (your account and group identifiers). Group records load again when you sign in. Do not give your backup file to others.</p>
       </section>
 
       <section id="sharing">
-        <div class="sec-n">06 · Sharing</div>
+        <div class="sec-n">07 · Sharing</div>
         <h2>Sharing</h2>
-        <p>We do not sell personal data, and we do not give it to anyone except as described above. What leaves the device is the minimum location needed for features, usage analytics after you agree, and the walk data described above in older feature-bearing apps when you separately consent to Gemini comments for walks of 20 minutes or more. Version 1.16.0 (213) and later does not send data to Gemini. If you use voice input, audio may go to the OS speech recognizer (Apple or Google). We do not send audio to our own servers.</p>
+        <p>We do not sell personal data, and we do not give it to anyone except as described above. What you put in a group is shown only to that group's members. What leaves the device is the minimum location needed for features, the information for groups and your account described above, usage analytics after you agree, and the walk categories listed above in older feature-bearing apps when you separately consent to Gemini comments for walks of 20 minutes or more. Version 1.16.0 (213) and later does not send data to Gemini. If you use voice input, audio may go to the OS speech recognizer (Apple or Google). We do not send audio to our own servers.</p>
+        <p>What you put in a group is given to that group's members when you choose to send it there. Handling needed for features, such as storage and delivery on our server, is entrusted to the service providers listed above.</p>
+
+        <h3>Third parties in other countries</h3>
+        <p>These providers are in the United States and handle the information described above in the United States and other countries.</p>
+        <ul class="bullets">
+          <li>Google LLC (Firebase, Google Maps)</li>
+          <li>RevenueCat, Inc. (checking Plus purchases)</li>
+          <li>Apple Inc. (sign-in, purchases, notifications)</li>
+          <li>Resend (delivering in-app contact email)</li>
+        </ul>
+        <p>The United States has no comprehensive federal privacy law equivalent to Japan's Act on the Protection of Personal Information; it has sector-specific federal laws and state laws. For details, see the Personal Information Protection Commission of Japan's <a href="https://www.ppc.go.jp/enforcement/infoprovision/laws/offshore_report_america/" target="_blank" rel="noopener">overview of the United States</a> (in Japanese).</p>
+        <p>These providers maintain systems for handling personal data appropriately through their data processing terms (Google, RevenueCat, Resend) or an international certification (Apple's Global CBPR). We check regularly that these systems remain in place. On request, we will promptly tell you about these systems and the measures we take. Please use <a href="#contact">Contact</a>.</p>
       </section>
 
       <section id="deletion">
-        <div class="sec-n">07 · Deleting data and withdrawing consent</div>
+        <div class="sec-n">08 · Deleting data and withdrawing consent</div>
         <h2>Deleting data and withdrawing consent</h2>
         <ul class="bullets">
           <li>Records on the device: deleting the app deletes the walk records and profiles stored on the device.</li>
+          <li>Group posts: use Delete post on a walk's details to delete each post. Its photos and replies are also removed from that group. Records of the owner's dog that already reached the owner's device stay on that device. Screenshots and other copies saved by others cannot be removed.</li>
           <li>Usage analytics: turn it off in Settings to withdraw consent. After that, we do not send new data to Firebase Analytics. How long Google keeps older data follows Google's policy.</li>
-          <li>Only in feature-bearing versions 1.16.0 (212) and earlier — Walk comments: turn this off in Settings to stop sending further walk data to Gemini. The app will show an on-device template, as it does for walks under 20 minutes.</li>
+          <li>Only in feature-bearing versions 1.16.0 (212) and earlier — Walk comments: turn this off in Settings to stop sending later walk categories to Gemini. The app will show an on-device template, as it does for walks under 20 minutes.</li>
           <li>Location, camera, photos, notifications, microphone, and speech recognition: you can turn off access for this app in iOS Settings at any time.</li>
         </ul>
-        <p>There is no in-app account deletion step, because there is no account.</p>
+        <h3>Deleting your account</h3>
+        <p>Go to Settings → Account → Delete account. We accept the request after you sign in again to confirm it is you. Once accepted, deletion continues even if you close the app. We aim to finish within 30 days of acceptance. If it cannot proceed automatically, the app tells you to contact us, and we finish it once you do.</p>
+        <ul class="bullets">
+          <li>What is deleted: your posts, updates, and replies in every group, with their photos, videos, and routes; your name; the record of groups you were in; notification device registrations; the record of your Plus status; your sign-in information (Firebase Authentication); and your RevenueCat customer record. We also ask Apple to revoke Sign in with Apple. If we cannot confirm this, the app shows you how to revoke it yourself.</li>
+          <li>Only the dog's owner, who is the group's admin, can add a dog to a group. Because a group you admin is disbanded first, the profiles and goals of dogs you added are deleted with it.</li>
+          <li>Copies on the owner's device: copies of walks, updates, and replies you sent about the owner's dog that already reached the owner's device are deleted the next time that device opens the app signed in. Copies restored from a backup are deleted the same way.</li>
+          <li>If you are the admin of a group, that group is disbanded first.</li>
+          <li>Your App Store subscription is not canceled automatically. Cancel it in the App Store.</li>
+          <li>Walk records and photos on this device are not deleted. To delete them, delete the app or remove them separately.</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <div class="sec-n">09 · Security measures</div>
+        <h2>Security measures</h2>
+        <p>To protect the personal data we handle on our server, we take these measures.</p>
+        <ul class="bullets">
+          <li>Basic policy: we follow applicable laws and guidelines, and we take questions and complaints through <a href="#contact">Contact</a>.</li>
+          <li>Handling rules: for each stage, from collection, use, storage, and sharing to deletion, we set how data is handled and how long it is kept (see <a href="#storage">Storage and retention</a>).</li>
+          <li>Organization: Wampo is run by one individual. Only the developer handles personal data.</li>
+          <li>People: the developer keeps checking what to watch for when handling personal data.</li>
+          <li>Physical: devices used for administration are protected with a screen lock against loss or theft.</li>
+          <li>Technical: access to data on our server is limited to you and the members of your groups. Connections are encrypted, and photos, videos, and routes are delivered through short-lived links. App Check blocks requests that do not come from the genuine app.</li>
+          <li>Understanding the foreign environment: we take these measures after understanding the privacy laws of the United States, where personal data is handled (see <a href="#sharing">Sharing</a>).</li>
+        </ul>
+      </section>
+
+      <section id="requests">
+        <div class="sec-n">10 · Your requests</div>
+        <h2>Your requests</h2>
+        <p>For personal data about you that we keep on our server, you can ask us to tell you the purpose of use, to disclose it (including records of sharing it with third parties), to correct, add to, or delete it, to stop using or erase it, and to stop sharing it with third parties. We do not hold records that exist only on your device.</p>
+        <ul class="bullets">
+          <li>How to ask: email <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a> with what you would like us to do.</li>
+          <li>Identity check: please send it from the Apple email address you use to sign in (the relay address if you chose Hide My Email). If we cannot confirm it is you, we may ask for more information.</li>
+          <li>Fees: none.</li>
+          <li>Answers: as a rule, by email.</li>
+          <li>In the app: you can also delete your account, delete posts, and stop usage analytics in the app (see <a href="#deletion">Deleting data and withdrawing consent</a>).</li>
+        </ul>
+        <p>We take complaints about how personal data is handled at the same address. Wampo is not a member of an accredited personal information protection organization.</p>
+      </section>
+
+      <section id="gdpr">
+        <div class="sec-n">11 · For users in the EEA and the UK</div>
+        <h2>For users in the EEA and the UK</h2>
+        <p>If you are in the European Economic Area or the United Kingdom, the GDPR or the UK GDPR applies, and the following also applies.</p>
+        <ul class="bullets">
+          <li>Controller: Shunsuke Maeda, an individual in Japan. Contact: <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</li>
+          <li>Legal bases: to provide the features you use, such as weather, maps, groups, notifications, Plus, and account deletion, we rely on the performance of our contract with you (Article 6(1)(b)). Usage analytics and, in older versions, walk comments rely on your consent (Article 6(1)(a)). Blocking illegitimate requests (App Check) and delivering in-app settings (Remote Config) rely on our legitimate interest in running the app securely and reliably (Article 6(1)(f)).</li>
+          <li>Your rights: you can ask for access to, rectification or erasure of, and restriction of processing of your personal data, and for data portability. You can object to processing based on legitimate interests. You can withdraw consent at any time; this does not affect processing before the withdrawal. To exercise these rights, see <a href="#requests">Your requests</a>.</li>
+          <li>Complaints: you can lodge a complaint with the data protection supervisory authority where you live or work, or where an alleged infringement took place.</li>
+          <li>Transfers: Wampo is run from Japan, which the European Commission and the UK have recognized as providing adequate protection. Google LLC transfers data under the EU-U.S. Data Privacy Framework and Standard Contractual Clauses; RevenueCat and Apple under Standard Contractual Clauses; Resend under the EU-U.S. Data Privacy Framework and Standard Contractual Clauses. Open-Meteo is in Switzerland, which the European Commission recognizes as providing adequate protection.</li>
+          <li>Retention: see <a href="#storage">Storage and retention</a>.</li>
+          <li>Whether you must provide data: you need not provide any personal data to record walks. Signing in is needed only for groups and Plus. We do not make decisions based solely on automated processing that significantly affect you.</li>
+        </ul>
       </section>
 
       <section id="changes">
-        <div class="sec-n">08 · Changes</div>
+        <div class="sec-n">12 · Changes</div>
         <h2>Changes</h2>
         <p>If we change this policy, we will post the update here and change the date at the top.</p>
       </section>
 
       <section id="contact">
-        <div class="sec-n">09 · Contact</div>
+        <div class="sec-n">13 · Contact</div>
         <h2>Contact</h2>
         <p>Questions: the <a href="support.html">support page</a>, or <a href="mailto:duck8823@gmail.com">duck8823@gmail.com</a>.</p>
+        <p>Business handling personal information: Shunsuke Maeda (an individual). We will promptly provide our address on request.</p>
 
         <div class="contact-card">
           <a href="support.html" class="btn btn-primary">Support →</a>
         </div>
       </section>
 
+    <section id="in-app-contact"><h2>In-app contact</h2>
+<p>When you choose to send, the category, subject, message and optional reply email go through Google Cloud Functions and Resend to a fixed support inbox. App version, OS version and device type (OS) are sent only when individually selected. The reply email is contact information in the message body; a reply is not guaranteed.</p>
+<p>Walk history, location, photos, videos, dog names, backups, app logs, advertising IDs, user IDs and persistent device IDs are not attached. Avoid including these in your message. A report sends the identifiers described in <a href="#report">Reporting and blocking</a> as the message. Drafts remain only in app memory, not in persistent device storage.</p>
+<p>The subject, message and reply email are not stored in Firestore or application logs. Firestore holds only keyed digests for duplicate prevention, status, timestamps and aggregate sending counters. Duplicate-prevention metadata becomes logically invalid after 25 hours; asynchronous TTL deletion occurs later and is not a 25-hour deletion guarantee. Google and Resend may record network metadata such as IP addresses in service operation logs.</p>
+<p>Delivered messages and reply emails are handled by Resend and the support inbox. Provider retention and support retention/deletion practices must be confirmed and disclosed before in-app sending is enabled. For deletion requests, use the existing support contact on this page. Web support and the public email remain available when in-app sending is unavailable.</p></section>
     </article>
   </div>
 </main>
@@ -303,6 +478,8 @@
         <h5>Legal</h5>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="tokushoho.html" hreflang="ja">Commercial Disclosure (Japan)</a></li>
         </ul>
       </div>
       <div class="footer-col">
