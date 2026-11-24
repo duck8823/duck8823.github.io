@@ -106,6 +106,7 @@
         <li><a href="#trouble">Troubleshooting</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#app-info">App information</a></li>
+        <li><a href="#in-app-contact">In-app contact</a></li>
       </ol>
     </aside>
 
@@ -265,7 +266,11 @@
           </div>
         </div>
       </section>
-
+    <section id="in-app-contact"><h2>In-app contact</h2>
+<p>When you choose to send, the category, subject, message and optional reply email go through Google Cloud Functions and Resend to a fixed support inbox. App version, OS version and device type (OS) are sent only when individually selected. The reply email is contact information in the message body; a reply is not guaranteed.</p>
+<p>Walk history, location, photos, videos, dog names, backups, app logs, advertising IDs, user IDs and persistent device IDs are not attached. Avoid including these in your message. Drafts remain only in app memory, not in persistent device storage.</p>
+<p>The subject, message and reply email are not stored in Firestore or application logs. Firestore holds only keyed digests for duplicate prevention, status, timestamps and aggregate sending counters. Duplicate-prevention metadata becomes logically invalid after 25 hours; asynchronous TTL deletion occurs later and is not a 25-hour deletion guarantee. Google and Resend may record network metadata such as IP addresses in service operation logs.</p>
+<p>Delivered messages and reply emails are handled by Resend and the support inbox. Provider retention and support retention/deletion practices must be confirmed and disclosed before in-app sending is enabled. For deletion requests, use the existing support contact on this page. Web support and the public email remain available when in-app sending is unavailable.</p></section>
     </article>
   </div>
 </main>
@@ -290,6 +295,8 @@
         <h5>Legal</h5>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="tokushoho.html" hreflang="ja">Commercial Disclosure (Japan)</a></li>
         </ul>
       </div>
       <div class="footer-col">
