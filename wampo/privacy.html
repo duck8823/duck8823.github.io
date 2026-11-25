@@ -73,7 +73,7 @@
     <h1>Privacy Policy</h1>
 
     <div class="doc-meta">
-      <span class="chip"><span class="dot"></span><strong>Last updated</strong> November 19, 2026</span>
+      <span class="chip"><span class="dot"></span><strong>Last updated</strong> November 25, 2026</span>
       <span class="chip"><strong>Scope</strong> Wampo for iOS</span>
       <span class="chip"><strong>Operator</strong> Shunsuke Maeda</span>
     </div>
@@ -126,7 +126,7 @@
       <section id="intro">
         <div class="sec-n">01 · Introduction</div>
         <h2>Introduction</h2>
-        <p>Last updated: November 19, 2026</p>
+        <p>Last updated: November 25, 2026</p>
         <p>Wampo is a personal project by Shunsuke Maeda. This policy explains what the Wampo app collects, how it uses that information, and where it is sent.</p>
       </section>
 
@@ -190,7 +190,7 @@
           <li>Dog profiles: for a dog you add to a group, its name, breed, birthday, photo, the setting for whether its round icon shows the photo or an avatar (with the avatar's parts, if one was made in an earlier version), and its goal. The photo is re-encoded as a JPEG of up to 1024 px on its long side and is sent without capture location or other metadata. Walk safety settings, such as a short nose or sensitivity to heat or cold, are not sent. Only the dog's owner, who is the group's admin, can add a dog to a group. The dog stays the owner's dog, and other members can only view its profile and goal.</li>
           <li>Walk posts: a walk with a dog you added to a group is sent to that group when you tap Done on the walk's finish screen. You do not choose whether to send each walk. This includes the dog, start and end times, distance, duration, markers (type and location), route, and the photos and videos you choose on that screen with their capture locations. Past walks that have not been sent are sent only when you tap Send under "Unsent walks" in the group.</li>
           <li>Updates and replies: the text and time of an update, the photos and videos you choose with their capture locations, and the text of a reply. An update is sent to the group when you save it.</li>
-          <li>Records kept on the owner's device: walks, updates, and replies that members send about the owner's dog are also saved on the owner's device, with their route, markers, photos, videos, and who recorded them, for what arrives while the group continues. They stay on the device as the owner's dog's records, even after the group ends. After the person who recorded them leaves or is removed from the group, their name is hidden and shown as "No name". If the person who recorded them deletes their account, the owner's device deletes their records the next time it opens the app signed in.</li>
+          <li>The owner's dog's records: walks, updates, and replies that members send about the owner's dog are kept on our server with the owner, as the owner's dog's records, with their route, markers, photos, and videos. They stay on the server even after the group ends, but other members can no longer see them. If the owner adds the dog to another group, that group's members can also see the dog's earlier records. They are also saved on the owner's device, with who recorded them, for what arrives while the group continues. They stay on the device as the owner's dog's records, even after the group ends. After the person who recorded them leaves or is removed from the group, their name is hidden and shown as "No name". If the person who recorded them deletes their account, the owner's device deletes their records the next time it opens the app signed in.</li>
         </ul>
         <h3 id="report">Reporting and blocking</h3>
         <p>You can report another member's post or reply to the Operator with Report in its menu. A report goes the same way as <a href="#in-app-contact">In-app contact</a> and sends whether it is a post or a reply, plus the identifiers needed to find it (the group, the post, the reply, and the account identifier of the person who wrote it). It does not include the text, photos or videos, or the account identifier of the person who reported it. The Operator uses the identifiers to review the post and handles it under the Terms of Use. The person who wrote it is not told that you reported it.</p>
@@ -338,13 +338,13 @@
         <p>Walk records (routes, distance, duration, markers, dog profiles, photos) are stored in a database on the device. What you send to a group is stored on our server (Firebase), separately from the records on your device. Deleting a group post or leaving a group does not delete the records on your device.</p>
         <p>We keep what is stored on our server until:</p>
         <ul class="bullets">
-          <li>Posts, updates, and replies: you delete them, or the group ends. Once deleted, no one in the group can see them. Records of the owner's dog that already reached the owner's device stay on that device. If you leave a group, your posts and replies stay in it. The names of people who left are hidden and shown as "No name". A post you withdraw while you are in the group stays on the owner's device with your name. You can still delete them later from Settings → Groups.</li>
-          <li>A group whose admin's Plus has ended: members can view and reply for 90 days from the day we confirm Plus has ended. After that, the group can no longer be viewed and its data is deleted.</li>
-          <li>A disbanded group: all members lose access at once, and the group's data is deleted. There is no 90-day period.</li>
+          <li>Posts, updates, and replies: you delete them, the owner deletes the dog, or you or the owner deletes their account. Even after the group ends, they stay with the owner as the owner's dog's records. Once deleted, no one in the group can see them. Records of the owner's dog that already reached the owner's device stay on that device. If you leave a group, your posts and replies stay in it. The names of people who left are hidden and shown as "No name". A post you withdraw while you are in the group stays on the owner's device with your name. You can still delete them from Settings → Groups after you leave or after the group ends.</li>
+          <li>A group whose admin's Plus has ended: members can view and reply for 90 days from the day we confirm Plus has ended. After that, the group can no longer be viewed and its data is deleted. Posts, updates, and replies stay with the owner as the owner's dog's records.</li>
+          <li>A disbanded group: all members lose access at once, and the group's data is deleted. Posts, updates, and replies stay with the owner as the owner's dog's records. There is no 90-day period.</li>
           <li>Notification device registrations: while you receive notifications. They are deleted when you delete your account.</li>
           <li>Your account: until you delete it. What is deleted is described in <a href="#deletion">Deleting data and withdrawing consent</a>.</li>
         </ul>
-        <p>Data of a group that can no longer be viewed is deleted, as a rule, within 7 days. Backups and copies inside services such as Firebase are removed when each service's retention period ends. Deletion in Wampo is complete without waiting for them.</p>
+        <p>Data of a group that can no longer be viewed (its name, members, invites, and notifications) is deleted, as a rule, within 7 days. This does not include the dogs' records that stay with the owner. Backups and copies inside services such as Firebase are removed when each service's retention period ends. Deletion in Wampo is complete without waiting for them.</p>
         <p>A backup you export from the app's settings contains the records on your device. It does not include the text or photos of group posts and replies, except for the copies below. Copies saved on your device of walks and moments that other members sent about your dogs are included with their text, photos, videos, comments, and the members' names and account identifiers. However, the names of people who left the group or deleted their account are not included. It also includes the last fetched name of each dog you added to a group, and a note of each post you sent (such as the group's name), with the identifiers that link them to your groups (your account and group identifiers). Group records load again when you sign in. Do not give your backup file to others.</p>
       </section>
 
@@ -371,7 +371,8 @@
         <h2>Deleting data and withdrawing consent</h2>
         <ul class="bullets">
           <li>Records on the device: deleting the app deletes the walk records and profiles stored on the device.</li>
-          <li>Group posts: use Delete post on a walk's details to delete each post. Its photos and replies are also removed from that group. Records of the owner's dog that already reached the owner's device stay on that device. Screenshots and other copies saved by others cannot be removed.</li>
+          <li>Group posts: use Delete post on a walk's details to delete each post. Its photos, videos, routes, and replies are also removed from our server. Records of the owner's dog that already reached the owner's device stay on that device. You can still delete them from Settings → Groups after you leave or after the group ends. Screenshots and other copies saved by others cannot be removed.</li>
+          <li>Deleting a dog: when the owner deletes a dog, we delete the dog's photo and the posts, updates, and replies of that dog alone (with their photos, videos, and routes) from our server. The dog is removed from posts shared with other dogs.</li>
           <li>Usage analytics: turn it off in Settings to withdraw consent. After that, we do not send new data to Firebase Analytics. How long Google keeps older data follows Google's policy.</li>
           <li>Only in feature-bearing versions 1.16.0 (212) and earlier — Walk comments: turn this off in Settings to stop sending later walk categories to Gemini. The app will show an on-device template, as it does for walks under 20 minutes.</li>
           <li>Location, camera, photos, notifications, microphone, and speech recognition: you can turn off access for this app in iOS Settings at any time.</li>
@@ -380,7 +381,7 @@
         <p>Go to Settings → Account → Delete account. We accept the request after you sign in again to confirm it is you. Once accepted, deletion continues even if you close the app. We aim to finish within 30 days of acceptance. If it cannot proceed automatically, the app tells you to contact us, and we finish it once you do.</p>
         <ul class="bullets">
           <li>What is deleted: your posts, updates, and replies in every group, with their photos, videos, and routes; your name; the record of groups you were in; notification device registrations; the record of your Plus status; your sign-in information (Firebase Authentication); and your RevenueCat customer record. We also ask Apple to revoke Sign in with Apple. If we cannot confirm this, the app shows you how to revoke it yourself.</li>
-          <li>Only the dog's owner, who is the group's admin, can add a dog to a group. Because a group you admin is disbanded first, the profiles and goals of dogs you added are deleted with it.</li>
+          <li>Only the dog's owner, who is the group's admin, can add a dog to a group. When the owner deletes their account, we delete the dog's profile, goals, and photo, and the walks, updates, and replies kept as the dog's records (including what other members sent) from our server. On other members' devices, only the copies the owner wrote are deleted.</li>
           <li>Copies on the owner's device: copies of walks, updates, and replies you sent about the owner's dog that already reached the owner's device are deleted the next time that device opens the app signed in. Copies restored from a backup are deleted the same way.</li>
           <li>If you are the admin of a group, that group is disbanded first.</li>
           <li>Your App Store subscription is not canceled automatically. Cancel it in the App Store.</li>
